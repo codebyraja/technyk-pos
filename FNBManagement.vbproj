@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BC9ACA2-EED1-46A0-8ABA-575FDB1F93E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FNBManagement.My.MyApplication</StartupObject>
+    <RootNamespace>FNBManagement</RootNamespace>
+    <AssemblyName>FNBManagement</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>POS.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FNBManagement.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FNBManagement.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Recp 21-nov-2011\RECP_resc_\bin\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Interop.MSXML2, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Interop.MSXML2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Scripting, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Interop.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WinHttp, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Interop.WinHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="textboxinharit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\textboxinharit.dll</HintPath>
+    </Reference>
+    <Reference Include="VbPowerPack, Version=1.0.1876.26083, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="wordconverter, Version=1.0.4273.25723, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\software\Desktop\kkk\ClassLibrary1\bin\wordconverter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\FrmReportView.designer.vb">
+      <DependentUpon>FrmReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Definations\BindCombo.vb" />
+    <Compile Include="Definations\FormatGrid.vb" />
+    <Compile Include="Definations\Encryption.vb" />
+    <Compile Include="Definations\Database.vb" />
+    <Compile Include="Definations\FormatControls.vb" />
+    <Compile Include="Definations\Send_SMS.vb" />
+    <Compile Include="Common\FrmCompanyInfo.designer.vb">
+      <DependentUpon>FrmCompanyInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmCompanyInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FrmFNBManagement.designer.vb">
+      <DependentUpon>FrmFNBManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmFNBManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enquiry\CrystalReportViewer.vb" />
+    <Compile Include="Enquiry\frmCreditTransactionEnquiry.designer.vb">
+      <DependentUpon>frmCreditTransactionEnquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry\frmCreditTransactionEnquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enquiry\frmDependantEnquiry.designer.vb">
+      <DependentUpon>frmDependantEnquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry\frmDependantEnquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enquiry\frmMemberEnquiry.designer.vb">
+      <DependentUpon>frmMemberEnquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry\frmMemberEnquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enquiry\FrmSmartCardBalanceEnquiry.designer.vb">
+      <DependentUpon>FrmSmartCardBalanceEnquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry\FrmSmartCardBalanceEnquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enquiry\frmSmartCardTransactionEnquiry.designer.vb">
+      <DependentUpon>frmSmartCardTransactionEnquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry\frmSmartCardTransactionEnquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enquiry\frmSpouseEnquiry.designer.vb">
+      <DependentUpon>frmSpouseEnquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry\frmSpouseEnquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helper\FormResizeHelper.vb" />
+    <Compile Include="helper\UIHelper.vb" />
+    <Compile Include="Master\FrmConfigurations.designer.vb">
+      <DependentUpon>FrmConfigurations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmConfigurations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmKOTRemarks.designer.vb">
+      <DependentUpon>FrmKOTRemarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmKOTRemarks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmLinkPaymodes.designer.vb">
+      <DependentUpon>FrmLinkPaymodes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmLinkPaymodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmLinkWaiter.designer.vb">
+      <DependentUpon>FrmLinkWaiter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmLinkWaiter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmLocationMenu.designer.vb">
+      <DependentUpon>FrmLocationMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmLocationMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmLinkTable.designer.vb">
+      <DependentUpon>FrmLinkTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmLinkTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmLocationMenuItem.designer.vb">
+      <DependentUpon>FrmLocationMenuItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmLocationMenuItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmModifierMaster.designer.vb">
+      <DependentUpon>FrmModifierMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmModifierMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmTablesMaster.designer.vb">
+      <DependentUpon>FrmTablesMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmTablesMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmWaiterMaster.designer.vb">
+      <DependentUpon>FrmWaiterMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmWaiterMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="POS Transations\CrystalReportViewer.vb" />
+    <Compile Include="POS Transations\FrmChangeBusinessDate.designer.vb">
+      <DependentUpon>FrmChangeBusinessDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS Transations\FrmChangeBusinessDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FrmChangePassword.designer.vb">
+      <DependentUpon>FrmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Definations\clsExcelReport.vb" />
+    <Compile Include="Definations\Module1.vb" />
+    <Compile Include="Definations\GlobalModule.vb" />
+    <Compile Include="Definations\ValidationFunctions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="POS Transations\FrmPOSBilling1N.designer.vb">
+      <DependentUpon>FrmPOSBilling1N.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS Transations\FrmPOSBilling1N.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FrmCompanyInfo.resx">
+      <DependentUpon>FrmCompanyInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmFNBManagement.resx">
+      <DependentUpon>FrmFNBManagement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmReportView.resx">
+      <DependentUpon>FrmReportView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry\frmCreditTransactionEnquiry.resx">
+      <DependentUpon>frmCreditTransactionEnquiry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry\frmDependantEnquiry.resx">
+      <DependentUpon>frmDependantEnquiry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry\frmMemberEnquiry.resx">
+      <DependentUpon>frmMemberEnquiry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry\FrmSmartCardBalanceEnquiry.resx">
+      <DependentUpon>FrmSmartCardBalanceEnquiry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry\frmSmartCardTransactionEnquiry.resx">
+      <DependentUpon>frmSmartCardTransactionEnquiry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquiry\frmSpouseEnquiry.resx">
+      <DependentUpon>frmSpouseEnquiry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmConfigurations.resx">
+      <DependentUpon>FrmConfigurations.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmKOTRemarks.resx">
+      <DependentUpon>FrmKOTRemarks.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmLinkPaymodes.resx">
+      <DependentUpon>FrmLinkPaymodes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmLinkWaiter.resx">
+      <DependentUpon>FrmLinkWaiter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmLocationMenu.resx">
+      <DependentUpon>FrmLocationMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmLinkTable.resx">
+      <DependentUpon>FrmLinkTable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmLocationMenuItem.resx">
+      <DependentUpon>FrmLocationMenuItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmModifierMaster.resx">
+      <DependentUpon>FrmModifierMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmTablesMaster.resx">
+      <DependentUpon>FrmTablesMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmWaiterMaster.resx">
+      <DependentUpon>FrmWaiterMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS Transations\FrmChangeBusinessDate.resx">
+      <DependentUpon>FrmChangeBusinessDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS Transations\FrmPOSBilling1N.resx">
+      <DependentUpon>FrmPOSBilling1N.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="POS.ico" />
+    <None Include="Resources\eu_12278928.png" />
+    <None Include="Resources\home_4518073.png" />
+    <None Include="Resources\ultraviwer.png" />
+    <None Include="Resources\payment_mode.png" />
+    <None Include="Resources\add21.png" />
+    <None Include="Resources\req bet store.png" />
+    <None Include="Resources\requisition.jpg" />
+    <None Include="Resources\data_disk.png" />
+    <None Include="Resources\Kaed.png" />
+    <None Include="Resources\Contract-Icon1.png" />
+    <None Include="Resources\data_ok.png" />
+    <None Include="Resources\RFID.jpg" />
+    <None Include="Resources\FindHS.png" />
+    <None Include="Resources\smartcard.png" />
+    <None Include="Resources\card.png" />
+    <None Include="Resources\InterLocationTransfer1.png" />
+    <None Include="Resources\InterLocationTransfer.png" />
+    <None Include="Resources\issue to location.png" />
+    <None Include="Resources\png-cogs-gears-cog-gear-preferences-settings-icon-download-png-512 %281%29.png" />
+    <None Include="Resources\settings1.jpg" />
+    <None Include="Resources\ANYDESK.png" />
+    <None Include="Resources\poskeyboard11.jpg" />
+    <None Include="Resources\poskeyboard1.jpg" />
+    <None Include="Resources\poskeyboard.jpg" />
+    <None Include="Resources\pos keyboard.jpg" />
+    <None Include="Resources\12672942.png" />
+    <None Include="Resources\blank.JPG" />
+    <None Include="Resources\luxfon.com_10604-1024x6401.jpg" />
+    <None Include="Resources\whiteimages.jpg" />
+    <None Include="Resources\LoginBKG.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\keyboard1.png" />
+    <None Include="Resources\HomeScreen.jpg" />
+    <None Include="Resources\HiRes %281%29.jpg" />
+    <None Include="Resources\gauge.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\view2.png" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\user1_mobilephone.png" />
+    <None Include="Resources\user1_add.png" />
+    <None Include="Resources\up_down2.png" />
+    <None Include="Resources\up_down1.png" />
+    <None Include="Resources\up_down.png" />
+    <None Include="Resources\text_tree.png" />
+    <None Include="Resources\table_sql_select.png" />
+    <None Include="Resources\table_preferences1.png" />
+    <None Include="Resources\table_preferences.png" />
+    <None Include="Resources\table_connection2.png" />
+    <None Include="Resources\table_connection1.png" />
+    <None Include="Resources\table_connection.png" />
+    <None Include="Resources\table_add1.png" />
+    <None Include="Resources\table_add.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\selection_delete.png" />
+    <None Include="Resources\selection.png" />
+    <None Include="Resources\scroll_delete1.png" />
+    <None Include="Resources\scroll_delete.png" />
+    <None Include="Resources\save_as1.png" />
+    <None Include="Resources\save_as.png" />
+    <None Include="Resources\refresh1.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\printer1.png" />
+    <None Include="Resources\printer_preferences2.png" />
+    <None Include="Resources\printer_preferences1.png" />
+    <None Include="Resources\printer_preferences.png" />
+    <None Include="Resources\printer_ok.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\pin_red.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\information1.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\house2.png" />
+    <None Include="Resources\house1.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\forbidden1.png" />
+    <None Include="Resources\forbidden.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\dude31.png" />
+    <None Include="Resources\dude3.png" />
+    <None Include="Resources\document_stop.png" />
+    <None Include="Resources\document_lock.png" />
+    <None Include="Resources\document_into.png" />
+    <None Include="Resources\document_edit.png" />
+    <None Include="Resources\document_delete.png" />
+    <None Include="Resources\document_cup1.png" />
+    <None Include="Resources\document_cup.png" />
+    <None Include="Resources\document_check.png" />
+    <None Include="Resources\document_add1.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\delete23.png" />
+    <None Include="Resources\delete22.png" />
+    <None Include="Resources\delete21.png" />
+    <None Include="Resources\delete4.png" />
+    <None Include="Resources\delete3.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\data_forbidden1.png" />
+    <None Include="Resources\data_forbidden.png" />
+    <None Include="Resources\data_error.png" />
+    <None Include="Resources\data_edit11.png" />
+    <None Include="Resources\data_edit3.png" />
+    <None Include="Resources\data_edit2.png" />
+    <None Include="Resources\data_edit1.png" />
+    <None Include="Resources\data_edit.png" />
+    <None Include="Resources\data_disk31.png" />
+    <None Include="Resources\data_disk3.png" />
+    <None Include="Resources\data_delete2.png" />
+    <None Include="Resources\data_delete1.png" />
+    <None Include="Resources\data_delete.png" />
+    <None Include="Resources\data_add.png" />
+    <None Include="Resources\contract2.png" />
+    <None Include="Resources\contract1.png" />
+    <None Include="Resources\contract.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\check3.png" />
+    <None Include="Resources\check2.png" />
+    <None Include="Resources\check1.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\chart.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\cabinet.png" />
+    <None Include="Resources\businessmen.png" />
+    <None Include="Resources\book_open.png" />
+    <None Include="Resources\arrow_up_green1.png" />
+    <None Include="Resources\arrow_up_green.png" />
+    <None Include="Resources\arrow_up_blue.png" />
+    <None Include="Resources\arrow_right_green1.png" />
+    <None Include="Resources\arrow_right_green.png" />
+    <None Include="Resources\arrow_right_blue.png" />
+    <None Include="Resources\arrow_left_blue.png" />
+    <None Include="Resources\arrow_down_green2.png" />
+    <None Include="Resources\arrow_down_green1.png" />
+    <None Include="Resources\arrow_down_green.png" />
+    <None Include="Resources\arrow_down_blue.png" />
+    <None Include="Resources\LoginBackground.jpg" />
+    <None Include="Resources\pp.jpg" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\minimise.jpg" />
+    <None Include="Resources\settings.jpg" />
+    <None Include="Resources\th.jpg" />
+    <None Include="Resources\POSReports.png" />
+    <None Include="Resources\LinkTable.jpg" />
+    <None Include="Resources\calendar_up.png" />
+    <None Include="Resources\column_delete.png" />
+    <None Include="Resources\GSTReport.png" />
+    <None Include="Resources\refund.jpg" />
+    <None Include="Resources\124229423-chart-icon-report-graph-or-sales-growth-sign-analysis-and-statistics-data-symbol-classic-flat-style-.jpg" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\22154801-push-pin-and-credit-word1.jpg" />
+    <None Include="Resources\510931-16Duf91486622133 %281%29.png" />
+    <None Include="Resources\500_F_217961828_xI2aG6lPi3A8wEDhfatgQMZVBUXFXfGL %282%291.jpg" />
+    <None Include="Resources\500_F_217961828_xI2aG6lPi3A8wEDhfatgQMZVBUXFXfGL %282%29.jpg" />
+    <None Include="Resources\Addwaiter - New.png" />
+    <None Include="Resources\Addwaiter.png" />
+    <None Include="Resources\copy %281%29.png" />
+    <None Include="Resources\Calender.jpg" />
+    <None Include="Resources\debit-card.png" />
+    <None Include="Resources\Date_Time_icon.png" />
+    <None Include="Resources\credit.jpg" />
+    <None Include="Resources\kids %282%29.png" />
+    <None Include="Resources\flat_seo-47-512.png" />
+    <None Include="Resources\linkGroup.jpg" />
+    <None Include="Resources\duplicate.jpg" />
+    <None Include="Resources\member.jpg" />
+    <None Include="Resources\member Enquiry.png" />
+    <None Include="Resources\depenants enq.jpg" />
+    <None Include="Resources\billing.png" />
+    <None Include="Resources\table_1.jpg" />
+    <None Include="Resources\restaurant-cafe-thin-line-icon-table-and-chair-vector-20957232 %281%29.jpg" />
+    <None Include="Resources\Service-Icons-web_All-in-one-POS-terminals.png" />
+    <None Include="Resources\single.jpg" />
+    <None Include="Resources\restaurant-cafe-thin-line-icon-table-and-chair-vector-20957232 %282%29.jpg" />
+    <None Include="Resources\spouse enquiry.png" />
+    <None Include="Resources\table_Link.jpg" />
+    <None Include="Resources\warehouse-inventory-icon-6.png" />
+    <None Include="Resources\TKGO3pZi.jpg" />
+    <None Include="Resources\transaction1.jpg" />
+    <None Include="Resources\ZEF-Icons-Subscribe-Med.png" />
+    <None Include="Resources\zz.png" />
+    <None Include="Resources\zz1.png" />
+    <None Include="Resources\zz21.png" />
+    <None Include="Resources\zz2.png" />
+    <None Include="Resources\zz4.jpg" />
+    <None Include="Resources\zz7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

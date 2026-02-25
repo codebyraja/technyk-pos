@@ -1,0 +1,446 @@
+D:\2020 dsoi dk\POS Management - OTP\bin\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - OTP\bin\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - OTP\bin\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - OTP\bin\Microsoft.Office.Interop.Excel.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Microsoft.Vbe.Interop.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\office.dll
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\ResolveAssemblyReference.cache
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmLogin.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmReportView.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.frmSettings.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmOpeningStock.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmPOSBilling.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmPOSSplitBilling.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.Resources.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - OTP\obj\Release\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Microsoft.Office.Interop.Excel.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Microsoft.Vbe.Interop.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\office.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\ResolveAssemblyReference.cache
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLogin.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmReportView.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.frmSettings.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmOpeningStock.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSSplitBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.Resources.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.exe
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.xml
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\ResolveAssemblyReference.cache
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLogin.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmReportView.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.frmSettings.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmOpeningStock.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSSplitBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.Resources.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\FNBManagement.exe
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\FNBManagement.xml
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Microsoft.Office.Interop.Excel.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Microsoft.Vbe.Interop.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\office.dll
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.exe
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.xml
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management\bin\FNBManagement.exe
+D:\2020 AF Hindan\POS Management\bin\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management\bin\FNBManagement.xml
+D:\2020 AF Hindan\POS Management\bin\Microsoft.Office.Interop.Excel.dll
+D:\2020 AF Hindan\POS Management\bin\Microsoft.Vbe.Interop.dll
+D:\2020 AF Hindan\POS Management\bin\office.dll
+D:\2020 AF Hindan\POS Management\obj\Release\ResolveAssemblyReference.cache
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmLogin.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmReportView.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmOpeningStock.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.Resources.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmConfigurations.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Release\FNBManagement.exe
+D:\2019 JCJ\Software Update\POS Management\obj\Release\FNBManagement.xml
+D:\2019 JCJ\Software Update\POS Management\obj\Release\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPartyBarBill.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSHutBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Release\FNBManagement.FrmPOSHomeDelivery.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Release\FNBManagement.exe
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Release\FNBManagement.xml
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Release\FNBManagement.pdb
+D:\2021Sports and Clutural Club\POS Management\obj\Release\ResolveAssemblyReference.cache
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLogin.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmReportView.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmOpeningStock.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmConfigurations.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmPOSBilling.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.Resources.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.exe
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.xml
+D:\2021Sports and Clutural Club\POS Management\obj\Release\FNBManagement.pdb
+D:\2021Sports and Clutural Club\POS Management\bin\FNBManagement.exe
+D:\2021Sports and Clutural Club\POS Management\bin\FNBManagement.pdb
+D:\2021Sports and Clutural Club\POS Management\bin\FNBManagement.xml
+D:\2021Sports and Clutural Club\POS Management\bin\Microsoft.Office.Interop.Excel.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Microsoft.Vbe.Interop.dll
+D:\2021Sports and Clutural Club\POS Management\bin\office.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\FNBManagement.exe
+D:\2021 Sports and Clutural Club\POS Management\bin\FNBManagement.pdb
+D:\2021 Sports and Clutural Club\POS Management\bin\FNBManagement.xml
+D:\2021 Sports and Clutural Club\POS Management\bin\Microsoft.Office.Interop.Excel.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Microsoft.Vbe.Interop.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\office.dll
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\ResolveAssemblyReference.cache
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLogin.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmReportView.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmOpeningStock.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmConfigurations.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.Resources.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.exe
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.xml
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.pdb
+D:\2021 Sports and Clutural Club\POS Management\obj\Release\FNBManagement.FrmReceiveFromStore.resources
+D:\2021 Panchshilla\POS Management\bin\FNBManagement.exe
+D:\2021 Panchshilla\POS Management\bin\FNBManagement.pdb
+D:\2021 Panchshilla\POS Management\bin\FNBManagement.xml
+D:\2021 Panchshilla\POS Management\bin\Microsoft.Office.Interop.Excel.dll
+D:\2021 Panchshilla\POS Management\bin\Microsoft.Vbe.Interop.dll
+D:\2021 Panchshilla\POS Management\bin\office.dll
+D:\2021 Panchshilla\POS Management\obj\Release\ResolveAssemblyReference.cache
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmLogin.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmReportView.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmReceiveFromStore.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmConfigurations.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.Resources.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.exe
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.xml
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.pdb
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmRequisition.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmConsumptionVoucher.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2021 Panchshilla\POS Management\obj\Release\FNBManagement.FrmClosingStock.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.exe
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.xml
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.pdb
+D:\2022 PSC\POS Management\bin\FNBManagement.exe
+D:\2022 PSC\POS Management\bin\FNBManagement.pdb
+D:\2022 PSC\POS Management\bin\FNBManagement.xml
+D:\2022 PSC\POS Management\bin\Microsoft.Office.Interop.Excel.dll
+D:\2022 PSC\POS Management\bin\Microsoft.Vbe.Interop.dll
+D:\2022 PSC\POS Management\bin\office.dll
+D:\2022 PSC\POS Management\obj\Release\ResolveAssemblyReference.cache
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmLogin.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmReportView.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmClosingStock.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmConsumptionVoucher.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmReceiveFromStore.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmRequisition.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmConfigurations.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.Resources.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2022 PSC\POS Management\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.exe
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.xml
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.pdb
+D:\2026 NSCI\Modules\POS Management\obj\Release\ResolveAssemblyReference.cache
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmFundTransfer.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmReceiptVoucher.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmSmartCardBlock.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmSmartCardCharge.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmSmartCardRefund.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmCompanyInfo.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmLogin.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmFNBManagement.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmReportView.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.frmDependantEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.frmMemberEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.frmSpouseEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmInventoryReports.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.RptStockAsOnDate.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmClosingStock.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmConsumptionVoucher.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmReceiveFromStore.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmRequisition.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmStockAdjustment.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmConfigurations.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmLocationMenu.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmLinkWaiter.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmLinkTable.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmLocationMenuItem.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmTableMaster.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmWaiterMaster.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmPOSBilling1N.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmChangeBusinessDate.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmChangePassword.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.Resources.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmPOSCreditBilling.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmPOSDuplicate.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.RptPOSReports.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.RptSlipReports.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.vbproj.GenerateResource.Cache
+D:\2026 NSCI\Modules\POS Management\bin\FNBManagement.exe
+D:\2026 NSCI\Modules\POS Management\bin\FNBManagement.pdb
+D:\2026 NSCI\Modules\POS Management\bin\FNBManagement.xml
+D:\2026 NSCI\Modules\POS Management\bin\Microsoft.Office.Interop.Excel.dll
+D:\2026 NSCI\Modules\POS Management\bin\Microsoft.Vbe.Interop.dll
+D:\2026 NSCI\Modules\POS Management\bin\office.dll
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmLinkPaymodes.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmKOTRemarks.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmModifierMaster.resources
+D:\2026 NSCI\Modules\POS Management\obj\Release\FNBManagement.FrmPOSBillingRoomPosting.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Release\FNBManagement.exe
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Release\FNBManagement.xml
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Release\FNBManagement.pdb

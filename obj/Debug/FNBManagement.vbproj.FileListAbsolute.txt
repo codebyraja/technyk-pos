@@ -1,0 +1,705 @@
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\Interop.MSXML2.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\Interop.Scripting.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\Interop.WinHttp.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\textboxinharit.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\office.dll
+D:\2020 dsoi dk\POS Management - OTP\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\ResolveAssemblyReference.cache
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.frmSettings.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmPOSSplitBilling.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.Resources.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2020 dsoi dk\POS Management - OTP\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 dsoi dk\Misc Codes 21-05-2020\POS Management - OTP - Copy (3)\obj\Debug\FNBManagement.exe
+D:\2020 dsoi dk\Misc Codes 21-05-2020\POS Management - OTP - Copy (3)\obj\Debug\FNBManagement.xml
+D:\2020 dsoi dk\Misc Codes 21-05-2020\POS Management - OTP - Copy (3)\obj\Debug\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\FNBManagement.exe
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\FNBManagement.pdb
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\FNBManagement.xml
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\Interop.MSXML2.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\Interop.Scripting.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\Interop.WinHttp.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\textboxinharit.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\bin\Debug\office.dll
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\ResolveAssemblyReference.cache
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmSettings.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSSplitBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.Resources.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2020 dsoi dk\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\ResolveAssemblyReference.cache
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmSettings.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSSplitBilling.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.Resources.resources
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.exe
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.xml
+D:\2020 AF Hindan\POS Management - 09-08-2020\obj\Debug\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\FNBManagement.exe
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\FNBManagement.xml
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\Interop.MSXML2.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\Interop.Scripting.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\Interop.WinHttp.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\textboxinharit.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2020 AF Hindan\POS Management - 09-08-2020\bin\Debug\office.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\FNBManagement.exe
+D:\2020 AF Hindan\POS Management\bin\Debug\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management\bin\Debug\FNBManagement.xml
+D:\2020 AF Hindan\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\textboxinharit.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2020 AF Hindan\POS Management\bin\Debug\office.dll
+D:\2020 AF Hindan\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.exe
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.xml
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\FNBManagement.exe
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\FNBManagement.pdb
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\FNBManagement.xml
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\textboxinharit.dll
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2019 JCJ\Software Update\POS Management\bin\Debug\office.dll
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.frmSettings.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.exe
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.xml
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.pdb
+D:\2019 JCJ\Software Update\POS Management\obj\Debug\FNBManagement.FrmPartyBarBill.resources
+C:\Users\USER\Desktop\POS Management - Copy\obj\Debug\FNBManagement.exe
+C:\Users\USER\Desktop\POS Management - Copy\obj\Debug\FNBManagement.xml
+C:\Users\USER\Desktop\POS Management - Copy\obj\Debug\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPartyBarBill.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSHutBilling.resources
+D:\2020 AF Hindan\POS Management\obj\Debug\FNBManagement.FrmPOSHomeDelivery.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\FNBManagement.exe
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\FNBManagement.pdb
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\FNBManagement.xml
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\Interop.MSXML2.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\Interop.Scripting.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\Interop.WinHttp.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\textboxinharit.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\bin\Debug\office.dll
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\ResolveAssemblyReference.cache
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPartyBarBill.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSBillingPartyPosting.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSBillingRoomPosting.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.Resources.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSHomeDelivery.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSHutBilling.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.exe
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.xml
+D:\2020 AF Hindan\POS Management HD + Template_ID\obj\Debug\FNBManagement.pdb
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.exe
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.xml
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.pdb
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmPOSBilling.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2021Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\FNBManagement.exe
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\FNBManagement.pdb
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\FNBManagement.xml
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\textboxinharit.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2021Sports and Clutural Club\POS Management\bin\Debug\office.dll
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.exe
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.xml
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.pdb
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\FNBManagement.exe
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\FNBManagement.pdb
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\FNBManagement.xml
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\textboxinharit.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2021 Sports and Clutural Club\POS Management\bin\Debug\office.dll
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmOpeningStock.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2021 Sports and Clutural Club\POS Management\obj\Debug\FNBManagement.FrmReceiveFromStore.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.exe
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.xml
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.pdb
+D:\2021 Panchshilla\POS Management\bin\Debug\FNBManagement.exe
+D:\2021 Panchshilla\POS Management\bin\Debug\FNBManagement.pdb
+D:\2021 Panchshilla\POS Management\bin\Debug\FNBManagement.xml
+D:\2021 Panchshilla\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2021 Panchshilla\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2021 Panchshilla\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2021 Panchshilla\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2021 Panchshilla\POS Management\bin\Debug\textboxinharit.dll
+D:\2021 Panchshilla\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2021 Panchshilla\POS Management\bin\Debug\office.dll
+D:\2021 Panchshilla\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmReceiveFromStore.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmRequisition.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmConsumptionVoucher.resources
+D:\2021 Panchshilla\POS Management\obj\Debug\FNBManagement.FrmClosingStock.resources
+D:\2022 PSC\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmClosingStock.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmConsumptionVoucher.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmReceiveFromStore.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmRequisition.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.exe
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.xml
+D:\2022 PSC\POS Management\obj\Debug\FNBManagement.pdb
+D:\2022 PSC\POS Management\bin\Debug\FNBManagement.exe
+D:\2022 PSC\POS Management\bin\Debug\FNBManagement.pdb
+D:\2022 PSC\POS Management\bin\Debug\FNBManagement.xml
+D:\2022 PSC\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2022 PSC\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2022 PSC\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2022 PSC\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2022 PSC\POS Management\bin\Debug\textboxinharit.dll
+D:\2022 PSC\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2022 PSC\POS Management\bin\Debug\office.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\FNBManagement.exe
+D:\2026 NSCI\Modules\POS Management\bin\Debug\FNBManagement.pdb
+D:\2026 NSCI\Modules\POS Management\bin\Debug\FNBManagement.xml
+D:\2026 NSCI\Modules\POS Management\bin\Debug\Interop.MSXML2.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\Interop.Scripting.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\Interop.WinHttp.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\textboxinharit.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\2026 NSCI\Modules\POS Management\bin\Debug\office.dll
+D:\2026 NSCI\Modules\POS Management\obj\Debug\ResolveAssemblyReference.cache
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmFundTransfer.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmMiscellaneousBilling.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmReceiptVoucher.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmSmartCardBlock.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmSmartCardCharge.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmSmartCardRefund.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmLogin.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmReportView.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmInventoryReports.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.RptStockAsOnDate.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmClosingStock.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmConsumptionVoucher.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmInterLocationStockTransfer.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmReceiveFromStore.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmRequisition.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmStockAdjustment.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmLocationMenuItem.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.Resources.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmPOSCreditBilling.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmPOSDuplicate.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.RptPOSReports.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.RptSlipReports.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.exe
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.xml
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.pdb
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmLinkPaymodes.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmKOTRemarks.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmModifierMaster.resources
+D:\2026 NSCI\Modules\POS Management\obj\Debug\FNBManagement.FrmPOSBillingRoomPosting.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\FNBManagement.exe
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\FNBManagement.pdb
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\FNBManagement.xml
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\Interop.MSXML2.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\Interop.Scripting.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\Interop.WinHttp.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\textboxinharit.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\bin\Debug\office.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmLogin.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmFNBManagement.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmReportView.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmConfigurations.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmKOTRemarks.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmLinkPaymodes.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmLocationMenu.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmLinkTable.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmLocationMenuItem.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmModifierMaster.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmTableMaster.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmChangePassword.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.Resources.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.exe
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.xml
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.pdb
+C:\Users\rajvi\OneDrive\Desktop\POS Management - Copy (2)\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.exe
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.xml
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.pdb
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\FNBManagement.exe
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\FNBManagement.pdb
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\FNBManagement.xml
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\Interop.MSXML2.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\Interop.Scripting.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\Interop.WinHttp.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\textboxinharit.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\office.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.vbprojResolveAssemblyReference.cache
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmLogin.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmFNBManagement.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmReportView.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmConfigurations.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmKOTRemarks.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmLinkPaymodes.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmLocationMenu.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmLinkTable.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmLocationMenuItem.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmModifierMaster.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmTableMaster.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmChangePassword.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.Resources.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+C:\Users\rajvi\OneDrive\Desktop\POS Management - NSCI\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\FNBManagement.exe
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\FNBManagement.exe.config
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\Interop.MSXML2.dll
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\Interop.Scripting.dll
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\Interop.WinHttp.dll
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\textboxinharit.dll
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.vbprojResolveAssemblyReference.cache
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmCompanyInfo.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmLogin.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmFNBManagement.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmReportView.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.frmCreditTransactionEnquiry.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.frmDependantEnquiry.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.frmMemberEnquiry.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmSmartCardBalanceEnquiry.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.frmSmartCardTransactionEnquiry.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.frmSpouseEnquiry.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmConfigurations.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmKOTRemarks.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmLinkPaymodes.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmLinkWaiter.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmLocationMenu.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmLinkTable.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmLocationMenuItem.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmModifierMaster.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmTableMaster.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmWaiterMaster.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmChangeBusinessDate.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmChangePassword.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.Resources.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmPOSBilling1N.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.vbproj.GenerateResource.Cache
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.exe
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.xml
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.pdb
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\FNBManagement.pdb
+D:\!\Raja\2026\POS Management - NSCI\bin\Debug\FNBManagement.xml
