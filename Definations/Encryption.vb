@@ -5,7 +5,7 @@ Imports System.Data.SqlClient
 Imports System.Configuration
 Imports System.Security.Cryptography
 Imports System.Xml
-
+Imports System.IO.FileNotFoundException
 Module Encryption
 
     Public Sub ReadConfigurations()

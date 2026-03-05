@@ -182,11 +182,10 @@ Public Class FrmModifierMaster
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
-    Private Sub txtWaiter_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtModifierName.TextChanged
+    Private Sub txtWaiter_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs)
         txtDisplayAs.Text = txtModifierName.Text
     End Sub
 
@@ -266,11 +265,25 @@ Public Class FrmModifierMaster
         FormatLabel("search")
     End Sub
 
-    Private Sub txtWaiterSearch_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtModifierSearch.TextChanged, txtDisplayAsSearch.TextChanged
+    Private Sub txtWaiterSearch_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BindGridForSearch()
     End Sub
 
-    Private Sub cmbSearchWaiter_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbStatusSearch.Validated
+    Private Sub cmbSearchWaiter_Validated(ByVal sender As Object, ByVal e As System.EventArgs)
         BindGridForSearch()
+    End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub FrmModifierMaster_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        'If responsive Is Nothing Then Exit Sub
+
+        'Me.SuspendLayout()
+
+        'responsive.ResizeControls(Me)
+
+        'Me.ResumeLayout()
     End Sub
 End Class

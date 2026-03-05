@@ -37,6 +37,17 @@ Public Class FrmFNBManagement
         DisableControls(False)
         DefineTooTipAndFormAccess()
         LOCATION_TYPE = "'POS Bar','POS Rest'"
+
+    End Sub
+    Public Sub ShowDashboard()
+        'PanelButtons.Controls.Clear()
+        'SetupResponsiveGrid()
+        'PanelButtons.Visible = True
+
+        PanelPOSTransactions.Controls.Clear()
+        If PanelPOSTransactions.Controls.Count = 0 Then
+            SetupResponsiveGrid()
+        End If
     End Sub
 
     Private Sub InitializeProductionLayout()
@@ -462,7 +473,8 @@ Public Class FrmFNBManagement
 
 
     Private Sub btnHome_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        PanelButtons.Visible = True
+        ShowDashboard()
+        'PanelButtons.Visible = True
         BackToMainScreen = True
         DefineTooTipAndFormAccess()
     End Sub
@@ -550,31 +562,70 @@ Public Class FrmFNBManagement
     End Sub
 
     Public Sub DisplayForm(ByVal frm As Form)
-        Reset()
-        frm.ControlBox = False
-        frm.FormBorderStyle = FormBorderStyle.None
+
+        PanelPOSTransactions.Controls.Clear()
+
         frm.TopLevel = False
+        frm.FormBorderStyle = FormBorderStyle.None
         frm.Dock = DockStyle.Fill
 
-        'frm.Location = New System.Drawing.Point(0, 0)
-        'frm.MinimumSize = New System.Drawing.Size(1020, 682)
-        'frm.MaximumSize = New System.Drawing.Size(1020, 682)
-        'frm.Size = New System.Drawing.Size(1020, 682)
+        PanelPOSTransactions.Controls.Add(frm)
 
-        frm.StartPosition = FormStartPosition.Manual
-        BackGroundColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer)) 'RGB(173, 216, 230)
-        ControlBackColor(frm)
-        frm.BackColor = BackGroundColor
+        AddHandler frm.FormClosed, AddressOf ChildFormClosed
 
-        frm.MdiParent = Me
-        frm.Visible = True
-
-        PanelButtons.Visible = False
         frm.Show()
-        frm.Activate()
         frm.BringToFront()
-        frm.Focus()
-        BackToMainScreen = False
+
+        'Reset()
+
+        'PanelButtons.Controls.Clear()
+
+        'frm.TopLevel = False
+        'frm.FormBorderStyle = FormBorderStyle.None
+        'frm.Dock = DockStyle.Fill
+
+        'PanelButtons.Controls.Add(frm)
+        'AddHandler frm.FormClosed, AddressOf ChildFormClosed
+
+        'frm.Show()
+        'frm.BringToFront()
+
+        'Reset()
+
+        '' Close previous child
+        'For Each f As Form In Me.MdiChildren
+        '    f.Close()
+        'Next
+
+        'frm.ControlBox = False
+        'frm.FormBorderStyle = FormBorderStyle.None
+        'frm.Dock = DockStyle.Fill
+        ''frm.TopLevel = False
+
+        ''frm.Location = New System.Drawing.Point(0, 0)
+        ''frm.MinimumSize = New System.Drawing.Size(1020, 682)
+        ''frm.MaximumSize = New System.Drawing.Size(1020, 682)
+        ''frm.Size = New System.Drawing.Size(1020, 682)
+
+        'frm.StartPosition = FormStartPosition.Manual
+        'BackGroundColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer)) 'RGB(173, 216, 230)
+        'ControlBackColor(frm)
+        'frm.BackColor = BackGroundColor
+
+        'frm.MdiParent = Me
+        ''frm.Visible = True
+
+        'PanelButtons.Visible = False
+        'frm.Show()
+        'frm.Activate()
+        'frm.BringToFront()
+        'frm.Focus()
+        'BackToMainScreen = False
+    End Sub
+    Private Sub ChildFormClosed(sender As Object, e As FormClosedEventArgs)
+
+        ShowDashboard()
+
     End Sub
 
     Private Sub DefineTooTipAndFormAccess()

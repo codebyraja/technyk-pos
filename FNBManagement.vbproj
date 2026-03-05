@@ -12,7 +12,7 @@
     <AssemblyName>FNBManagement</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
@@ -51,12 +51,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Recp 21-nov-2011\RECP_resc_\bin\ClassLibrary1.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Interop.MSXML2, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Interop.MSXML2.dll</HintPath>
@@ -100,10 +94,6 @@
       <HintPath>bin\textboxinharit.dll</HintPath>
     </Reference>
     <Reference Include="VbPowerPack, Version=1.0.1876.26083, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="wordconverter, Version=1.0.4273.25723, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Documents and Settings\software\Desktop\kkk\ClassLibrary1\bin\wordconverter.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -118,6 +108,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BasePOSForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Common\FrmReportView.designer.vb">
       <DependentUpon>FrmReportView.vb</DependentUpon>
     </Compile>
@@ -185,7 +178,12 @@
     <Compile Include="Enquiry\frmSpouseEnquiry.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="helper\General.vb" />
     <Compile Include="helper\FormResizeHelper.vb" />
+    <Compile Include="helper\FormResizer.vb" />
+    <Compile Include="helper\GridHelper.vb" />
+    <Compile Include="helper\LayoutManager.vb" />
+    <Compile Include="helper\ResponsiveHelper.vb" />
     <Compile Include="helper\UIHelper.vb" />
     <Compile Include="Master\FrmConfigurations.designer.vb">
       <DependentUpon>FrmConfigurations.vb</DependentUpon>
@@ -209,6 +207,12 @@
       <DependentUpon>FrmLinkWaiter.vb</DependentUpon>
     </Compile>
     <Compile Include="Master\FrmLinkWaiter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmLinkWaiter1.designer.vb">
+      <DependentUpon>FrmLinkWaiter1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmLinkWaiter1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmLocationMenu.designer.vb">
@@ -241,10 +245,16 @@
     <Compile Include="Master\FrmTablesMaster.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\FrmWaiterMaster.designer.vb">
+    <Compile Include="Master\FrmWaiterMaster.Designer.vb">
       <DependentUpon>FrmWaiterMaster.vb</DependentUpon>
     </Compile>
     <Compile Include="Master\FrmWaiterMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmWaiterMaster1.designer.vb">
+      <DependentUpon>FrmWaiterMaster1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmWaiterMaster1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
@@ -341,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmLinkWaiter.resx">
       <DependentUpon>FrmLinkWaiter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmLinkWaiter1.resx">
+      <DependentUpon>FrmLinkWaiter1.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmLocationMenu.resx">
@@ -365,7 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmWaiterMaster.resx">
       <DependentUpon>FrmWaiterMaster.vb</DependentUpon>
-      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmWaiterMaster1.resx">
+      <DependentUpon>FrmWaiterMaster1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS Transations\FrmChangeBusinessDate.resx">
       <DependentUpon>FrmChangeBusinessDate.vb</DependentUpon>

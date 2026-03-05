@@ -3,6 +3,88 @@ Imports System.Drawing
 Imports System.Linq
 
 Public Module UIHelper
+    Public Sub MakeFormResponsive(frm As Form,
+                              leftPanel As Panel,
+                              centerPanel As Panel,
+                              rightPanel As Panel)
+
+        If frm Is Nothing Then Exit Sub
+
+        frm.SuspendLayout()
+
+        ' Remove manual sizing
+        frm.AutoScroll = False
+
+        ' Create main layout
+        'Dim tblMain As New TableLayoutPanel
+        'tblMain.Dock = DockStyle.Fill
+        'tblMain.ColumnCount = 3
+        'tblMain.RowCount = 1
+        'tblMain.BackColor = Color.White
+
+        ' Create main layout container
+        Dim tblMain As New TableLayoutPanel
+        tblMain.Name = "tblMainLayout"
+        tblMain.Dock = DockStyle.Fill
+        tblMain.ColumnCount = 3
+        tblMain.RowCount = 1
+        tblMain.BackColor = frm.BackColor
+
+
+        tblMain.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20))
+        tblMain.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50))
+        tblMain.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 30))
+
+        tblMain.RowStyles.Add(New RowStyle(SizeType.Percent, 100))
+
+        ' Remove panels from form (not clearing form)
+        frm.Controls.Remove(leftPanel)
+        frm.Controls.Remove(centerPanel)
+        frm.Controls.Remove(rightPanel)
+
+        ' Reset panels
+        leftPanel.Dock = DockStyle.Fill
+        centerPanel.Dock = DockStyle.Fill
+        rightPanel.Dock = DockStyle.Fill
+
+        ' Add into layout
+        tblMain.Controls.Add(leftPanel, 0, 0)
+        tblMain.Controls.Add(centerPanel, 1, 0)
+        tblMain.Controls.Add(rightPanel, 2, 0)
+
+        ' Add layout to form
+        tblMain.BringToFront()
+        frm.Controls.Add(tblMain)
+
+        'frm.Controls.Clear()
+        'frm.Controls.Add(tblMain)
+
+        frm.ResumeLayout()
+    End Sub
+
+    Public Sub ApplyDynamicScaling(frm As Form)
+
+        Dim screenHeight As Integer = Screen.FromControl(frm).WorkingArea.Height
+        Dim scaleFactor As Double = screenHeight / 1080.0
+
+        If scaleFactor < 0.75 Then scaleFactor = 0.75
+        If scaleFactor > 1.4 Then scaleFactor = 1.4
+
+        ScaleControlsRecursive(frm, scaleFactor)
+
+    End Sub
+
+    Private Sub ScaleControlsRecursive(ctrl As Control, scaleFactor As Double)
+
+        ctrl.Font = New Font(ctrl.Font.FontFamily,
+                             CSng(ctrl.Font.Size * scaleFactor),
+                             ctrl.Font.Style)
+
+        For Each child As Control In ctrl.Controls
+            ScaleControlsRecursive(child, scaleFactor)
+        Next
+
+    End Sub
 
     Public Sub AdjustHeaderDynamic(form As Form,
                                           headerPanel As Panel,
@@ -207,6 +289,57 @@ Public Module UIHelper
         Next
 
         status.ResumeLayout()
+
+    End Sub
+
+
+
+
+
+    Public Sub CenterButtonsInPanel(targetPanel As Panel, Optional spacing As Integer = 5, Optional onlyVisible As Boolean = True)
+
+        If targetPanel Is Nothing Then Exit Sub
+        If targetPanel.Controls.Count = 0 Then Exit Sub
+
+        Dim buttons As New List(Of Button)
+        Dim totalWidth As Integer = 0
+
+        ' Collect buttons
+        For Each ctrl As Control In targetPanel.Controls
+            If TypeOf ctrl Is Button Then
+                If onlyVisible Then
+                    If ctrl.Visible Then
+                        buttons.Add(DirectCast(ctrl, Button))
+                        totalWidth += ctrl.Width
+                    End If
+                Else
+                    buttons.Add(DirectCast(ctrl, Button))
+                    totalWidth += ctrl.Width
+                End If
+            End If
+        Next
+
+        If buttons.Count = 0 Then Exit Sub
+
+        totalWidth += spacing * (buttons.Count - 1)
+
+        Dim startX As Integer = (targetPanel.Width - totalWidth) \ 2
+        Dim centerY As Integer = (targetPanel.Height - buttons(0).Height) \ 2
+
+        For Each btn As Button In buttons
+            btn.Left = startX
+            btn.Top = centerY
+            startX += btn.Width + spacing
+        Next
+
+    End Sub
+
+    Public Sub AttachAutoCenter(panel As Panel)
+
+        AddHandler panel.Resize,
+            Sub(sender, e)
+            CenterButtonsInPanel(panel)
+        End Sub
 
     End Sub
 End Module

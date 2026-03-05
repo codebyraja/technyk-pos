@@ -22,105 +22,243 @@ Partial Class FrmKOTRemarks
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmKOTRemarks))
-        Me.LabelHeader = New System.Windows.Forms.Label
-        Me.dgSearch = New System.Windows.Forms.DataGridView
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.cmbStatus = New System.Windows.Forms.ComboBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtDisplayAs = New System.Windows.Forms.TextBox
-        Me.txtWaiter = New System.Windows.Forms.TextBox
-        Me.txtCode = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.btnDelete = New System.Windows.Forms.Button
-        Me.btnClose = New System.Windows.Forms.Button
-        Me.btnCancel = New System.Windows.Forms.Button
-        Me.btnEdit = New System.Windows.Forms.Button
-        Me.btnAdd = New System.Windows.Forms.Button
-        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.labelRecordCount = New System.Windows.Forms.Label
-        Me.cmbStatusSearch = New System.Windows.Forms.ComboBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtWaiterSearch = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.PanelEntry = New System.Windows.Forms.Panel
-        Me.PanelSearch = New System.Windows.Forms.Panel
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.txtDisplayAsSearch = New System.Windows.Forms.TextBox
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.PanelContainer = New System.Windows.Forms.Panel()
+        Me.PanelSearch = New System.Windows.Forms.Panel()
+        Me.dgSearch = New System.Windows.Forms.DataGridView()
+        Me.labelRecordCount = New System.Windows.Forms.Label()
+        Me.PanelSearchTop = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtDisplayAsSearch = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cmbStatusSearch = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtWaiterSearch = New System.Windows.Forms.TextBox()
+        Me.PanelEntry = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtCode = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.txtWaiter = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtDisplayAs = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.PanelSubHeader = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.LabelHeader = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn
-        Me.Edit = New System.Windows.Forms.DataGridViewImageColumn
-        CType(Me.dgSearch, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelEntry.SuspendLayout()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Edit = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.PanelContainer.SuspendLayout()
         Me.PanelSearch.SuspendLayout()
+        CType(Me.dgSearch, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelSearchTop.SuspendLayout()
+        Me.PanelEntry.SuspendLayout()
+        Me.PanelSubHeader.SuspendLayout()
+        Me.PanelFooter.SuspendLayout()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'LabelHeader
+        'PanelContainer
         '
-        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.LabelHeader.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelHeader.ForeColor = System.Drawing.Color.Black
-        Me.LabelHeader.Location = New System.Drawing.Point(0, 0)
-        Me.LabelHeader.Name = "LabelHeader"
-        Me.LabelHeader.Size = New System.Drawing.Size(1020, 30)
-        Me.LabelHeader.TabIndex = 0
-        Me.LabelHeader.Text = "KOT REMARKS"
-        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PanelContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PanelContainer.Controls.Add(Me.PanelSearch)
+        Me.PanelContainer.Controls.Add(Me.PanelEntry)
+        Me.PanelContainer.Controls.Add(Me.PanelSubHeader)
+        Me.PanelContainer.Controls.Add(Me.LabelHeader)
+        Me.PanelContainer.Controls.Add(Me.Panel1)
+        Me.PanelContainer.Controls.Add(Me.PanelFooter)
+        Me.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContainer.Location = New System.Drawing.Point(0, 0)
+        Me.PanelContainer.Name = "PanelContainer"
+        Me.PanelContainer.Size = New System.Drawing.Size(1200, 700)
+        Me.PanelContainer.TabIndex = 0
+        '
+        'PanelSearch
+        '
+        Me.PanelSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelSearch.Controls.Add(Me.dgSearch)
+        Me.PanelSearch.Controls.Add(Me.labelRecordCount)
+        Me.PanelSearch.Controls.Add(Me.PanelSearchTop)
+        Me.PanelSearch.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelSearch.Location = New System.Drawing.Point(420, 72)
+        Me.PanelSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelSearch.Name = "PanelSearch"
+        Me.PanelSearch.Padding = New System.Windows.Forms.Padding(10)
+        Me.PanelSearch.Size = New System.Drawing.Size(780, 578)
+        Me.PanelSearch.TabIndex = 59
         '
         'dgSearch
         '
         Me.dgSearch.AllowUserToAddRows = False
         Me.dgSearch.AllowUserToDeleteRows = False
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSearch.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSearch.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgSearch.BackgroundColor = System.Drawing.Color.White
         Me.dgSearch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgSearch.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.dgSearch.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSearch.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSearch.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgSearch.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Edit})
         Me.dgSearch.Cursor = System.Windows.Forms.Cursors.Default
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgSearch.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgSearch.DefaultCellStyle = DataGridViewCellStyle4
+        Me.dgSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgSearch.GridColor = System.Drawing.Color.Chocolate
-        Me.dgSearch.Location = New System.Drawing.Point(6, 64)
+        Me.dgSearch.Location = New System.Drawing.Point(10, 80)
+        Me.dgSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.dgSearch.MultiSelect = False
         Me.dgSearch.Name = "dgSearch"
         Me.dgSearch.ReadOnly = True
         Me.dgSearch.RowHeadersVisible = False
-        Me.dgSearch.Size = New System.Drawing.Size(509, 521)
+        Me.dgSearch.Size = New System.Drawing.Size(758, 461)
         Me.dgSearch.TabIndex = 6
         Me.dgSearch.TabStop = False
+        '
+        'labelRecordCount
+        '
+        Me.labelRecordCount.BackColor = System.Drawing.Color.Transparent
+        Me.labelRecordCount.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.labelRecordCount.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
+        Me.labelRecordCount.Location = New System.Drawing.Point(10, 541)
+        Me.labelRecordCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelRecordCount.Name = "labelRecordCount"
+        Me.labelRecordCount.Size = New System.Drawing.Size(758, 25)
+        Me.labelRecordCount.TabIndex = 7
+        '
+        'PanelSearchTop
+        '
+        Me.PanelSearchTop.Controls.Add(Me.Label9)
+        Me.PanelSearchTop.Controls.Add(Me.txtDisplayAsSearch)
+        Me.PanelSearchTop.Controls.Add(Me.Label5)
+        Me.PanelSearchTop.Controls.Add(Me.cmbStatusSearch)
+        Me.PanelSearchTop.Controls.Add(Me.Label6)
+        Me.PanelSearchTop.Controls.Add(Me.txtWaiterSearch)
+        Me.PanelSearchTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSearchTop.Location = New System.Drawing.Point(10, 10)
+        Me.PanelSearchTop.Name = "PanelSearchTop"
+        Me.PanelSearchTop.Size = New System.Drawing.Size(758, 70)
+        Me.PanelSearchTop.TabIndex = 8
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
+        Me.Label9.Location = New System.Drawing.Point(255, 0)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(110, 20)
+        Me.Label9.TabIndex = 8
+        Me.Label9.Text = "Description"
+        '
+        'txtDisplayAsSearch
+        '
+        Me.txtDisplayAsSearch.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDisplayAsSearch.Location = New System.Drawing.Point(259, 27)
+        Me.txtDisplayAsSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDisplayAsSearch.MaxLength = 50
+        Me.txtDisplayAsSearch.Name = "txtDisplayAsSearch"
+        Me.txtDisplayAsSearch.Size = New System.Drawing.Size(240, 27)
+        Me.txtDisplayAsSearch.TabIndex = 9
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
+        Me.Label5.Location = New System.Drawing.Point(13, 4)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(125, 20)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "KOT Remarks"
+        '
+        'cmbStatusSearch
+        '
+        Me.cmbStatusSearch.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbStatusSearch.FormattingEnabled = True
+        Me.cmbStatusSearch.Items.AddRange(New Object() {"[Select All]", "Active", "Inactive"})
+        Me.cmbStatusSearch.Location = New System.Drawing.Point(507, 28)
+        Me.cmbStatusSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbStatusSearch.Name = "cmbStatusSearch"
+        Me.cmbStatusSearch.Size = New System.Drawing.Size(237, 26)
+        Me.cmbStatusSearch.TabIndex = 11
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
+        Me.Label6.Location = New System.Drawing.Point(503, 4)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(62, 20)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Status"
+        '
+        'txtWaiterSearch
+        '
+        Me.txtWaiterSearch.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtWaiterSearch.Location = New System.Drawing.Point(17, 28)
+        Me.txtWaiterSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtWaiterSearch.MaxLength = 50
+        Me.txtWaiterSearch.Name = "txtWaiterSearch"
+        Me.txtWaiterSearch.Size = New System.Drawing.Size(234, 27)
+        Me.txtWaiterSearch.TabIndex = 7
+        '
+        'PanelEntry
+        '
+        Me.PanelEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelEntry.Controls.Add(Me.Label8)
+        Me.PanelEntry.Controls.Add(Me.txtCode)
+        Me.PanelEntry.Controls.Add(Me.Label10)
+        Me.PanelEntry.Controls.Add(Me.Label2)
+        Me.PanelEntry.Controls.Add(Me.cmbStatus)
+        Me.PanelEntry.Controls.Add(Me.txtWaiter)
+        Me.PanelEntry.Controls.Add(Me.Label4)
+        Me.PanelEntry.Controls.Add(Me.txtDisplayAs)
+        Me.PanelEntry.Controls.Add(Me.Label3)
+        Me.PanelEntry.Controls.Add(Me.Label7)
+        Me.PanelEntry.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEntry.Location = New System.Drawing.Point(0, 72)
+        Me.PanelEntry.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelEntry.Name = "PanelEntry"
+        Me.PanelEntry.Size = New System.Drawing.Size(420, 578)
+        Me.PanelEntry.TabIndex = 53
         '
         'Label8
         '
@@ -128,11 +266,22 @@ Partial Class FrmKOTRemarks
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Lucida Fax", 9.0!)
         Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(54, 110)
+        Me.Label8.Location = New System.Drawing.Point(72, 135)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(12, 15)
+        Me.Label8.Size = New System.Drawing.Size(15, 17)
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "*"
+        '
+        'txtCode
+        '
+        Me.txtCode.Enabled = False
+        Me.txtCode.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtCode.Location = New System.Drawing.Point(168, 18)
+        Me.txtCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCode.Name = "txtCode"
+        Me.txtCode.Size = New System.Drawing.Size(230, 27)
+        Me.txtCode.TabIndex = 1
         '
         'Label10
         '
@@ -140,41 +289,77 @@ Partial Class FrmKOTRemarks
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Lucida Fax", 9.0!)
         Me.Label10.ForeColor = System.Drawing.Color.Red
-        Me.Label10.Location = New System.Drawing.Point(108, 51)
+        Me.Label10.Location = New System.Drawing.Point(144, 63)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(12, 15)
+        Me.Label10.Size = New System.Drawing.Size(15, 17)
         Me.Label10.TabIndex = 3
         Me.Label10.Text = "*"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
+        Me.Label2.Location = New System.Drawing.Point(3, 62)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(125, 20)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "KOT Remarks"
         '
         'cmbStatus
         '
         Me.cmbStatus.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
         Me.cmbStatus.FormattingEnabled = True
         Me.cmbStatus.Items.AddRange(New Object() {"[Select One]", "Active", "Inactive"})
-        Me.cmbStatus.Location = New System.Drawing.Point(126, 107)
+        Me.cmbStatus.Location = New System.Drawing.Point(168, 132)
+        Me.cmbStatus.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(128, 23)
+        Me.cmbStatus.Size = New System.Drawing.Size(230, 26)
         Me.cmbStatus.TabIndex = 9
+        '
+        'txtWaiter
+        '
+        Me.txtWaiter.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtWaiter.Location = New System.Drawing.Point(168, 57)
+        Me.txtWaiter.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtWaiter.MaxLength = 50
+        Me.txtWaiter.Name = "txtWaiter"
+        Me.txtWaiter.Size = New System.Drawing.Size(230, 27)
+        Me.txtWaiter.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label4.Location = New System.Drawing.Point(2, 109)
+        Me.Label4.Location = New System.Drawing.Point(3, 134)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 16)
+        Me.Label4.Size = New System.Drawing.Size(62, 20)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Status"
+        '
+        'txtDisplayAs
+        '
+        Me.txtDisplayAs.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDisplayAs.Location = New System.Drawing.Point(168, 94)
+        Me.txtDisplayAs.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDisplayAs.MaxLength = 100
+        Me.txtDisplayAs.Name = "txtDisplayAs"
+        Me.txtDisplayAs.Size = New System.Drawing.Size(230, 27)
+        Me.txtDisplayAs.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(2, 80)
+        Me.Label3.Location = New System.Drawing.Point(3, 98)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 16)
+        Me.Label3.Size = New System.Drawing.Size(110, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Description"
         '
@@ -183,49 +368,87 @@ Partial Class FrmKOTRemarks
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label7.Location = New System.Drawing.Point(2, 19)
+        Me.Label7.Location = New System.Drawing.Point(3, 23)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 16)
+        Me.Label7.Size = New System.Drawing.Size(53, 20)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Code"
         '
-        'txtDisplayAs
+        'PanelSubHeader
         '
-        Me.txtDisplayAs.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDisplayAs.Location = New System.Drawing.Point(126, 76)
-        Me.txtDisplayAs.MaxLength = 100
-        Me.txtDisplayAs.Name = "txtDisplayAs"
-        Me.txtDisplayAs.Size = New System.Drawing.Size(322, 23)
-        Me.txtDisplayAs.TabIndex = 6
+        Me.PanelSubHeader.Controls.Add(Me.Label1)
+        Me.PanelSubHeader.Controls.Add(Me.Label11)
+        Me.PanelSubHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ErrorProvider1.SetIconAlignment(Me.PanelSubHeader, System.Windows.Forms.ErrorIconAlignment.BottomRight)
+        Me.PanelSubHeader.Location = New System.Drawing.Point(0, 42)
+        Me.PanelSubHeader.Name = "PanelSubHeader"
+        Me.PanelSubHeader.Size = New System.Drawing.Size(1200, 30)
+        Me.PanelSubHeader.TabIndex = 63
         '
-        'txtWaiter
+        'Label1
         '
-        Me.txtWaiter.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtWaiter.Location = New System.Drawing.Point(126, 46)
-        Me.txtWaiter.MaxLength = 50
-        Me.txtWaiter.Name = "txtWaiter"
-        Me.txtWaiter.Size = New System.Drawing.Size(322, 23)
-        Me.txtWaiter.TabIndex = 4
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(4, 6)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(246, 20)
+        Me.Label1.TabIndex = 63
+        Me.Label1.Text = "ADD /EDIT KOT REMARKS"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
-        'txtCode
+        'Label11
         '
-        Me.txtCode.Enabled = False
-        Me.txtCode.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtCode.Location = New System.Drawing.Point(126, 15)
-        Me.txtCode.Name = "txtCode"
-        Me.txtCode.Size = New System.Drawing.Size(101, 23)
-        Me.txtCode.TabIndex = 1
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label11.Location = New System.Drawing.Point(416, 6)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(219, 20)
+        Me.Label11.TabIndex = 64
+        Me.Label11.Text = "SEARCH KOT REMARKS"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
-        'Label2
+        'LabelHeader
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(2, 50)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 16)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "KOT Remarks"
+        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LabelHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LabelHeader.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelHeader.ForeColor = System.Drawing.Color.Silver
+        Me.LabelHeader.Location = New System.Drawing.Point(0, 2)
+        Me.LabelHeader.Margin = New System.Windows.Forms.Padding(0)
+        Me.LabelHeader.Name = "LabelHeader"
+        Me.LabelHeader.Size = New System.Drawing.Size(1200, 40)
+        Me.LabelHeader.TabIndex = 52
+        Me.LabelHeader.Text = "KOT REMARKS"
+        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Gray
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.ForeColor = System.Drawing.Color.Black
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1200, 2)
+        Me.Panel1.TabIndex = 60
+        '
+        'PanelFooter
+        '
+        Me.PanelFooter.Controls.Add(Me.btnDelete)
+        Me.PanelFooter.Controls.Add(Me.btnClose)
+        Me.PanelFooter.Controls.Add(Me.btnCancel)
+        Me.PanelFooter.Controls.Add(Me.btnEdit)
+        Me.PanelFooter.Controls.Add(Me.btnAdd)
+        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelFooter.Location = New System.Drawing.Point(0, 650)
+        Me.PanelFooter.Name = "PanelFooter"
+        Me.PanelFooter.Size = New System.Drawing.Size(1200, 50)
+        Me.PanelFooter.TabIndex = 64
         '
         'btnDelete
         '
@@ -239,10 +462,11 @@ Partial Class FrmKOTRemarks
         Me.btnDelete.ForeColor = System.Drawing.Color.White
         Me.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDelete.ImageIndex = 2
-        Me.btnDelete.Location = New System.Drawing.Point(171, 639)
+        Me.btnDelete.Location = New System.Drawing.Point(520, 5)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(78, 26)
-        Me.btnDelete.TabIndex = 3
+        Me.btnDelete.Size = New System.Drawing.Size(100, 40)
+        Me.btnDelete.TabIndex = 61
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
@@ -258,10 +482,11 @@ Partial Class FrmKOTRemarks
         Me.btnClose.ForeColor = System.Drawing.Color.White
         Me.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnClose.ImageKey = "(none)"
-        Me.btnClose.Location = New System.Drawing.Point(327, 639)
+        Me.btnClose.Location = New System.Drawing.Point(728, 5)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(78, 26)
-        Me.btnClose.TabIndex = 5
+        Me.btnClose.Size = New System.Drawing.Size(100, 40)
+        Me.btnClose.TabIndex = 63
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = False
         '
@@ -278,10 +503,11 @@ Partial Class FrmKOTRemarks
         Me.btnCancel.ForeColor = System.Drawing.Color.White
         Me.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCancel.ImageKey = "(none)"
-        Me.btnCancel.Location = New System.Drawing.Point(249, 639)
+        Me.btnCancel.Location = New System.Drawing.Point(624, 5)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(78, 26)
-        Me.btnCancel.TabIndex = 4
+        Me.btnCancel.Size = New System.Drawing.Size(100, 40)
+        Me.btnCancel.TabIndex = 62
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = False
         '
@@ -297,10 +523,11 @@ Partial Class FrmKOTRemarks
         Me.btnEdit.ForeColor = System.Drawing.Color.White
         Me.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEdit.ImageKey = "(none)"
-        Me.btnEdit.Location = New System.Drawing.Point(93, 639)
+        Me.btnEdit.Location = New System.Drawing.Point(416, 5)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(78, 26)
-        Me.btnEdit.TabIndex = 2
+        Me.btnEdit.Size = New System.Drawing.Size(100, 40)
+        Me.btnEdit.TabIndex = 60
         Me.btnEdit.Text = "Edit"
         Me.btnEdit.UseVisualStyleBackColor = False
         '
@@ -316,151 +543,13 @@ Partial Class FrmKOTRemarks
         Me.btnAdd.ForeColor = System.Drawing.Color.White
         Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAdd.ImageKey = "(none)"
-        Me.btnAdd.Location = New System.Drawing.Point(15, 639)
+        Me.btnAdd.Location = New System.Drawing.Point(312, 5)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(78, 26)
-        Me.btnAdd.TabIndex = 1
+        Me.btnAdd.Size = New System.Drawing.Size(100, 40)
+        Me.btnAdd.TabIndex = 59
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = False
-        '
-        'ErrorProvider1
-        '
-        Me.ErrorProvider1.ContainerControl = Me
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Gray
-        Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(0, 30)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1022, 2)
-        Me.Panel1.TabIndex = 46
-        '
-        'labelRecordCount
-        '
-        Me.labelRecordCount.BackColor = System.Drawing.Color.Transparent
-        Me.labelRecordCount.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.labelRecordCount.Location = New System.Drawing.Point(2, 586)
-        Me.labelRecordCount.Name = "labelRecordCount"
-        Me.labelRecordCount.Size = New System.Drawing.Size(517, 18)
-        Me.labelRecordCount.TabIndex = 7
-        '
-        'cmbStatusSearch
-        '
-        Me.cmbStatusSearch.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.cmbStatusSearch.FormattingEnabled = True
-        Me.cmbStatusSearch.Items.AddRange(New Object() {"[Select All]", "Active", "Inactive"})
-        Me.cmbStatusSearch.Location = New System.Drawing.Point(376, 33)
-        Me.cmbStatusSearch.Name = "cmbStatusSearch"
-        Me.cmbStatusSearch.Size = New System.Drawing.Size(139, 23)
-        Me.cmbStatusSearch.TabIndex = 5
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label6.Location = New System.Drawing.Point(380, 13)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 16)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Status"
-        '
-        'txtWaiterSearch
-        '
-        Me.txtWaiterSearch.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtWaiterSearch.Location = New System.Drawing.Point(7, 33)
-        Me.txtWaiterSearch.MaxLength = 50
-        Me.txtWaiterSearch.Name = "txtWaiterSearch"
-        Me.txtWaiterSearch.Size = New System.Drawing.Size(237, 23)
-        Me.txtWaiterSearch.TabIndex = 1
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label5.Location = New System.Drawing.Point(3, 12)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 16)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "KOT Remarks"
-        '
-        'PanelEntry
-        '
-        Me.PanelEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelEntry.Controls.Add(Me.Label8)
-        Me.PanelEntry.Controls.Add(Me.txtCode)
-        Me.PanelEntry.Controls.Add(Me.Label10)
-        Me.PanelEntry.Controls.Add(Me.Label2)
-        Me.PanelEntry.Controls.Add(Me.cmbStatus)
-        Me.PanelEntry.Controls.Add(Me.txtWaiter)
-        Me.PanelEntry.Controls.Add(Me.Label4)
-        Me.PanelEntry.Controls.Add(Me.txtDisplayAs)
-        Me.PanelEntry.Controls.Add(Me.Label3)
-        Me.PanelEntry.Controls.Add(Me.Label7)
-        Me.PanelEntry.Location = New System.Drawing.Point(12, 52)
-        Me.PanelEntry.Name = "PanelEntry"
-        Me.PanelEntry.Size = New System.Drawing.Size(458, 141)
-        Me.PanelEntry.TabIndex = 0
-        '
-        'PanelSearch
-        '
-        Me.PanelSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelSearch.Controls.Add(Me.Label9)
-        Me.PanelSearch.Controls.Add(Me.txtDisplayAsSearch)
-        Me.PanelSearch.Controls.Add(Me.labelRecordCount)
-        Me.PanelSearch.Controls.Add(Me.Label5)
-        Me.PanelSearch.Controls.Add(Me.cmbStatusSearch)
-        Me.PanelSearch.Controls.Add(Me.dgSearch)
-        Me.PanelSearch.Controls.Add(Me.Label6)
-        Me.PanelSearch.Controls.Add(Me.txtWaiterSearch)
-        Me.PanelSearch.Location = New System.Drawing.Point(485, 52)
-        Me.PanelSearch.Name = "PanelSearch"
-        Me.PanelSearch.Size = New System.Drawing.Size(522, 609)
-        Me.PanelSearch.TabIndex = 6
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label9.Location = New System.Drawing.Point(253, 10)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(84, 16)
-        Me.Label9.TabIndex = 2
-        Me.Label9.Text = "Description"
-        '
-        'txtDisplayAsSearch
-        '
-        Me.txtDisplayAsSearch.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDisplayAsSearch.Location = New System.Drawing.Point(248, 33)
-        Me.txtDisplayAsSearch.MaxLength = 50
-        Me.txtDisplayAsSearch.Name = "txtDisplayAsSearch"
-        Me.txtDisplayAsSearch.Size = New System.Drawing.Size(122, 23)
-        Me.txtDisplayAsSearch.TabIndex = 3
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label11.Location = New System.Drawing.Point(489, 46)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(164, 15)
-        Me.Label11.TabIndex = 51
-        Me.Label11.Text = "SEARCH KOT REMARKS"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(16, 45)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(187, 15)
-        Me.Label1.TabIndex = 50
-        Me.Label1.Text = "ADD /EDIT KOT REMARKS"
         '
         'ToolTip1
         '
@@ -468,22 +557,27 @@ Partial Class FrmKOTRemarks
         Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.[Error]
         Me.ToolTip1.ToolTipTitle = "Banquet Mgmt"
         '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
         'DataGridViewImageColumn1
         '
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.NullValue = CType(resources.GetObject("DataGridViewCellStyle10.NullValue"), Object)
-        DataGridViewCellStyle10.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.Control
-        Me.DataGridViewImageColumn1.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.NullValue = Nothing
+        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Control
+        Me.DataGridViewImageColumn1.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridViewImageColumn1.FillWeight = 40.0!
         Me.DataGridViewImageColumn1.Frozen = True
         Me.DataGridViewImageColumn1.HeaderText = ""
         Me.DataGridViewImageColumn1.Image = Global.FNBManagement.My.Resources.Resources.data_edit
         Me.DataGridViewImageColumn1.MinimumWidth = 40
         Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
         Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         Me.DataGridViewImageColumn1.ToolTipText = "Click to edit the Row"
@@ -491,14 +585,14 @@ Partial Class FrmKOTRemarks
         '
         'Edit
         '
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.NullValue = CType(resources.GetObject("DataGridViewCellStyle8.NullValue"), Object)
-        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Control
-        Me.Edit.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.NullValue = Nothing
+        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Control
+        Me.Edit.DefaultCellStyle = DataGridViewCellStyle3
         Me.Edit.FillWeight = 25.0!
         Me.Edit.Frozen = True
         Me.Edit.HeaderText = ""
@@ -513,67 +607,65 @@ Partial Class FrmKOTRemarks
         '
         'FrmKOTRemarks
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.CancelButton = Me.btnCancel
-        Me.ClientSize = New System.Drawing.Size(1020, 680)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PanelSearch)
-        Me.Controls.Add(Me.PanelEntry)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnDelete)
-        Me.Controls.Add(Me.LabelHeader)
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnEdit)
-        Me.Controls.Add(Me.btnAdd)
+        Me.ClientSize = New System.Drawing.Size(1200, 700)
+        Me.Controls.Add(Me.PanelContainer)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmKOTRemarks"
         Me.Text = "Waiter"
+        Me.PanelContainer.ResumeLayout(False)
+        Me.PanelSearch.ResumeLayout(False)
         CType(Me.dgSearch, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelSearchTop.ResumeLayout(False)
+        Me.PanelSearchTop.PerformLayout()
         Me.PanelEntry.ResumeLayout(False)
         Me.PanelEntry.PerformLayout()
-        Me.PanelSearch.ResumeLayout(False)
-        Me.PanelSearch.PerformLayout()
+        Me.PanelSubHeader.ResumeLayout(False)
+        Me.PanelSubHeader.PerformLayout()
+        Me.PanelFooter.ResumeLayout(False)
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents LabelHeader As System.Windows.Forms.Label
-    Friend WithEvents dgSearch As System.Windows.Forms.DataGridView
-    Friend WithEvents txtCode As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtWaiter As System.Windows.Forms.TextBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents PanelContainer As System.Windows.Forms.Panel
+    Friend WithEvents PanelFooter As System.Windows.Forms.Panel
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtDisplayAs As System.Windows.Forms.TextBox
-    Friend WithEvents cmbStatus As System.Windows.Forms.ComboBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents PanelSubHeader As System.Windows.Forms.Panel
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents LabelHeader As System.Windows.Forms.Label
+    Friend WithEvents PanelSearch As System.Windows.Forms.Panel
+    Friend WithEvents labelRecordCount As System.Windows.Forms.Label
+    Friend WithEvents dgSearch As System.Windows.Forms.DataGridView
+    Friend WithEvents Edit As System.Windows.Forms.DataGridViewImageColumn
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents txtWaiterSearch As System.Windows.Forms.TextBox
+    Friend WithEvents PanelEntry As System.Windows.Forms.Panel
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents txtCode As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cmbStatus As System.Windows.Forms.ComboBox
+    Friend WithEvents txtWaiter As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtDisplayAs As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents DataGridViewImageColumn1 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+    Friend WithEvents PanelSearchTop As System.Windows.Forms.Panel
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents txtDisplayAsSearch As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents cmbStatusSearch As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents DataGridViewImageColumn1 As System.Windows.Forms.DataGridViewImageColumn
-    Friend WithEvents labelRecordCount As System.Windows.Forms.Label
-    Friend WithEvents Edit As System.Windows.Forms.DataGridViewImageColumn
-    Friend WithEvents PanelSearch As System.Windows.Forms.Panel
-    Friend WithEvents PanelEntry As System.Windows.Forms.Panel
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents txtDisplayAsSearch As System.Windows.Forms.TextBox
-    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents txtWaiterSearch As System.Windows.Forms.TextBox
 End Class

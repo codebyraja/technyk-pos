@@ -5,8 +5,11 @@ Imports CrystalDecisions.Shared
 Imports System.Data
 
 Public Class FrmPOSBilling1N
-Dim NewKOTNo As Integer
-Dim ItemCountDestinationTable As Integer
+    Inherits BasePOSForm
+
+    'All variables here...
+    Dim NewKOTNo As Integer
+    Dim ItemCountDestinationTable As Integer
     Dim VendorCodes As String = ""
     Dim RFIDMemberID As String = "ID-0510"
     Dim LOCATION_TYPE11 As String = "'POS BAR','POS REST'"
@@ -178,7 +181,7 @@ Dim ItemCountDestinationTable As Integer
         PanelDisplayArea.Enabled = True
         DisableControl(PanelItem)
         DisableControl(PanelDisplayArea)
-        PanelClosedBills.Location = LeftPanelLocation
+        'PanelClosedBills.Location = LeftPanelLocation
         DisplayMemberPics("")
         BindComboboxWithSelectOneNumeric("Select UserCode,UserName From AC_UserMaster", "UserCode", "UserName", cmbCashier)
         cmbCashier.SelectedValue = UserCode
@@ -207,14 +210,6 @@ Dim ItemCountDestinationTable As Integer
             End If
             FlagCheckBusinessDate = False
         End If
-
-        ' Get working area (excluding taskbar)
-        Dim wa As Rectangle = Screen.PrimaryScreen.WorkingArea
-
-        Me.StartPosition = FormStartPosition.Manual
-        Me.Location = wa.Location
-        Me.Size = wa.Size
-
     End Sub
 
     Protected Overloads Overrides Function _
@@ -260,7 +255,7 @@ Dim ItemCountDestinationTable As Integer
         lblBillingSmartCardClosingStr.Text = "Card Closing"
         lblOpeningCreditLimitstr.Text = "Credit Limit"
         lblMemberAcClosingStr.Text = "Mem A/c Closing"
-        PanelRight.Location = RightPanelLocation
+        'PanelRight.Location = RightPanelLocation
         PanelClosedBills.Visible = True
         PanelSettleBill.Visible = False
         PanelSettleBill.Location = LeftPanelLocation

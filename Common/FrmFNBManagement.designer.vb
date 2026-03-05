@@ -14,7 +14,6 @@ Partial Class FrmFNBManagement
         End Try
     End Sub
 
-
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
@@ -1345,12 +1344,14 @@ Partial Class FrmFNBManagement
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1365, 945)
         Me.ControlBox = False
+
         Me.Controls.Add(Me.PanelButtons)
+
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.IsMdiContainer = True
+        Me.IsMdiContainer = False
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmFNBManagement"

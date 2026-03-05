@@ -79,7 +79,7 @@ Public Class FrmChangeBusinessDate
         End If
     End Sub
 
-    Private Sub btnChangeDate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnChangeDate.Click
+    Private Sub btnChangeDate_Click(sender As Object, e As EventArgs) Handles btnChangeDate.Click
         If dtpBusinessDate.Value <= dtpBusinessDate.Tag Then
             MsgBox("Next Business date cannot be less than or equal to the Current Business date", MsgBoxStyle.Critical)
             Exit Sub
@@ -105,10 +105,9 @@ Public Class FrmChangeBusinessDate
         End If
     End Sub
 
-    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-
-        Me.Dispose()
-        BackToMainScreen = True
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        'Me.Dispose()
+        'BackToMainScreen = True
+        General.Close(Me)
     End Sub
-
 End Class

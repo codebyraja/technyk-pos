@@ -8,6 +8,7 @@ Public Class FrmLinkWaiter
     Dim drLinkWaiter As DataRow
     Dim dtLinkWaiter As DataTable
     Dim Ctr As Integer = 0
+    Private responsive As ResponsiveHelper
 
     Private Sub Frm_LocationWiseGroupBind_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         DisableControl(Me.PanelEntry)
@@ -18,9 +19,11 @@ Public Class FrmLinkWaiter
         cmbLocation.SelectedValue = 0
         cmbWaiter.SelectedValue = 0
         BindSearchGrid()
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
-    Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         If (btnAdd.Text = "Add") Then
             Me.ErrorProvider1.Dispose()
             ClearText(Me.PanelEntry)
@@ -74,7 +77,7 @@ Public Class FrmLinkWaiter
         End If
     End Sub
 
-    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         DisableControl(Me.PanelEntry)
         ClearText(Me.PanelEntry)
         EnableButton("CANCEL", Me)
@@ -103,9 +106,10 @@ Public Class FrmLinkWaiter
         End If
     End Function
 
-    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        'Me.Dispose()
+        'BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub BindSearchGrid()
@@ -133,7 +137,7 @@ Public Class FrmLinkWaiter
         labelRecordCount.Text = "Record Count: " & dgLinkLocationWaiter.RowCount
     End Sub
 
-    Private Sub btnAddWaiter_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddWaiter.Click
+    Private Sub btnAddWaiter_Click(sender As Object, e As EventArgs) Handles btnAddWaiter.Click
         If validation() = False Then Exit Sub
         For Me.Ctr = 0 To dgLinkLocationWaiter.RowCount - 1
             If ((dgLinkLocationWaiter.Item("LocationCode", Me.Ctr).Value = cmbLocation.SelectedValue) And (dgLinkLocationWaiter.Item("WaiterCode", Me.Ctr).Value = cmbWaiter.SelectedValue)) Then
@@ -155,7 +159,7 @@ Public Class FrmLinkWaiter
         cmbWaiter.Focus()
     End Sub
 
-    Private Sub cmbLocation_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbLocation.Validated
+    Private Sub cmbLocation_Validated(sender As Object, e As EventArgs) Handles cmbLocation.Validated
         BindSearchGrid()
     End Sub
 
@@ -187,4 +191,17 @@ Public Class FrmLinkWaiter
         End If
     End Sub
 
+    Private Sub PanelFooter_Resize() Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub FrmLinkWaiter_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then Exit Sub
+
+        Me.SuspendLayout()
+
+        responsive.ResizeControls(Me)
+
+        Me.ResumeLayout()
+    End Sub
 End Class

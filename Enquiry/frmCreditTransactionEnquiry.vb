@@ -7,6 +7,7 @@ Imports System.Data.SqlClient
 'Imports CrystalDecisions.ReportAppServer
 
 Public Class frmCreditTransactionEnquiry
+    Inherits BasePOSForm
     Dim ds As DataSet
     Dim NoOfrecords As Integer
     Dim NoOfrecordsStr As String
@@ -26,17 +27,99 @@ Public Class frmCreditTransactionEnquiry
         dtpDateFrom.MinDate = MemberAccountOpening.ToString(DateFormat)
         lblAllotedLimit.Text = "0.00"
         lblAvailableLimit.Text = "0.00"
+
+        Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        PanelSearch.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        LabelHeader.TextAlign = ContentAlignment.MiddleCenter
+
+        PanelFooter.Dock = DockStyle.Bottom
+        PanelFooter.Height = 60
+
     End Sub
 
-    Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
+    'Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+
+    '    ' Center 3 buttons manually
+    '    Dim totalWidth As Integer =
+    '        btnSearch.Width +
+    '        btnPrintReport.Width +
+    '        btnClose.Width + 20
+
+    '    Dim startX As Integer = (PanelFooter.Width - totalWidth) \ 2
+
+    '    btnSearch.Left = startX
+    '    btnPrintReport.Left = btnSearch.Right + 10
+    '    btnClose.Left = btnPrintReport.Right + 10
+
+    '    ' LEFT side lblCount
+    '    ' lblCount.Left = 20
+    '    lblCount. = (PanelFooter.Height - lblCount.Height) \ 2
+
+    '    ' Right side totals
+    '    lblTotalCrAmount.Top = lblCount.Top
+    '    lblTotalDrAmount.Top = lblCount.Top
+
+    '    lblTotalCrAmount.Left = PanelFooter.Width - lblTotalCrAmount.Width - 20
+    '    lblTotalDrAmount.Left = lblTotalCrAmount.Left - lblTotalDrAmount.Width - 10
+    'End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+
+        ' ===== Row 1 (Upper Row - Credit Info) =====
+        Dim row1Y As Integer = 2
+
+
+        Label1.Top = row1Y
+        lblAllotedLimit.Top = row1Y
+        Label4.Top = row1Y
+        lblAvailableLimit.Top = row1Y
+        txtAmountDr.Top = row1Y
+        txtAmountCr.Top = row1Y
+
+        txtAmountCr.Left = PanelFooter.Width - lblTotalCrAmount.Width - 20
+        txtAmountDr.Left = txtAmountCr.Left - txtAmountDr.Width - 10
+
+        ' ===== Row 2 (Bottom Row - Buttons) =====
+        Dim row2Y As Integer = PanelFooter.Height - btnSearch.Height - 4
+
+        btnSearch.Top = row2Y
+        btnPrintReport.Top = row2Y
+        btnClose.Top = row2Y
+
+        lblCount.Top = row2Y + 2
+        'lblCount.Left = 20
+
+        ' ===== Center Buttons Horizontally =====
+        Dim totalWidth As Integer =
+            btnSearch.Width +
+            btnPrintReport.Width +
+            btnClose.Width + 20
+
+        Dim startX As Integer = (PanelFooter.Width - totalWidth) \ 2
+
+        btnSearch.Left = startX
+        btnPrintReport.Left = btnSearch.Right + 10
+        btnClose.Left = btnPrintReport.Right + 10
+
+        ' ===== Right Totals (Align with Buttons Row) =====
+        lblTotalCrAmount.Top = row2Y + 2
+        lblTotalDrAmount.Top = row2Y + 2
+
+        lblTotalCrAmount.Left = PanelFooter.Width - lblTotalCrAmount.Width - 20
+        lblTotalDrAmount.Left = lblTotalCrAmount.Left - lblTotalDrAmount.Width - 10
+
+    End Sub
+
+    Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         lblCount.Text = "Preparing Data."
         Me.Refresh()
         txtAmountDr.Text = "0.00"
         PopulateMemberTransactions()
-        bindSearchGrid()
+        BindSearchGrid()
     End Sub
 
-    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BackToMainScreen = True
         Me.Dispose()
     End Sub
@@ -51,7 +134,7 @@ Public Class frmCreditTransactionEnquiry
             txtAmountDr.Text = "0.00"
             Dim OpeningAmt, DrOpeningAmt, CrOpeningAmt As Double
             If dtpDateFrom.Value.ToString(DateFormat) <= CDate(MemberAccountOpening) Then
-                OpeningAmt = objDatabase.ExecuteScalarN("Select isnull([OpeningAmt],0) from [MM_MemberAccountOpening] where  [MemberID]='" & txtC_ID.Text & "'")
+                OpeningAmt = ObjDatabase.ExecuteScalarN("Select isnull([OpeningAmt],0) from [MM_MemberAccountOpening] where  [MemberID]='" & txtC_ID.Text & "'")
                 If OpeningAmt > 0 Then
                     lblopeningDr.Tag = Math.Abs(OpeningAmt)
                     lblopeningDr.Text = Math.Abs(OpeningAmt).ToString("####0.00 Dr.")
@@ -65,7 +148,7 @@ Public Class frmCreditTransactionEnquiry
                     lblopeningDr.Visible = False
                 End If
             Else
-                OpeningAmt = objDatabase.ExecuteScalarN("Select top 1 isnull(PayableAmount,0) from MM_BillHead where BillDate<'" & dtpDateFrom.Value.ToString(DateFormat) & "' and  MemberID='" & txtC_ID.Text & "' Order by billdate desc")
+                OpeningAmt = ObjDatabase.ExecuteScalarN("Select top 1 isnull(PayableAmount,0) from MM_BillHead where BillDate<'" & dtpDateFrom.Value.ToString(DateFormat) & "' and  MemberID='" & txtC_ID.Text & "' Order by billdate desc")
                 If OpeningAmt > 0 Then
                     DrOpeningAmt = Math.Abs(OpeningAmt)
                     lblopeningDr.Tag = Math.Abs(OpeningAmt)
@@ -83,11 +166,11 @@ Public Class frmCreditTransactionEnquiry
             Try
                 Dim DrAmt, CrAmt, DrNetAmt, CrNetAmt As Double
                 If dtpDateFrom.Value.ToString(DateFormat) > CDate(MemberAccountOpening) Then
-                    Dim LastBillDate As DateTime = objDatabase.ExecuteScalar("Select top 1 isnull(BillDate,getdate()) from MM_BillHead where BillDate<'" & dtpDateFrom.Value.ToString(DateFormat) & "' and  MemberID='" & txtC_ID.Text & "' Order by billdate desc")
+                    Dim LastBillDate As DateTime = ObjDatabase.ExecuteScalar("Select top 1 isnull(BillDate,getdate()) from MM_BillHead where BillDate<'" & dtpDateFrom.Value.ToString(DateFormat) & "' and  MemberID='" & txtC_ID.Text & "' Order by billdate desc")
                     StrSql = "Select isnull(sum(DrAmount),0) DrAmount ,isnull(sum(CrAmount),0) CrAmount from [MM_MemberCreditEnquiry] "
                     StrSql &= " where [MemberID] ='" & txtC_ID.Text & "' and  ([BillDate] > '" & LastBillDate.ToString(DateFormat) & "' and [BillDate] < '" & dtpDateFrom.Value.ToString(DateFormat) & "')"
                     ds = New DataSet
-                    ds = objDatabase.BindDataSet(StrSql, "Opening")
+                    ds = ObjDatabase.BindDataSet(StrSql, "Opening")
                     If ds.Tables("Opening").Rows.Count > 0 Then
                         DrAmt = ds.Tables("Opening").Rows(0)("DrAmount")
                         CrAmt = ds.Tables("Opening").Rows(0)("CrAmount")
@@ -128,7 +211,7 @@ Public Class frmCreditTransactionEnquiry
                 StrSql &= IIf(cmbLocation.Text <> "[Select All]", " and LocationName='" & cmbLocation.Text & "'", "").ToString
                 StrSql &= " Order by [BillDate],LocationName"
                 ds = New DataSet
-                ds = objDatabase.BindDataSet(StrSql, "member")
+                ds = ObjDatabase.BindDataSet(StrSql, "member")
                 dgCreditEnquiry.DataSource = ds
                 dgCreditEnquiry.DataMember = ds.Tables(0).ToString()
                 lblCount.Text = ""
@@ -144,63 +227,127 @@ Public Class frmCreditTransactionEnquiry
             End If
         End If
     End Sub
-
     Private Sub FormatGrid()
-        dgCreditEnquiry.RowHeadersVisible = True
-        dgCreditEnquiry.RowHeadersWidth = 20
-        dgCreditEnquiry.Columns(0).Width = 30
+
+        If dgCreditEnquiry.Columns.Count = 0 Then Exit Sub
+
+        dgCreditEnquiry.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
+        dgCreditEnquiry.RowHeadersVisible = False
+        dgCreditEnquiry.AllowUserToResizeRows = False
+
+        ' Hide unwanted columns
         dgCreditEnquiry.Columns("YearCode").Visible = False
         dgCreditEnquiry.Columns("LocationCode").Visible = False
-        dgCreditEnquiry.Columns("BillNo").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("BillNo").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("BillNo").Width = 60
-        dgCreditEnquiry.Columns("BillDate").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("BillDate").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("BillDate").DefaultCellStyle.Format = DateFormat
-        dgCreditEnquiry.Columns("BillDate").Width = 100
-        dgCreditEnquiry.Columns("MemberID").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("MemberID").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("MemberID").HeaderText = "C_ID"
-        dgCreditEnquiry.Columns("MemberID").Width = 75
-        dgCreditEnquiry.Columns("OldMemNo").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("OldMemNo").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("OldMemNo").HeaderText = "M_ID"
         dgCreditEnquiry.Columns("OldMemNo").Visible = False
-        dgCreditEnquiry.Columns("Full_Name").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("Full_Name").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("Full_Name").HeaderText = "Name"
         dgCreditEnquiry.Columns("Full_Name").Visible = False
-        dgCreditEnquiry.Columns("LocationType").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("LocationType").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("LocationType").HeaderText = "Trans Type"
-        dgCreditEnquiry.Columns("LocationType").Width = 150
-        dgCreditEnquiry.Columns("DrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("DrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("DrAmount").DefaultCellStyle.Format = "#####0.00"
-        dgCreditEnquiry.Columns("DrAmount").Width = 85
-        dgCreditEnquiry.Columns("DrAmount").HeaderText = "Dr. Amt."
-        dgCreditEnquiry.Columns("CrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("CrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgCreditEnquiry.Columns("CrAmount").DefaultCellStyle.Format = "#####0.00"
-        dgCreditEnquiry.Columns("CrAmount").Width = 85
-        dgCreditEnquiry.Columns("CrAmount").HeaderText = "Cr. Amt."
-        dgCreditEnquiry.Columns("LocationNAme").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("LocationNAme").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-        dgCreditEnquiry.Columns("LocationNAme").HeaderText = "Transaction Desc."
-        dgCreditEnquiry.Columns("LocationNAme").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+
+        ' ===== Frozen Image Column =====
+        dgCreditEnquiry.Columns(0).Frozen = True
+        dgCreditEnquiry.Columns(0).Width = 40
+        dgCreditEnquiry.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.None
+
+        ' ===== Fixed Width Columns =====
+        SetFixed("BillNo", 70, DataGridViewContentAlignment.MiddleRight)
+        SetFixed("BillDate", 100, DataGridViewContentAlignment.MiddleRight, DateFormat)
+        SetFixed("MemberID", 80, DataGridViewContentAlignment.MiddleLeft)
+        SetFixed("LocationType", 140, DataGridViewContentAlignment.MiddleLeft)
+        SetFixed("DrAmount", 90, DataGridViewContentAlignment.MiddleRight, "0.00")
+        SetFixed("CrAmount", 90, DataGridViewContentAlignment.MiddleRight, "0.00")
+
+        ' ===== Fill Column (VERY IMPORTANT) =====
+        If dgCreditEnquiry.Columns.Contains("LocationName") Then
+            With dgCreditEnquiry.Columns("LocationName")
+                .HeaderText = "Transaction Desc."
+                .AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                .FillWeight = 100
+            End With
+        End If
+
+        dgCreditEnquiry.Anchor = AnchorStyles.Top Or
+                         AnchorStyles.Bottom Or
+                         AnchorStyles.Left Or
+                         AnchorStyles.Right
+
     End Sub
+
+
+    Private Sub SetFixed(colName As String,
+                         width As Integer,
+                         align As DataGridViewContentAlignment,
+                         Optional format As String = "")
+
+        If dgCreditEnquiry.Columns.Contains(colName) Then
+            With dgCreditEnquiry.Columns(colName)
+                .Width = width
+                .AutoSizeMode = DataGridViewAutoSizeColumnMode.None
+                .DefaultCellStyle.Alignment = align
+                If format <> "" Then
+                    .DefaultCellStyle.Format = format
+                End If
+            End With
+        End If
+
+    End Sub
+
+    'Private Sub FormatGrid()
+    '    dgCreditEnquiry.RowHeadersVisible = True
+    '    dgCreditEnquiry.RowHeadersWidth = 20
+    '    dgCreditEnquiry.Columns(0).Width = 30
+    '    dgCreditEnquiry.Columns("YearCode").Visible = False
+    '    dgCreditEnquiry.Columns("LocationCode").Visible = False
+    '    dgCreditEnquiry.Columns("BillNo").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("BillNo").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("BillNo").Width = 60
+    '    dgCreditEnquiry.Columns("BillDate").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("BillDate").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("BillDate").DefaultCellStyle.Format = DateFormat
+    '    dgCreditEnquiry.Columns("BillDate").Width = 100
+    '    dgCreditEnquiry.Columns("MemberID").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("MemberID").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("MemberID").HeaderText = "C_ID"
+    '    dgCreditEnquiry.Columns("MemberID").Width = 75
+    '    dgCreditEnquiry.Columns("OldMemNo").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("OldMemNo").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("OldMemNo").HeaderText = "M_ID"
+    '    dgCreditEnquiry.Columns("OldMemNo").Visible = False
+    '    dgCreditEnquiry.Columns("Full_Name").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("Full_Name").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("Full_Name").HeaderText = "Name"
+    '    dgCreditEnquiry.Columns("Full_Name").Visible = False
+    '    dgCreditEnquiry.Columns("LocationType").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("LocationType").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("LocationType").HeaderText = "Trans Type"
+    '    dgCreditEnquiry.Columns("LocationType").Width = 150
+    '    dgCreditEnquiry.Columns("DrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("DrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("DrAmount").DefaultCellStyle.Format = "#####0.00"
+    '    dgCreditEnquiry.Columns("DrAmount").Width = 85
+    '    dgCreditEnquiry.Columns("DrAmount").HeaderText = "Dr. Amt."
+    '    dgCreditEnquiry.Columns("CrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("CrAmount").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+    '    dgCreditEnquiry.Columns("CrAmount").DefaultCellStyle.Format = "#####0.00"
+    '    dgCreditEnquiry.Columns("CrAmount").Width = 85
+    '    dgCreditEnquiry.Columns("CrAmount").HeaderText = "Cr. Amt."
+    '    dgCreditEnquiry.Columns("LocationNAme").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("LocationNAme").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+    '    dgCreditEnquiry.Columns("LocationNAme").HeaderText = "Transaction Desc."
+    '    dgCreditEnquiry.Columns("LocationNAme").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+
+    '    ' Apply reusable layout
+    '    GridHelper.FormatEnquiryGrid(dgCreditEnquiry, 0)
+    'End Sub
 
     Private Sub bindSearchGridLoad()
         lblopeningDr.Text = ""
         lblopeningDr.Tag = ""
         lblOpeningCr.Text = ""
         lblOpeningCr.Tag = ""
-        strSql = "Select BillNo,BillDate,MemberID,OldMemNo,Full_Name,LocationType,LocationName,DrAmount,CrAmount,YearCode,LocationCode  from [MM_MemberCreditEnquiry] where 1=2 and "
-        strsql &= " ([MemberID] ='" & txtC_ID.Text & "' OR OldMemNo='" & txtC_ID.Text & "') and  ([BillDate] >= '" & dtpDateFrom.Value.ToString(DateFormat) & "' and [BillDate] <= '" & dtpDateTo.Value.ToString(DateFormat) & "')"
-        strsql &= IIf(cmbLocation.Text <> "[Select All]", " and LocationName='" & cmbLocation.Text & "'", "").ToString
-        strsql &= " Order by [BillDate],LocationName"
+        StrSql = "Select BillNo,BillDate,MemberID,OldMemNo,Full_Name,LocationType,LocationName,DrAmount,CrAmount,YearCode,LocationCode  from [MM_MemberCreditEnquiry] where 1=2 and "
+        StrSql &= " ([MemberID] ='" & txtC_ID.Text & "' OR OldMemNo='" & txtC_ID.Text & "') and  ([BillDate] >= '" & dtpDateFrom.Value.ToString(DateFormat) & "' and [BillDate] <= '" & dtpDateTo.Value.ToString(DateFormat) & "')"
+        StrSql &= IIf(cmbLocation.Text <> "[Select All]", " and LocationName='" & cmbLocation.Text & "'", "").ToString
+        StrSql &= " Order by [BillDate],LocationName"
         ds = New DataSet
-        ds = objDatabase.BindDataSet(strsql, "member")
+        ds = ObjDatabase.BindDataSet(StrSql, "member")
         dgCreditEnquiry.DataSource = ds
         dgCreditEnquiry.DataMember = ds.Tables(0).ToString()
         lblCount.Text = ""
@@ -252,7 +399,7 @@ Public Class frmCreditTransactionEnquiry
             lblStatus.Text = ""
             lblCategory.Text = ""
             btnSearch.Enabled = True
-            bindSearchGrid()
+            BindSearchGrid()
             txtAmountDr.Text = ""
         End If
     End Sub
@@ -276,7 +423,7 @@ Public Class frmCreditTransactionEnquiry
         lblopeningDr.Text = ""
         lblOpeningCr.Tag = ""
         lblOpeningCr.Text = ""
-        Dim OpeningAmt As Double = objDatabase.ExecuteScalarN("Select top 1 isnull(PayableAmount,0) from MM_BillHead where BillDate<'" & dtpDateFrom.Value.ToString(DateFormat) & "' and  MemberID='" & txtC_ID.Text & "' Order by billdate desc")
+        Dim OpeningAmt As Double = ObjDatabase.ExecuteScalarN("Select top 1 isnull(PayableAmount,0) from MM_BillHead where BillDate<'" & dtpDateFrom.Value.ToString(DateFormat) & "' and  MemberID='" & txtC_ID.Text & "' Order by billdate desc")
         If OpeningAmt > 0 Then
             lblopeningDr.Tag = Math.Abs(OpeningAmt)
             lblopeningDr.Text = Math.Abs(OpeningAmt).ToString("####0.00 Dr.")
@@ -331,16 +478,16 @@ Public Class frmCreditTransactionEnquiry
         End If
     End Sub
 
-    Private Sub btnPrintReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrintReport.Click
+    Private Sub btnPrintReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim objfrmreport As New FrmReportView
         Dim ReportTitle As String = ""
         'CrystalReportDocument = New ReportDocument
         'CrystalReportDocument.Load(ApplicationStartupPath & "\TransactionPrint\crptCreditEnquirySP.rpt")
         'CrystalReportDocument.DataSourceConnections.Item(0).SetConnection(SQLServerName, SQLServerDatabase, False)
         'CrystalReportDocument.DataSourceConnections.Item(0).SetLogon(SQLServerUserName, SQLServerPassword)
-        strSql = ""
-        strSql = "{MM_MemberCreditEnquiry.MemberID}='" & txtC_ID.Text & "' and {MM_MemberCreditEnquiry.BillDate} in  date(" & Format(dtpDateFrom.Value, "yyyy, MM, dd") & ") to date(" & Format(dtpDateTo.Value, "yyyy, MM, dd") & ")"
-        strSql &= IIf(cmbLocation.Text <> "[Select All]", " AND {MM_MemberCreditEnquiry.LocationName}='" & Trim(cmbLocation.Text) & "'", "").ToString()
+        StrSql = ""
+        StrSql = "{MM_MemberCreditEnquiry.MemberID}='" & txtC_ID.Text & "' and {MM_MemberCreditEnquiry.BillDate} in  date(" & Format(dtpDateFrom.Value, "yyyy, MM, dd") & ") to date(" & Format(dtpDateTo.Value, "yyyy, MM, dd") & ")"
+        StrSql &= IIf(cmbLocation.Text <> "[Select All]", " AND {MM_MemberCreditEnquiry.LocationName}='" & Trim(cmbLocation.Text) & "'", "").ToString()
         ReportTitle = "M_ID: " & lblMemID.Text & "; C_ID: " & txtC_ID.Text & "; Period: " & dtpDateFrom.Value.ToString(DateFormat) & " To " & dtpDateTo.Value.ToString(DateFormat) & "; "
         ReportTitle &= "Location: " & IIf(cmbLocation.Text <> "[Select All]", Trim(cmbLocation.Text) & "; ", "All; ").ToString()
         'CrystalReportDocument.RecordSelectionFormula = strSql

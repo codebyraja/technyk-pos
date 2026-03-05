@@ -7,14 +7,54 @@ Public Class FrmWaiterMaster
     Dim dr As SqlDataReader
     Dim da As New SqlDataAdapter
     Dim ds As DataSet
+    Private responsive As ResponsiveHelper
+    Private Sub FrmWaiterMaster_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    Private Sub FrmWaiterMaster_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        PanelSubHeader.Dock = DockStyle.Top
+        PanelSubHeader.Height = 25
+
+        PanelEntry.Dock = DockStyle.Left
+        PanelEntry.Width = 220
+
+        PanelFooter.Dock = DockStyle.Bottom
+        PanelFooter.Height = 55
+
+        PanelSearch.Dock = DockStyle.Fill
+
+        PanelSearchTop.Dock = DockStyle.Top
+        PanelSearchTop.Height = 70
+
+        labelRecordCount.Dock = DockStyle.Bottom
+        labelRecordCount.Height = 25
+
+        responsive = New ResponsiveHelper(Me)
+        responsive.ResizeControls(Me)
+
         DisableControl(Me.PanelEntry)
         EnableControl(Me.PanelSearch)
         ClearText(Me.PanelEntry)
         EnableButton("CANCEL", Me)
         cmbStatusSearch.Text = "[Select All]"
         BindGridForSearch()
+
+    End Sub
+    Private Sub FrmWaiterMaster_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        'If responsive IsNot Nothing Then
+        '    responsive.ResizeControls(Me)
+        'End If
+
+        If responsive Is Nothing Then Exit Sub
+
+        Me.SuspendLayout()
+
+        responsive.ResizeControls(Me)
+
+        Me.ResumeLayout()
+
+    End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
     End Sub
 
     Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
@@ -188,8 +228,17 @@ Public Class FrmWaiterMaster
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        'Me.Dispose()
+        'BackToMainScreen = True
+
+        Me.Close()
+
+        Dim mainForm As FrmFNBManagement =
+            CType(Application.OpenForms("FrmFNBManagement"), FrmFNBManagement)
+
+        If mainForm IsNot Nothing Then
+            mainForm.ShowDashboard()
+        End If
     End Sub
 
     Private Sub txtWaiter_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtWaiter.TextChanged
@@ -222,7 +271,7 @@ Public Class FrmWaiterMaster
     End Sub
 
     Protected Overloads Overrides Function _
-          ProcessDialogKey(ByVal keyData As Keys) As Boolean
+        ProcessDialogKey(ByVal keyData As Keys) As Boolean
         If TypeOf ActiveControl Is Button = False Then
             Select Case keyData
                 Case Keys.Enter

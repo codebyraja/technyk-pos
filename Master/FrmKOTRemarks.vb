@@ -17,7 +17,7 @@ Public Class FrmKOTRemarks
         BindGridForSearch()
     End Sub
 
-    Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         If (btnAdd.Text = "Add") Then
             Me.ErrorProvider1.Dispose()
             ClearText(Me.PanelEntry)
@@ -171,7 +171,7 @@ Public Class FrmKOTRemarks
         End Try
     End Sub
 
-    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         DisableControl(Me.PanelEntry)
         EnableControl(Me.PanelSearch)
         ClearText(Me.PanelEntry)
@@ -180,12 +180,11 @@ Public Class FrmKOTRemarks
         ErrorProvider1.Dispose()
     End Sub
 
-    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        General.Close(Me)
     End Sub
 
-    Private Sub txtWaiter_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtWaiter.TextChanged
+    Private Sub txtWaiter_TextChanged(sender As Object, e As EventArgs) Handles txtWaiter.TextChanged
         txtDisplayAs.Text = txtWaiter.Text
     End Sub
 
@@ -265,11 +264,23 @@ Public Class FrmKOTRemarks
         FormatLabel("search")
     End Sub
 
-    Private Sub txtWaiterSearch_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtWaiterSearch.TextChanged, txtDisplayAsSearch.TextChanged
+    Private Sub txtWaiterSearch_TextChanged(sender As Object, e As EventArgs) Handles txtWaiterSearch.TextChanged
         BindGridForSearch()
     End Sub
 
-    Private Sub cmbSearchWaiter_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbStatusSearch.Validated
+    Private Sub cmbSearchWaiter_Validated(ByVal sender As Object, ByVal e As System.EventArgs)
         BindGridForSearch()
+    End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub FrmKOTRemarks_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        'If responsive IsNot Nothing Then
+        '    responsive.ResizeControls(Me)
+        'End If
+
+
     End Sub
 End Class
