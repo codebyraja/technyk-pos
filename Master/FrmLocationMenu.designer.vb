@@ -22,158 +22,86 @@ Partial Class FrmLocationMenu
     'Do not modify it using the Code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLocationMenu))
-        Me.LabelHeader = New System.Windows.Forms.Label
-        Me.btnClose = New System.Windows.Forms.Button
-        Me.btnCancel = New System.Windows.Forms.Button
-        Me.btnAdd = New System.Windows.Forms.Button
-        Me.Panel3 = New System.Windows.Forms.Panel
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.PanelEntry = New System.Windows.Forms.Panel
-        Me.labelRecordCount = New System.Windows.Forms.Label
-        Me.dgLocationMenu = New System.Windows.Forms.DataGridView
-        Me.dgbtnEdit = New System.Windows.Forms.DataGridViewImageColumn
-        Me.dgbtnDelete = New System.Windows.Forms.DataGridViewImageColumn
-        Me.btnAddGroup = New System.Windows.Forms.Button
-        Me.cmbMainGroup = New System.Windows.Forms.ComboBox
-        Me.cmbLocation = New System.Windows.Forms.ComboBox
-        Me.Label27 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cmbGroup = New System.Windows.Forms.ComboBox
+        Me.LabelHeader = New System.Windows.Forms.Label()
+        Me.PanelContainer = New System.Windows.Forms.Panel()
+        Me.PanelEntry = New System.Windows.Forms.Panel()
+        Me.dgLocationMenu = New System.Windows.Forms.DataGridView()
+        Me.dgbtnEdit = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.PanelEntryTop = New System.Windows.Forms.Panel()
+        Me.btnAddGroup = New System.Windows.Forms.Button()
+        Me.cmbMainGroup = New System.Windows.Forms.ComboBox()
+        Me.cmbLocation = New System.Windows.Forms.ComboBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cmbGroup = New System.Windows.Forms.ComboBox()
+        Me.labelRecordCount = New System.Windows.Forms.Label()
+        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.PanelLine = New System.Windows.Forms.Panel()
+        Me.dgbtnDelete = New System.Windows.Forms.DataGridViewImageColumn()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Panel3.SuspendLayout()
+        Me.PanelContainer.SuspendLayout()
         Me.PanelEntry.SuspendLayout()
         CType(Me.dgLocationMenu, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelEntryTop.SuspendLayout()
+        Me.PanelFooter.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LabelHeader
         '
-        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LabelHeader.Dock = System.Windows.Forms.DockStyle.Top
         Me.LabelHeader.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelHeader.ForeColor = System.Drawing.Color.Black
-        Me.LabelHeader.Location = New System.Drawing.Point(1, 1)
+        Me.LabelHeader.ForeColor = System.Drawing.Color.Silver
+        Me.LabelHeader.Location = New System.Drawing.Point(10, 10)
+        Me.LabelHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelHeader.Name = "LabelHeader"
-        Me.LabelHeader.Size = New System.Drawing.Size(1018, 29)
+        Me.LabelHeader.Size = New System.Drawing.Size(1180, 40)
         Me.LabelHeader.TabIndex = 0
         Me.LabelHeader.Text = "LOCATION MENU"
-        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnClose
+        'PanelContainer
         '
-        Me.btnClose.BackColor = System.Drawing.Color.Transparent
-        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
-        Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnClose.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnClose.ForeColor = System.Drawing.Color.Transparent
-        Me.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnClose.ImageKey = "(none)"
-        Me.btnClose.Location = New System.Drawing.Point(549, 639)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(78, 26)
-        Me.btnClose.TabIndex = 3
-        Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
-        'btnCancel
-        '
-        Me.btnCancel.BackColor = System.Drawing.Color.Transparent
-        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancel.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
-        Me.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnCancel.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnCancel.ForeColor = System.Drawing.Color.Transparent
-        Me.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancel.ImageKey = "(none)"
-        Me.btnCancel.Location = New System.Drawing.Point(471, 639)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(78, 26)
-        Me.btnCancel.TabIndex = 2
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = False
-        '
-        'btnAdd
-        '
-        Me.btnAdd.BackColor = System.Drawing.Color.Transparent
-        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAdd.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
-        Me.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnAdd.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnAdd.ForeColor = System.Drawing.Color.Transparent
-        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdd.ImageKey = "(none)"
-        Me.btnAdd.Location = New System.Drawing.Point(393, 639)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(78, 26)
-        Me.btnAdd.TabIndex = 1
-        Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Panel1)
-        Me.Panel3.Controls.Add(Me.LabelHeader)
-        Me.Panel3.Controls.Add(Me.btnClose)
-        Me.Panel3.Controls.Add(Me.PanelEntry)
-        Me.Panel3.Controls.Add(Me.btnCancel)
-        Me.Panel3.Controls.Add(Me.btnAdd)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.ForeColor = System.Drawing.Color.Black
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1020, 680)
-        Me.Panel3.TabIndex = 0
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Gray
-        Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(0, 30)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1022, 2)
-        Me.Panel1.TabIndex = 45
+        Me.PanelContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelContainer.Controls.Add(Me.PanelEntry)
+        Me.PanelContainer.Controls.Add(Me.PanelFooter)
+        Me.PanelContainer.Controls.Add(Me.PanelLine)
+        Me.PanelContainer.Controls.Add(Me.LabelHeader)
+        Me.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContainer.ForeColor = System.Drawing.Color.Black
+        Me.PanelContainer.Location = New System.Drawing.Point(0, 0)
+        Me.PanelContainer.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelContainer.Name = "PanelContainer"
+        Me.PanelContainer.Padding = New System.Windows.Forms.Padding(10)
+        Me.PanelContainer.Size = New System.Drawing.Size(1200, 700)
+        Me.PanelContainer.TabIndex = 0
         '
         'PanelEntry
         '
         Me.PanelEntry.BackColor = System.Drawing.Color.Transparent
         Me.PanelEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelEntry.Controls.Add(Me.labelRecordCount)
         Me.PanelEntry.Controls.Add(Me.dgLocationMenu)
-        Me.PanelEntry.Controls.Add(Me.btnAddGroup)
-        Me.PanelEntry.Controls.Add(Me.cmbMainGroup)
-        Me.PanelEntry.Controls.Add(Me.cmbLocation)
-        Me.PanelEntry.Controls.Add(Me.Label27)
-        Me.PanelEntry.Controls.Add(Me.Label2)
-        Me.PanelEntry.Controls.Add(Me.Label3)
-        Me.PanelEntry.Controls.Add(Me.cmbGroup)
-        Me.PanelEntry.Location = New System.Drawing.Point(9, 81)
+        Me.PanelEntry.Controls.Add(Me.PanelEntryTop)
+        Me.PanelEntry.Controls.Add(Me.labelRecordCount)
+        Me.PanelEntry.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEntry.Location = New System.Drawing.Point(10, 52)
+        Me.PanelEntry.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelEntry.Name = "PanelEntry"
-        Me.PanelEntry.Size = New System.Drawing.Size(1001, 519)
+        Me.PanelEntry.Padding = New System.Windows.Forms.Padding(10)
+        Me.PanelEntry.Size = New System.Drawing.Size(1180, 588)
         Me.PanelEntry.TabIndex = 0
-        '
-        'labelRecordCount
-        '
-        Me.labelRecordCount.BackColor = System.Drawing.Color.Transparent
-        Me.labelRecordCount.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.labelRecordCount.Location = New System.Drawing.Point(3, 496)
-        Me.labelRecordCount.Name = "labelRecordCount"
-        Me.labelRecordCount.Size = New System.Drawing.Size(703, 19)
-        Me.labelRecordCount.TabIndex = 8
         '
         'dgLocationMenu
         '
@@ -197,7 +125,7 @@ Partial Class FrmLocationMenu
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgLocationMenu.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgLocationMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgLocationMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnEdit, Me.dgbtnDelete})
+        Me.dgLocationMenu.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnEdit})
         Me.dgLocationMenu.Cursor = System.Windows.Forms.Cursors.Default
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
@@ -207,14 +135,16 @@ Partial Class FrmLocationMenu
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgLocationMenu.DefaultCellStyle = DataGridViewCellStyle4
+        Me.dgLocationMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgLocationMenu.GridColor = System.Drawing.Color.Chocolate
-        Me.dgLocationMenu.Location = New System.Drawing.Point(6, 103)
+        Me.dgLocationMenu.Location = New System.Drawing.Point(10, 70)
+        Me.dgLocationMenu.Margin = New System.Windows.Forms.Padding(4)
         Me.dgLocationMenu.MultiSelect = False
         Me.dgLocationMenu.Name = "dgLocationMenu"
         Me.dgLocationMenu.ReadOnly = True
         Me.dgLocationMenu.RowHeadersVisible = False
         Me.dgLocationMenu.RowHeadersWidth = 20
-        Me.dgLocationMenu.Size = New System.Drawing.Size(987, 391)
+        Me.dgLocationMenu.Size = New System.Drawing.Size(1158, 481)
         Me.dgLocationMenu.TabIndex = 7
         Me.dgLocationMenu.TabStop = False
         '
@@ -239,16 +169,20 @@ Partial Class FrmLocationMenu
         Me.dgbtnEdit.ToolTipText = "Click to edit the Row"
         Me.dgbtnEdit.Width = 25
         '
-        'dgbtnDelete
+        'PanelEntryTop
         '
-        Me.dgbtnDelete.FillWeight = 25.0!
-        Me.dgbtnDelete.HeaderText = ""
-        Me.dgbtnDelete.Image = Global.FNBManagement.My.Resources.Resources.data_delete1
-        Me.dgbtnDelete.MinimumWidth = 25
-        Me.dgbtnDelete.Name = "dgbtnDelete"
-        Me.dgbtnDelete.ReadOnly = True
-        Me.dgbtnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbtnDelete.Width = 25
+        Me.PanelEntryTop.Controls.Add(Me.btnAddGroup)
+        Me.PanelEntryTop.Controls.Add(Me.cmbMainGroup)
+        Me.PanelEntryTop.Controls.Add(Me.cmbLocation)
+        Me.PanelEntryTop.Controls.Add(Me.Label27)
+        Me.PanelEntryTop.Controls.Add(Me.Label2)
+        Me.PanelEntryTop.Controls.Add(Me.Label3)
+        Me.PanelEntryTop.Controls.Add(Me.cmbGroup)
+        Me.PanelEntryTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelEntryTop.Location = New System.Drawing.Point(10, 10)
+        Me.PanelEntryTop.Name = "PanelEntryTop"
+        Me.PanelEntryTop.Size = New System.Drawing.Size(1158, 60)
+        Me.PanelEntryTop.TabIndex = 9
         '
         'btnAddGroup
         '
@@ -257,10 +191,11 @@ Partial Class FrmLocationMenu
         Me.btnAddGroup.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnAddGroup.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
         Me.btnAddGroup.ForeColor = System.Drawing.Color.Black
-        Me.btnAddGroup.Location = New System.Drawing.Point(362, 70)
+        Me.btnAddGroup.Location = New System.Drawing.Point(1028, 7)
+        Me.btnAddGroup.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddGroup.Name = "btnAddGroup"
-        Me.btnAddGroup.Size = New System.Drawing.Size(95, 25)
-        Me.btnAddGroup.TabIndex = 6
+        Me.btnAddGroup.Size = New System.Drawing.Size(127, 45)
+        Me.btnAddGroup.TabIndex = 13
         Me.btnAddGroup.Text = "Add Group"
         Me.btnAddGroup.UseVisualStyleBackColor = False
         '
@@ -271,10 +206,11 @@ Partial Class FrmLocationMenu
         Me.cmbMainGroup.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmbMainGroup.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbMainGroup.FormattingEnabled = True
-        Me.cmbMainGroup.Location = New System.Drawing.Point(92, 39)
+        Me.cmbMainGroup.Location = New System.Drawing.Point(461, 15)
+        Me.cmbMainGroup.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbMainGroup.Name = "cmbMainGroup"
-        Me.cmbMainGroup.Size = New System.Drawing.Size(266, 23)
-        Me.cmbMainGroup.TabIndex = 3
+        Me.cmbMainGroup.Size = New System.Drawing.Size(250, 26)
+        Me.cmbMainGroup.TabIndex = 10
         '
         'cmbLocation
         '
@@ -283,20 +219,22 @@ Partial Class FrmLocationMenu
         Me.cmbLocation.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmbLocation.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbLocation.FormattingEnabled = True
-        Me.cmbLocation.Location = New System.Drawing.Point(92, 8)
+        Me.cmbLocation.Location = New System.Drawing.Point(96, 15)
+        Me.cmbLocation.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbLocation.Name = "cmbLocation"
-        Me.cmbLocation.Size = New System.Drawing.Size(266, 23)
-        Me.cmbLocation.TabIndex = 1
+        Me.cmbLocation.Size = New System.Drawing.Size(250, 26)
+        Me.cmbLocation.TabIndex = 8
         '
         'Label27
         '
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label27.Location = New System.Drawing.Point(2, 43)
+        Me.Label27.Location = New System.Drawing.Point(354, 18)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(85, 16)
-        Me.Label27.TabIndex = 2
+        Me.Label27.Size = New System.Drawing.Size(110, 20)
+        Me.Label27.TabIndex = 9
         Me.Label27.Text = "Main Group"
         '
         'Label2
@@ -304,10 +242,11 @@ Partial Class FrmLocationMenu
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(2, 72)
+        Me.Label2.Location = New System.Drawing.Point(719, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 16)
-        Me.Label2.TabIndex = 4
+        Me.Label2.Size = New System.Drawing.Size(63, 20)
+        Me.Label2.TabIndex = 11
         Me.Label2.Text = "Group"
         '
         'Label3
@@ -315,10 +254,11 @@ Partial Class FrmLocationMenu
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(2, 12)
+        Me.Label3.Location = New System.Drawing.Point(4, 18)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 16)
-        Me.Label3.TabIndex = 0
+        Me.Label3.Size = New System.Drawing.Size(84, 20)
+        Me.Label3.TabIndex = 7
         Me.Label3.Text = "Location"
         '
         'cmbGroup
@@ -328,10 +268,115 @@ Partial Class FrmLocationMenu
         Me.cmbGroup.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmbGroup.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbGroup.FormattingEnabled = True
-        Me.cmbGroup.Location = New System.Drawing.Point(92, 70)
+        Me.cmbGroup.Location = New System.Drawing.Point(787, 15)
+        Me.cmbGroup.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbGroup.Name = "cmbGroup"
-        Me.cmbGroup.Size = New System.Drawing.Size(266, 23)
-        Me.cmbGroup.TabIndex = 5
+        Me.cmbGroup.Size = New System.Drawing.Size(233, 26)
+        Me.cmbGroup.TabIndex = 12
+        '
+        'labelRecordCount
+        '
+        Me.labelRecordCount.BackColor = System.Drawing.Color.Transparent
+        Me.labelRecordCount.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.labelRecordCount.Font = New System.Drawing.Font("Lucida Fax", 9.75!)
+        Me.labelRecordCount.Location = New System.Drawing.Point(10, 551)
+        Me.labelRecordCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelRecordCount.Name = "labelRecordCount"
+        Me.labelRecordCount.Size = New System.Drawing.Size(1158, 25)
+        Me.labelRecordCount.TabIndex = 8
+        '
+        'PanelFooter
+        '
+        Me.PanelFooter.Controls.Add(Me.btnClose)
+        Me.PanelFooter.Controls.Add(Me.btnCancel)
+        Me.PanelFooter.Controls.Add(Me.btnAdd)
+        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelFooter.Location = New System.Drawing.Point(10, 640)
+        Me.PanelFooter.Name = "PanelFooter"
+        Me.PanelFooter.Size = New System.Drawing.Size(1180, 50)
+        Me.PanelFooter.TabIndex = 49
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.Transparent
+        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnClose.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnClose.ForeColor = System.Drawing.Color.Transparent
+        Me.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnClose.ImageKey = "(none)"
+        Me.btnClose.Location = New System.Drawing.Point(640, 5)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(104, 40)
+        Me.btnClose.TabIndex = 51
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancel.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnCancel.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCancel.ForeColor = System.Drawing.Color.Transparent
+        Me.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCancel.ImageKey = "(none)"
+        Me.btnCancel.Location = New System.Drawing.Point(536, 5)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(104, 40)
+        Me.btnCancel.TabIndex = 50
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
+        'btnAdd
+        '
+        Me.btnAdd.BackColor = System.Drawing.Color.Transparent
+        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAdd.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnAdd.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnAdd.ForeColor = System.Drawing.Color.Transparent
+        Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAdd.ImageKey = "(none)"
+        Me.btnAdd.Location = New System.Drawing.Point(432, 5)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(104, 40)
+        Me.btnAdd.TabIndex = 49
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.UseVisualStyleBackColor = False
+        '
+        'PanelLine
+        '
+        Me.PanelLine.BackColor = System.Drawing.Color.Gray
+        Me.PanelLine.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLine.ForeColor = System.Drawing.Color.Black
+        Me.PanelLine.Location = New System.Drawing.Point(10, 50)
+        Me.PanelLine.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelLine.Name = "PanelLine"
+        Me.PanelLine.Size = New System.Drawing.Size(1180, 2)
+        Me.PanelLine.TabIndex = 45
+        '
+        'dgbtnDelete
+        '
+        Me.dgbtnDelete.FillWeight = 25.0!
+        Me.dgbtnDelete.HeaderText = ""
+        Me.dgbtnDelete.Image = Global.FNBManagement.My.Resources.Resources.data_delete1
+        Me.dgbtnDelete.MinimumWidth = 25
+        Me.dgbtnDelete.Name = "dgbtnDelete"
+        Me.dgbtnDelete.ReadOnly = True
+        Me.dgbtnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbtnDelete.Width = 25
         '
         'ErrorProvider1
         '
@@ -345,48 +390,53 @@ Partial Class FrmLocationMenu
         '
         'FrmLocationMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1020, 680)
-        Me.Controls.Add(Me.Panel3)
+        Me.ClientSize = New System.Drawing.Size(1200, 700)
+        Me.Controls.Add(Me.PanelContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FrmLocationMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Group"
         Me.TopMost = True
-        Me.Panel3.ResumeLayout(False)
+        Me.PanelContainer.ResumeLayout(False)
         Me.PanelEntry.ResumeLayout(False)
-        Me.PanelEntry.PerformLayout()
         CType(Me.dgLocationMenu, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelEntryTop.ResumeLayout(False)
+        Me.PanelEntryTop.PerformLayout()
+        Me.PanelFooter.ResumeLayout(False)
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents LabelHeader As System.Windows.Forms.Label
-    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents PanelContainer As System.Windows.Forms.Panel
+    Friend WithEvents PanelFooter As System.Windows.Forms.Panel
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnCancel As System.Windows.Forms.Button
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents PanelLine As System.Windows.Forms.Panel
     Friend WithEvents PanelEntry As System.Windows.Forms.Panel
-    Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
-    Friend WithEvents cmbMainGroup As System.Windows.Forms.ComboBox
-    Friend WithEvents Label27 As System.Windows.Forms.Label
-    Friend WithEvents dgLocationMenu As System.Windows.Forms.DataGridView
-    Friend WithEvents btnAddGroup As System.Windows.Forms.Button
-    Friend WithEvents cmbLocation As System.Windows.Forms.ComboBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents cmbGroup As System.Windows.Forms.ComboBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents labelRecordCount As System.Windows.Forms.Label
+    Friend WithEvents dgLocationMenu As System.Windows.Forms.DataGridView
     Friend WithEvents dgbtnEdit As System.Windows.Forms.DataGridViewImageColumn
     Friend WithEvents dgbtnDelete As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents PanelEntryTop As System.Windows.Forms.Panel
+    Friend WithEvents btnAddGroup As System.Windows.Forms.Button
+    Friend WithEvents cmbMainGroup As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbLocation As System.Windows.Forms.ComboBox
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents cmbGroup As System.Windows.Forms.ComboBox
 
 
 End Class

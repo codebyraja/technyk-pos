@@ -2,6 +2,7 @@
 Imports System.Data.SqlClient
 
 Public Class FrmConfigurations
+    Private responsive As ResponsiveHelper
     Dim myTrans As SqlTransaction
     Dim myCommand As SqlCommand
     Dim dr As SqlDataReader
@@ -18,6 +19,8 @@ Public Class FrmConfigurations
         BindComboboxWithSelectAllNumeric("Select Code,LocationName From IM_LocationMaster where Type in(" & LOCATION_TYPE & ")", "Code", "LocationName", cmbLocationSearch)
         cmbLocation.SelectedValue = 0
         cmbLocationSearch.SelectedValue = 0
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
     Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
@@ -187,8 +190,7 @@ Public Class FrmConfigurations
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub txtPropertyName_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtPropertyName.TextChanged
@@ -305,12 +307,24 @@ Public Class FrmConfigurations
         FormatLabel("search")
     End Sub
 
-    Private Sub txtDescriptionSearch_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtProprtyValueSearch.TextChanged, txtPropertyNameSearch.TextChanged
+    Private Sub txtDescriptionSearch_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs)
         BindGridForSearch()
     End Sub
 
 
     Private Sub cmbLocationSearch_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbLocationSearch.Validated
         BindGridForSearch()
+    End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub FrmConfigurations_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
     End Sub
 End Class

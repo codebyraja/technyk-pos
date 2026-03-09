@@ -229,7 +229,7 @@ Partial Class frmCreditTransactionEnquiry
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1028, 671)
+        Me.Panel3.Size = New System.Drawing.Size(1032, 671)
         Me.Panel3.TabIndex = 0
         '
         'PanelDisplay
@@ -259,7 +259,7 @@ Partial Class frmCreditTransactionEnquiry
         Me.PanelFooter.Controls.Add(Me.lblTotalDrAmount)
         Me.PanelFooter.Controls.Add(Me.lblTotalCrAmount)
         Me.PanelFooter.Controls.Add(Me.btnPrintReport)
-        Me.PanelFooter.Location = New System.Drawing.Point(7, 615)
+        Me.PanelFooter.Location = New System.Drawing.Point(-92, 547)
         Me.PanelFooter.Name = "PanelFooter"
         Me.PanelFooter.Size = New System.Drawing.Size(1014, 55)
         Me.PanelFooter.TabIndex = 4

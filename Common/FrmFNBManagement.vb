@@ -872,8 +872,6 @@ Public Class FrmFNBManagement
         btnfrmConfigurations.Enabled = Flag
     End Sub
 
-
-
     Private Sub btnFrmMiscBilling_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFrmKOTRemarks.Click
         Dim frm As New FrmKOTRemarks
         CheckUserFormAccess(btnFrmKOTRemarks)
@@ -925,9 +923,6 @@ Public Class FrmFNBManagement
         End If
     End Sub
 
-   
-
-    
     Private Sub btnFrmPOSBilling_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFrmPOSBilling.Click
         Dim frm As New FrmPOSBilling1N
         CheckUserFormAccess(btnFrmPOSBilling)

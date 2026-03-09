@@ -204,4 +204,8 @@ Public Class FrmLinkWaiter
 
         Me.ResumeLayout()
     End Sub
+
+    Private Sub PanelFooter_Paint(sender As Object, e As PaintEventArgs) Handles PanelFooter.Paint
+
+    End Sub
 End Class

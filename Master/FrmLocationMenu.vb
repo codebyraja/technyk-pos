@@ -111,8 +111,9 @@ Public Class FrmLocationMenu
     End Function
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        'Me.Dispose()
+        'BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub BindGridForSearch()
@@ -206,7 +207,7 @@ Public Class FrmLocationMenu
         End If
     End Sub
 
-    Private Sub PanelEntry_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PanelEntry.Paint
-
+    Private Sub PanelFooter_Paint(sender As Object, e As PaintEventArgs) Handles PanelFooter.Paint
+        CenterButtonsInPanel(PanelFooter)
     End Sub
 End Class

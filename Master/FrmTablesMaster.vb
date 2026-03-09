@@ -9,6 +9,7 @@ Public Class FrmTableMaster
     Dim ds As DataSet
 
     Private Sub FrmTableMaster_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         ObjDatabase.ConnectDatabse()
         DisableControl(Me.PanelEntry)
         EnableControl(PanelSearch)
@@ -18,6 +19,7 @@ Public Class FrmTableMaster
         BindComboboxWithSelectOneNumeric("Select Code,LocationName From IM_LocationMaster where Type in(" & LOCATION_TYPE & ")", "Code", "LocationName", cmbLocationSearch)
         cmbLocation.SelectedValue = 0
         cmbLocationSearch.SelectedValue = 0
+
     End Sub
 
     Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
@@ -192,8 +194,7 @@ Public Class FrmTableMaster
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub txtTableNo_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtTableNo.TextChanged
@@ -299,7 +300,7 @@ Public Class FrmTableMaster
         FormatLabel("search")
     End Sub
 
-    Private Sub txtDescriptionSearch_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtDescriptionSearch.TextChanged, txtTableNoSearch.TextChanged
+    Private Sub txtDescriptionSearch_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtDescriptionSearch.TextChanged
         BindGridForSearch()
     End Sub
 
@@ -309,5 +310,9 @@ Public Class FrmTableMaster
 
     Private Sub cmbLocationSearch_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbLocationSearch.Validated
         BindGridForSearch()
+    End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
     End Sub
 End Class

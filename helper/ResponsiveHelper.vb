@@ -66,5 +66,4 @@ Public Class ResponsiveHelper
         Next
 
     End Sub
-
 End Class

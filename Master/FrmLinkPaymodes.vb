@@ -2,6 +2,7 @@ Imports System.Windows.Forms
 Imports System.Data.SqlClient
 
 Public Class FrmLinkPaymodes
+    Private responsive As ResponsiveHelper
     Dim myTrans As SqlTransaction
     Dim myCommand As SqlCommand
     Dim ds As New DataSet
@@ -18,6 +19,8 @@ Public Class FrmLinkPaymodes
         cmbLocation.SelectedValue = 0
         cmbPaymentMode.SelectedValue = 0
         BindSearchGrid()
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
     Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
@@ -104,8 +107,9 @@ Public Class FrmLinkPaymodes
     End Function
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        'Me.Dispose()
+        'BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub BindSearchGrid()
@@ -188,4 +192,15 @@ Public Class FrmLinkPaymodes
         End If
     End Sub
 
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub FrmLinkPaymodes_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
+    End Sub
 End Class

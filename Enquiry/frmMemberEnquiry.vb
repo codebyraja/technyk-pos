@@ -7,6 +7,8 @@ Imports System.Data
 Imports System.Configuration
 
 Public Class frmMemberEnquiry
+    Private responsive As ResponsiveHelper
+
     Dim ds As DataSet
     Dim NoOfrecords As Integer
     Dim NoOfrecordsStr As String
@@ -29,6 +31,8 @@ Public Class frmMemberEnquiry
         cmbCategoryType.Text = "[Select All]"
         cmbCategoryTypeSub.Text = "[Select All]"
         BindGrid(200)
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
     Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
@@ -39,9 +43,7 @@ Public Class frmMemberEnquiry
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        BackToMainScreen = True
-        Me.Dispose()
-
+        General.Close(Me)
     End Sub
 
     Private Sub BindGrid(ByVal Records As Integer)
@@ -89,7 +91,7 @@ Public Class frmMemberEnquiry
         IIf(txtEmail.Text <> "", " and MM.Email_ID like '" & Trim(txtEmail.Text) & "%'", "") & _
         " Order by MM.MemberID "
             ds = New DataSet
-            ds = objDatabase.BindDataSet(StrSql, "Enquiry")
+            ds = ObjDatabase.BindDataSet(StrSql, "Enquiry")
             dgsearch.DataSource = ds
             dgsearch.DataMember = ds.Tables(0).ToString()
             labelRecordCount.Text = ""
@@ -150,5 +152,17 @@ Public Class frmMemberEnquiry
             EXCLS.exportExcel(dgsearch, FileName & ".xls")
             ShellEx(Me.Handle, "Open", EXCLS.myFile, "", "", 10)
         End If
+    End Sub
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub frmMemberEnquiry_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
     End Sub
 End Class

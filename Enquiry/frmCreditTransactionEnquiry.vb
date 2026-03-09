@@ -111,7 +111,7 @@ Public Class frmCreditTransactionEnquiry
 
     End Sub
 
-    Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
         lblCount.Text = "Preparing Data."
         Me.Refresh()
         txtAmountDr.Text = "0.00"
@@ -119,9 +119,8 @@ Public Class frmCreditTransactionEnquiry
         BindSearchGrid()
     End Sub
 
-    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        BackToMainScreen = True
-        Me.Dispose()
+    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
+        General.Close(Me)
     End Sub
 
     Private Sub BindSearchGrid()
@@ -269,7 +268,6 @@ Public Class frmCreditTransactionEnquiry
                          AnchorStyles.Right
 
     End Sub
-
 
     Private Sub SetFixed(colName As String,
                          width As Integer,
@@ -478,7 +476,7 @@ Public Class frmCreditTransactionEnquiry
         End If
     End Sub
 
-    Private Sub btnPrintReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnPrintReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrintReport.Click
         Dim objfrmreport As New FrmReportView
         Dim ReportTitle As String = ""
         'CrystalReportDocument = New ReportDocument

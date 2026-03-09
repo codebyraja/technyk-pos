@@ -2,6 +2,7 @@ Imports System.Windows.Forms
 Imports System.Data.SqlClient
 
 Public Class FrmLinkTable
+    Private responsive As ResponsiveHelper
     Dim myTrans As SqlTransaction
     Dim myCommand As SqlCommand
     Dim da As New SqlDataAdapter
@@ -23,6 +24,8 @@ Public Class FrmLinkTable
         cmbTableLocation.SelectedValue = 0
         cmbTable.SelectedValue = 0
         btnAddTable.Enabled = False
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
     Protected Overloads Overrides Function _
@@ -147,8 +150,7 @@ Public Class FrmLinkTable
     End Function
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub BindGridForSearch()
@@ -264,7 +266,19 @@ Public Class FrmLinkTable
         End If
     End Sub
 
-    Private Sub cmbTable_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbTable.SelectedIndexChanged
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
 
+    Private Sub PanelFooter_Paint(sender As Object, e As PaintEventArgs) Handles PanelFooter.Paint
+
+    End Sub
+
+    Private Sub FrmLinkTable_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
     End Sub
 End Class

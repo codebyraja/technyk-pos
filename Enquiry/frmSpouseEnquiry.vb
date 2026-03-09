@@ -2,7 +2,9 @@ Imports System.Windows.Forms
 Imports System.Data.SqlClient
 
 Public Class frmSpouseEnquiry
-    Dim objDatabase As New Database
+    Private responsive As ResponsiveHelper
+
+    Dim objDatabase As New database
     Dim ds As DataSet
     Dim TopRecord As String
     Dim strsql As String
@@ -10,12 +12,12 @@ Public Class frmSpouseEnquiry
     Private Sub frmSpouseEnquiry_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         BindGrid(200)
         txtC_ID.Focus()
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        BackToMainScreen = True
-        Me.Dispose()
-
+        General.Close(Me)
     End Sub
 
     Public Sub BindGrid(ByVal RecordCount As Integer)
@@ -102,5 +104,16 @@ Public Class frmSpouseEnquiry
     Private Sub dtpAnniversaryDateFrom_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtpAnniversaryDateFrom.ValueChanged, dtpDoBTo.ValueChanged, dtpAnniversaryDateTo.ValueChanged, dtpDoBFrom.ValueChanged
         BindGrid(0)
     End Sub
-    
+
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub frmSpouseEnquiry_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
+    End Sub
 End Class

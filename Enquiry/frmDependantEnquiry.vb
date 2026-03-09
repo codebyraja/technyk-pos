@@ -2,7 +2,8 @@ Imports System.Windows.Forms
 Imports System.Data.SqlClient
 
 Public Class frmDependantEnquiry
-    Dim objDatabase As New Database
+    Private responsive As ResponsiveHelper
+    Dim objDatabase As New database
     Dim strsql As String
     Dim ds As DataSet
     Dim TopRecords As String
@@ -10,11 +11,13 @@ Public Class frmDependantEnquiry
     Private Sub frmDependantEnquiry_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         BindComboboxWithSelectOneNumeric("Select Code, [DepStatus] from [AC_DepStatus]", "Code", "DepStatus", cmbStatus)
         BindGrid(200)
+
+        responsive = New ResponsiveHelper(Me)
+
     End Sub
 
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        BackToMainScreen = True
-        Me.Dispose()
+        General.Close(Me)
     End Sub
 
     Public Sub BindGrid(ByVal RecordCount As Integer)
@@ -136,7 +139,16 @@ Public Class frmDependantEnquiry
         BindGrid(0)
     End Sub
 
-    Private Sub cmbStatus_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbStatus.SelectedIndexChanged
+    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub frmDependantEnquiry_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
 
     End Sub
 End Class
