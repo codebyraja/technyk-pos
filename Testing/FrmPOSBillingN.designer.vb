@@ -1,0 +1,6664 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FrmPOSBillingN
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the Code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPOSBillingN))
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.PanelModifyKOT = New System.Windows.Forms.Panel()
+        Me.cmbKOTRemarks = New System.Windows.Forms.ComboBox()
+        Me.lblMemID = New System.Windows.Forms.Label()
+        Me.Label106 = New System.Windows.Forms.Label()
+        Me.btnMinus6 = New System.Windows.Forms.Button()
+        Me.btnMinus5 = New System.Windows.Forms.Button()
+        Me.btnMinus4 = New System.Windows.Forms.Button()
+        Me.btnMinus7 = New System.Windows.Forms.Button()
+        Me.btnMinus9 = New System.Windows.Forms.Button()
+        Me.btnMinus8 = New System.Windows.Forms.Button()
+        Me.lbl35 = New System.Windows.Forms.Label()
+        Me.lbl34 = New System.Windows.Forms.Label()
+        Me.lblReducedKOTAmt = New System.Windows.Forms.Label()
+        Me.Label107 = New System.Windows.Forms.Label()
+        Me.lblReducedKOTQty = New System.Windows.Forms.Label()
+        Me.Label108 = New System.Windows.Forms.Label()
+        Me.lblModifiedKOTAmt = New System.Windows.Forms.Label()
+        Me.Label109 = New System.Windows.Forms.Label()
+        Me.lblModifiedKOTQty = New System.Windows.Forms.Label()
+        Me.Label110 = New System.Windows.Forms.Label()
+        Me.lblTotalOriginalKOTAmt = New System.Windows.Forms.Label()
+        Me.Label111 = New System.Windows.Forms.Label()
+        Me.lblModifiedQty = New System.Windows.Forms.Label()
+        Me.lblActualQty = New System.Windows.Forms.Label()
+        Me.btnMinus0 = New System.Windows.Forms.Button()
+        Me.btnMinus3 = New System.Windows.Forms.Button()
+        Me.btnMinus2 = New System.Windows.Forms.Button()
+        Me.btnMinus1 = New System.Windows.Forms.Button()
+        Me.btnVoidKOT = New System.Windows.Forms.Button()
+        Me.lblKOTNo_KOTModify = New System.Windows.Forms.Label()
+        Me.lblYearCode_KOTModify = New System.Windows.Forms.Label()
+        Me.lblLocationCode_KOTModify = New System.Windows.Forms.Label()
+        Me.lblTotalOriginalQty = New System.Windows.Forms.Label()
+        Me.Label112 = New System.Windows.Forms.Label()
+        Me.labelKOTModificationItemDetails = New System.Windows.Forms.Label()
+        Me.dgKOTItemList = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.labelKOTModificationHeader = New System.Windows.Forms.Label()
+        Me.dgKOTList = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label113 = New System.Windows.Forms.Label()
+        Me.Label114 = New System.Windows.Forms.Label()
+        Me.Label115 = New System.Windows.Forms.Label()
+        Me.Label116 = New System.Windows.Forms.Label()
+        Me.Label117 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label118 = New System.Windows.Forms.Label()
+        Me.Label119 = New System.Windows.Forms.Label()
+        Me.Label120 = New System.Windows.Forms.Label()
+        Me.Label121 = New System.Windows.Forms.Label()
+        Me.Label122 = New System.Windows.Forms.Label()
+        Me.Label123 = New System.Windows.Forms.Label()
+        Me.Label124 = New System.Windows.Forms.Label()
+        Me.PanelMergeTables = New System.Windows.Forms.Panel()
+        Me.Label86 = New System.Windows.Forms.Label()
+        Me.Label87 = New System.Windows.Forms.Label()
+        Me.Label88 = New System.Windows.Forms.Label()
+        Me.Label89 = New System.Windows.Forms.Label()
+        Me.lblDestinationIssueNo = New System.Windows.Forms.Label()
+        Me.lblDestinationClosingBalance = New System.Windows.Forms.Label()
+        Me.Label90 = New System.Windows.Forms.Label()
+        Me.lblDestinationMemName = New System.Windows.Forms.Label()
+        Me.lblDestinationOpeningBalance = New System.Windows.Forms.Label()
+        Me.Label91 = New System.Windows.Forms.Label()
+        Me.lblDestinationMemID = New System.Windows.Forms.Label()
+        Me.Label92 = New System.Windows.Forms.Label()
+        Me.btnMoveAll = New System.Windows.Forms.Button()
+        Me.dgSourceTable = New System.Windows.Forms.DataGridView()
+        Me.dgbtnMoveSourceItem = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.lblDestinationBillNo = New System.Windows.Forms.Label()
+        Me.Label93 = New System.Windows.Forms.Label()
+        Me.lblSourceBillNo = New System.Windows.Forms.Label()
+        Me.Label94 = New System.Windows.Forms.Label()
+        Me.lblSourceTotalQty = New System.Windows.Forms.Label()
+        Me.Label95 = New System.Windows.Forms.Label()
+        Me.lblGrossAmtSource = New System.Windows.Forms.Label()
+        Me.Label96 = New System.Windows.Forms.Label()
+        Me.Label97 = New System.Windows.Forms.Label()
+        Me.lblDestinationTotalQty = New System.Windows.Forms.Label()
+        Me.Label98 = New System.Windows.Forms.Label()
+        Me.Label99 = New System.Windows.Forms.Label()
+        Me.lblDestinationGrossAmt = New System.Windows.Forms.Label()
+        Me.Label100 = New System.Windows.Forms.Label()
+        Me.dgDestinationTable = New System.Windows.Forms.DataGridView()
+        Me.dgbtnMoveDetinationItem = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.cmbDestinationTable = New System.Windows.Forms.ComboBox()
+        Me.Label101 = New System.Windows.Forms.Label()
+        Me.cmbSourceTable = New System.Windows.Forms.ComboBox()
+        Me.Label102 = New System.Windows.Forms.Label()
+        Me.Label125 = New System.Windows.Forms.Label()
+        Me.Label126 = New System.Windows.Forms.Label()
+        Me.Label127 = New System.Windows.Forms.Label()
+        Me.Label128 = New System.Windows.Forms.Label()
+        Me.Label129 = New System.Windows.Forms.Label()
+        Me.Label130 = New System.Windows.Forms.Label()
+        Me.Label131 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Label132 = New System.Windows.Forms.Label()
+        Me.Label133 = New System.Windows.Forms.Label()
+        Me.Label134 = New System.Windows.Forms.Label()
+        Me.Label135 = New System.Windows.Forms.Label()
+        Me.Label136 = New System.Windows.Forms.Label()
+        Me.Label137 = New System.Windows.Forms.Label()
+        Me.Label138 = New System.Windows.Forms.Label()
+        Me.Label139 = New System.Windows.Forms.Label()
+        Me.Label140 = New System.Windows.Forms.Label()
+        Me.Label141 = New System.Windows.Forms.Label()
+        Me.Label142 = New System.Windows.Forms.Label()
+        Me.Label143 = New System.Windows.Forms.Label()
+        Me.Label144 = New System.Windows.Forms.Label()
+        Me.Label145 = New System.Windows.Forms.Label()
+        Me.Label146 = New System.Windows.Forms.Label()
+        Me.Label147 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label148 = New System.Windows.Forms.Label()
+        Me.Label149 = New System.Windows.Forms.Label()
+        Me.Label150 = New System.Windows.Forms.Label()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label157 = New System.Windows.Forms.Label()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn12 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn15 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.dgPrintBill = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.dgviewdraftbill = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnSendOTP = New System.Windows.Forms.Button()
+        Me.btnShiftTable = New System.Windows.Forms.Button()
+        Me.btnEstimate = New System.Windows.Forms.Button()
+        Me.btnSaveNSettle = New System.Windows.Forms.Button()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.dgbtnmodifier = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.dgbtnEdit = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.dgbtndelete = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnTableMoveRight = New System.Windows.Forms.Button()
+        Me.btnTableMoveLeft = New System.Windows.Forms.Button()
+        Me.btnBillingLocationMoveLeft = New System.Windows.Forms.Button()
+        Me.btnBillingLocationMoveRight = New System.Windows.Forms.Button()
+        Me.btnPrintDuplicateBill = New System.Windows.Forms.Button()
+        Me.btnCloseView = New System.Windows.Forms.Button()
+        Me.dgbtnSelectMember = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.PanelContainer = New System.Windows.Forms.Panel()
+        Me.PanelMainScreen = New System.Windows.Forms.Panel()
+        Me.PanelSearchItem = New System.Windows.Forms.Panel()
+        Me.btnCancelMemberSearch = New System.Windows.Forms.Button()
+        Me.txtSearchItemCode = New System.Windows.Forms.TextBox()
+        Me.Label155 = New System.Windows.Forms.Label()
+        Me.Label156 = New System.Windows.Forms.Label()
+        Me.txtSearchItemName = New System.Windows.Forms.TextBox()
+        Me.dgSearchItem = New System.Windows.Forms.DataGridView()
+        Me.PanelContentHost = New System.Windows.Forms.Panel()
+        Me.PanelRight = New System.Windows.Forms.Panel()
+        Me.PanelItem = New System.Windows.Forms.Panel()
+        Me.dgItemGrid = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn11 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn13 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn14 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.lblAliasCode = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.lblGSTPer = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.lblSCPer = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.lblUnit = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.LabelClosingStock = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.LabelStockStr = New System.Windows.Forms.Label()
+        Me.txtRate = New System.Windows.Forms.TextBox()
+        Me.txtItemCode = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtQty = New System.Windows.Forms.TextBox()
+        Me.cmbItemName = New System.Windows.Forms.ComboBox()
+        Me.PanelImg = New System.Windows.Forms.Panel()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.PBMember = New System.Windows.Forms.PictureBox()
+        Me.lblItemName = New System.Windows.Forms.Label()
+        Me.PBSpouseSign = New System.Windows.Forms.PictureBox()
+        Me.lblKOTNo = New System.Windows.Forms.Label()
+        Me.lblOpenItemName = New System.Windows.Forms.Label()
+        Me.txtDiscountPer = New System.Windows.Forms.TextBox()
+        Me.PBMemberSign = New System.Windows.Forms.PictureBox()
+        Me.PBSpouse = New System.Windows.Forms.PictureBox()
+        Me.PanelDisplayArea = New System.Windows.Forms.Panel()
+        Me.lblMemberAcClosingBalance = New System.Windows.Forms.Label()
+        Me.lblOpeningCreditLimit = New System.Windows.Forms.Label()
+        Me.lblMemberAcClosingStr = New System.Windows.Forms.Label()
+        Me.lblOpeningCreditLimitstr = New System.Windows.Forms.Label()
+        Me.lblSmartCardClosingBalance = New System.Windows.Forms.Label()
+        Me.lblSmartCardOpeningBalance = New System.Windows.Forms.Label()
+        Me.lblBillingSmartCardClosingStr = New System.Windows.Forms.Label()
+        Me.lblBillingSmartCardOpeningStr = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.lblDiscountAmt = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.lblROff = New System.Windows.Forms.Label()
+        Me.lblVATAmt = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblSubTotal = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.lblTotalQty = New System.Windows.Forms.Label()
+        Me.lblGrossAmt = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblGSTAmt = New System.Windows.Forms.Label()
+        Me.lblSCAmt = New System.Windows.Forms.Label()
+        Me.PanelMemberDetails = New System.Windows.Forms.Panel()
+        Me.lblMainScreebCitizenType = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lblValidationMode = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtRefNo = New System.Windows.Forms.TextBox()
+        Me.chbComplementory = New System.Windows.Forms.CheckBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtPAX = New System.Windows.Forms.TextBox()
+        Me.labelPAX = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.cmbTable = New System.Windows.Forms.ComboBox()
+        Me.lblMemberName = New System.Windows.Forms.Label()
+        Me.txtMemID = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbWaiter = New System.Windows.Forms.ComboBox()
+        Me.PanelBillHeader = New System.Windows.Forms.Panel()
+        Me.lblBillAmtPerviousKOT = New System.Windows.Forms.Label()
+        Me.lblOpenBillString = New System.Windows.Forms.Label()
+        Me.lblBillNo = New System.Windows.Forms.Label()
+        Me.lblBillDate = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.PanelLocationAndTables = New System.Windows.Forms.Panel()
+        Me.PanelTables = New System.Windows.Forms.Panel()
+        Me.btnTable36 = New System.Windows.Forms.Button()
+        Me.btnTable35 = New System.Windows.Forms.Button()
+        Me.btnTable39 = New System.Windows.Forms.Button()
+        Me.btnTable38 = New System.Windows.Forms.Button()
+        Me.btnTable37 = New System.Windows.Forms.Button()
+        Me.btnTable28 = New System.Windows.Forms.Button()
+        Me.btnTable31 = New System.Windows.Forms.Button()
+        Me.btnTable29 = New System.Windows.Forms.Button()
+        Me.btnTable30 = New System.Windows.Forms.Button()
+        Me.btnTable34 = New System.Windows.Forms.Button()
+        Me.btnTable33 = New System.Windows.Forms.Button()
+        Me.btnTable32 = New System.Windows.Forms.Button()
+        Me.btnTable27 = New System.Windows.Forms.Button()
+        Me.btnTable25 = New System.Windows.Forms.Button()
+        Me.btnTable26 = New System.Windows.Forms.Button()
+        Me.btnTable18 = New System.Windows.Forms.Button()
+        Me.btnTable21 = New System.Windows.Forms.Button()
+        Me.btnTable19 = New System.Windows.Forms.Button()
+        Me.btnTable20 = New System.Windows.Forms.Button()
+        Me.btnTable24 = New System.Windows.Forms.Button()
+        Me.btnTable23 = New System.Windows.Forms.Button()
+        Me.btnTable22 = New System.Windows.Forms.Button()
+        Me.btnTable17 = New System.Windows.Forms.Button()
+        Me.btnTable15 = New System.Windows.Forms.Button()
+        Me.btnTable16 = New System.Windows.Forms.Button()
+        Me.btnTable8 = New System.Windows.Forms.Button()
+        Me.btnTable11 = New System.Windows.Forms.Button()
+        Me.btnTable9 = New System.Windows.Forms.Button()
+        Me.btnTable10 = New System.Windows.Forms.Button()
+        Me.btnTable1 = New System.Windows.Forms.Button()
+        Me.btnTable14 = New System.Windows.Forms.Button()
+        Me.btnTable2 = New System.Windows.Forms.Button()
+        Me.btnTable13 = New System.Windows.Forms.Button()
+        Me.btnTable3 = New System.Windows.Forms.Button()
+        Me.btnTable12 = New System.Windows.Forms.Button()
+        Me.btnTable4 = New System.Windows.Forms.Button()
+        Me.btnTable7 = New System.Windows.Forms.Button()
+        Me.btnTable5 = New System.Windows.Forms.Button()
+        Me.btnTable6 = New System.Windows.Forms.Button()
+        Me.PanelLocationTables = New System.Windows.Forms.Panel()
+        Me.btnBillingLocation1 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation2 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation3 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation8 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation4 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation7 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation5 = New System.Windows.Forms.Button()
+        Me.btnBillingLocation6 = New System.Windows.Forms.Button()
+        Me.PanelClosedBills = New System.Windows.Forms.Panel()
+        Me.dgHistory = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.cmbTableNoSC = New System.Windows.Forms.ComboBox()
+        Me.txtMemIDSC = New System.Windows.Forms.TextBox()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.cmbLocation = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.cmbCashier = New System.Windows.Forms.ComboBox()
+        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.PanelDisplayBill = New System.Windows.Forms.Panel()
+        Me.lblKOTStr = New System.Windows.Forms.Label()
+        Me.lblTempYearCode = New System.Windows.Forms.Label()
+        Me.lblTempLocationCode = New System.Windows.Forms.Label()
+        Me.lblTempBillNo = New System.Windows.Forms.Label()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnHistory = New System.Windows.Forms.Button()
+        Me.btnShiftKOT = New System.Windows.Forms.Button()
+        Me.btnSettleBillHomePage = New System.Windows.Forms.Button()
+        Me.btnModifiers = New System.Windows.Forms.Button()
+        Me.btnModifyKOT = New System.Windows.Forms.Button()
+        Me.btnShowTables = New System.Windows.Forms.Button()
+        Me.PanelLine = New System.Windows.Forms.Panel()
+        Me.LabelHeader = New System.Windows.Forms.Label()
+        Me.PanelModifiers = New System.Windows.Forms.Panel()
+        Me.btnItemModifierOK = New System.Windows.Forms.Button()
+        Me.btnDismiss = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.txtKOTRemarks = New System.Windows.Forms.TextBox()
+        Me.LabelItemModifier = New System.Windows.Forms.Label()
+        Me.dgModifiers = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.PanelSettleBill = New System.Windows.Forms.Panel()
+        Me.txtDiscFoodAmt = New System.Windows.Forms.TextBox()
+        Me.txtDiscNonAlcoholicAmt = New System.Windows.Forms.TextBox()
+        Me.txtDiscAlcoholicAmt = New System.Windows.Forms.TextBox()
+        Me.lblCitizenType = New System.Windows.Forms.Label()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.lblDiscFood = New System.Windows.Forms.Label()
+        Me.lblDiscNonAlcoholic = New System.Windows.Forms.Label()
+        Me.lblDiscAlcoholic = New System.Windows.Forms.Label()
+        Me.txtDiscFoodPer = New System.Windows.Forms.TextBox()
+        Me.txtDiscNonAlcoholicPer = New System.Windows.Forms.TextBox()
+        Me.txtDiscAlcoholicPer = New System.Windows.Forms.TextBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.labelBillSCAmount = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.lbll4 = New System.Windows.Forms.Label()
+        Me.lbll3 = New System.Windows.Forms.Label()
+        Me.lbll2 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lbll1 = New System.Windows.Forms.Label()
+        Me.lblCardID = New System.Windows.Forms.Label()
+        Me.lblIssueNo = New System.Windows.Forms.Label()
+        Me.lblRoundOff = New System.Windows.Forms.Label()
+        Me.lblBillSettlementHeader = New System.Windows.Forms.Label()
+        Me.btnCancelBill = New System.Windows.Forms.Button()
+        Me.btnSettleBill = New System.Windows.Forms.Button()
+        Me.labelBillRoundOff = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.labelBillNetAmount = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.labelBillVATAmount = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.labelBillBasicAmount = New System.Windows.Forms.Label()
+        Me.labelBillGrossAmount = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.labelBillGSTAmount = New System.Windows.Forms.Label()
+        Me.labelBillDiscountAmount = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.labelBillPayModeClosingAmount = New System.Windows.Forms.Label()
+        Me.cmbModeOfPayment = New System.Windows.Forms.ComboBox()
+        Me.labelBillPayModeOpeningAmount = New System.Windows.Forms.Label()
+        Me.labelBillPayModeClosingStr = New System.Windows.Forms.Label()
+        Me.labelBillPayModeOpeningStr = New System.Windows.Forms.Label()
+        Me.ErrorProvider2 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.PanelModifyKOT.SuspendLayout()
+        CType(Me.dgKOTItemList, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgKOTList, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel9.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.PanelMergeTables.SuspendLayout()
+        CType(Me.dgSourceTable, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgDestinationTable, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelContainer.SuspendLayout()
+        Me.PanelMainScreen.SuspendLayout()
+        Me.PanelSearchItem.SuspendLayout()
+        CType(Me.dgSearchItem, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelContentHost.SuspendLayout()
+        Me.PanelRight.SuspendLayout()
+        Me.PanelItem.SuspendLayout()
+        CType(Me.dgItemGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelImg.SuspendLayout()
+        CType(Me.PBMember, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBSpouseSign, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBMemberSign, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBSpouse, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelDisplayArea.SuspendLayout()
+        Me.PanelMemberDetails.SuspendLayout()
+        Me.PanelBillHeader.SuspendLayout()
+        Me.PanelLocationAndTables.SuspendLayout()
+        Me.PanelTables.SuspendLayout()
+        Me.PanelLocationTables.SuspendLayout()
+        Me.PanelClosedBills.SuspendLayout()
+        CType(Me.dgHistory, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelFooter.SuspendLayout()
+        Me.PanelDisplayBill.SuspendLayout()
+        Me.PanelModifiers.SuspendLayout()
+        CType(Me.dgModifiers, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelSettleBill.SuspendLayout()
+        CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel14.Location = New System.Drawing.Point(0, 700)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(1200, 10)
+        Me.Panel14.TabIndex = 313
+        '
+        'PanelModifyKOT
+        '
+        Me.PanelModifyKOT.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelModifyKOT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelModifyKOT.Controls.Add(Me.cmbKOTRemarks)
+        Me.PanelModifyKOT.Controls.Add(Me.lblMemID)
+        Me.PanelModifyKOT.Controls.Add(Me.Label106)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus6)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus5)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus4)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus7)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus9)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus8)
+        Me.PanelModifyKOT.Controls.Add(Me.lbl35)
+        Me.PanelModifyKOT.Controls.Add(Me.lbl34)
+        Me.PanelModifyKOT.Controls.Add(Me.lblReducedKOTAmt)
+        Me.PanelModifyKOT.Controls.Add(Me.Label107)
+        Me.PanelModifyKOT.Controls.Add(Me.lblReducedKOTQty)
+        Me.PanelModifyKOT.Controls.Add(Me.Label108)
+        Me.PanelModifyKOT.Controls.Add(Me.lblModifiedKOTAmt)
+        Me.PanelModifyKOT.Controls.Add(Me.Label109)
+        Me.PanelModifyKOT.Controls.Add(Me.lblModifiedKOTQty)
+        Me.PanelModifyKOT.Controls.Add(Me.Label110)
+        Me.PanelModifyKOT.Controls.Add(Me.lblTotalOriginalKOTAmt)
+        Me.PanelModifyKOT.Controls.Add(Me.Label111)
+        Me.PanelModifyKOT.Controls.Add(Me.lblModifiedQty)
+        Me.PanelModifyKOT.Controls.Add(Me.lblActualQty)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus0)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus3)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus2)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus1)
+        Me.PanelModifyKOT.Controls.Add(Me.btnVoidKOT)
+        Me.PanelModifyKOT.Controls.Add(Me.lblKOTNo_KOTModify)
+        Me.PanelModifyKOT.Controls.Add(Me.lblYearCode_KOTModify)
+        Me.PanelModifyKOT.Controls.Add(Me.lblLocationCode_KOTModify)
+        Me.PanelModifyKOT.Controls.Add(Me.lblTotalOriginalQty)
+        Me.PanelModifyKOT.Controls.Add(Me.Label112)
+        Me.PanelModifyKOT.Controls.Add(Me.labelKOTModificationItemDetails)
+        Me.PanelModifyKOT.Controls.Add(Me.dgKOTItemList)
+        Me.PanelModifyKOT.Controls.Add(Me.labelKOTModificationHeader)
+        Me.PanelModifyKOT.Controls.Add(Me.dgKOTList)
+        Me.PanelModifyKOT.Location = New System.Drawing.Point(21, 0)
+        Me.PanelModifyKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelModifyKOT.Name = "PanelModifyKOT"
+        Me.PanelModifyKOT.Size = New System.Drawing.Size(922, 784)
+        Me.PanelModifyKOT.TabIndex = 267
+        '
+        'cmbKOTRemarks
+        '
+        Me.cmbKOTRemarks.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbKOTRemarks.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbKOTRemarks.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbKOTRemarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbKOTRemarks.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cmbKOTRemarks.FormattingEnabled = True
+        Me.cmbKOTRemarks.Location = New System.Drawing.Point(103, 687)
+        Me.cmbKOTRemarks.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbKOTRemarks.Name = "cmbKOTRemarks"
+        Me.cmbKOTRemarks.Size = New System.Drawing.Size(795, 31)
+        Me.cmbKOTRemarks.TabIndex = 340
+        '
+        'lblMemID
+        '
+        Me.lblMemID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblMemID.Location = New System.Drawing.Point(109, 239)
+        Me.lblMemID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMemID.Name = "lblMemID"
+        Me.lblMemID.Size = New System.Drawing.Size(48, 20)
+        Me.lblMemID.TabIndex = 339
+        Me.lblMemID.Text = "Mem_ID"
+        Me.lblMemID.Visible = False
+        '
+        'Label106
+        '
+        Me.Label106.AutoSize = True
+        Me.Label106.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.Location = New System.Drawing.Point(8, 692)
+        Me.Label106.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label106.Name = "Label106"
+        Me.Label106.Size = New System.Drawing.Size(83, 20)
+        Me.Label106.TabIndex = 335
+        Me.Label106.Text = "Remarks"
+        '
+        'btnMinus6
+        '
+        Me.btnMinus6.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus6.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus6.ForeColor = System.Drawing.Color.White
+        Me.btnMinus6.Location = New System.Drawing.Point(821, 289)
+        Me.btnMinus6.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus6.Name = "btnMinus6"
+        Me.btnMinus6.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus6.TabIndex = 334
+        Me.btnMinus6.Text = "6"
+        Me.btnMinus6.UseVisualStyleBackColor = False
+        '
+        'btnMinus5
+        '
+        Me.btnMinus5.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus5.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus5.ForeColor = System.Drawing.Color.White
+        Me.btnMinus5.Location = New System.Drawing.Point(731, 289)
+        Me.btnMinus5.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus5.Name = "btnMinus5"
+        Me.btnMinus5.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus5.TabIndex = 333
+        Me.btnMinus5.Text = "5"
+        Me.btnMinus5.UseVisualStyleBackColor = False
+        '
+        'btnMinus4
+        '
+        Me.btnMinus4.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus4.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus4.ForeColor = System.Drawing.Color.White
+        Me.btnMinus4.Location = New System.Drawing.Point(640, 289)
+        Me.btnMinus4.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus4.Name = "btnMinus4"
+        Me.btnMinus4.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus4.TabIndex = 332
+        Me.btnMinus4.Text = "4"
+        Me.btnMinus4.UseVisualStyleBackColor = False
+        '
+        'btnMinus7
+        '
+        Me.btnMinus7.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus7.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus7.ForeColor = System.Drawing.Color.White
+        Me.btnMinus7.Location = New System.Drawing.Point(640, 225)
+        Me.btnMinus7.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus7.Name = "btnMinus7"
+        Me.btnMinus7.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus7.TabIndex = 331
+        Me.btnMinus7.Text = "7"
+        Me.btnMinus7.UseVisualStyleBackColor = False
+        '
+        'btnMinus9
+        '
+        Me.btnMinus9.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus9.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus9.ForeColor = System.Drawing.Color.White
+        Me.btnMinus9.Location = New System.Drawing.Point(821, 225)
+        Me.btnMinus9.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus9.Name = "btnMinus9"
+        Me.btnMinus9.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus9.TabIndex = 330
+        Me.btnMinus9.Text = "9"
+        Me.btnMinus9.UseVisualStyleBackColor = False
+        '
+        'btnMinus8
+        '
+        Me.btnMinus8.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus8.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus8.ForeColor = System.Drawing.Color.White
+        Me.btnMinus8.Location = New System.Drawing.Point(731, 225)
+        Me.btnMinus8.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus8.Name = "btnMinus8"
+        Me.btnMinus8.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus8.TabIndex = 329
+        Me.btnMinus8.Text = "8"
+        Me.btnMinus8.UseVisualStyleBackColor = False
+        '
+        'lbl35
+        '
+        Me.lbl35.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lbl35.Font = New System.Drawing.Font("Lucida Fax", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl35.Location = New System.Drawing.Point(617, 722)
+        Me.lbl35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl35.Name = "lbl35"
+        Me.lbl35.Size = New System.Drawing.Size(3, 54)
+        Me.lbl35.TabIndex = 328
+        Me.lbl35.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl34
+        '
+        Me.lbl34.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lbl34.Font = New System.Drawing.Font("Lucida Fax", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl34.Location = New System.Drawing.Point(291, 721)
+        Me.lbl34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl34.Name = "lbl34"
+        Me.lbl34.Size = New System.Drawing.Size(3, 54)
+        Me.lbl34.TabIndex = 327
+        Me.lbl34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblReducedKOTAmt
+        '
+        Me.lblReducedKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblReducedKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReducedKOTAmt.Location = New System.Drawing.Point(455, 748)
+        Me.lblReducedKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblReducedKOTAmt.Name = "lblReducedKOTAmt"
+        Me.lblReducedKOTAmt.Size = New System.Drawing.Size(130, 25)
+        Me.lblReducedKOTAmt.TabIndex = 326
+        Me.lblReducedKOTAmt.Text = "0.00"
+        Me.lblReducedKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label107
+        '
+        Me.Label107.AutoSize = True
+        Me.Label107.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label107.Location = New System.Drawing.Point(459, 722)
+        Me.Label107.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label107.Name = "Label107"
+        Me.Label107.Size = New System.Drawing.Size(113, 17)
+        Me.Label107.TabIndex = 325
+        Me.Label107.Text = "Reduced Amt"
+        Me.Label107.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblReducedKOTQty
+        '
+        Me.lblReducedKOTQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblReducedKOTQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReducedKOTQty.Location = New System.Drawing.Point(325, 748)
+        Me.lblReducedKOTQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblReducedKOTQty.Name = "lblReducedKOTQty"
+        Me.lblReducedKOTQty.Size = New System.Drawing.Size(122, 25)
+        Me.lblReducedKOTQty.TabIndex = 324
+        Me.lblReducedKOTQty.Text = "0.00"
+        Me.lblReducedKOTQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label108
+        '
+        Me.Label108.AutoSize = True
+        Me.Label108.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label108.Location = New System.Drawing.Point(329, 722)
+        Me.Label108.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label108.Name = "Label108"
+        Me.Label108.Size = New System.Drawing.Size(108, 17)
+        Me.Label108.TabIndex = 323
+        Me.Label108.Text = "Reduced Qty"
+        Me.Label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModifiedKOTAmt
+        '
+        Me.lblModifiedKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblModifiedKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModifiedKOTAmt.Location = New System.Drawing.Point(780, 751)
+        Me.lblModifiedKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifiedKOTAmt.Name = "lblModifiedKOTAmt"
+        Me.lblModifiedKOTAmt.Size = New System.Drawing.Size(126, 25)
+        Me.lblModifiedKOTAmt.TabIndex = 322
+        Me.lblModifiedKOTAmt.Text = "0.00"
+        Me.lblModifiedKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label109
+        '
+        Me.Label109.AutoSize = True
+        Me.Label109.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label109.Location = New System.Drawing.Point(781, 725)
+        Me.Label109.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label109.Name = "Label109"
+        Me.Label109.Size = New System.Drawing.Size(115, 17)
+        Me.Label109.TabIndex = 321
+        Me.Label109.Text = "Modified Amt"
+        Me.Label109.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModifiedKOTQty
+        '
+        Me.lblModifiedKOTQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblModifiedKOTQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModifiedKOTQty.Location = New System.Drawing.Point(651, 751)
+        Me.lblModifiedKOTQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifiedKOTQty.Name = "lblModifiedKOTQty"
+        Me.lblModifiedKOTQty.Size = New System.Drawing.Size(122, 25)
+        Me.lblModifiedKOTQty.TabIndex = 320
+        Me.lblModifiedKOTQty.Text = "0.00"
+        Me.lblModifiedKOTQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label110
+        '
+        Me.Label110.AutoSize = True
+        Me.Label110.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label110.Location = New System.Drawing.Point(651, 725)
+        Me.Label110.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label110.Name = "Label110"
+        Me.Label110.Size = New System.Drawing.Size(110, 17)
+        Me.Label110.TabIndex = 319
+        Me.Label110.Text = "Modified Qty"
+        Me.Label110.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblTotalOriginalKOTAmt
+        '
+        Me.lblTotalOriginalKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalOriginalKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalOriginalKOTAmt.Location = New System.Drawing.Point(129, 751)
+        Me.lblTotalOriginalKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalOriginalKOTAmt.Name = "lblTotalOriginalKOTAmt"
+        Me.lblTotalOriginalKOTAmt.Size = New System.Drawing.Size(123, 25)
+        Me.lblTotalOriginalKOTAmt.TabIndex = 318
+        Me.lblTotalOriginalKOTAmt.Text = "0.00"
+        Me.lblTotalOriginalKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label111
+        '
+        Me.Label111.AutoSize = True
+        Me.Label111.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label111.Location = New System.Drawing.Point(133, 725)
+        Me.Label111.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label111.Name = "Label111"
+        Me.Label111.Size = New System.Drawing.Size(108, 17)
+        Me.Label111.TabIndex = 317
+        Me.Label111.Text = "Original Amt"
+        Me.Label111.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModifiedQty
+        '
+        Me.lblModifiedQty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblModifiedQty.Location = New System.Drawing.Point(124, 313)
+        Me.lblModifiedQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifiedQty.Name = "lblModifiedQty"
+        Me.lblModifiedQty.Size = New System.Drawing.Size(48, 20)
+        Me.lblModifiedQty.TabIndex = 316
+        Me.lblModifiedQty.Text = "lblModifiedQty"
+        Me.lblModifiedQty.Visible = False
+        '
+        'lblActualQty
+        '
+        Me.lblActualQty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblActualQty.Location = New System.Drawing.Point(124, 278)
+        Me.lblActualQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblActualQty.Name = "lblActualQty"
+        Me.lblActualQty.Size = New System.Drawing.Size(48, 20)
+        Me.lblActualQty.TabIndex = 315
+        Me.lblActualQty.Text = "lblActualQty"
+        Me.lblActualQty.Visible = False
+        '
+        'btnMinus0
+        '
+        Me.btnMinus0.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus0.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus0.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus0.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus0.ForeColor = System.Drawing.Color.White
+        Me.btnMinus0.Location = New System.Drawing.Point(543, 353)
+        Me.btnMinus0.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus0.Name = "btnMinus0"
+        Me.btnMinus0.Size = New System.Drawing.Size(96, 63)
+        Me.btnMinus0.TabIndex = 314
+        Me.btnMinus0.Text = "0"
+        Me.btnMinus0.UseVisualStyleBackColor = False
+        '
+        'btnMinus3
+        '
+        Me.btnMinus3.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus3.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus3.ForeColor = System.Drawing.Color.White
+        Me.btnMinus3.Location = New System.Drawing.Point(821, 353)
+        Me.btnMinus3.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus3.Name = "btnMinus3"
+        Me.btnMinus3.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus3.TabIndex = 313
+        Me.btnMinus3.Text = "3"
+        Me.btnMinus3.UseVisualStyleBackColor = False
+        '
+        'btnMinus2
+        '
+        Me.btnMinus2.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus2.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus2.ForeColor = System.Drawing.Color.White
+        Me.btnMinus2.Location = New System.Drawing.Point(731, 353)
+        Me.btnMinus2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus2.Name = "btnMinus2"
+        Me.btnMinus2.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus2.TabIndex = 312
+        Me.btnMinus2.Text = "2"
+        Me.btnMinus2.UseVisualStyleBackColor = False
+        '
+        'btnMinus1
+        '
+        Me.btnMinus1.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus1.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMinus1.ForeColor = System.Drawing.Color.White
+        Me.btnMinus1.Location = New System.Drawing.Point(640, 353)
+        Me.btnMinus1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus1.Name = "btnMinus1"
+        Me.btnMinus1.Size = New System.Drawing.Size(89, 63)
+        Me.btnMinus1.TabIndex = 311
+        Me.btnMinus1.Text = "1"
+        Me.btnMinus1.UseVisualStyleBackColor = False
+        '
+        'btnVoidKOT
+        '
+        Me.btnVoidKOT.BackColor = System.Drawing.Color.Tomato
+        Me.btnVoidKOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVoidKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnVoidKOT.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.btnVoidKOT.ForeColor = System.Drawing.Color.White
+        Me.btnVoidKOT.Location = New System.Drawing.Point(543, 225)
+        Me.btnVoidKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnVoidKOT.Name = "btnVoidKOT"
+        Me.btnVoidKOT.Size = New System.Drawing.Size(96, 127)
+        Me.btnVoidKOT.TabIndex = 310
+        Me.btnVoidKOT.Text = "VOID KOT"
+        Me.btnVoidKOT.UseVisualStyleBackColor = False
+        '
+        'lblKOTNo_KOTModify
+        '
+        Me.lblKOTNo_KOTModify.AutoSize = True
+        Me.lblKOTNo_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblKOTNo_KOTModify.Location = New System.Drawing.Point(248, 289)
+        Me.lblKOTNo_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblKOTNo_KOTModify.Name = "lblKOTNo_KOTModify"
+        Me.lblKOTNo_KOTModify.Size = New System.Drawing.Size(179, 19)
+        Me.lblKOTNo_KOTModify.TabIndex = 309
+        Me.lblKOTNo_KOTModify.Text = "lblKOTNo_KOTModify"
+        Me.lblKOTNo_KOTModify.Visible = False
+        '
+        'lblYearCode_KOTModify
+        '
+        Me.lblYearCode_KOTModify.AutoSize = True
+        Me.lblYearCode_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblYearCode_KOTModify.Location = New System.Drawing.Point(248, 331)
+        Me.lblYearCode_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblYearCode_KOTModify.Name = "lblYearCode_KOTModify"
+        Me.lblYearCode_KOTModify.Size = New System.Drawing.Size(197, 19)
+        Me.lblYearCode_KOTModify.TabIndex = 309
+        Me.lblYearCode_KOTModify.Text = "lblYearCode_KOTModify"
+        Me.lblYearCode_KOTModify.Visible = False
+        '
+        'lblLocationCode_KOTModify
+        '
+        Me.lblLocationCode_KOTModify.AutoSize = True
+        Me.lblLocationCode_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblLocationCode_KOTModify.Location = New System.Drawing.Point(248, 313)
+        Me.lblLocationCode_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblLocationCode_KOTModify.Name = "lblLocationCode_KOTModify"
+        Me.lblLocationCode_KOTModify.Size = New System.Drawing.Size(231, 19)
+        Me.lblLocationCode_KOTModify.TabIndex = 308
+        Me.lblLocationCode_KOTModify.Text = "lblLocationCode_KOTModify"
+        Me.lblLocationCode_KOTModify.Visible = False
+        '
+        'lblTotalOriginalQty
+        '
+        Me.lblTotalOriginalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalOriginalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalOriginalQty.Location = New System.Drawing.Point(5, 751)
+        Me.lblTotalOriginalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalOriginalQty.Name = "lblTotalOriginalQty"
+        Me.lblTotalOriginalQty.Size = New System.Drawing.Size(117, 25)
+        Me.lblTotalOriginalQty.TabIndex = 304
+        Me.lblTotalOriginalQty.Text = "0.00"
+        Me.lblTotalOriginalQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label112
+        '
+        Me.Label112.AutoSize = True
+        Me.Label112.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label112.Location = New System.Drawing.Point(8, 725)
+        Me.Label112.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label112.Name = "Label112"
+        Me.Label112.Size = New System.Drawing.Size(103, 17)
+        Me.Label112.TabIndex = 303
+        Me.Label112.Text = "Original Qty"
+        Me.Label112.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'labelKOTModificationItemDetails
+        '
+        Me.labelKOTModificationItemDetails.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.labelKOTModificationItemDetails.Location = New System.Drawing.Point(9, 386)
+        Me.labelKOTModificationItemDetails.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelKOTModificationItemDetails.Name = "labelKOTModificationItemDetails"
+        Me.labelKOTModificationItemDetails.Size = New System.Drawing.Size(525, 28)
+        Me.labelKOTModificationItemDetails.TabIndex = 302
+        Me.labelKOTModificationItemDetails.Text = "KOT Detail"
+        Me.labelKOTModificationItemDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dgKOTItemList
+        '
+        Me.dgKOTItemList.AllowUserToAddRows = False
+        Me.dgKOTItemList.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTItemList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgKOTItemList.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgKOTItemList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgKOTItemList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgKOTItemList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTItemList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgKOTItemList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgKOTItemList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn6})
+        Me.dgKOTItemList.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgKOTItemList.DefaultCellStyle = DataGridViewCellStyle3
+        Me.dgKOTItemList.GridColor = System.Drawing.Color.Chocolate
+        Me.dgKOTItemList.Location = New System.Drawing.Point(5, 423)
+        Me.dgKOTItemList.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgKOTItemList.MultiSelect = False
+        Me.dgKOTItemList.Name = "dgKOTItemList"
+        Me.dgKOTItemList.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTItemList.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgKOTItemList.RowHeadersVisible = False
+        Me.dgKOTItemList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgKOTItemList.RowTemplate.Height = 40
+        Me.dgKOTItemList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgKOTItemList.Size = New System.Drawing.Size(907, 257)
+        Me.dgKOTItemList.TabIndex = 301
+        Me.dgKOTItemList.TabStop = False
+        '
+        'DataGridViewImageColumn6
+        '
+        Me.DataGridViewImageColumn6.FillWeight = 30.0!
+        Me.DataGridViewImageColumn6.Frozen = True
+        Me.DataGridViewImageColumn6.HeaderText = ""
+        Me.DataGridViewImageColumn6.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
+        Me.DataGridViewImageColumn6.MinimumWidth = 30
+        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
+        Me.DataGridViewImageColumn6.ReadOnly = True
+        Me.DataGridViewImageColumn6.Width = 30
+        '
+        'labelKOTModificationHeader
+        '
+        Me.labelKOTModificationHeader.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.labelKOTModificationHeader.Location = New System.Drawing.Point(9, 5)
+        Me.labelKOTModificationHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelKOTModificationHeader.Name = "labelKOTModificationHeader"
+        Me.labelKOTModificationHeader.Size = New System.Drawing.Size(896, 26)
+        Me.labelKOTModificationHeader.TabIndex = 300
+        Me.labelKOTModificationHeader.Text = "KOT belonging to the Table No."
+        Me.labelKOTModificationHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dgKOTList
+        '
+        Me.dgKOTList.AllowUserToAddRows = False
+        Me.dgKOTList.AllowUserToDeleteRows = False
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgKOTList.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgKOTList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgKOTList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgKOTList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.dgKOTList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgKOTList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn3})
+        Me.dgKOTList.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgKOTList.DefaultCellStyle = DataGridViewCellStyle7
+        Me.dgKOTList.GridColor = System.Drawing.Color.Chocolate
+        Me.dgKOTList.Location = New System.Drawing.Point(5, 36)
+        Me.dgKOTList.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgKOTList.MultiSelect = False
+        Me.dgKOTList.Name = "dgKOTList"
+        Me.dgKOTList.ReadOnly = True
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTList.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.dgKOTList.RowHeadersVisible = False
+        Me.dgKOTList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgKOTList.RowTemplate.Height = 40
+        Me.dgKOTList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgKOTList.Size = New System.Drawing.Size(907, 185)
+        Me.dgKOTList.TabIndex = 2
+        Me.dgKOTList.TabStop = False
+        '
+        'DataGridViewImageColumn3
+        '
+        Me.DataGridViewImageColumn3.FillWeight = 30.0!
+        Me.DataGridViewImageColumn3.Frozen = True
+        Me.DataGridViewImageColumn3.HeaderText = ""
+        Me.DataGridViewImageColumn3.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
+        Me.DataGridViewImageColumn3.MinimumWidth = 30
+        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
+        Me.DataGridViewImageColumn3.ReadOnly = True
+        Me.DataGridViewImageColumn3.Width = 30
+        '
+        'Panel9
+        '
+        Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel9.Controls.Add(Me.Button14)
+        Me.Panel9.Controls.Add(Me.Panel7)
+        Me.Panel9.Controls.Add(Me.Button15)
+        Me.Panel9.Controls.Add(Me.Button16)
+        Me.Panel9.Controls.Add(Me.TextBox12)
+        Me.Panel9.Controls.Add(Me.Label157)
+        Me.Panel9.Controls.Add(Me.DataGridView2)
+        Me.Panel9.Location = New System.Drawing.Point(581, 717)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(286, 205)
+        Me.Panel9.TabIndex = 307
+        '
+        'Button14
+        '
+        Me.Button14.AutoSize = True
+        Me.Button14.BackColor = System.Drawing.Color.Yellow
+        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button14.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Button14.Location = New System.Drawing.Point(295, 724)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(113, 48)
+        Me.Button14.TabIndex = 326
+        Me.Button14.Text = "OK"
+        Me.ToolTip2.SetToolTip(Me.Button14, "Click to provide modifiers for Item")
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Panel7
+        '
+        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel7.Controls.Add(Me.TextBox5)
+        Me.Panel7.Controls.Add(Me.TextBox6)
+        Me.Panel7.Controls.Add(Me.TextBox7)
+        Me.Panel7.Controls.Add(Me.Label113)
+        Me.Panel7.Controls.Add(Me.Label114)
+        Me.Panel7.Controls.Add(Me.Label115)
+        Me.Panel7.Controls.Add(Me.Label116)
+        Me.Panel7.Controls.Add(Me.Label117)
+        Me.Panel7.Controls.Add(Me.TextBox8)
+        Me.Panel7.Controls.Add(Me.TextBox9)
+        Me.Panel7.Controls.Add(Me.TextBox10)
+        Me.Panel7.Controls.Add(Me.Label118)
+        Me.Panel7.Controls.Add(Me.Label119)
+        Me.Panel7.Controls.Add(Me.Label120)
+        Me.Panel7.Controls.Add(Me.Label121)
+        Me.Panel7.Controls.Add(Me.Label122)
+        Me.Panel7.Controls.Add(Me.Label123)
+        Me.Panel7.Controls.Add(Me.Label124)
+        Me.Panel7.Controls.Add(Me.PanelMergeTables)
+        Me.Panel7.Controls.Add(Me.Label125)
+        Me.Panel7.Controls.Add(Me.Label126)
+        Me.Panel7.Controls.Add(Me.Label127)
+        Me.Panel7.Controls.Add(Me.Label128)
+        Me.Panel7.Controls.Add(Me.Label129)
+        Me.Panel7.Controls.Add(Me.Label130)
+        Me.Panel7.Controls.Add(Me.Label131)
+        Me.Panel7.Controls.Add(Me.Button10)
+        Me.Panel7.Controls.Add(Me.Button11)
+        Me.Panel7.Controls.Add(Me.Label132)
+        Me.Panel7.Controls.Add(Me.Label133)
+        Me.Panel7.Controls.Add(Me.Label134)
+        Me.Panel7.Controls.Add(Me.Label135)
+        Me.Panel7.Controls.Add(Me.Label136)
+        Me.Panel7.Controls.Add(Me.Label137)
+        Me.Panel7.Controls.Add(Me.Label138)
+        Me.Panel7.Controls.Add(Me.Label139)
+        Me.Panel7.Controls.Add(Me.Label140)
+        Me.Panel7.Controls.Add(Me.Label141)
+        Me.Panel7.Controls.Add(Me.Label142)
+        Me.Panel7.Controls.Add(Me.Label143)
+        Me.Panel7.Controls.Add(Me.Label144)
+        Me.Panel7.Controls.Add(Me.Label145)
+        Me.Panel7.Controls.Add(Me.Label146)
+        Me.Panel7.Controls.Add(Me.Label147)
+        Me.Panel7.Controls.Add(Me.ComboBox4)
+        Me.Panel7.Controls.Add(Me.Label148)
+        Me.Panel7.Controls.Add(Me.Label149)
+        Me.Panel7.Controls.Add(Me.Label150)
+        Me.Panel7.Location = New System.Drawing.Point(404, 4)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(200, 200)
+        Me.Panel7.TabIndex = 1
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TextBox5.Location = New System.Drawing.Point(317, 256)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(93, 27)
+        Me.TextBox5.TabIndex = 15
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TextBox6.Location = New System.Drawing.Point(317, 220)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(93, 27)
+        Me.TextBox6.TabIndex = 12
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TextBox7.Location = New System.Drawing.Point(317, 185)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(93, 27)
+        Me.TextBox7.TabIndex = 9
+        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label113
+        '
+        Me.Label113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label113.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label113.ForeColor = System.Drawing.Color.Black
+        Me.Label113.Location = New System.Drawing.Point(247, 148)
+        Me.Label113.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label113.Name = "Label113"
+        Me.Label113.Size = New System.Drawing.Size(165, 28)
+        Me.Label113.TabIndex = 6
+        Me.Label113.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label114
+        '
+        Me.Label114.AutoSize = True
+        Me.Label114.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label114.ForeColor = System.Drawing.Color.Black
+        Me.Label114.Location = New System.Drawing.Point(3, 153)
+        Me.Label114.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label114.Name = "Label114"
+        Me.Label114.Size = New System.Drawing.Size(123, 20)
+        Me.Label114.TabIndex = 5
+        Me.Label114.Text = "Citizen Type"
+        Me.Label114.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label115
+        '
+        Me.Label115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label115.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label115.ForeColor = System.Drawing.Color.Black
+        Me.Label115.Location = New System.Drawing.Point(151, 401)
+        Me.Label115.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label115.Name = "Label115"
+        Me.Label115.Size = New System.Drawing.Size(77, 28)
+        Me.Label115.TabIndex = 13
+        Me.Label115.Text = "0.00"
+        Me.Label115.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label115.Visible = False
+        '
+        'Label116
+        '
+        Me.Label116.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label116.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label116.ForeColor = System.Drawing.Color.Black
+        Me.Label116.Location = New System.Drawing.Point(151, 366)
+        Me.Label116.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label116.Name = "Label116"
+        Me.Label116.Size = New System.Drawing.Size(77, 28)
+        Me.Label116.TabIndex = 10
+        Me.Label116.Text = "0.00"
+        Me.Label116.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label116.Visible = False
+        '
+        'Label117
+        '
+        Me.Label117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label117.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label117.ForeColor = System.Drawing.Color.Black
+        Me.Label117.Location = New System.Drawing.Point(151, 330)
+        Me.Label117.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label117.Name = "Label117"
+        Me.Label117.Size = New System.Drawing.Size(77, 28)
+        Me.Label117.TabIndex = 7
+        Me.Label117.Text = "0.00"
+        Me.Label117.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label117.Visible = False
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TextBox8.Location = New System.Drawing.Point(247, 256)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(64, 27)
+        Me.TextBox8.TabIndex = 14
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TextBox9.Location = New System.Drawing.Point(247, 220)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(64, 27)
+        Me.TextBox9.TabIndex = 11
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TextBox10.Location = New System.Drawing.Point(247, 185)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(64, 27)
+        Me.TextBox10.TabIndex = 8
+        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label118
+        '
+        Me.Label118.AutoSize = True
+        Me.Label118.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label118.ForeColor = System.Drawing.Color.Black
+        Me.Label118.Location = New System.Drawing.Point(3, 261)
+        Me.Label118.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label118.Name = "Label118"
+        Me.Label118.Size = New System.Drawing.Size(148, 20)
+        Me.Label118.TabIndex = 13
+        Me.Label118.Text = "Disc.% on &Food"
+        Me.Label118.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label119
+        '
+        Me.Label119.AutoSize = True
+        Me.Label119.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label119.ForeColor = System.Drawing.Color.Black
+        Me.Label119.Location = New System.Drawing.Point(3, 225)
+        Me.Label119.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label119.Name = "Label119"
+        Me.Label119.Size = New System.Drawing.Size(231, 20)
+        Me.Label119.TabIndex = 10
+        Me.Label119.Text = "Disc.% on &Non Alcoholic"
+        Me.Label119.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label120
+        '
+        Me.Label120.AutoSize = True
+        Me.Label120.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label120.ForeColor = System.Drawing.Color.Black
+        Me.Label120.Location = New System.Drawing.Point(3, 190)
+        Me.Label120.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label120.Name = "Label120"
+        Me.Label120.Size = New System.Drawing.Size(189, 20)
+        Me.Label120.TabIndex = 7
+        Me.Label120.Text = "Disc.% on &Alcoholic"
+        Me.Label120.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label121
+        '
+        Me.Label121.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label121.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label121.ForeColor = System.Drawing.Color.Black
+        Me.Label121.Location = New System.Drawing.Point(247, 401)
+        Me.Label121.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label121.Name = "Label121"
+        Me.Label121.Size = New System.Drawing.Size(165, 28)
+        Me.Label121.TabIndex = 23
+        Me.Label121.Text = "0.00"
+        Me.Label121.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label122
+        '
+        Me.Label122.AutoSize = True
+        Me.Label122.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label122.ForeColor = System.Drawing.Color.Black
+        Me.Label122.Location = New System.Drawing.Point(3, 406)
+        Me.Label122.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label122.Name = "Label122"
+        Me.Label122.Size = New System.Drawing.Size(109, 20)
+        Me.Label122.TabIndex = 22
+        Me.Label122.Text = "SC Amount"
+        Me.Label122.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label123
+        '
+        Me.Label123.BackColor = System.Drawing.Color.Black
+        Me.Label123.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label123.ForeColor = System.Drawing.Color.Black
+        Me.Label123.Location = New System.Drawing.Point(0, 617)
+        Me.Label123.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label123.Name = "Label123"
+        Me.Label123.Size = New System.Drawing.Size(420, 2)
+        Me.Label123.TabIndex = 326
+        Me.Label123.Text = "Card Opening"
+        Me.Label123.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label124
+        '
+        Me.Label124.BackColor = System.Drawing.Color.Black
+        Me.Label124.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label124.ForeColor = System.Drawing.Color.Black
+        Me.Label124.Location = New System.Drawing.Point(0, 575)
+        Me.Label124.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label124.Name = "Label124"
+        Me.Label124.Size = New System.Drawing.Size(421, 2)
+        Me.Label124.TabIndex = 33
+        Me.Label124.Text = "Card Opening"
+        Me.Label124.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PanelMergeTables
+        '
+        Me.PanelMergeTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelMergeTables.Controls.Add(Me.Label86)
+        Me.PanelMergeTables.Controls.Add(Me.Label87)
+        Me.PanelMergeTables.Controls.Add(Me.Label88)
+        Me.PanelMergeTables.Controls.Add(Me.Label89)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationIssueNo)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationClosingBalance)
+        Me.PanelMergeTables.Controls.Add(Me.Label90)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationMemName)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationOpeningBalance)
+        Me.PanelMergeTables.Controls.Add(Me.Label91)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationMemID)
+        Me.PanelMergeTables.Controls.Add(Me.Label92)
+        Me.PanelMergeTables.Controls.Add(Me.btnMoveAll)
+        Me.PanelMergeTables.Controls.Add(Me.dgSourceTable)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationBillNo)
+        Me.PanelMergeTables.Controls.Add(Me.Label93)
+        Me.PanelMergeTables.Controls.Add(Me.lblSourceBillNo)
+        Me.PanelMergeTables.Controls.Add(Me.Label94)
+        Me.PanelMergeTables.Controls.Add(Me.lblSourceTotalQty)
+        Me.PanelMergeTables.Controls.Add(Me.Label95)
+        Me.PanelMergeTables.Controls.Add(Me.lblGrossAmtSource)
+        Me.PanelMergeTables.Controls.Add(Me.Label96)
+        Me.PanelMergeTables.Controls.Add(Me.Label97)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationTotalQty)
+        Me.PanelMergeTables.Controls.Add(Me.Label98)
+        Me.PanelMergeTables.Controls.Add(Me.Label99)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationGrossAmt)
+        Me.PanelMergeTables.Controls.Add(Me.Label100)
+        Me.PanelMergeTables.Controls.Add(Me.dgDestinationTable)
+        Me.PanelMergeTables.Controls.Add(Me.cmbDestinationTable)
+        Me.PanelMergeTables.Controls.Add(Me.Label101)
+        Me.PanelMergeTables.Controls.Add(Me.cmbSourceTable)
+        Me.PanelMergeTables.Controls.Add(Me.Label102)
+        Me.PanelMergeTables.Location = New System.Drawing.Point(330, 40)
+        Me.PanelMergeTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelMergeTables.Name = "PanelMergeTables"
+        Me.PanelMergeTables.Size = New System.Drawing.Size(250, 250)
+        Me.PanelMergeTables.TabIndex = 310
+        '
+        'Label86
+        '
+        Me.Label86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label86.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label86.ForeColor = System.Drawing.Color.Navy
+        Me.Label86.Location = New System.Drawing.Point(296, 313)
+        Me.Label86.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label86.Name = "Label86"
+        Me.Label86.Size = New System.Drawing.Size(98, 22)
+        Me.Label86.TabIndex = 40
+        Me.Label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label86.Visible = False
+        '
+        'Label87
+        '
+        Me.Label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label87.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label87.ForeColor = System.Drawing.Color.Navy
+        Me.Label87.Location = New System.Drawing.Point(256, 315)
+        Me.Label87.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label87.Name = "Label87"
+        Me.Label87.Size = New System.Drawing.Size(98, 22)
+        Me.Label87.TabIndex = 40
+        Me.Label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label87.Visible = False
+        '
+        'Label88
+        '
+        Me.Label88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label88.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label88.ForeColor = System.Drawing.Color.Navy
+        Me.Label88.Location = New System.Drawing.Point(149, 316)
+        Me.Label88.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label88.Name = "Label88"
+        Me.Label88.Size = New System.Drawing.Size(98, 22)
+        Me.Label88.TabIndex = 40
+        Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label88.Visible = False
+        '
+        'Label89
+        '
+        Me.Label89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label89.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label89.ForeColor = System.Drawing.Color.Navy
+        Me.Label89.Location = New System.Drawing.Point(29, 338)
+        Me.Label89.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label89.Name = "Label89"
+        Me.Label89.Size = New System.Drawing.Size(87, 23)
+        Me.Label89.TabIndex = 39
+        Me.Label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label89.Visible = False
+        '
+        'lblDestinationIssueNo
+        '
+        Me.lblDestinationIssueNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationIssueNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationIssueNo.ForeColor = System.Drawing.Color.Navy
+        Me.lblDestinationIssueNo.Location = New System.Drawing.Point(163, 338)
+        Me.lblDestinationIssueNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationIssueNo.Name = "lblDestinationIssueNo"
+        Me.lblDestinationIssueNo.Size = New System.Drawing.Size(87, 23)
+        Me.lblDestinationIssueNo.TabIndex = 39
+        Me.lblDestinationIssueNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblDestinationIssueNo.Visible = False
+        '
+        'lblDestinationClosingBalance
+        '
+        Me.lblDestinationClosingBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationClosingBalance.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationClosingBalance.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationClosingBalance.Location = New System.Drawing.Point(411, 752)
+        Me.lblDestinationClosingBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationClosingBalance.Name = "lblDestinationClosingBalance"
+        Me.lblDestinationClosingBalance.Size = New System.Drawing.Size(87, 23)
+        Me.lblDestinationClosingBalance.TabIndex = 38
+        Me.lblDestinationClosingBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label90
+        '
+        Me.Label90.AutoSize = True
+        Me.Label90.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label90.ForeColor = System.Drawing.Color.Black
+        Me.Label90.Location = New System.Drawing.Point(264, 754)
+        Me.Label90.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label90.Name = "Label90"
+        Me.Label90.Size = New System.Drawing.Size(133, 17)
+        Me.Label90.TabIndex = 37
+        Me.Label90.Text = "Closing Balance"
+        '
+        'lblDestinationMemName
+        '
+        Me.lblDestinationMemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationMemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationMemName.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationMemName.Location = New System.Drawing.Point(696, 395)
+        Me.lblDestinationMemName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationMemName.Name = "lblDestinationMemName"
+        Me.lblDestinationMemName.Size = New System.Drawing.Size(225, 23)
+        Me.lblDestinationMemName.TabIndex = 36
+        Me.lblDestinationMemName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblDestinationOpeningBalance
+        '
+        Me.lblDestinationOpeningBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationOpeningBalance.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationOpeningBalance.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationOpeningBalance.Location = New System.Drawing.Point(167, 752)
+        Me.lblDestinationOpeningBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationOpeningBalance.Name = "lblDestinationOpeningBalance"
+        Me.lblDestinationOpeningBalance.Size = New System.Drawing.Size(87, 23)
+        Me.lblDestinationOpeningBalance.TabIndex = 35
+        Me.lblDestinationOpeningBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label91
+        '
+        Me.Label91.AutoSize = True
+        Me.Label91.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label91.ForeColor = System.Drawing.Color.Black
+        Me.Label91.Location = New System.Drawing.Point(15, 753)
+        Me.Label91.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label91.Name = "Label91"
+        Me.Label91.Size = New System.Drawing.Size(140, 17)
+        Me.Label91.TabIndex = 34
+        Me.Label91.Text = "Opening Balance"
+        '
+        'lblDestinationMemID
+        '
+        Me.lblDestinationMemID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationMemID.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationMemID.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationMemID.Location = New System.Drawing.Point(605, 395)
+        Me.lblDestinationMemID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationMemID.Name = "lblDestinationMemID"
+        Me.lblDestinationMemID.Size = New System.Drawing.Size(87, 23)
+        Me.lblDestinationMemID.TabIndex = 33
+        Me.lblDestinationMemID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label92
+        '
+        Me.Label92.AutoSize = True
+        Me.Label92.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label92.ForeColor = System.Drawing.Color.Black
+        Me.Label92.Location = New System.Drawing.Point(527, 398)
+        Me.Label92.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label92.Name = "Label92"
+        Me.Label92.Size = New System.Drawing.Size(72, 17)
+        Me.Label92.TabIndex = 32
+        Me.Label92.Text = "Mem_ID"
+        '
+        'btnMoveAll
+        '
+        Me.btnMoveAll.AutoSize = True
+        Me.btnMoveAll.BackColor = System.Drawing.Color.Yellow
+        Me.btnMoveAll.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMoveAll.FlatAppearance.BorderColor = System.Drawing.Color.Maroon
+        Me.btnMoveAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnMoveAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
+        Me.btnMoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMoveAll.Font = New System.Drawing.Font("Lucida Fax", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMoveAll.ForeColor = System.Drawing.Color.Black
+        Me.btnMoveAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMoveAll.ImageIndex = 2
+        Me.btnMoveAll.Location = New System.Drawing.Point(1228, 9)
+        Me.btnMoveAll.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMoveAll.Name = "btnMoveAll"
+        Me.btnMoveAll.Size = New System.Drawing.Size(112, 32)
+        Me.btnMoveAll.TabIndex = 13
+        Me.btnMoveAll.Text = "Move All"
+        Me.btnMoveAll.UseVisualStyleBackColor = False
+        '
+        'dgSourceTable
+        '
+        Me.dgSourceTable.AllowUserToAddRows = False
+        Me.dgSourceTable.AllowUserToDeleteRows = False
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSourceTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.dgSourceTable.BackgroundColor = System.Drawing.Color.White
+        Me.dgSourceTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgSourceTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgSourceTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSourceTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        Me.dgSourceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgSourceTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnMoveSourceItem})
+        Me.dgSourceTable.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgSourceTable.DefaultCellStyle = DataGridViewCellStyle11
+        Me.dgSourceTable.GridColor = System.Drawing.Color.Chocolate
+        Me.dgSourceTable.Location = New System.Drawing.Point(8, 49)
+        Me.dgSourceTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgSourceTable.MultiSelect = False
+        Me.dgSourceTable.Name = "dgSourceTable"
+        Me.dgSourceTable.ReadOnly = True
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSourceTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        Me.dgSourceTable.RowHeadersVisible = False
+        Me.dgSourceTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgSourceTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgSourceTable.Size = New System.Drawing.Size(1335, 267)
+        Me.dgSourceTable.TabIndex = 4
+        Me.dgSourceTable.TabStop = False
+        '
+        'dgbtnMoveSourceItem
+        '
+        Me.dgbtnMoveSourceItem.FillWeight = 40.0!
+        Me.dgbtnMoveSourceItem.Frozen = True
+        Me.dgbtnMoveSourceItem.HeaderText = ""
+        Me.dgbtnMoveSourceItem.Image = Global.FNBManagement.My.Resources.Resources.arrow_down_blue
+        Me.dgbtnMoveSourceItem.MinimumWidth = 40
+        Me.dgbtnMoveSourceItem.Name = "dgbtnMoveSourceItem"
+        Me.dgbtnMoveSourceItem.ReadOnly = True
+        Me.dgbtnMoveSourceItem.Width = 40
+        '
+        'lblDestinationBillNo
+        '
+        Me.lblDestinationBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationBillNo.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationBillNo.Location = New System.Drawing.Point(455, 395)
+        Me.lblDestinationBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationBillNo.Name = "lblDestinationBillNo"
+        Me.lblDestinationBillNo.Size = New System.Drawing.Size(66, 23)
+        Me.lblDestinationBillNo.TabIndex = 31
+        Me.lblDestinationBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label93
+        '
+        Me.Label93.AutoSize = True
+        Me.Label93.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label93.ForeColor = System.Drawing.Color.Black
+        Me.Label93.Location = New System.Drawing.Point(384, 398)
+        Me.Label93.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label93.Name = "Label93"
+        Me.Label93.Size = New System.Drawing.Size(60, 17)
+        Me.Label93.TabIndex = 30
+        Me.Label93.Text = "Bill No"
+        '
+        'lblSourceBillNo
+        '
+        Me.lblSourceBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSourceBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSourceBillNo.ForeColor = System.Drawing.Color.Black
+        Me.lblSourceBillNo.Location = New System.Drawing.Point(455, 16)
+        Me.lblSourceBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSourceBillNo.Name = "lblSourceBillNo"
+        Me.lblSourceBillNo.Size = New System.Drawing.Size(66, 22)
+        Me.lblSourceBillNo.TabIndex = 29
+        Me.lblSourceBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label94
+        '
+        Me.Label94.AutoSize = True
+        Me.Label94.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label94.ForeColor = System.Drawing.Color.Black
+        Me.Label94.Location = New System.Drawing.Point(384, 17)
+        Me.Label94.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label94.Name = "Label94"
+        Me.Label94.Size = New System.Drawing.Size(60, 17)
+        Me.Label94.TabIndex = 28
+        Me.Label94.Text = "Bill No"
+        '
+        'lblSourceTotalQty
+        '
+        Me.lblSourceTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSourceTotalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSourceTotalQty.ForeColor = System.Drawing.Color.Black
+        Me.lblSourceTotalQty.Location = New System.Drawing.Point(1005, 330)
+        Me.lblSourceTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSourceTotalQty.Name = "lblSourceTotalQty"
+        Me.lblSourceTotalQty.Size = New System.Drawing.Size(87, 22)
+        Me.lblSourceTotalQty.TabIndex = 24
+        Me.lblSourceTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label95
+        '
+        Me.Label95.AutoSize = True
+        Me.Label95.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label95.ForeColor = System.Drawing.Color.Black
+        Me.Label95.Location = New System.Drawing.Point(913, 332)
+        Me.Label95.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label95.Name = "Label95"
+        Me.Label95.Size = New System.Drawing.Size(81, 17)
+        Me.Label95.TabIndex = 23
+        Me.Label95.Text = "Total Qty"
+        '
+        'lblGrossAmtSource
+        '
+        Me.lblGrossAmtSource.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGrossAmtSource.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGrossAmtSource.ForeColor = System.Drawing.Color.Black
+        Me.lblGrossAmtSource.Location = New System.Drawing.Point(1219, 330)
+        Me.lblGrossAmtSource.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGrossAmtSource.Name = "lblGrossAmtSource"
+        Me.lblGrossAmtSource.Size = New System.Drawing.Size(103, 22)
+        Me.lblGrossAmtSource.TabIndex = 22
+        Me.lblGrossAmtSource.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label96
+        '
+        Me.Label96.AutoSize = True
+        Me.Label96.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label96.ForeColor = System.Drawing.Color.Black
+        Me.Label96.Location = New System.Drawing.Point(1117, 331)
+        Me.Label96.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label96.Name = "Label96"
+        Me.Label96.Size = New System.Drawing.Size(90, 17)
+        Me.Label96.TabIndex = 21
+        Me.Label96.Text = "Gross Amt"
+        '
+        'Label97
+        '
+        Me.Label97.BackColor = System.Drawing.Color.Black
+        Me.Label97.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label97.ForeColor = System.Drawing.Color.Black
+        Me.Label97.Location = New System.Drawing.Point(8, 374)
+        Me.Label97.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label97.Name = "Label97"
+        Me.Label97.Size = New System.Drawing.Size(1323, 2)
+        Me.Label97.TabIndex = 20
+        Me.Label97.Text = "&Move To Table #"
+        '
+        'lblDestinationTotalQty
+        '
+        Me.lblDestinationTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationTotalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationTotalQty.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationTotalQty.Location = New System.Drawing.Point(1005, 752)
+        Me.lblDestinationTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationTotalQty.Name = "lblDestinationTotalQty"
+        Me.lblDestinationTotalQty.Size = New System.Drawing.Size(87, 22)
+        Me.lblDestinationTotalQty.TabIndex = 19
+        Me.lblDestinationTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label98
+        '
+        Me.Label98.AutoSize = True
+        Me.Label98.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label98.ForeColor = System.Drawing.Color.Black
+        Me.Label98.Location = New System.Drawing.Point(913, 753)
+        Me.Label98.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label98.Name = "Label98"
+        Me.Label98.Size = New System.Drawing.Size(81, 17)
+        Me.Label98.TabIndex = 18
+        Me.Label98.Text = "Total Qty"
+        '
+        'Label99
+        '
+        Me.Label99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label99.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label99.ForeColor = System.Drawing.Color.Navy
+        Me.Label99.Location = New System.Drawing.Point(20, 320)
+        Me.Label99.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label99.Name = "Label99"
+        Me.Label99.Size = New System.Drawing.Size(98, 22)
+        Me.Label99.TabIndex = 17
+        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label99.Visible = False
+        '
+        'lblDestinationGrossAmt
+        '
+        Me.lblDestinationGrossAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationGrossAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationGrossAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationGrossAmt.Location = New System.Drawing.Point(1219, 752)
+        Me.lblDestinationGrossAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationGrossAmt.Name = "lblDestinationGrossAmt"
+        Me.lblDestinationGrossAmt.Size = New System.Drawing.Size(103, 22)
+        Me.lblDestinationGrossAmt.TabIndex = 17
+        Me.lblDestinationGrossAmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label100
+        '
+        Me.Label100.AutoSize = True
+        Me.Label100.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label100.ForeColor = System.Drawing.Color.Black
+        Me.Label100.Location = New System.Drawing.Point(1117, 753)
+        Me.Label100.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label100.Name = "Label100"
+        Me.Label100.Size = New System.Drawing.Size(90, 17)
+        Me.Label100.TabIndex = 16
+        Me.Label100.Text = "Gross Amt"
+        '
+        'dgDestinationTable
+        '
+        Me.dgDestinationTable.AllowUserToAddRows = False
+        Me.dgDestinationTable.AllowUserToDeleteRows = False
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle13.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgDestinationTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        Me.dgDestinationTable.BackgroundColor = System.Drawing.Color.White
+        Me.dgDestinationTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgDestinationTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgDestinationTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgDestinationTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        Me.dgDestinationTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgDestinationTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnMoveDetinationItem})
+        Me.dgDestinationTable.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgDestinationTable.DefaultCellStyle = DataGridViewCellStyle15
+        Me.dgDestinationTable.GridColor = System.Drawing.Color.Chocolate
+        Me.dgDestinationTable.Location = New System.Drawing.Point(8, 434)
+        Me.dgDestinationTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgDestinationTable.MultiSelect = False
+        Me.dgDestinationTable.Name = "dgDestinationTable"
+        Me.dgDestinationTable.ReadOnly = True
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle16.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgDestinationTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
+        Me.dgDestinationTable.RowHeadersVisible = False
+        Me.dgDestinationTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgDestinationTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgDestinationTable.Size = New System.Drawing.Size(1333, 304)
+        Me.dgDestinationTable.TabIndex = 15
+        Me.dgDestinationTable.TabStop = False
+        '
+        'dgbtnMoveDetinationItem
+        '
+        Me.dgbtnMoveDetinationItem.FillWeight = 40.0!
+        Me.dgbtnMoveDetinationItem.Frozen = True
+        Me.dgbtnMoveDetinationItem.HeaderText = ""
+        Me.dgbtnMoveDetinationItem.Image = Global.FNBManagement.My.Resources.Resources.arrow_up_blue
+        Me.dgbtnMoveDetinationItem.MinimumWidth = 40
+        Me.dgbtnMoveDetinationItem.Name = "dgbtnMoveDetinationItem"
+        Me.dgbtnMoveDetinationItem.ReadOnly = True
+        Me.dgbtnMoveDetinationItem.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbtnMoveDetinationItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.dgbtnMoveDetinationItem.Width = 40
+        '
+        'cmbDestinationTable
+        '
+        Me.cmbDestinationTable.BackColor = System.Drawing.Color.LightGreen
+        Me.cmbDestinationTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbDestinationTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDestinationTable.Enabled = False
+        Me.cmbDestinationTable.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbDestinationTable.ForeColor = System.Drawing.Color.Black
+        Me.cmbDestinationTable.Location = New System.Drawing.Point(180, 391)
+        Me.cmbDestinationTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbDestinationTable.Name = "cmbDestinationTable"
+        Me.cmbDestinationTable.Size = New System.Drawing.Size(199, 25)
+        Me.cmbDestinationTable.TabIndex = 14
+        Me.cmbDestinationTable.TabStop = False
+        '
+        'Label101
+        '
+        Me.Label101.AutoSize = True
+        Me.Label101.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label101.ForeColor = System.Drawing.Color.Black
+        Me.Label101.Location = New System.Drawing.Point(4, 396)
+        Me.Label101.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label101.Name = "Label101"
+        Me.Label101.Size = New System.Drawing.Size(140, 17)
+        Me.Label101.TabIndex = 13
+        Me.Label101.Text = "&Move To Table #"
+        '
+        'cmbSourceTable
+        '
+        Me.cmbSourceTable.BackColor = System.Drawing.Color.LightGreen
+        Me.cmbSourceTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbSourceTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSourceTable.Enabled = False
+        Me.cmbSourceTable.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSourceTable.ForeColor = System.Drawing.Color.Black
+        Me.cmbSourceTable.Location = New System.Drawing.Point(180, 9)
+        Me.cmbSourceTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbSourceTable.Name = "cmbSourceTable"
+        Me.cmbSourceTable.Size = New System.Drawing.Size(199, 25)
+        Me.cmbSourceTable.TabIndex = 12
+        Me.cmbSourceTable.TabStop = False
+        '
+        'Label102
+        '
+        Me.Label102.AutoSize = True
+        Me.Label102.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label102.ForeColor = System.Drawing.Color.Black
+        Me.Label102.Location = New System.Drawing.Point(5, 12)
+        Me.Label102.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label102.Name = "Label102"
+        Me.Label102.Size = New System.Drawing.Size(160, 17)
+        Me.Label102.TabIndex = 11
+        Me.Label102.Text = "Move &From Table #"
+        '
+        'Label125
+        '
+        Me.Label125.BackColor = System.Drawing.Color.Black
+        Me.Label125.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label125.ForeColor = System.Drawing.Color.Black
+        Me.Label125.Location = New System.Drawing.Point(0, 134)
+        Me.Label125.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label125.Name = "Label125"
+        Me.Label125.Size = New System.Drawing.Size(420, 2)
+        Me.Label125.TabIndex = 4
+        Me.Label125.Text = "Card Opening"
+        Me.Label125.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label126
+        '
+        Me.Label126.BackColor = System.Drawing.Color.Black
+        Me.Label126.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label126.ForeColor = System.Drawing.Color.Black
+        Me.Label126.Location = New System.Drawing.Point(-1, 534)
+        Me.Label126.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label126.Name = "Label126"
+        Me.Label126.Size = New System.Drawing.Size(420, 2)
+        Me.Label126.TabIndex = 30
+        Me.Label126.Text = "Card Opening"
+        Me.Label126.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label127
+        '
+        Me.Label127.BackColor = System.Drawing.Color.Black
+        Me.Label127.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label127.ForeColor = System.Drawing.Color.Black
+        Me.Label127.Location = New System.Drawing.Point(-1, 89)
+        Me.Label127.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label127.Name = "Label127"
+        Me.Label127.Size = New System.Drawing.Size(420, 2)
+        Me.Label127.TabIndex = 322
+        Me.Label127.Text = "Card Opening"
+        Me.Label127.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label128
+        '
+        Me.Label128.AutoSize = True
+        Me.Label128.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label128.Location = New System.Drawing.Point(11, 673)
+        Me.Label128.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label128.Name = "Label128"
+        Me.Label128.Size = New System.Drawing.Size(63, 19)
+        Me.Label128.TabIndex = 288
+        Me.Label128.Text = "CardID"
+        Me.Label128.Visible = False
+        '
+        'Label129
+        '
+        Me.Label129.AutoSize = True
+        Me.Label129.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label129.Location = New System.Drawing.Point(87, 673)
+        Me.Label129.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label129.Name = "Label129"
+        Me.Label129.Size = New System.Drawing.Size(72, 19)
+        Me.Label129.TabIndex = 6
+        Me.Label129.Text = "IssueNo"
+        Me.Label129.Visible = False
+        '
+        'Label130
+        '
+        Me.Label130.AutoSize = True
+        Me.Label130.Font = New System.Drawing.Font("Arial", 10.75!, System.Drawing.FontStyle.Bold)
+        Me.Label130.ForeColor = System.Drawing.Color.Black
+        Me.Label130.Location = New System.Drawing.Point(172, 672)
+        Me.Label130.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label130.Name = "Label130"
+        Me.Label130.Size = New System.Drawing.Size(114, 21)
+        Me.Label130.TabIndex = 32
+        Me.Label130.Text = "lblRoundOff"
+        Me.Label130.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label130.Visible = False
+        '
+        'Label131
+        '
+        Me.Label131.BackColor = System.Drawing.Color.Teal
+        Me.Label131.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label131.Font = New System.Drawing.Font("Lucida Fax", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.Label131.ForeColor = System.Drawing.Color.White
+        Me.Label131.Location = New System.Drawing.Point(0, 0)
+        Me.Label131.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label131.Name = "Label131"
+        Me.Label131.Size = New System.Drawing.Size(198, 36)
+        Me.Label131.TabIndex = 321
+        Me.Label131.Text = "SETTLE BILL"
+        Me.Label131.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button10
+        '
+        Me.Button10.AutoSize = True
+        Me.Button10.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button10.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Button10.Location = New System.Drawing.Point(215, 710)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(197, 48)
+        Me.Button10.TabIndex = 37
+        Me.Button10.Text = "CANCEL"
+        Me.ToolTip2.SetToolTip(Me.Button10, "BACK TO BILLING SCREEN")
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.AutoSize = True
+        Me.Button11.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button11.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Button11.Location = New System.Drawing.Point(5, 710)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(204, 48)
+        Me.Button11.TabIndex = 36
+        Me.Button11.Text = "SETTLE BILL"
+        Me.ToolTip2.SetToolTip(Me.Button11, "SETTLE BILL")
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Label132
+        '
+        Me.Label132.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label132.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label132.ForeColor = System.Drawing.Color.Black
+        Me.Label132.Location = New System.Drawing.Point(247, 501)
+        Me.Label132.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label132.Name = "Label132"
+        Me.Label132.Size = New System.Drawing.Size(165, 28)
+        Me.Label132.TabIndex = 29
+        Me.Label132.Text = "0.00"
+        Me.Label132.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label133
+        '
+        Me.Label133.AutoSize = True
+        Me.Label133.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label133.ForeColor = System.Drawing.Color.Black
+        Me.Label133.Location = New System.Drawing.Point(3, 506)
+        Me.Label133.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label133.Name = "Label133"
+        Me.Label133.Size = New System.Drawing.Size(104, 20)
+        Me.Label133.TabIndex = 28
+        Me.Label133.Text = "Round Off"
+        Me.Label133.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label134
+        '
+        Me.Label134.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label134.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label134.ForeColor = System.Drawing.Color.Black
+        Me.Label134.Location = New System.Drawing.Point(247, 468)
+        Me.Label134.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label134.Name = "Label134"
+        Me.Label134.Size = New System.Drawing.Size(165, 28)
+        Me.Label134.TabIndex = 27
+        Me.Label134.Text = "0.00"
+        Me.Label134.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label135
+        '
+        Me.Label135.AutoSize = True
+        Me.Label135.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label135.ForeColor = System.Drawing.Color.Black
+        Me.Label135.Location = New System.Drawing.Point(3, 473)
+        Me.Label135.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label135.Name = "Label135"
+        Me.Label135.Size = New System.Drawing.Size(117, 20)
+        Me.Label135.TabIndex = 26
+        Me.Label135.Text = "Net Amount"
+        Me.Label135.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label136
+        '
+        Me.Label136.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label136.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label136.ForeColor = System.Drawing.Color.Black
+        Me.Label136.Location = New System.Drawing.Point(247, 434)
+        Me.Label136.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label136.Name = "Label136"
+        Me.Label136.Size = New System.Drawing.Size(165, 28)
+        Me.Label136.TabIndex = 25
+        Me.Label136.Text = "0.00"
+        Me.Label136.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label137
+        '
+        Me.Label137.AutoSize = True
+        Me.Label137.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label137.ForeColor = System.Drawing.Color.Black
+        Me.Label137.Location = New System.Drawing.Point(3, 546)
+        Me.Label137.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label137.Name = "Label137"
+        Me.Label137.Size = New System.Drawing.Size(104, 20)
+        Me.Label137.TabIndex = 31
+        Me.Label137.Text = "Gross Amt"
+        Me.Label137.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label138
+        '
+        Me.Label138.AutoSize = True
+        Me.Label138.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label138.ForeColor = System.Drawing.Color.Black
+        Me.Label138.Location = New System.Drawing.Point(3, 439)
+        Me.Label138.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label138.Name = "Label138"
+        Me.Label138.Size = New System.Drawing.Size(125, 20)
+        Me.Label138.TabIndex = 24
+        Me.Label138.Text = "VAT Amount"
+        Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label139
+        '
+        Me.Label139.AutoSize = True
+        Me.Label139.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label139.ForeColor = System.Drawing.Color.Black
+        Me.Label139.Location = New System.Drawing.Point(3, 306)
+        Me.Label139.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label139.Name = "Label139"
+        Me.Label139.Size = New System.Drawing.Size(134, 20)
+        Me.Label139.TabIndex = 16
+        Me.Label139.Text = "Basic Amount"
+        Me.Label139.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label140
+        '
+        Me.Label140.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label140.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label140.ForeColor = System.Drawing.Color.Black
+        Me.Label140.Location = New System.Drawing.Point(247, 302)
+        Me.Label140.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label140.Name = "Label140"
+        Me.Label140.Size = New System.Drawing.Size(165, 28)
+        Me.Label140.TabIndex = 17
+        Me.Label140.Text = "0.00"
+        Me.Label140.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label141
+        '
+        Me.Label141.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label141.Font = New System.Drawing.Font("Lucida Fax", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label141.ForeColor = System.Drawing.Color.Black
+        Me.Label141.Location = New System.Drawing.Point(247, 542)
+        Me.Label141.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label141.Name = "Label141"
+        Me.Label141.Size = New System.Drawing.Size(165, 28)
+        Me.Label141.TabIndex = 32
+        Me.Label141.Text = "0.00"
+        Me.Label141.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label142
+        '
+        Me.Label142.AutoSize = True
+        Me.Label142.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label142.ForeColor = System.Drawing.Color.Black
+        Me.Label142.Location = New System.Drawing.Point(3, 373)
+        Me.Label142.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label142.Name = "Label142"
+        Me.Label142.Size = New System.Drawing.Size(122, 20)
+        Me.Label142.TabIndex = 20
+        Me.Label142.Text = "GST Amount"
+        Me.Label142.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label143
+        '
+        Me.Label143.AutoSize = True
+        Me.Label143.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label143.ForeColor = System.Drawing.Color.Black
+        Me.Label143.Location = New System.Drawing.Point(3, 340)
+        Me.Label143.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label143.Name = "Label143"
+        Me.Label143.Size = New System.Drawing.Size(133, 20)
+        Me.Label143.TabIndex = 18
+        Me.Label143.Text = "Disc. Amount"
+        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label144
+        '
+        Me.Label144.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label144.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label144.ForeColor = System.Drawing.Color.Black
+        Me.Label144.Location = New System.Drawing.Point(247, 368)
+        Me.Label144.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label144.Name = "Label144"
+        Me.Label144.Size = New System.Drawing.Size(165, 28)
+        Me.Label144.TabIndex = 21
+        Me.Label144.Text = "0.00"
+        Me.Label144.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label145
+        '
+        Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label145.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label145.ForeColor = System.Drawing.Color.Black
+        Me.Label145.Location = New System.Drawing.Point(247, 335)
+        Me.Label145.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label145.Name = "Label145"
+        Me.Label145.Size = New System.Drawing.Size(165, 28)
+        Me.Label145.TabIndex = 19
+        Me.Label145.Text = "0.00"
+        Me.Label145.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label146
+        '
+        Me.Label146.AutoSize = True
+        Me.Label146.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label146.Location = New System.Drawing.Point(3, 55)
+        Me.Label146.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label146.Name = "Label146"
+        Me.Label146.Size = New System.Drawing.Size(96, 20)
+        Me.Label146.TabIndex = 0
+        Me.Label146.Text = "&Pay Mode"
+        '
+        'Label147
+        '
+        Me.Label147.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label147.Font = New System.Drawing.Font("Lucida Fax", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label147.ForeColor = System.Drawing.Color.White
+        Me.Label147.Location = New System.Drawing.Point(247, 583)
+        Me.Label147.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label147.Name = "Label147"
+        Me.Label147.Size = New System.Drawing.Size(165, 28)
+        Me.Label147.TabIndex = 35
+        Me.Label147.Text = "0.00"
+        Me.Label147.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.ComboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.ComboBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(125, 50)
+        Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(285, 28)
+        Me.ComboBox4.TabIndex = 1
+        '
+        'Label148
+        '
+        Me.Label148.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label148.Font = New System.Drawing.Font("Lucida Fax", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Label148.ForeColor = System.Drawing.Color.White
+        Me.Label148.Location = New System.Drawing.Point(256, 100)
+        Me.Label148.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label148.Name = "Label148"
+        Me.Label148.Size = New System.Drawing.Size(156, 27)
+        Me.Label148.TabIndex = 3
+        Me.Label148.Text = "0.00"
+        Me.Label148.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label149
+        '
+        Me.Label149.AutoSize = True
+        Me.Label149.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label149.ForeColor = System.Drawing.Color.Black
+        Me.Label149.Location = New System.Drawing.Point(3, 588)
+        Me.Label149.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label149.Name = "Label149"
+        Me.Label149.Size = New System.Drawing.Size(200, 20)
+        Me.Label149.TabIndex = 34
+        Me.Label149.Text = "Card Closing Balance"
+        Me.Label149.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label150
+        '
+        Me.Label150.AutoSize = True
+        Me.Label150.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label150.ForeColor = System.Drawing.Color.Black
+        Me.Label150.Location = New System.Drawing.Point(3, 102)
+        Me.Label150.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label150.Name = "Label150"
+        Me.Label150.Size = New System.Drawing.Size(209, 20)
+        Me.Label150.TabIndex = 2
+        Me.Label150.Text = "Card Opening Balance"
+        Me.Label150.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Button15
+        '
+        Me.Button15.AutoSize = True
+        Me.Button15.BackColor = System.Drawing.Color.Yellow
+        Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button15.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Button15.Location = New System.Drawing.Point(151, 724)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(140, 48)
+        Me.Button15.TabIndex = 325
+        Me.Button15.Text = "DISMISS"
+        Me.ToolTip2.SetToolTip(Me.Button15, "Click to Cancel")
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Button16
+        '
+        Me.Button16.AutoSize = True
+        Me.Button16.BackColor = System.Drawing.Color.Yellow
+        Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button16.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button16.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.Button16.Location = New System.Drawing.Point(9, 724)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(139, 48)
+        Me.Button16.TabIndex = 324
+        Me.Button16.Text = "CLEAR"
+        Me.ToolTip2.SetToolTip(Me.Button16, "Click to Clear Modifiers")
+        Me.Button16.UseVisualStyleBackColor = False
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Font = New System.Drawing.Font("Lucida Fax", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.TextBox12.Location = New System.Drawing.Point(9, 618)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox12.Multiline = True
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(396, 93)
+        Me.TextBox12.TabIndex = 323
+        Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label157
+        '
+        Me.Label157.BackColor = System.Drawing.Color.Teal
+        Me.Label157.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label157.Font = New System.Drawing.Font("Lucida Fax", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.Label157.ForeColor = System.Drawing.Color.White
+        Me.Label157.Location = New System.Drawing.Point(0, 0)
+        Me.Label157.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label157.Name = "Label157"
+        Me.Label157.Size = New System.Drawing.Size(284, 40)
+        Me.Label157.TabIndex = 322
+        Me.Label157.Text = "ITEM MODIERS"
+        Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle17.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
+        Me.DataGridView2.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.DataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.DataGridView2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn12})
+        Me.DataGridView2.Cursor = System.Windows.Forms.Cursors.Default
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle19
+        Me.DataGridView2.GridColor = System.Drawing.Color.Chocolate
+        Me.DataGridView2.Location = New System.Drawing.Point(9, 48)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView2.MultiSelect = False
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle20.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.RowHeadersDefaultCellStyle = DataGridViewCellStyle20
+        Me.DataGridView2.RowHeadersVisible = False
+        Me.DataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.DataGridView2.RowTemplate.Height = 40
+        Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView2.Size = New System.Drawing.Size(397, 558)
+        Me.DataGridView2.TabIndex = 15
+        Me.DataGridView2.TabStop = False
+        '
+        'DataGridViewImageColumn12
+        '
+        Me.DataGridViewImageColumn12.FillWeight = 50.0!
+        Me.DataGridViewImageColumn12.Frozen = True
+        Me.DataGridViewImageColumn12.HeaderText = ""
+        Me.DataGridViewImageColumn12.Image = Global.FNBManagement.My.Resources.Resources.check2
+        Me.DataGridViewImageColumn12.MinimumWidth = 50
+        Me.DataGridViewImageColumn12.Name = "DataGridViewImageColumn12"
+        Me.DataGridViewImageColumn12.ReadOnly = True
+        Me.DataGridViewImageColumn12.Width = 50
+        '
+        'DataGridViewImageColumn7
+        '
+        Me.DataGridViewImageColumn7.FillWeight = 40.0!
+        Me.DataGridViewImageColumn7.Frozen = True
+        Me.DataGridViewImageColumn7.HeaderText = ""
+        Me.DataGridViewImageColumn7.Image = Global.FNBManagement.My.Resources.Resources.check1
+        Me.DataGridViewImageColumn7.MinimumWidth = 40
+        Me.DataGridViewImageColumn7.Name = "DataGridViewImageColumn7"
+        Me.DataGridViewImageColumn7.ReadOnly = True
+        Me.DataGridViewImageColumn7.Width = 40
+        '
+        'DataGridViewImageColumn15
+        '
+        Me.DataGridViewImageColumn15.FillWeight = 50.0!
+        Me.DataGridViewImageColumn15.Frozen = True
+        Me.DataGridViewImageColumn15.HeaderText = ""
+        Me.DataGridViewImageColumn15.Image = Global.FNBManagement.My.Resources.Resources.delete1
+        Me.DataGridViewImageColumn15.MinimumWidth = 50
+        Me.DataGridViewImageColumn15.Name = "DataGridViewImageColumn15"
+        Me.DataGridViewImageColumn15.ReadOnly = True
+        Me.DataGridViewImageColumn15.Width = 50
+        '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.FillWeight = 50.0!
+        Me.DataGridViewImageColumn1.Frozen = True
+        Me.DataGridViewImageColumn1.HeaderText = ""
+        Me.DataGridViewImageColumn1.Image = Global.FNBManagement.My.Resources.Resources.delete1
+        Me.DataGridViewImageColumn1.MinimumWidth = 50
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.DataGridViewImageColumn1.Width = 50
+        '
+        'DataGridViewImageColumn4
+        '
+        Me.DataGridViewImageColumn4.FillWeight = 25.0!
+        Me.DataGridViewImageColumn4.Frozen = True
+        Me.DataGridViewImageColumn4.HeaderText = ""
+        Me.DataGridViewImageColumn4.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
+        Me.DataGridViewImageColumn4.MinimumWidth = 25
+        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
+        Me.DataGridViewImageColumn4.ReadOnly = True
+        Me.DataGridViewImageColumn4.Width = 25
+        '
+        'dgPrintBill
+        '
+        Me.dgPrintBill.FillWeight = 25.0!
+        Me.dgPrintBill.Frozen = True
+        Me.dgPrintBill.HeaderText = ""
+        Me.dgPrintBill.Image = Global.FNBManagement.My.Resources.Resources.printer
+        Me.dgPrintBill.MinimumWidth = 25
+        Me.dgPrintBill.Name = "dgPrintBill"
+        Me.dgPrintBill.ReadOnly = True
+        Me.dgPrintBill.Width = 25
+        '
+        'dgviewdraftbill
+        '
+        Me.dgviewdraftbill.FillWeight = 25.0!
+        Me.dgviewdraftbill.Frozen = True
+        Me.dgviewdraftbill.HeaderText = ""
+        Me.dgviewdraftbill.Image = Global.FNBManagement.My.Resources.Resources.view
+        Me.dgviewdraftbill.MinimumWidth = 25
+        Me.dgviewdraftbill.Name = "dgviewdraftbill"
+        Me.dgviewdraftbill.ReadOnly = True
+        Me.dgviewdraftbill.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgviewdraftbill.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.dgviewdraftbill.Width = 25
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.Gainsboro
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'DeleteToolStripMenuItem
+        '
+        Me.DeleteToolStripMenuItem.BackColor = System.Drawing.Color.Gainsboro
+        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(122, 24)
+        Me.DeleteToolStripMenuItem.Text = "Delete"
+        '
+        'btnSendOTP
+        '
+        Me.btnSendOTP.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSendOTP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSendOTP.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSendOTP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSendOTP.Font = New System.Drawing.Font("Lucida Fax", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSendOTP.Location = New System.Drawing.Point(43, 50)
+        Me.btnSendOTP.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSendOTP.Name = "btnSendOTP"
+        Me.btnSendOTP.Size = New System.Drawing.Size(140, 28)
+        Me.btnSendOTP.TabIndex = 2
+        Me.btnSendOTP.Text = "Send OTP"
+        Me.ToolTip1.SetToolTip(Me.btnSendOTP, "OTP Validation")
+        Me.btnSendOTP.UseVisualStyleBackColor = False
+        Me.btnSendOTP.Visible = False
+        '
+        'btnShiftTable
+        '
+        Me.btnShiftTable.AutoSize = True
+        Me.btnShiftTable.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnShiftTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnShiftTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnShiftTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnShiftTable.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnShiftTable.Location = New System.Drawing.Point(423, 10)
+        Me.btnShiftTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnShiftTable.Name = "btnShiftTable"
+        Me.btnShiftTable.Size = New System.Drawing.Size(134, 48)
+        Me.btnShiftTable.TabIndex = 313
+        Me.btnShiftTable.Text = "SHIFT TABLE"
+        Me.ToolTip1.SetToolTip(Me.btnShiftTable, "SHIFT TABLE")
+        Me.btnShiftTable.UseVisualStyleBackColor = False
+        '
+        'btnEstimate
+        '
+        Me.btnEstimate.AutoSize = True
+        Me.btnEstimate.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnEstimate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnEstimate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEstimate.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnEstimate.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnEstimate.Location = New System.Drawing.Point(689, 65)
+        Me.btnEstimate.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEstimate.Name = "btnEstimate"
+        Me.btnEstimate.Size = New System.Drawing.Size(148, 48)
+        Me.btnEstimate.TabIndex = 314
+        Me.btnEstimate.Text = "ESTIMATE"
+        Me.ToolTip1.SetToolTip(Me.btnEstimate, "MOVE KOT")
+        Me.btnEstimate.UseVisualStyleBackColor = False
+        '
+        'btnSaveNSettle
+        '
+        Me.btnSaveNSettle.AutoSize = True
+        Me.btnSaveNSettle.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnSaveNSettle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSaveNSettle.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSaveNSettle.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSaveNSettle.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSaveNSettle.Location = New System.Drawing.Point(188, 60)
+        Me.btnSaveNSettle.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSaveNSettle.Name = "btnSaveNSettle"
+        Me.btnSaveNSettle.Size = New System.Drawing.Size(209, 48)
+        Me.btnSaveNSettle.TabIndex = 311
+        Me.btnSaveNSettle.Text = "SAVE && SETTLE"
+        Me.ToolTip1.SetToolTip(Me.btnSaveNSettle, "SAVE & SETTLE")
+        Me.btnSaveNSettle.UseVisualStyleBackColor = False
+        '
+        'DataGridViewImageColumn2
+        '
+        Me.DataGridViewImageColumn2.FillWeight = 40.0!
+        Me.DataGridViewImageColumn2.Frozen = True
+        Me.DataGridViewImageColumn2.HeaderText = ""
+        Me.DataGridViewImageColumn2.Image = Global.FNBManagement.My.Resources.Resources.check1
+        Me.DataGridViewImageColumn2.MinimumWidth = 40
+        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        Me.DataGridViewImageColumn2.ReadOnly = True
+        Me.DataGridViewImageColumn2.Width = 40
+        '
+        'dgbtnmodifier
+        '
+        Me.dgbtnmodifier.FillWeight = 25.0!
+        Me.dgbtnmodifier.Frozen = True
+        Me.dgbtnmodifier.HeaderText = ""
+        Me.dgbtnmodifier.Image = Global.FNBManagement.My.Resources.Resources.add21
+        Me.dgbtnmodifier.Name = "dgbtnmodifier"
+        Me.dgbtnmodifier.ReadOnly = True
+        Me.dgbtnmodifier.Width = 25
+        '
+        'dgbtnEdit
+        '
+        Me.dgbtnEdit.FillWeight = 25.0!
+        Me.dgbtnEdit.Frozen = True
+        Me.dgbtnEdit.HeaderText = ""
+        Me.dgbtnEdit.Image = Global.FNBManagement.My.Resources.Resources.edit
+        Me.dgbtnEdit.MinimumWidth = 25
+        Me.dgbtnEdit.Name = "dgbtnEdit"
+        Me.dgbtnEdit.ReadOnly = True
+        Me.dgbtnEdit.Width = 25
+        '
+        'dgbtndelete
+        '
+        Me.dgbtndelete.FillWeight = 25.0!
+        Me.dgbtndelete.Frozen = True
+        Me.dgbtndelete.HeaderText = ""
+        Me.dgbtndelete.Image = Global.FNBManagement.My.Resources.Resources.delete23
+        Me.dgbtndelete.MinimumWidth = 25
+        Me.dgbtndelete.Name = "dgbtndelete"
+        Me.dgbtndelete.ReadOnly = True
+        Me.dgbtndelete.Width = 25
+        '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.BackColor = System.Drawing.Color.Gainsboro
+        Me.ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(61, 4)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.Gainsboro
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(122, 24)
+        Me.ToolStripMenuItem1.Text = "Delete"
+        '
+        'btnTableMoveRight
+        '
+        Me.btnTableMoveRight.BackColor = System.Drawing.Color.Silver
+        Me.btnTableMoveRight.BackgroundImage = Global.FNBManagement.My.Resources.Resources.arrow_right_blue
+        Me.btnTableMoveRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnTableMoveRight.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTableMoveRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTableMoveRight.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTableMoveRight.Location = New System.Drawing.Point(638, 26)
+        Me.btnTableMoveRight.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTableMoveRight.Name = "btnTableMoveRight"
+        Me.btnTableMoveRight.Size = New System.Drawing.Size(155, 25)
+        Me.btnTableMoveRight.TabIndex = 42
+        Me.btnTableMoveRight.TabStop = False
+        Me.btnTableMoveRight.Tag = ""
+        Me.ToolTip2.SetToolTip(Me.btnTableMoveRight, "CLICK TO MOVE RIGHT")
+        Me.btnTableMoveRight.UseVisualStyleBackColor = False
+        '
+        'btnTableMoveLeft
+        '
+        Me.btnTableMoveLeft.BackColor = System.Drawing.Color.Silver
+        Me.btnTableMoveLeft.BackgroundImage = Global.FNBManagement.My.Resources.Resources.arrow_left_blue
+        Me.btnTableMoveLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnTableMoveLeft.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTableMoveLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTableMoveLeft.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTableMoveLeft.Location = New System.Drawing.Point(638, -1)
+        Me.btnTableMoveLeft.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTableMoveLeft.Name = "btnTableMoveLeft"
+        Me.btnTableMoveLeft.Size = New System.Drawing.Size(155, 25)
+        Me.btnTableMoveLeft.TabIndex = 41
+        Me.btnTableMoveLeft.TabStop = False
+        Me.btnTableMoveLeft.Tag = ""
+        Me.ToolTip2.SetToolTip(Me.btnTableMoveLeft, "CLICK TO MOVE LEFT")
+        Me.btnTableMoveLeft.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocationMoveLeft
+        '
+        Me.btnBillingLocationMoveLeft.BackColor = System.Drawing.Color.Silver
+        Me.btnBillingLocationMoveLeft.BackgroundImage = Global.FNBManagement.My.Resources.Resources.arrow_left_blue
+        Me.btnBillingLocationMoveLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnBillingLocationMoveLeft.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocationMoveLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocationMoveLeft.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBillingLocationMoveLeft.Location = New System.Drawing.Point(638, 2)
+        Me.btnBillingLocationMoveLeft.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocationMoveLeft.Name = "btnBillingLocationMoveLeft"
+        Me.btnBillingLocationMoveLeft.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocationMoveLeft.TabIndex = 4
+        Me.btnBillingLocationMoveLeft.TabStop = False
+        Me.btnBillingLocationMoveLeft.Tag = ""
+        Me.ToolTip2.SetToolTip(Me.btnBillingLocationMoveLeft, "CLICK TO MOVE LEFT")
+        Me.btnBillingLocationMoveLeft.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocationMoveRight
+        '
+        Me.btnBillingLocationMoveRight.BackColor = System.Drawing.Color.Silver
+        Me.btnBillingLocationMoveRight.BackgroundImage = Global.FNBManagement.My.Resources.Resources.arrow_right_blue
+        Me.btnBillingLocationMoveRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnBillingLocationMoveRight.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocationMoveRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocationMoveRight.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBillingLocationMoveRight.Location = New System.Drawing.Point(638, 56)
+        Me.btnBillingLocationMoveRight.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocationMoveRight.Name = "btnBillingLocationMoveRight"
+        Me.btnBillingLocationMoveRight.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocationMoveRight.TabIndex = 9
+        Me.btnBillingLocationMoveRight.TabStop = False
+        Me.btnBillingLocationMoveRight.Tag = ""
+        Me.ToolTip2.SetToolTip(Me.btnBillingLocationMoveRight, "CLICK TO MOVE RIGHT")
+        Me.btnBillingLocationMoveRight.UseVisualStyleBackColor = False
+        '
+        'btnPrintDuplicateBill
+        '
+        Me.btnPrintDuplicateBill.BackColor = System.Drawing.Color.Transparent
+        Me.btnPrintDuplicateBill.BackgroundImage = Global.FNBManagement.My.Resources.Resources.printer1
+        Me.btnPrintDuplicateBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnPrintDuplicateBill.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrintDuplicateBill.FlatAppearance.BorderColor = System.Drawing.Color.Maroon
+        Me.btnPrintDuplicateBill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnPrintDuplicateBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
+        Me.btnPrintDuplicateBill.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrintDuplicateBill.ForeColor = System.Drawing.Color.Black
+        Me.btnPrintDuplicateBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPrintDuplicateBill.ImageKey = "(none)"
+        Me.btnPrintDuplicateBill.Location = New System.Drawing.Point(325, 1)
+        Me.btnPrintDuplicateBill.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnPrintDuplicateBill.Name = "btnPrintDuplicateBill"
+        Me.btnPrintDuplicateBill.Size = New System.Drawing.Size(59, 46)
+        Me.btnPrintDuplicateBill.TabIndex = 2
+        Me.ToolTip2.SetToolTip(Me.btnPrintDuplicateBill, "Print Bill")
+        Me.btnPrintDuplicateBill.UseVisualStyleBackColor = False
+        '
+        'btnCloseView
+        '
+        Me.btnCloseView.BackColor = System.Drawing.Color.Transparent
+        Me.btnCloseView.BackgroundImage = Global.FNBManagement.My.Resources.Resources.delete1
+        Me.btnCloseView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCloseView.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCloseView.FlatAppearance.BorderColor = System.Drawing.Color.Maroon
+        Me.btnCloseView.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnCloseView.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
+        Me.btnCloseView.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCloseView.ForeColor = System.Drawing.Color.Black
+        Me.btnCloseView.Location = New System.Drawing.Point(389, 1)
+        Me.btnCloseView.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCloseView.Name = "btnCloseView"
+        Me.btnCloseView.Size = New System.Drawing.Size(59, 46)
+        Me.btnCloseView.TabIndex = 3
+        Me.ToolTip2.SetToolTip(Me.btnCloseView, "Close Current View")
+        Me.btnCloseView.UseVisualStyleBackColor = False
+        '
+        'dgbtnSelectMember
+        '
+        Me.dgbtnSelectMember.FillWeight = 25.0!
+        Me.dgbtnSelectMember.Frozen = True
+        Me.dgbtnSelectMember.HeaderText = ""
+        Me.dgbtnSelectMember.Image = Global.FNBManagement.My.Resources.Resources.check3
+        Me.dgbtnSelectMember.MinimumWidth = 25
+        Me.dgbtnSelectMember.Name = "dgbtnSelectMember"
+        Me.dgbtnSelectMember.ReadOnly = True
+        Me.dgbtnSelectMember.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbtnSelectMember.Width = 25
+        '
+        'PanelContainer
+        '
+        Me.PanelContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.PanelContainer.Controls.Add(Me.PanelMainScreen)
+        Me.PanelContainer.Controls.Add(Me.PanelSettleBill)
+        Me.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContainer.Location = New System.Drawing.Point(0, 0)
+        Me.PanelContainer.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelContainer.Name = "PanelContainer"
+        Me.PanelContainer.Size = New System.Drawing.Size(1200, 700)
+        Me.PanelContainer.TabIndex = 0
+        '
+        'PanelMainScreen
+        '
+        Me.PanelMainScreen.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PanelMainScreen.Controls.Add(Me.PanelSearchItem)
+        Me.PanelMainScreen.Controls.Add(Me.PanelContentHost)
+        Me.PanelMainScreen.Controls.Add(Me.PanelClosedBills)
+        Me.PanelMainScreen.Controls.Add(Me.PanelFooter)
+        Me.PanelMainScreen.Controls.Add(Me.PanelLine)
+        Me.PanelMainScreen.Controls.Add(Me.LabelHeader)
+        Me.PanelMainScreen.Controls.Add(Me.PanelModifiers)
+        Me.PanelMainScreen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMainScreen.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMainScreen.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelMainScreen.Name = "PanelMainScreen"
+        Me.PanelMainScreen.Padding = New System.Windows.Forms.Padding(10)
+        Me.PanelMainScreen.Size = New System.Drawing.Size(1200, 700)
+        Me.PanelMainScreen.TabIndex = 2
+        '
+        'PanelSearchItem
+        '
+        Me.PanelSearchItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PanelSearchItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelSearchItem.Controls.Add(Me.btnCancelMemberSearch)
+        Me.PanelSearchItem.Controls.Add(Me.txtSearchItemCode)
+        Me.PanelSearchItem.Controls.Add(Me.Label155)
+        Me.PanelSearchItem.Controls.Add(Me.Label156)
+        Me.PanelSearchItem.Controls.Add(Me.txtSearchItemName)
+        Me.PanelSearchItem.Controls.Add(Me.dgSearchItem)
+        Me.PanelSearchItem.Location = New System.Drawing.Point(275, 159)
+        Me.PanelSearchItem.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelSearchItem.Name = "PanelSearchItem"
+        Me.PanelSearchItem.Size = New System.Drawing.Size(650, 382)
+        Me.PanelSearchItem.TabIndex = 323
+        '
+        'btnCancelMemberSearch
+        '
+        Me.btnCancelMemberSearch.BackgroundImage = Global.FNBManagement.My.Resources.Resources.delete1
+        Me.btnCancelMemberSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnCancelMemberSearch.Location = New System.Drawing.Point(597, 0)
+        Me.btnCancelMemberSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancelMemberSearch.Name = "btnCancelMemberSearch"
+        Me.btnCancelMemberSearch.Size = New System.Drawing.Size(41, 30)
+        Me.btnCancelMemberSearch.TabIndex = 4
+        Me.btnCancelMemberSearch.UseVisualStyleBackColor = True
+        '
+        'txtSearchItemCode
+        '
+        Me.txtSearchItemCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtSearchItemCode.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearchItemCode.Location = New System.Drawing.Point(12, 31)
+        Me.txtSearchItemCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSearchItemCode.MaxLength = 10
+        Me.txtSearchItemCode.Name = "txtSearchItemCode"
+        Me.txtSearchItemCode.Size = New System.Drawing.Size(103, 25)
+        Me.txtSearchItemCode.TabIndex = 1
+        '
+        'Label155
+        '
+        Me.Label155.AutoSize = True
+        Me.Label155.BackColor = System.Drawing.Color.Transparent
+        Me.Label155.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label155.Location = New System.Drawing.Point(16, 9)
+        Me.Label155.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label155.Name = "Label155"
+        Me.Label155.Size = New System.Drawing.Size(85, 17)
+        Me.Label155.TabIndex = 0
+        Me.Label155.Text = "Item Code"
+        '
+        'Label156
+        '
+        Me.Label156.AutoSize = True
+        Me.Label156.BackColor = System.Drawing.Color.Transparent
+        Me.Label156.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label156.Location = New System.Drawing.Point(129, 9)
+        Me.Label156.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label156.Name = "Label156"
+        Me.Label156.Size = New System.Drawing.Size(89, 17)
+        Me.Label156.TabIndex = 2
+        Me.Label156.Text = "Item Name"
+        '
+        'txtSearchItemName
+        '
+        Me.txtSearchItemName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtSearchItemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearchItemName.Location = New System.Drawing.Point(125, 30)
+        Me.txtSearchItemName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSearchItemName.Name = "txtSearchItemName"
+        Me.txtSearchItemName.Size = New System.Drawing.Size(512, 25)
+        Me.txtSearchItemName.TabIndex = 3
+        '
+        'dgSearchItem
+        '
+        Me.dgSearchItem.AllowUserToAddRows = False
+        Me.dgSearchItem.AllowUserToDeleteRows = False
+        Me.dgSearchItem.BackgroundColor = System.Drawing.Color.LightGray
+        Me.dgSearchItem.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgSearchItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgSearchItem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.dgSearchItem.Location = New System.Drawing.Point(8, 64)
+        Me.dgSearchItem.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgSearchItem.MultiSelect = False
+        Me.dgSearchItem.Name = "dgSearchItem"
+        Me.dgSearchItem.ReadOnly = True
+        Me.dgSearchItem.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgSearchItem.RowHeadersWidth = 20
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.dgSearchItem.RowsDefaultCellStyle = DataGridViewCellStyle21
+        Me.dgSearchItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgSearchItem.Size = New System.Drawing.Size(631, 308)
+        Me.dgSearchItem.TabIndex = 5
+        Me.dgSearchItem.TabStop = False
+        '
+        'PanelContentHost
+        '
+        Me.PanelContentHost.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PanelContentHost.Controls.Add(Me.PanelRight)
+        Me.PanelContentHost.Controls.Add(Me.PanelLocationAndTables)
+        Me.PanelContentHost.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelContentHost.Location = New System.Drawing.Point(390, 52)
+        Me.PanelContentHost.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelContentHost.Name = "PanelContentHost"
+        Me.PanelContentHost.Size = New System.Drawing.Size(800, 518)
+        Me.PanelContentHost.TabIndex = 320
+        '
+        'PanelRight
+        '
+        Me.PanelRight.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelRight.Controls.Add(Me.PanelItem)
+        Me.PanelRight.Controls.Add(Me.PanelImg)
+        Me.PanelRight.Controls.Add(Me.PanelDisplayArea)
+        Me.PanelRight.Controls.Add(Me.PanelMemberDetails)
+        Me.PanelRight.Controls.Add(Me.PanelBillHeader)
+        Me.PanelRight.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelRight.Location = New System.Drawing.Point(0, 0)
+        Me.PanelRight.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelRight.Name = "PanelRight"
+        Me.PanelRight.Size = New System.Drawing.Size(800, 518)
+        Me.PanelRight.TabIndex = 323
+        '
+        'PanelItem
+        '
+        Me.PanelItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelItem.Controls.Add(Me.dgItemGrid)
+        Me.PanelItem.Controls.Add(Me.lblAliasCode)
+        Me.PanelItem.Controls.Add(Me.Label34)
+        Me.PanelItem.Controls.Add(Me.lblGSTPer)
+        Me.PanelItem.Controls.Add(Me.Label32)
+        Me.PanelItem.Controls.Add(Me.lblSCPer)
+        Me.PanelItem.Controls.Add(Me.Label27)
+        Me.PanelItem.Controls.Add(Me.lblUnit)
+        Me.PanelItem.Controls.Add(Me.Label15)
+        Me.PanelItem.Controls.Add(Me.LabelClosingStock)
+        Me.PanelItem.Controls.Add(Me.Label21)
+        Me.PanelItem.Controls.Add(Me.LabelStockStr)
+        Me.PanelItem.Controls.Add(Me.txtRate)
+        Me.PanelItem.Controls.Add(Me.txtItemCode)
+        Me.PanelItem.Controls.Add(Me.Label6)
+        Me.PanelItem.Controls.Add(Me.Label5)
+        Me.PanelItem.Controls.Add(Me.txtQty)
+        Me.PanelItem.Controls.Add(Me.cmbItemName)
+        Me.PanelItem.Location = New System.Drawing.Point(3, 197)
+        Me.PanelItem.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelItem.Name = "PanelItem"
+        Me.PanelItem.Size = New System.Drawing.Size(792, 254)
+        Me.PanelItem.TabIndex = 1
+        '
+        'dgItemGrid
+        '
+        Me.dgItemGrid.AllowUserToAddRows = False
+        Me.dgItemGrid.AllowUserToDeleteRows = False
+        DataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle22.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgItemGrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle22
+        Me.dgItemGrid.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgItemGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgItemGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgItemGrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle23.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgItemGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
+        Me.dgItemGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgItemGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn11, Me.DataGridViewImageColumn13, Me.DataGridViewImageColumn14})
+        Me.dgItemGrid.Cursor = System.Windows.Forms.Cursors.Default
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgItemGrid.DefaultCellStyle = DataGridViewCellStyle24
+        Me.dgItemGrid.GridColor = System.Drawing.Color.Chocolate
+        Me.dgItemGrid.Location = New System.Drawing.Point(4, 58)
+        Me.dgItemGrid.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgItemGrid.MultiSelect = False
+        Me.dgItemGrid.Name = "dgItemGrid"
+        Me.dgItemGrid.ReadOnly = True
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle25.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgItemGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle25
+        Me.dgItemGrid.RowHeadersVisible = False
+        Me.dgItemGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgItemGrid.RowTemplate.Height = 40
+        Me.dgItemGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgItemGrid.Size = New System.Drawing.Size(783, 190)
+        Me.dgItemGrid.TabIndex = 23
+        Me.dgItemGrid.TabStop = False
+        '
+        'DataGridViewImageColumn11
+        '
+        Me.DataGridViewImageColumn11.FillWeight = 25.0!
+        Me.DataGridViewImageColumn11.Frozen = True
+        Me.DataGridViewImageColumn11.HeaderText = ""
+        Me.DataGridViewImageColumn11.Image = Global.FNBManagement.My.Resources.Resources.delete23
+        Me.DataGridViewImageColumn11.MinimumWidth = 25
+        Me.DataGridViewImageColumn11.Name = "DataGridViewImageColumn11"
+        Me.DataGridViewImageColumn11.ReadOnly = True
+        Me.DataGridViewImageColumn11.Width = 25
+        '
+        'DataGridViewImageColumn13
+        '
+        Me.DataGridViewImageColumn13.FillWeight = 25.0!
+        Me.DataGridViewImageColumn13.Frozen = True
+        Me.DataGridViewImageColumn13.HeaderText = ""
+        Me.DataGridViewImageColumn13.Image = Global.FNBManagement.My.Resources.Resources.edit
+        Me.DataGridViewImageColumn13.MinimumWidth = 25
+        Me.DataGridViewImageColumn13.Name = "DataGridViewImageColumn13"
+        Me.DataGridViewImageColumn13.ReadOnly = True
+        Me.DataGridViewImageColumn13.Width = 25
+        '
+        'DataGridViewImageColumn14
+        '
+        Me.DataGridViewImageColumn14.FillWeight = 25.0!
+        Me.DataGridViewImageColumn14.Frozen = True
+        Me.DataGridViewImageColumn14.HeaderText = ""
+        Me.DataGridViewImageColumn14.Image = Global.FNBManagement.My.Resources.Resources.add21
+        Me.DataGridViewImageColumn14.Name = "DataGridViewImageColumn14"
+        Me.DataGridViewImageColumn14.ReadOnly = True
+        Me.DataGridViewImageColumn14.Width = 25
+        '
+        'lblAliasCode
+        '
+        Me.lblAliasCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblAliasCode.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblAliasCode.Location = New System.Drawing.Point(152, 2)
+        Me.lblAliasCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAliasCode.Name = "lblAliasCode"
+        Me.lblAliasCode.Size = New System.Drawing.Size(84, 23)
+        Me.lblAliasCode.TabIndex = 22
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label34.Location = New System.Drawing.Point(4, 6)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(89, 17)
+        Me.Label34.TabIndex = 22
+        Me.Label34.Text = "Item Code"
+        '
+        'lblGSTPer
+        '
+        Me.lblGSTPer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGSTPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblGSTPer.Location = New System.Drawing.Point(475, 27)
+        Me.lblGSTPer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGSTPer.Name = "lblGSTPer"
+        Me.lblGSTPer.Size = New System.Drawing.Size(66, 27)
+        Me.lblGSTPer.TabIndex = 5
+        Me.lblGSTPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label32.Location = New System.Drawing.Point(472, 3)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(54, 17)
+        Me.Label32.TabIndex = 4
+        Me.Label32.Text = "Tax %"
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblSCPer
+        '
+        Me.lblSCPer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSCPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblSCPer.Location = New System.Drawing.Point(546, 27)
+        Me.lblSCPer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSCPer.Name = "lblSCPer"
+        Me.lblSCPer.Size = New System.Drawing.Size(65, 27)
+        Me.lblSCPer.TabIndex = 7
+        Me.lblSCPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label27.Location = New System.Drawing.Point(543, 3)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(40, 17)
+        Me.Label27.TabIndex = 6
+        Me.Label27.Text = "SC%"
+        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblUnit
+        '
+        Me.lblUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblUnit.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblUnit.Location = New System.Drawing.Point(404, 27)
+        Me.lblUnit.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUnit.Name = "lblUnit"
+        Me.lblUnit.Size = New System.Drawing.Size(66, 27)
+        Me.lblUnit.TabIndex = 3
+        Me.lblUnit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label15.Location = New System.Drawing.Point(401, 5)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(40, 17)
+        Me.Label15.TabIndex = 2
+        Me.Label15.Text = "Unit"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'LabelClosingStock
+        '
+        Me.LabelClosingStock.BackColor = System.Drawing.Color.Yellow
+        Me.LabelClosingStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LabelClosingStock.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelClosingStock.ForeColor = System.Drawing.Color.Black
+        Me.LabelClosingStock.Location = New System.Drawing.Point(311, 1)
+        Me.LabelClosingStock.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelClosingStock.Name = "LabelClosingStock"
+        Me.LabelClosingStock.Size = New System.Drawing.Size(87, 25)
+        Me.LabelClosingStock.TabIndex = 21
+        Me.LabelClosingStock.Text = "0"
+        Me.LabelClosingStock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label21.Location = New System.Drawing.Point(624, 3)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(43, 17)
+        Me.Label21.TabIndex = 8
+        Me.Label21.Text = "Rate"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LabelStockStr
+        '
+        Me.LabelStockStr.BackColor = System.Drawing.Color.Yellow
+        Me.LabelStockStr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LabelStockStr.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelStockStr.ForeColor = System.Drawing.Color.Black
+        Me.LabelStockStr.Location = New System.Drawing.Point(241, 1)
+        Me.LabelStockStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelStockStr.Name = "LabelStockStr"
+        Me.LabelStockStr.Size = New System.Drawing.Size(66, 25)
+        Me.LabelStockStr.TabIndex = 20
+        Me.LabelStockStr.Text = "Stock"
+        Me.LabelStockStr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtRate
+        '
+        Me.txtRate.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtRate.Location = New System.Drawing.Point(619, 27)
+        Me.txtRate.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRate.Name = "txtRate"
+        Me.txtRate.Size = New System.Drawing.Size(71, 27)
+        Me.txtRate.TabIndex = 9
+        Me.txtRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtItemCode
+        '
+        Me.txtItemCode.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtItemCode.Location = New System.Drawing.Point(6, 27)
+        Me.txtItemCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtItemCode.Name = "txtItemCode"
+        Me.txtItemCode.Size = New System.Drawing.Size(87, 27)
+        Me.txtItemCode.TabIndex = 1
+        Me.txtItemCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label6.Location = New System.Drawing.Point(695, 3)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(35, 17)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Qty"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label5.Location = New System.Drawing.Point(104, 5)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(44, 17)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Item"
+        '
+        'txtQty
+        '
+        Me.txtQty.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtQty.Location = New System.Drawing.Point(697, 27)
+        Me.txtQty.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtQty.Name = "txtQty"
+        Me.txtQty.Size = New System.Drawing.Size(61, 27)
+        Me.txtQty.TabIndex = 11
+        Me.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'cmbItemName
+        '
+        Me.cmbItemName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbItemName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbItemName.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbItemName.DropDownWidth = 500
+        Me.cmbItemName.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbItemName.FormattingEnabled = True
+        Me.cmbItemName.Location = New System.Drawing.Point(107, 28)
+        Me.cmbItemName.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbItemName.Name = "cmbItemName"
+        Me.cmbItemName.Size = New System.Drawing.Size(292, 26)
+        Me.cmbItemName.TabIndex = 1
+        '
+        'PanelImg
+        '
+        Me.PanelImg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelImg.Controls.Add(Me.Label40)
+        Me.PanelImg.Controls.Add(Me.PBMember)
+        Me.PanelImg.Controls.Add(Me.lblItemName)
+        Me.PanelImg.Controls.Add(Me.PBSpouseSign)
+        Me.PanelImg.Controls.Add(Me.lblKOTNo)
+        Me.PanelImg.Controls.Add(Me.lblOpenItemName)
+        Me.PanelImg.Controls.Add(Me.txtDiscountPer)
+        Me.PanelImg.Controls.Add(Me.PBMemberSign)
+        Me.PanelImg.Controls.Add(Me.btnSendOTP)
+        Me.PanelImg.Controls.Add(Me.PBSpouse)
+        Me.PanelImg.Location = New System.Drawing.Point(538, 43)
+        Me.PanelImg.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelImg.Name = "PanelImg"
+        Me.PanelImg.Size = New System.Drawing.Size(257, 151)
+        Me.PanelImg.TabIndex = 294
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label40.Location = New System.Drawing.Point(52, 39)
+        Me.Label40.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(54, 17)
+        Me.Label40.TabIndex = 15
+        Me.Label40.Text = "Disc%"
+        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label40.Visible = False
+        '
+        'PBMember
+        '
+        Me.PBMember.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBMember.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PBMember.InitialImage = CType(resources.GetObject("PBMember.InitialImage"), System.Drawing.Image)
+        Me.PBMember.Location = New System.Drawing.Point(4, 2)
+        Me.PBMember.Margin = New System.Windows.Forms.Padding(4)
+        Me.PBMember.Name = "PBMember"
+        Me.PBMember.Size = New System.Drawing.Size(123, 108)
+        Me.PBMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBMember.TabIndex = 284
+        Me.PBMember.TabStop = False
+        '
+        'lblItemName
+        '
+        Me.lblItemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblItemName.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblItemName.Location = New System.Drawing.Point(124, 49)
+        Me.lblItemName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblItemName.Name = "lblItemName"
+        Me.lblItemName.Size = New System.Drawing.Size(46, 28)
+        Me.lblItemName.TabIndex = 24
+        Me.lblItemName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblItemName.Visible = False
+        '
+        'PBSpouseSign
+        '
+        Me.PBSpouseSign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PBSpouseSign.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PBSpouseSign.InitialImage = Nothing
+        Me.PBSpouseSign.Location = New System.Drawing.Point(131, 113)
+        Me.PBSpouseSign.Margin = New System.Windows.Forms.Padding(4)
+        Me.PBSpouseSign.Name = "PBSpouseSign"
+        Me.PBSpouseSign.Size = New System.Drawing.Size(121, 32)
+        Me.PBSpouseSign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBSpouseSign.TabIndex = 287
+        Me.PBSpouseSign.TabStop = False
+        '
+        'lblKOTNo
+        '
+        Me.lblKOTNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblKOTNo.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblKOTNo.Location = New System.Drawing.Point(128, 59)
+        Me.lblKOTNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblKOTNo.Name = "lblKOTNo"
+        Me.lblKOTNo.Size = New System.Drawing.Size(90, 28)
+        Me.lblKOTNo.TabIndex = 24
+        Me.lblKOTNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblKOTNo.Visible = False
+        '
+        'lblOpenItemName
+        '
+        Me.lblOpenItemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOpenItemName.Location = New System.Drawing.Point(29, 60)
+        Me.lblOpenItemName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblOpenItemName.Name = "lblOpenItemName"
+        Me.lblOpenItemName.Size = New System.Drawing.Size(77, 20)
+        Me.lblOpenItemName.TabIndex = 22
+        Me.lblOpenItemName.Text = "lblOpenItemName"
+        Me.lblOpenItemName.Visible = False
+        '
+        'txtDiscountPer
+        '
+        Me.txtDiscountPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscountPer.Location = New System.Drawing.Point(39, 62)
+        Me.txtDiscountPer.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscountPer.Name = "txtDiscountPer"
+        Me.txtDiscountPer.Size = New System.Drawing.Size(0, 27)
+        Me.txtDiscountPer.TabIndex = 5
+        Me.txtDiscountPer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtDiscountPer.Visible = False
+        '
+        'PBMemberSign
+        '
+        Me.PBMemberSign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PBMemberSign.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PBMemberSign.InitialImage = Nothing
+        Me.PBMemberSign.Location = New System.Drawing.Point(4, 113)
+        Me.PBMemberSign.Margin = New System.Windows.Forms.Padding(4)
+        Me.PBMemberSign.Name = "PBMemberSign"
+        Me.PBMemberSign.Size = New System.Drawing.Size(123, 32)
+        Me.PBMemberSign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBMemberSign.TabIndex = 286
+        Me.PBMemberSign.TabStop = False
+        '
+        'PBSpouse
+        '
+        Me.PBSpouse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBSpouse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PBSpouse.Location = New System.Drawing.Point(131, 2)
+        Me.PBSpouse.Margin = New System.Windows.Forms.Padding(4)
+        Me.PBSpouse.Name = "PBSpouse"
+        Me.PBSpouse.Size = New System.Drawing.Size(121, 108)
+        Me.PBSpouse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBSpouse.TabIndex = 285
+        Me.PBSpouse.TabStop = False
+        '
+        'PanelDisplayArea
+        '
+        Me.PanelDisplayArea.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelDisplayArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelDisplayArea.Controls.Add(Me.lblMemberAcClosingBalance)
+        Me.PanelDisplayArea.Controls.Add(Me.lblOpeningCreditLimit)
+        Me.PanelDisplayArea.Controls.Add(Me.lblMemberAcClosingStr)
+        Me.PanelDisplayArea.Controls.Add(Me.lblOpeningCreditLimitstr)
+        Me.PanelDisplayArea.Controls.Add(Me.lblSmartCardClosingBalance)
+        Me.PanelDisplayArea.Controls.Add(Me.lblSmartCardOpeningBalance)
+        Me.PanelDisplayArea.Controls.Add(Me.lblBillingSmartCardClosingStr)
+        Me.PanelDisplayArea.Controls.Add(Me.lblBillingSmartCardOpeningStr)
+        Me.PanelDisplayArea.Controls.Add(Me.Label36)
+        Me.PanelDisplayArea.Controls.Add(Me.lblDiscountAmt)
+        Me.PanelDisplayArea.Controls.Add(Me.Label16)
+        Me.PanelDisplayArea.Controls.Add(Me.lblROff)
+        Me.PanelDisplayArea.Controls.Add(Me.lblVATAmt)
+        Me.PanelDisplayArea.Controls.Add(Me.Label20)
+        Me.PanelDisplayArea.Controls.Add(Me.Label23)
+        Me.PanelDisplayArea.Controls.Add(Me.Label8)
+        Me.PanelDisplayArea.Controls.Add(Me.lblSubTotal)
+        Me.PanelDisplayArea.Controls.Add(Me.Label22)
+        Me.PanelDisplayArea.Controls.Add(Me.lblTotalQty)
+        Me.PanelDisplayArea.Controls.Add(Me.lblGrossAmt)
+        Me.PanelDisplayArea.Controls.Add(Me.Label19)
+        Me.PanelDisplayArea.Controls.Add(Me.Label4)
+        Me.PanelDisplayArea.Controls.Add(Me.lblGSTAmt)
+        Me.PanelDisplayArea.Controls.Add(Me.lblSCAmt)
+        Me.PanelDisplayArea.Location = New System.Drawing.Point(3, 455)
+        Me.PanelDisplayArea.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelDisplayArea.Name = "PanelDisplayArea"
+        Me.PanelDisplayArea.Size = New System.Drawing.Size(792, 64)
+        Me.PanelDisplayArea.TabIndex = 3
+        '
+        'lblMemberAcClosingBalance
+        '
+        Me.lblMemberAcClosingBalance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblMemberAcClosingBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMemberAcClosingBalance.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblMemberAcClosingBalance.ForeColor = System.Drawing.Color.White
+        Me.lblMemberAcClosingBalance.Location = New System.Drawing.Point(315, 33)
+        Me.lblMemberAcClosingBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMemberAcClosingBalance.Name = "lblMemberAcClosingBalance"
+        Me.lblMemberAcClosingBalance.Size = New System.Drawing.Size(60, 25)
+        Me.lblMemberAcClosingBalance.TabIndex = 31
+        Me.lblMemberAcClosingBalance.Text = "0.00"
+        Me.lblMemberAcClosingBalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblOpeningCreditLimit
+        '
+        Me.lblOpeningCreditLimit.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblOpeningCreditLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblOpeningCreditLimit.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOpeningCreditLimit.ForeColor = System.Drawing.Color.White
+        Me.lblOpeningCreditLimit.Location = New System.Drawing.Point(315, 5)
+        Me.lblOpeningCreditLimit.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblOpeningCreditLimit.Name = "lblOpeningCreditLimit"
+        Me.lblOpeningCreditLimit.Size = New System.Drawing.Size(60, 25)
+        Me.lblOpeningCreditLimit.TabIndex = 30
+        Me.lblOpeningCreditLimit.Text = "0.00"
+        Me.lblOpeningCreditLimit.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblMemberAcClosingStr
+        '
+        Me.lblMemberAcClosingStr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMemberAcClosingStr.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblMemberAcClosingStr.ForeColor = System.Drawing.Color.Black
+        Me.lblMemberAcClosingStr.Location = New System.Drawing.Point(186, 33)
+        Me.lblMemberAcClosingStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMemberAcClosingStr.Name = "lblMemberAcClosingStr"
+        Me.lblMemberAcClosingStr.Size = New System.Drawing.Size(131, 25)
+        Me.lblMemberAcClosingStr.TabIndex = 29
+        Me.lblMemberAcClosingStr.Text = "Mem A/c Closing"
+        Me.lblMemberAcClosingStr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblOpeningCreditLimitstr
+        '
+        Me.lblOpeningCreditLimitstr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblOpeningCreditLimitstr.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOpeningCreditLimitstr.ForeColor = System.Drawing.Color.Black
+        Me.lblOpeningCreditLimitstr.Location = New System.Drawing.Point(186, 5)
+        Me.lblOpeningCreditLimitstr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblOpeningCreditLimitstr.Name = "lblOpeningCreditLimitstr"
+        Me.lblOpeningCreditLimitstr.Size = New System.Drawing.Size(131, 25)
+        Me.lblOpeningCreditLimitstr.TabIndex = 28
+        Me.lblOpeningCreditLimitstr.Text = "Credit Limit"
+        Me.lblOpeningCreditLimitstr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblSmartCardClosingBalance
+        '
+        Me.lblSmartCardClosingBalance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblSmartCardClosingBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSmartCardClosingBalance.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSmartCardClosingBalance.ForeColor = System.Drawing.Color.White
+        Me.lblSmartCardClosingBalance.Location = New System.Drawing.Point(117, 33)
+        Me.lblSmartCardClosingBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSmartCardClosingBalance.Name = "lblSmartCardClosingBalance"
+        Me.lblSmartCardClosingBalance.Size = New System.Drawing.Size(60, 25)
+        Me.lblSmartCardClosingBalance.TabIndex = 27
+        Me.lblSmartCardClosingBalance.Text = "0.00"
+        Me.lblSmartCardClosingBalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblSmartCardOpeningBalance
+        '
+        Me.lblSmartCardOpeningBalance.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblSmartCardOpeningBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSmartCardOpeningBalance.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSmartCardOpeningBalance.ForeColor = System.Drawing.Color.White
+        Me.lblSmartCardOpeningBalance.Location = New System.Drawing.Point(117, 5)
+        Me.lblSmartCardOpeningBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSmartCardOpeningBalance.Name = "lblSmartCardOpeningBalance"
+        Me.lblSmartCardOpeningBalance.Size = New System.Drawing.Size(60, 25)
+        Me.lblSmartCardOpeningBalance.TabIndex = 26
+        Me.lblSmartCardOpeningBalance.Text = "0.00"
+        Me.lblSmartCardOpeningBalance.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblBillingSmartCardClosingStr
+        '
+        Me.lblBillingSmartCardClosingStr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBillingSmartCardClosingStr.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblBillingSmartCardClosingStr.ForeColor = System.Drawing.Color.Black
+        Me.lblBillingSmartCardClosingStr.Location = New System.Drawing.Point(3, 33)
+        Me.lblBillingSmartCardClosingStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBillingSmartCardClosingStr.Name = "lblBillingSmartCardClosingStr"
+        Me.lblBillingSmartCardClosingStr.Size = New System.Drawing.Size(117, 25)
+        Me.lblBillingSmartCardClosingStr.TabIndex = 25
+        Me.lblBillingSmartCardClosingStr.Text = "Card Closing"
+        Me.lblBillingSmartCardClosingStr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblBillingSmartCardOpeningStr
+        '
+        Me.lblBillingSmartCardOpeningStr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBillingSmartCardOpeningStr.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblBillingSmartCardOpeningStr.ForeColor = System.Drawing.Color.Black
+        Me.lblBillingSmartCardOpeningStr.Location = New System.Drawing.Point(3, 5)
+        Me.lblBillingSmartCardOpeningStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBillingSmartCardOpeningStr.Name = "lblBillingSmartCardOpeningStr"
+        Me.lblBillingSmartCardOpeningStr.Size = New System.Drawing.Size(117, 25)
+        Me.lblBillingSmartCardOpeningStr.TabIndex = 24
+        Me.lblBillingSmartCardOpeningStr.Text = "Card Opening"
+        Me.lblBillingSmartCardOpeningStr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label36
+        '
+        Me.Label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label36.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label36.ForeColor = System.Drawing.Color.Black
+        Me.Label36.Location = New System.Drawing.Point(494, 5)
+        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(51, 25)
+        Me.Label36.TabIndex = 22
+        Me.Label36.Text = "Disc."
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblDiscountAmt
+        '
+        Me.lblDiscountAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDiscountAmt.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblDiscountAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblDiscountAmt.Location = New System.Drawing.Point(494, 33)
+        Me.lblDiscountAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDiscountAmt.Name = "lblDiscountAmt"
+        Me.lblDiscountAmt.Size = New System.Drawing.Size(51, 25)
+        Me.lblDiscountAmt.TabIndex = 23
+        Me.lblDiscountAmt.Text = "0.00"
+        Me.lblDiscountAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label16
+        '
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label16.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label16.ForeColor = System.Drawing.Color.Black
+        Me.Label16.Location = New System.Drawing.Point(627, 5)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(73, 25)
+        Me.Label16.TabIndex = 16
+        Me.Label16.Text = "ROff"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblROff
+        '
+        Me.lblROff.BackColor = System.Drawing.Color.Transparent
+        Me.lblROff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblROff.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblROff.ForeColor = System.Drawing.Color.Black
+        Me.lblROff.Location = New System.Drawing.Point(627, 33)
+        Me.lblROff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblROff.Name = "lblROff"
+        Me.lblROff.Size = New System.Drawing.Size(73, 25)
+        Me.lblROff.TabIndex = 17
+        Me.lblROff.Text = "0.00"
+        Me.lblROff.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblVATAmt
+        '
+        Me.lblVATAmt.BackColor = System.Drawing.Color.Transparent
+        Me.lblVATAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblVATAmt.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblVATAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblVATAmt.Location = New System.Drawing.Point(669, -32)
+        Me.lblVATAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblVATAmt.Name = "lblVATAmt"
+        Me.lblVATAmt.Size = New System.Drawing.Size(83, 25)
+        Me.lblVATAmt.TabIndex = 13
+        Me.lblVATAmt.Text = "0.00"
+        Me.lblVATAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblVATAmt.Visible = False
+        '
+        'Label20
+        '
+        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label20.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label20.ForeColor = System.Drawing.Color.Black
+        Me.Label20.Location = New System.Drawing.Point(704, 5)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(83, 25)
+        Me.Label20.TabIndex = 14
+        Me.Label20.Text = "Gross Amt"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label23
+        '
+        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label23.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label23.ForeColor = System.Drawing.Color.Black
+        Me.Label23.Location = New System.Drawing.Point(669, -60)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(83, 25)
+        Me.Label23.TabIndex = 12
+        Me.Label23.Text = "VAT Amt"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label23.Visible = False
+        '
+        'Label8
+        '
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label8.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(438, 5)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(51, 25)
+        Me.Label8.TabIndex = 6
+        Me.Label8.Text = "Amt"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblSubTotal
+        '
+        Me.lblSubTotal.BackColor = System.Drawing.Color.Transparent
+        Me.lblSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSubTotal.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSubTotal.ForeColor = System.Drawing.Color.Black
+        Me.lblSubTotal.Location = New System.Drawing.Point(438, 33)
+        Me.lblSubTotal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSubTotal.Name = "lblSubTotal"
+        Me.lblSubTotal.Size = New System.Drawing.Size(51, 25)
+        Me.lblSubTotal.TabIndex = 7
+        Me.lblSubTotal.Text = "0.00"
+        Me.lblSubTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label22
+        '
+        Me.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label22.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label22.ForeColor = System.Drawing.Color.Black
+        Me.Label22.Location = New System.Drawing.Point(381, 5)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(51, 25)
+        Me.Label22.TabIndex = 4
+        Me.Label22.Text = "Qty"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblTotalQty
+        '
+        Me.lblTotalQty.BackColor = System.Drawing.Color.Transparent
+        Me.lblTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalQty.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTotalQty.ForeColor = System.Drawing.Color.Black
+        Me.lblTotalQty.Location = New System.Drawing.Point(381, 33)
+        Me.lblTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalQty.Name = "lblTotalQty"
+        Me.lblTotalQty.Size = New System.Drawing.Size(51, 25)
+        Me.lblTotalQty.TabIndex = 5
+        Me.lblTotalQty.Text = "0"
+        Me.lblTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblGrossAmt
+        '
+        Me.lblGrossAmt.BackColor = System.Drawing.Color.Transparent
+        Me.lblGrossAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGrossAmt.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblGrossAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblGrossAmt.Location = New System.Drawing.Point(704, 33)
+        Me.lblGrossAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGrossAmt.Name = "lblGrossAmt"
+        Me.lblGrossAmt.Size = New System.Drawing.Size(83, 25)
+        Me.lblGrossAmt.TabIndex = 15
+        Me.lblGrossAmt.Text = "0.00"
+        Me.lblGrossAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label19
+        '
+        Me.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label19.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label19.ForeColor = System.Drawing.Color.Black
+        Me.Label19.Location = New System.Drawing.Point(550, 5)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(72, 25)
+        Me.Label19.TabIndex = 10
+        Me.Label19.Text = "GST Amt"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label4
+        '
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(589, -60)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(74, 25)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "SC Amt"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label4.Visible = False
+        '
+        'lblGSTAmt
+        '
+        Me.lblGSTAmt.BackColor = System.Drawing.Color.Transparent
+        Me.lblGSTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGSTAmt.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblGSTAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblGSTAmt.Location = New System.Drawing.Point(550, 33)
+        Me.lblGSTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGSTAmt.Name = "lblGSTAmt"
+        Me.lblGSTAmt.Size = New System.Drawing.Size(72, 25)
+        Me.lblGSTAmt.TabIndex = 11
+        Me.lblGSTAmt.Text = "0.00"
+        Me.lblGSTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblSCAmt
+        '
+        Me.lblSCAmt.BackColor = System.Drawing.Color.Transparent
+        Me.lblSCAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSCAmt.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSCAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblSCAmt.Location = New System.Drawing.Point(589, -32)
+        Me.lblSCAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSCAmt.Name = "lblSCAmt"
+        Me.lblSCAmt.Size = New System.Drawing.Size(74, 25)
+        Me.lblSCAmt.TabIndex = 9
+        Me.lblSCAmt.Text = "0.00"
+        Me.lblSCAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblSCAmt.Visible = False
+        '
+        'PanelMemberDetails
+        '
+        Me.PanelMemberDetails.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelMemberDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelMemberDetails.Controls.Add(Me.lblMainScreebCitizenType)
+        Me.PanelMemberDetails.Controls.Add(Me.Label17)
+        Me.PanelMemberDetails.Controls.Add(Me.lblValidationMode)
+        Me.PanelMemberDetails.Controls.Add(Me.Label9)
+        Me.PanelMemberDetails.Controls.Add(Me.txtRefNo)
+        Me.PanelMemberDetails.Controls.Add(Me.chbComplementory)
+        Me.PanelMemberDetails.Controls.Add(Me.Label14)
+        Me.PanelMemberDetails.Controls.Add(Me.txtPAX)
+        Me.PanelMemberDetails.Controls.Add(Me.labelPAX)
+        Me.PanelMemberDetails.Controls.Add(Me.Label13)
+        Me.PanelMemberDetails.Controls.Add(Me.cmbTable)
+        Me.PanelMemberDetails.Controls.Add(Me.lblMemberName)
+        Me.PanelMemberDetails.Controls.Add(Me.txtMemID)
+        Me.PanelMemberDetails.Controls.Add(Me.Label1)
+        Me.PanelMemberDetails.Controls.Add(Me.Label3)
+        Me.PanelMemberDetails.Controls.Add(Me.Label2)
+        Me.PanelMemberDetails.Controls.Add(Me.cmbWaiter)
+        Me.PanelMemberDetails.Location = New System.Drawing.Point(3, 43)
+        Me.PanelMemberDetails.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelMemberDetails.Name = "PanelMemberDetails"
+        Me.PanelMemberDetails.Size = New System.Drawing.Size(531, 151)
+        Me.PanelMemberDetails.TabIndex = 0
+        '
+        'lblMainScreebCitizenType
+        '
+        Me.lblMainScreebCitizenType.BackColor = System.Drawing.Color.Yellow
+        Me.lblMainScreebCitizenType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMainScreebCitizenType.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblMainScreebCitizenType.Location = New System.Drawing.Point(196, 11)
+        Me.lblMainScreebCitizenType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMainScreebCitizenType.Name = "lblMainScreebCitizenType"
+        Me.lblMainScreebCitizenType.Size = New System.Drawing.Size(135, 28)
+        Me.lblMainScreebCitizenType.TabIndex = 15
+        Me.lblMainScreebCitizenType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(4, 50)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(53, 17)
+        Me.Label17.TabIndex = 3
+        Me.Label17.Text = "Name"
+        '
+        'lblValidationMode
+        '
+        Me.lblValidationMode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblValidationMode.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblValidationMode.Location = New System.Drawing.Point(394, 10)
+        Me.lblValidationMode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblValidationMode.Name = "lblValidationMode"
+        Me.lblValidationMode.Size = New System.Drawing.Size(122, 27)
+        Me.lblValidationMode.TabIndex = 6
+        Me.lblValidationMode.Text = "SmartCard"
+        Me.lblValidationMode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(335, 15)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(51, 17)
+        Me.Label9.TabIndex = 5
+        Me.Label9.Text = "Mode"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtRefNo
+        '
+        Me.txtRefNo.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtRefNo.Location = New System.Drawing.Point(394, 112)
+        Me.txtRefNo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRefNo.Name = "txtRefNo"
+        Me.txtRefNo.Size = New System.Drawing.Size(123, 27)
+        Me.txtRefNo.TabIndex = 14
+        Me.txtRefNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'chbComplementory
+        '
+        Me.chbComplementory.AutoSize = True
+        Me.chbComplementory.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.chbComplementory.Location = New System.Drawing.Point(362, 47)
+        Me.chbComplementory.Margin = New System.Windows.Forms.Padding(4)
+        Me.chbComplementory.Name = "chbComplementory"
+        Me.chbComplementory.Size = New System.Drawing.Size(156, 21)
+        Me.chbComplementory.TabIndex = 3
+        Me.chbComplementory.Text = "Complementory"
+        Me.chbComplementory.UseVisualStyleBackColor = True
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(337, 119)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(50, 17)
+        Me.Label14.TabIndex = 13
+        Me.Label14.Text = "&Ref.#"
+        '
+        'txtPAX
+        '
+        Me.txtPAX.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtPAX.Location = New System.Drawing.Point(394, 80)
+        Me.txtPAX.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPAX.Name = "txtPAX"
+        Me.txtPAX.Size = New System.Drawing.Size(123, 27)
+        Me.txtPAX.TabIndex = 10
+        Me.txtPAX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'labelPAX
+        '
+        Me.labelPAX.AutoSize = True
+        Me.labelPAX.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelPAX.Location = New System.Drawing.Point(337, 86)
+        Me.labelPAX.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelPAX.Name = "labelPAX"
+        Me.labelPAX.Size = New System.Drawing.Size(38, 17)
+        Me.labelPAX.TabIndex = 9
+        Me.labelPAX.Text = "&PAX"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(4, 86)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(84, 17)
+        Me.Label13.TabIndex = 7
+        Me.Label13.Text = "&Table No."
+        '
+        'cmbTable
+        '
+        Me.cmbTable.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbTable.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbTable.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbTable.FormattingEnabled = True
+        Me.cmbTable.Location = New System.Drawing.Point(91, 80)
+        Me.cmbTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbTable.Name = "cmbTable"
+        Me.cmbTable.Size = New System.Drawing.Size(242, 26)
+        Me.cmbTable.TabIndex = 8
+        '
+        'lblMemberName
+        '
+        Me.lblMemberName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblMemberName.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblMemberName.Location = New System.Drawing.Point(91, 47)
+        Me.lblMemberName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMemberName.Name = "lblMemberName"
+        Me.lblMemberName.Size = New System.Drawing.Size(240, 25)
+        Me.lblMemberName.TabIndex = 4
+        Me.lblMemberName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtMemID
+        '
+        Me.txtMemID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtMemID.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtMemID.Location = New System.Drawing.Point(91, 10)
+        Me.txtMemID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtMemID.Name = "txtMemID"
+        Me.txtMemID.Size = New System.Drawing.Size(100, 27)
+        Me.txtMemID.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(412, -18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(59, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "I Code"
+        Me.Label1.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(4, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 17)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "&Mem_ID"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(4, 119)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(58, 17)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "&Waiter"
+        '
+        'cmbWaiter
+        '
+        Me.cmbWaiter.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbWaiter.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbWaiter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbWaiter.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbWaiter.FormattingEnabled = True
+        Me.cmbWaiter.Location = New System.Drawing.Point(91, 114)
+        Me.cmbWaiter.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbWaiter.Name = "cmbWaiter"
+        Me.cmbWaiter.Size = New System.Drawing.Size(242, 26)
+        Me.cmbWaiter.TabIndex = 12
+        '
+        'PanelBillHeader
+        '
+        Me.PanelBillHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelBillHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelBillHeader.Controls.Add(Me.lblBillAmtPerviousKOT)
+        Me.PanelBillHeader.Controls.Add(Me.lblOpenBillString)
+        Me.PanelBillHeader.Controls.Add(Me.lblBillNo)
+        Me.PanelBillHeader.Controls.Add(Me.lblBillDate)
+        Me.PanelBillHeader.Controls.Add(Me.Label29)
+        Me.PanelBillHeader.Controls.Add(Me.Label11)
+        Me.PanelBillHeader.Location = New System.Drawing.Point(3, 0)
+        Me.PanelBillHeader.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelBillHeader.Name = "PanelBillHeader"
+        Me.PanelBillHeader.Size = New System.Drawing.Size(792, 41)
+        Me.PanelBillHeader.TabIndex = 0
+        '
+        'lblBillAmtPerviousKOT
+        '
+        Me.lblBillAmtPerviousKOT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBillAmtPerviousKOT.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblBillAmtPerviousKOT.Location = New System.Drawing.Point(355, 5)
+        Me.lblBillAmtPerviousKOT.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBillAmtPerviousKOT.Name = "lblBillAmtPerviousKOT"
+        Me.lblBillAmtPerviousKOT.Size = New System.Drawing.Size(163, 28)
+        Me.lblBillAmtPerviousKOT.TabIndex = 25
+        Me.lblBillAmtPerviousKOT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblOpenBillString
+        '
+        Me.lblOpenBillString.AutoSize = True
+        Me.lblOpenBillString.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOpenBillString.ForeColor = System.Drawing.Color.Black
+        Me.lblOpenBillString.Location = New System.Drawing.Point(260, 11)
+        Me.lblOpenBillString.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblOpenBillString.Name = "lblOpenBillString"
+        Me.lblOpenBillString.Size = New System.Drawing.Size(83, 17)
+        Me.lblOpenBillString.TabIndex = 24
+        Me.lblOpenBillString.Text = "BILL AMT"
+        Me.lblOpenBillString.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblBillNo
+        '
+        Me.lblBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblBillNo.Location = New System.Drawing.Point(91, 6)
+        Me.lblBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBillNo.Name = "lblBillNo"
+        Me.lblBillNo.Size = New System.Drawing.Size(156, 28)
+        Me.lblBillNo.TabIndex = 23
+        Me.lblBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblBillDate
+        '
+        Me.lblBillDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBillDate.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblBillDate.Location = New System.Drawing.Point(624, 5)
+        Me.lblBillDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBillDate.Name = "lblBillDate"
+        Me.lblBillDate.Size = New System.Drawing.Size(163, 28)
+        Me.lblBillDate.TabIndex = 6
+        Me.lblBillDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.Color.Black
+        Me.Label29.Location = New System.Drawing.Point(525, 11)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(90, 17)
+        Me.Label29.TabIndex = 3
+        Me.Label29.Text = "BILL DATE"
+        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(3, 11)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(71, 17)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "BILL NO"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PanelLocationAndTables
+        '
+        Me.PanelLocationAndTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelLocationAndTables.Controls.Add(Me.PanelTables)
+        Me.PanelLocationAndTables.Controls.Add(Me.PanelLocationTables)
+        Me.PanelLocationAndTables.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelLocationAndTables.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLocationAndTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelLocationAndTables.Name = "PanelLocationAndTables"
+        Me.PanelLocationAndTables.Size = New System.Drawing.Size(800, 518)
+        Me.PanelLocationAndTables.TabIndex = 322
+        '
+        'PanelTables
+        '
+        Me.PanelTables.BackColor = System.Drawing.Color.White
+        Me.PanelTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelTables.Controls.Add(Me.btnTableMoveRight)
+        Me.PanelTables.Controls.Add(Me.btnTableMoveLeft)
+        Me.PanelTables.Controls.Add(Me.btnTable36)
+        Me.PanelTables.Controls.Add(Me.btnTable35)
+        Me.PanelTables.Controls.Add(Me.btnTable39)
+        Me.PanelTables.Controls.Add(Me.btnTable38)
+        Me.PanelTables.Controls.Add(Me.btnTable37)
+        Me.PanelTables.Controls.Add(Me.btnTable28)
+        Me.PanelTables.Controls.Add(Me.btnTable31)
+        Me.PanelTables.Controls.Add(Me.btnTable29)
+        Me.PanelTables.Controls.Add(Me.btnTable30)
+        Me.PanelTables.Controls.Add(Me.btnTable34)
+        Me.PanelTables.Controls.Add(Me.btnTable33)
+        Me.PanelTables.Controls.Add(Me.btnTable32)
+        Me.PanelTables.Controls.Add(Me.btnTable27)
+        Me.PanelTables.Controls.Add(Me.btnTable25)
+        Me.PanelTables.Controls.Add(Me.btnTable26)
+        Me.PanelTables.Controls.Add(Me.btnTable18)
+        Me.PanelTables.Controls.Add(Me.btnTable21)
+        Me.PanelTables.Controls.Add(Me.btnTable19)
+        Me.PanelTables.Controls.Add(Me.btnTable20)
+        Me.PanelTables.Controls.Add(Me.btnTable24)
+        Me.PanelTables.Controls.Add(Me.btnTable23)
+        Me.PanelTables.Controls.Add(Me.btnTable22)
+        Me.PanelTables.Controls.Add(Me.btnTable17)
+        Me.PanelTables.Controls.Add(Me.btnTable15)
+        Me.PanelTables.Controls.Add(Me.btnTable16)
+        Me.PanelTables.Controls.Add(Me.btnTable8)
+        Me.PanelTables.Controls.Add(Me.btnTable11)
+        Me.PanelTables.Controls.Add(Me.btnTable9)
+        Me.PanelTables.Controls.Add(Me.btnTable10)
+        Me.PanelTables.Controls.Add(Me.btnTable1)
+        Me.PanelTables.Controls.Add(Me.btnTable14)
+        Me.PanelTables.Controls.Add(Me.btnTable2)
+        Me.PanelTables.Controls.Add(Me.btnTable13)
+        Me.PanelTables.Controls.Add(Me.btnTable3)
+        Me.PanelTables.Controls.Add(Me.btnTable12)
+        Me.PanelTables.Controls.Add(Me.btnTable4)
+        Me.PanelTables.Controls.Add(Me.btnTable7)
+        Me.PanelTables.Controls.Add(Me.btnTable5)
+        Me.PanelTables.Controls.Add(Me.btnTable6)
+        Me.PanelTables.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelTables.Location = New System.Drawing.Point(0, 110)
+        Me.PanelTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelTables.Name = "PanelTables"
+        Me.PanelTables.Size = New System.Drawing.Size(798, 406)
+        Me.PanelTables.TabIndex = 10
+        '
+        'btnTable36
+        '
+        Me.btnTable36.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable36.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable36.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable36.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable36.Location = New System.Drawing.Point(162, 354)
+        Me.btnTable36.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable36.Name = "btnTable36"
+        Me.btnTable36.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable36.TabIndex = 37
+        Me.btnTable36.TabStop = False
+        Me.btnTable36.Tag = ""
+        Me.btnTable36.UseVisualStyleBackColor = False
+        '
+        'btnTable35
+        '
+        Me.btnTable35.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable35.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable35.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable35.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable35.Location = New System.Drawing.Point(3, 354)
+        Me.btnTable35.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable35.Name = "btnTable35"
+        Me.btnTable35.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable35.TabIndex = 36
+        Me.btnTable35.TabStop = False
+        Me.btnTable35.Tag = ""
+        Me.btnTable35.UseVisualStyleBackColor = False
+        '
+        'btnTable39
+        '
+        Me.btnTable39.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable39.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable39.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable39.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable39.Location = New System.Drawing.Point(638, 354)
+        Me.btnTable39.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable39.Name = "btnTable39"
+        Me.btnTable39.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable39.TabIndex = 40
+        Me.btnTable39.TabStop = False
+        Me.btnTable39.Tag = ""
+        Me.btnTable39.UseVisualStyleBackColor = False
+        '
+        'btnTable38
+        '
+        Me.btnTable38.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable38.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable38.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable38.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable38.Location = New System.Drawing.Point(479, 354)
+        Me.btnTable38.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable38.Name = "btnTable38"
+        Me.btnTable38.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable38.TabIndex = 39
+        Me.btnTable38.TabStop = False
+        Me.btnTable38.Tag = ""
+        Me.btnTable38.UseVisualStyleBackColor = False
+        '
+        'btnTable37
+        '
+        Me.btnTable37.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable37.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable37.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable37.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable37.Location = New System.Drawing.Point(321, 354)
+        Me.btnTable37.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable37.Name = "btnTable37"
+        Me.btnTable37.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable37.TabIndex = 38
+        Me.btnTable37.TabStop = False
+        Me.btnTable37.Tag = ""
+        Me.btnTable37.UseVisualStyleBackColor = False
+        '
+        'btnTable28
+        '
+        Me.btnTable28.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable28.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable28.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable28.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable28.Location = New System.Drawing.Point(479, 254)
+        Me.btnTable28.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable28.Name = "btnTable28"
+        Me.btnTable28.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable28.TabIndex = 29
+        Me.btnTable28.TabStop = False
+        Me.btnTable28.Tag = ""
+        Me.btnTable28.UseVisualStyleBackColor = False
+        '
+        'btnTable31
+        '
+        Me.btnTable31.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable31.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable31.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable31.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable31.Location = New System.Drawing.Point(162, 304)
+        Me.btnTable31.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable31.Name = "btnTable31"
+        Me.btnTable31.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable31.TabIndex = 32
+        Me.btnTable31.TabStop = False
+        Me.btnTable31.Tag = ""
+        Me.btnTable31.UseVisualStyleBackColor = False
+        '
+        'btnTable29
+        '
+        Me.btnTable29.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable29.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable29.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable29.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable29.Location = New System.Drawing.Point(638, 254)
+        Me.btnTable29.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable29.Name = "btnTable29"
+        Me.btnTable29.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable29.TabIndex = 30
+        Me.btnTable29.TabStop = False
+        Me.btnTable29.Tag = ""
+        Me.btnTable29.UseVisualStyleBackColor = False
+        '
+        'btnTable30
+        '
+        Me.btnTable30.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable30.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable30.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable30.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable30.Location = New System.Drawing.Point(3, 304)
+        Me.btnTable30.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable30.Name = "btnTable30"
+        Me.btnTable30.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable30.TabIndex = 31
+        Me.btnTable30.TabStop = False
+        Me.btnTable30.Tag = ""
+        Me.btnTable30.UseVisualStyleBackColor = False
+        '
+        'btnTable34
+        '
+        Me.btnTable34.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable34.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable34.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable34.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable34.Location = New System.Drawing.Point(638, 304)
+        Me.btnTable34.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable34.Name = "btnTable34"
+        Me.btnTable34.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable34.TabIndex = 35
+        Me.btnTable34.TabStop = False
+        Me.btnTable34.Tag = ""
+        Me.btnTable34.UseVisualStyleBackColor = False
+        '
+        'btnTable33
+        '
+        Me.btnTable33.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable33.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable33.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable33.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable33.Location = New System.Drawing.Point(479, 304)
+        Me.btnTable33.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable33.Name = "btnTable33"
+        Me.btnTable33.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable33.TabIndex = 34
+        Me.btnTable33.TabStop = False
+        Me.btnTable33.Tag = ""
+        Me.btnTable33.UseVisualStyleBackColor = False
+        '
+        'btnTable32
+        '
+        Me.btnTable32.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable32.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable32.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable32.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable32.Location = New System.Drawing.Point(321, 304)
+        Me.btnTable32.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable32.Name = "btnTable32"
+        Me.btnTable32.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable32.TabIndex = 33
+        Me.btnTable32.TabStop = False
+        Me.btnTable32.Tag = ""
+        Me.btnTable32.UseVisualStyleBackColor = False
+        '
+        'btnTable27
+        '
+        Me.btnTable27.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable27.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable27.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable27.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable27.Location = New System.Drawing.Point(321, 254)
+        Me.btnTable27.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable27.Name = "btnTable27"
+        Me.btnTable27.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable27.TabIndex = 28
+        Me.btnTable27.TabStop = False
+        Me.btnTable27.Tag = ""
+        Me.btnTable27.UseVisualStyleBackColor = False
+        '
+        'btnTable25
+        '
+        Me.btnTable25.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable25.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable25.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable25.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable25.Location = New System.Drawing.Point(3, 254)
+        Me.btnTable25.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable25.Name = "btnTable25"
+        Me.btnTable25.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable25.TabIndex = 26
+        Me.btnTable25.TabStop = False
+        Me.btnTable25.Tag = ""
+        Me.btnTable25.UseVisualStyleBackColor = False
+        '
+        'btnTable26
+        '
+        Me.btnTable26.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable26.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable26.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable26.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable26.Location = New System.Drawing.Point(162, 254)
+        Me.btnTable26.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable26.Name = "btnTable26"
+        Me.btnTable26.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable26.TabIndex = 27
+        Me.btnTable26.TabStop = False
+        Me.btnTable26.Tag = ""
+        Me.btnTable26.UseVisualStyleBackColor = False
+        '
+        'btnTable18
+        '
+        Me.btnTable18.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable18.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable18.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable18.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable18.Location = New System.Drawing.Point(479, 154)
+        Me.btnTable18.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable18.Name = "btnTable18"
+        Me.btnTable18.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable18.TabIndex = 19
+        Me.btnTable18.TabStop = False
+        Me.btnTable18.Tag = ""
+        Me.btnTable18.UseVisualStyleBackColor = False
+        '
+        'btnTable21
+        '
+        Me.btnTable21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable21.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable21.Location = New System.Drawing.Point(162, 204)
+        Me.btnTable21.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable21.Name = "btnTable21"
+        Me.btnTable21.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable21.TabIndex = 22
+        Me.btnTable21.TabStop = False
+        Me.btnTable21.Tag = ""
+        Me.btnTable21.UseVisualStyleBackColor = False
+        '
+        'btnTable19
+        '
+        Me.btnTable19.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable19.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable19.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable19.Location = New System.Drawing.Point(638, 154)
+        Me.btnTable19.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable19.Name = "btnTable19"
+        Me.btnTable19.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable19.TabIndex = 20
+        Me.btnTable19.TabStop = False
+        Me.btnTable19.Tag = ""
+        Me.btnTable19.UseVisualStyleBackColor = False
+        '
+        'btnTable20
+        '
+        Me.btnTable20.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable20.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable20.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable20.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable20.Location = New System.Drawing.Point(3, 204)
+        Me.btnTable20.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable20.Name = "btnTable20"
+        Me.btnTable20.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable20.TabIndex = 21
+        Me.btnTable20.TabStop = False
+        Me.btnTable20.Tag = ""
+        Me.btnTable20.UseVisualStyleBackColor = False
+        '
+        'btnTable24
+        '
+        Me.btnTable24.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable24.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable24.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable24.Location = New System.Drawing.Point(638, 204)
+        Me.btnTable24.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable24.Name = "btnTable24"
+        Me.btnTable24.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable24.TabIndex = 25
+        Me.btnTable24.TabStop = False
+        Me.btnTable24.Tag = ""
+        Me.btnTable24.UseVisualStyleBackColor = False
+        '
+        'btnTable23
+        '
+        Me.btnTable23.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable23.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable23.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable23.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable23.Location = New System.Drawing.Point(479, 204)
+        Me.btnTable23.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable23.Name = "btnTable23"
+        Me.btnTable23.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable23.TabIndex = 24
+        Me.btnTable23.TabStop = False
+        Me.btnTable23.Tag = ""
+        Me.btnTable23.UseVisualStyleBackColor = False
+        '
+        'btnTable22
+        '
+        Me.btnTable22.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable22.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable22.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable22.Location = New System.Drawing.Point(321, 204)
+        Me.btnTable22.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable22.Name = "btnTable22"
+        Me.btnTable22.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable22.TabIndex = 23
+        Me.btnTable22.TabStop = False
+        Me.btnTable22.Tag = ""
+        Me.btnTable22.UseVisualStyleBackColor = False
+        '
+        'btnTable17
+        '
+        Me.btnTable17.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable17.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable17.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable17.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable17.Location = New System.Drawing.Point(321, 154)
+        Me.btnTable17.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable17.Name = "btnTable17"
+        Me.btnTable17.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable17.TabIndex = 18
+        Me.btnTable17.TabStop = False
+        Me.btnTable17.Tag = ""
+        Me.btnTable17.UseVisualStyleBackColor = False
+        '
+        'btnTable15
+        '
+        Me.btnTable15.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable15.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable15.Location = New System.Drawing.Point(3, 154)
+        Me.btnTable15.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable15.Name = "btnTable15"
+        Me.btnTable15.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable15.TabIndex = 16
+        Me.btnTable15.TabStop = False
+        Me.btnTable15.Tag = ""
+        Me.btnTable15.UseVisualStyleBackColor = False
+        '
+        'btnTable16
+        '
+        Me.btnTable16.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable16.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable16.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable16.Location = New System.Drawing.Point(162, 154)
+        Me.btnTable16.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable16.Name = "btnTable16"
+        Me.btnTable16.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable16.TabIndex = 17
+        Me.btnTable16.TabStop = False
+        Me.btnTable16.Tag = ""
+        Me.btnTable16.UseVisualStyleBackColor = False
+        '
+        'btnTable8
+        '
+        Me.btnTable8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable8.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable8.Location = New System.Drawing.Point(479, 54)
+        Me.btnTable8.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable8.Name = "btnTable8"
+        Me.btnTable8.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable8.TabIndex = 9
+        Me.btnTable8.TabStop = False
+        Me.btnTable8.Tag = ""
+        Me.btnTable8.UseVisualStyleBackColor = False
+        '
+        'btnTable11
+        '
+        Me.btnTable11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable11.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable11.Location = New System.Drawing.Point(162, 104)
+        Me.btnTable11.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable11.Name = "btnTable11"
+        Me.btnTable11.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable11.TabIndex = 12
+        Me.btnTable11.TabStop = False
+        Me.btnTable11.Tag = ""
+        Me.btnTable11.UseVisualStyleBackColor = False
+        '
+        'btnTable9
+        '
+        Me.btnTable9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable9.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable9.Location = New System.Drawing.Point(638, 54)
+        Me.btnTable9.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable9.Name = "btnTable9"
+        Me.btnTable9.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable9.TabIndex = 10
+        Me.btnTable9.TabStop = False
+        Me.btnTable9.Tag = ""
+        Me.btnTable9.UseVisualStyleBackColor = False
+        '
+        'btnTable10
+        '
+        Me.btnTable10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable10.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable10.Location = New System.Drawing.Point(3, 104)
+        Me.btnTable10.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable10.Name = "btnTable10"
+        Me.btnTable10.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable10.TabIndex = 11
+        Me.btnTable10.TabStop = False
+        Me.btnTable10.Tag = ""
+        Me.btnTable10.UseVisualStyleBackColor = False
+        '
+        'btnTable1
+        '
+        Me.btnTable1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable1.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable1.Location = New System.Drawing.Point(3, 4)
+        Me.btnTable1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable1.Name = "btnTable1"
+        Me.btnTable1.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable1.TabIndex = 0
+        Me.btnTable1.TabStop = False
+        Me.btnTable1.Tag = ""
+        Me.btnTable1.UseVisualStyleBackColor = False
+        '
+        'btnTable14
+        '
+        Me.btnTable14.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable14.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable14.Location = New System.Drawing.Point(638, 104)
+        Me.btnTable14.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable14.Name = "btnTable14"
+        Me.btnTable14.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable14.TabIndex = 15
+        Me.btnTable14.TabStop = False
+        Me.btnTable14.Tag = ""
+        Me.btnTable14.UseVisualStyleBackColor = False
+        '
+        'btnTable2
+        '
+        Me.btnTable2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable2.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable2.Location = New System.Drawing.Point(162, 4)
+        Me.btnTable2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable2.Name = "btnTable2"
+        Me.btnTable2.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable2.TabIndex = 1
+        Me.btnTable2.TabStop = False
+        Me.btnTable2.Tag = ""
+        Me.btnTable2.UseVisualStyleBackColor = False
+        '
+        'btnTable13
+        '
+        Me.btnTable13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable13.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable13.Location = New System.Drawing.Point(479, 104)
+        Me.btnTable13.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable13.Name = "btnTable13"
+        Me.btnTable13.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable13.TabIndex = 14
+        Me.btnTable13.TabStop = False
+        Me.btnTable13.Tag = ""
+        Me.btnTable13.UseVisualStyleBackColor = False
+        '
+        'btnTable3
+        '
+        Me.btnTable3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable3.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable3.Location = New System.Drawing.Point(321, 4)
+        Me.btnTable3.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable3.Name = "btnTable3"
+        Me.btnTable3.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable3.TabIndex = 2
+        Me.btnTable3.TabStop = False
+        Me.btnTable3.Tag = ""
+        Me.btnTable3.UseVisualStyleBackColor = False
+        '
+        'btnTable12
+        '
+        Me.btnTable12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable12.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable12.Location = New System.Drawing.Point(321, 104)
+        Me.btnTable12.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable12.Name = "btnTable12"
+        Me.btnTable12.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable12.TabIndex = 13
+        Me.btnTable12.TabStop = False
+        Me.btnTable12.Tag = ""
+        Me.btnTable12.UseVisualStyleBackColor = False
+        '
+        'btnTable4
+        '
+        Me.btnTable4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable4.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable4.Location = New System.Drawing.Point(479, 4)
+        Me.btnTable4.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable4.Name = "btnTable4"
+        Me.btnTable4.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable4.TabIndex = 3
+        Me.btnTable4.TabStop = False
+        Me.btnTable4.Tag = ""
+        Me.btnTable4.UseVisualStyleBackColor = False
+        '
+        'btnTable7
+        '
+        Me.btnTable7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable7.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable7.Location = New System.Drawing.Point(321, 54)
+        Me.btnTable7.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable7.Name = "btnTable7"
+        Me.btnTable7.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable7.TabIndex = 8
+        Me.btnTable7.TabStop = False
+        Me.btnTable7.Tag = ""
+        Me.btnTable7.UseVisualStyleBackColor = False
+        '
+        'btnTable5
+        '
+        Me.btnTable5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable5.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable5.Location = New System.Drawing.Point(3, 54)
+        Me.btnTable5.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable5.Name = "btnTable5"
+        Me.btnTable5.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable5.TabIndex = 6
+        Me.btnTable5.TabStop = False
+        Me.btnTable5.Tag = ""
+        Me.btnTable5.UseVisualStyleBackColor = False
+        '
+        'btnTable6
+        '
+        Me.btnTable6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnTable6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnTable6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnTable6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnTable6.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnTable6.Location = New System.Drawing.Point(162, 54)
+        Me.btnTable6.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTable6.Name = "btnTable6"
+        Me.btnTable6.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable6.TabIndex = 7
+        Me.btnTable6.TabStop = False
+        Me.btnTable6.Tag = ""
+        Me.btnTable6.UseVisualStyleBackColor = False
+        '
+        'PanelLocationTables
+        '
+        Me.PanelLocationTables.BackColor = System.Drawing.Color.White
+        Me.PanelLocationTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation1)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation2)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation3)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation8)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation4)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation7)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation5)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocation6)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocationMoveLeft)
+        Me.PanelLocationTables.Controls.Add(Me.btnBillingLocationMoveRight)
+        Me.PanelLocationTables.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLocationTables.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLocationTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelLocationTables.Name = "PanelLocationTables"
+        Me.PanelLocationTables.Size = New System.Drawing.Size(798, 110)
+        Me.PanelLocationTables.TabIndex = 9
+        '
+        'btnBillingLocation1
+        '
+        Me.btnBillingLocation1.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation1.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation1.Location = New System.Drawing.Point(3, 2)
+        Me.btnBillingLocation1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation1.Name = "btnBillingLocation1"
+        Me.btnBillingLocation1.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation1.TabIndex = 0
+        Me.btnBillingLocation1.TabStop = False
+        Me.btnBillingLocation1.Tag = ""
+        Me.btnBillingLocation1.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation2
+        '
+        Me.btnBillingLocation2.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation2.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation2.Location = New System.Drawing.Point(162, 2)
+        Me.btnBillingLocation2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation2.Name = "btnBillingLocation2"
+        Me.btnBillingLocation2.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation2.TabIndex = 1
+        Me.btnBillingLocation2.TabStop = False
+        Me.btnBillingLocation2.Tag = ""
+        Me.btnBillingLocation2.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation3
+        '
+        Me.btnBillingLocation3.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation3.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation3.Location = New System.Drawing.Point(321, 2)
+        Me.btnBillingLocation3.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation3.Name = "btnBillingLocation3"
+        Me.btnBillingLocation3.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation3.TabIndex = 2
+        Me.btnBillingLocation3.TabStop = False
+        Me.btnBillingLocation3.Tag = ""
+        Me.btnBillingLocation3.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation8
+        '
+        Me.btnBillingLocation8.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation8.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation8.Location = New System.Drawing.Point(479, 56)
+        Me.btnBillingLocation8.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation8.Name = "btnBillingLocation8"
+        Me.btnBillingLocation8.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation8.TabIndex = 8
+        Me.btnBillingLocation8.TabStop = False
+        Me.btnBillingLocation8.Tag = ""
+        Me.btnBillingLocation8.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation4
+        '
+        Me.btnBillingLocation4.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation4.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation4.Location = New System.Drawing.Point(479, 2)
+        Me.btnBillingLocation4.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation4.Name = "btnBillingLocation4"
+        Me.btnBillingLocation4.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation4.TabIndex = 3
+        Me.btnBillingLocation4.TabStop = False
+        Me.btnBillingLocation4.Tag = ""
+        Me.btnBillingLocation4.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation7
+        '
+        Me.btnBillingLocation7.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation7.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation7.Location = New System.Drawing.Point(321, 56)
+        Me.btnBillingLocation7.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation7.Name = "btnBillingLocation7"
+        Me.btnBillingLocation7.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation7.TabIndex = 7
+        Me.btnBillingLocation7.TabStop = False
+        Me.btnBillingLocation7.Tag = ""
+        Me.btnBillingLocation7.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation5
+        '
+        Me.btnBillingLocation5.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation5.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation5.Location = New System.Drawing.Point(3, 56)
+        Me.btnBillingLocation5.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation5.Name = "btnBillingLocation5"
+        Me.btnBillingLocation5.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation5.TabIndex = 5
+        Me.btnBillingLocation5.TabStop = False
+        Me.btnBillingLocation5.Tag = ""
+        Me.btnBillingLocation5.UseVisualStyleBackColor = False
+        '
+        'btnBillingLocation6
+        '
+        Me.btnBillingLocation6.BackColor = System.Drawing.Color.White
+        Me.btnBillingLocation6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnBillingLocation6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBillingLocation6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnBillingLocation6.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.btnBillingLocation6.Location = New System.Drawing.Point(162, 56)
+        Me.btnBillingLocation6.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBillingLocation6.Name = "btnBillingLocation6"
+        Me.btnBillingLocation6.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation6.TabIndex = 6
+        Me.btnBillingLocation6.TabStop = False
+        Me.btnBillingLocation6.Tag = ""
+        Me.btnBillingLocation6.UseVisualStyleBackColor = False
+        '
+        'PanelClosedBills
+        '
+        Me.PanelClosedBills.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelClosedBills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelClosedBills.Controls.Add(Me.dgHistory)
+        Me.PanelClosedBills.Controls.Add(Me.cmbTableNoSC)
+        Me.PanelClosedBills.Controls.Add(Me.txtMemIDSC)
+        Me.PanelClosedBills.Controls.Add(Me.Label50)
+        Me.PanelClosedBills.Controls.Add(Me.Label46)
+        Me.PanelClosedBills.Controls.Add(Me.Label12)
+        Me.PanelClosedBills.Controls.Add(Me.cmbLocation)
+        Me.PanelClosedBills.Controls.Add(Me.Label10)
+        Me.PanelClosedBills.Controls.Add(Me.cmbCashier)
+        Me.PanelClosedBills.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelClosedBills.Location = New System.Drawing.Point(10, 52)
+        Me.PanelClosedBills.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelClosedBills.Name = "PanelClosedBills"
+        Me.PanelClosedBills.Size = New System.Drawing.Size(380, 518)
+        Me.PanelClosedBills.TabIndex = 317
+        '
+        'dgHistory
+        '
+        Me.dgHistory.AllowUserToAddRows = False
+        Me.dgHistory.AllowUserToDeleteRows = False
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle26.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgHistory.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle26
+        Me.dgHistory.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgHistory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgHistory.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgHistory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle27
+        Me.dgHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgHistory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn8, Me.DataGridViewImageColumn9, Me.DataGridViewImageColumn10})
+        Me.dgHistory.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgHistory.DefaultCellStyle = DataGridViewCellStyle28
+        Me.dgHistory.GridColor = System.Drawing.Color.Chocolate
+        Me.dgHistory.Location = New System.Drawing.Point(3, 119)
+        Me.dgHistory.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgHistory.MultiSelect = False
+        Me.dgHistory.Name = "dgHistory"
+        Me.dgHistory.ReadOnly = True
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle29.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgHistory.RowHeadersDefaultCellStyle = DataGridViewCellStyle29
+        Me.dgHistory.RowHeadersVisible = False
+        Me.dgHistory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgHistory.RowTemplate.Height = 40
+        Me.dgHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgHistory.Size = New System.Drawing.Size(373, 394)
+        Me.dgHistory.TabIndex = 8
+        Me.dgHistory.TabStop = False
+        '
+        'DataGridViewImageColumn8
+        '
+        Me.DataGridViewImageColumn8.FillWeight = 25.0!
+        Me.DataGridViewImageColumn8.Frozen = True
+        Me.DataGridViewImageColumn8.HeaderText = ""
+        Me.DataGridViewImageColumn8.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
+        Me.DataGridViewImageColumn8.MinimumWidth = 25
+        Me.DataGridViewImageColumn8.Name = "DataGridViewImageColumn8"
+        Me.DataGridViewImageColumn8.ReadOnly = True
+        Me.DataGridViewImageColumn8.Width = 25
+        '
+        'DataGridViewImageColumn9
+        '
+        Me.DataGridViewImageColumn9.FillWeight = 25.0!
+        Me.DataGridViewImageColumn9.Frozen = True
+        Me.DataGridViewImageColumn9.HeaderText = ""
+        Me.DataGridViewImageColumn9.Image = Global.FNBManagement.My.Resources.Resources.printer
+        Me.DataGridViewImageColumn9.MinimumWidth = 25
+        Me.DataGridViewImageColumn9.Name = "DataGridViewImageColumn9"
+        Me.DataGridViewImageColumn9.ReadOnly = True
+        Me.DataGridViewImageColumn9.Width = 25
+        '
+        'DataGridViewImageColumn10
+        '
+        Me.DataGridViewImageColumn10.FillWeight = 25.0!
+        Me.DataGridViewImageColumn10.Frozen = True
+        Me.DataGridViewImageColumn10.HeaderText = ""
+        Me.DataGridViewImageColumn10.Image = Global.FNBManagement.My.Resources.Resources.view
+        Me.DataGridViewImageColumn10.MinimumWidth = 25
+        Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
+        Me.DataGridViewImageColumn10.ReadOnly = True
+        Me.DataGridViewImageColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewImageColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewImageColumn10.Width = 25
+        '
+        'cmbTableNoSC
+        '
+        Me.cmbTableNoSC.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbTableNoSC.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbTableNoSC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbTableNoSC.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbTableNoSC.FormattingEnabled = True
+        Me.cmbTableNoSC.Location = New System.Drawing.Point(97, 82)
+        Me.cmbTableNoSC.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbTableNoSC.Name = "cmbTableNoSC"
+        Me.cmbTableNoSC.Size = New System.Drawing.Size(103, 26)
+        Me.cmbTableNoSC.TabIndex = 5
+        '
+        'txtMemIDSC
+        '
+        Me.txtMemIDSC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtMemIDSC.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtMemIDSC.Location = New System.Drawing.Point(287, 84)
+        Me.txtMemIDSC.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtMemIDSC.Name = "txtMemIDSC"
+        Me.txtMemIDSC.Size = New System.Drawing.Size(86, 27)
+        Me.txtMemIDSC.TabIndex = 7
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label50.Location = New System.Drawing.Point(205, 87)
+        Me.Label50.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(82, 20)
+        Me.Label50.TabIndex = 6
+        Me.Label50.Text = "&Mem.No"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label46.Location = New System.Drawing.Point(3, 89)
+        Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(56, 20)
+        Me.Label46.TabIndex = 4
+        Me.Label46.Text = "T&bl #"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label12.Location = New System.Drawing.Point(3, 52)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(86, 20)
+        Me.Label12.TabIndex = 2
+        Me.Label12.Text = "Location"
+        '
+        'cmbLocation
+        '
+        Me.cmbLocation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLocation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbLocation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbLocation.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbLocation.FormattingEnabled = True
+        Me.cmbLocation.Location = New System.Drawing.Point(97, 47)
+        Me.cmbLocation.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbLocation.Name = "cmbLocation"
+        Me.cmbLocation.Size = New System.Drawing.Size(279, 26)
+        Me.cmbLocation.TabIndex = 3
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Label10.Location = New System.Drawing.Point(3, 15)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(77, 20)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "Cashier"
+        '
+        'cmbCashier
+        '
+        Me.cmbCashier.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbCashier.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbCashier.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbCashier.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.cmbCashier.FormattingEnabled = True
+        Me.cmbCashier.Location = New System.Drawing.Point(97, 10)
+        Me.cmbCashier.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbCashier.Name = "cmbCashier"
+        Me.cmbCashier.Size = New System.Drawing.Size(278, 26)
+        Me.cmbCashier.TabIndex = 1
+        '
+        'PanelFooter
+        '
+        Me.PanelFooter.Controls.Add(Me.PanelDisplayBill)
+        Me.PanelFooter.Controls.Add(Me.btnRefresh)
+        Me.PanelFooter.Controls.Add(Me.btnClose)
+        Me.PanelFooter.Controls.Add(Me.btnHistory)
+        Me.PanelFooter.Controls.Add(Me.btnShiftKOT)
+        Me.PanelFooter.Controls.Add(Me.btnSettleBillHomePage)
+        Me.PanelFooter.Controls.Add(Me.btnModifiers)
+        Me.PanelFooter.Controls.Add(Me.btnModifyKOT)
+        Me.PanelFooter.Controls.Add(Me.btnShowTables)
+        Me.PanelFooter.Controls.Add(Me.btnShiftTable)
+        Me.PanelFooter.Controls.Add(Me.btnEstimate)
+        Me.PanelFooter.Controls.Add(Me.btnSaveNSettle)
+        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelFooter.Location = New System.Drawing.Point(10, 570)
+        Me.PanelFooter.Name = "PanelFooter"
+        Me.PanelFooter.Size = New System.Drawing.Size(1180, 120)
+        Me.PanelFooter.TabIndex = 312
+        '
+        'PanelDisplayBill
+        '
+        Me.PanelDisplayBill.BackColor = System.Drawing.Color.White
+        Me.PanelDisplayBill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelDisplayBill.Controls.Add(Me.lblKOTStr)
+        Me.PanelDisplayBill.Controls.Add(Me.lblTempYearCode)
+        Me.PanelDisplayBill.Controls.Add(Me.lblTempLocationCode)
+        Me.PanelDisplayBill.Controls.Add(Me.lblTempBillNo)
+        Me.PanelDisplayBill.Controls.Add(Me.btnPrintDuplicateBill)
+        Me.PanelDisplayBill.Controls.Add(Me.btnCloseView)
+        Me.PanelDisplayBill.Location = New System.Drawing.Point(351, 121)
+        Me.PanelDisplayBill.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelDisplayBill.Name = "PanelDisplayBill"
+        Me.PanelDisplayBill.Size = New System.Drawing.Size(349, 317)
+        Me.PanelDisplayBill.TabIndex = 318
+        '
+        'lblKOTStr
+        '
+        Me.lblKOTStr.AutoSize = True
+        Me.lblKOTStr.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblKOTStr.ForeColor = System.Drawing.Color.Black
+        Me.lblKOTStr.Location = New System.Drawing.Point(211, 390)
+        Me.lblKOTStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblKOTStr.Name = "lblKOTStr"
+        Me.lblKOTStr.Size = New System.Drawing.Size(69, 18)
+        Me.lblKOTStr.TabIndex = 60
+        Me.lblKOTStr.Text = "&Bill Type"
+        Me.lblKOTStr.Visible = False
+        '
+        'lblTempYearCode
+        '
+        Me.lblTempYearCode.AutoSize = True
+        Me.lblTempYearCode.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTempYearCode.ForeColor = System.Drawing.Color.Black
+        Me.lblTempYearCode.Location = New System.Drawing.Point(83, 15)
+        Me.lblTempYearCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTempYearCode.Name = "lblTempYearCode"
+        Me.lblTempYearCode.Size = New System.Drawing.Size(69, 18)
+        Me.lblTempYearCode.TabIndex = 59
+        Me.lblTempYearCode.Text = "&Bill Type"
+        Me.lblTempYearCode.Visible = False
+        '
+        'lblTempLocationCode
+        '
+        Me.lblTempLocationCode.AutoSize = True
+        Me.lblTempLocationCode.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTempLocationCode.ForeColor = System.Drawing.Color.Black
+        Me.lblTempLocationCode.Location = New System.Drawing.Point(137, 14)
+        Me.lblTempLocationCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTempLocationCode.Name = "lblTempLocationCode"
+        Me.lblTempLocationCode.Size = New System.Drawing.Size(69, 18)
+        Me.lblTempLocationCode.TabIndex = 58
+        Me.lblTempLocationCode.Text = "&Bill Type"
+        Me.lblTempLocationCode.Visible = False
+        '
+        'lblTempBillNo
+        '
+        Me.lblTempBillNo.AutoSize = True
+        Me.lblTempBillNo.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTempBillNo.ForeColor = System.Drawing.Color.Black
+        Me.lblTempBillNo.Location = New System.Drawing.Point(7, 14)
+        Me.lblTempBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTempBillNo.Name = "lblTempBillNo"
+        Me.lblTempBillNo.Size = New System.Drawing.Size(69, 18)
+        Me.lblTempBillNo.TabIndex = 57
+        Me.lblTempBillNo.Text = "&Bill Type"
+        Me.lblTempBillNo.Visible = False
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.AutoSize = True
+        Me.btnRefresh.BackColor = System.Drawing.Color.Tomato
+        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnRefresh.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnRefresh.Location = New System.Drawing.Point(953, 10)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(108, 48)
+        Me.btnRefresh.TabIndex = 319
+        Me.btnRefresh.Text = "REFRESH"
+        Me.btnRefresh.UseVisualStyleBackColor = False
+        '
+        'btnClose
+        '
+        Me.btnClose.AutoSize = True
+        Me.btnClose.BackColor = System.Drawing.Color.Tomato
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnClose.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnClose.Location = New System.Drawing.Point(1066, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(109, 48)
+        Me.btnClose.TabIndex = 320
+        Me.btnClose.Text = "CLOSE"
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'btnHistory
+        '
+        Me.btnHistory.AutoSize = True
+        Me.btnHistory.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnHistory.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnHistory.Location = New System.Drawing.Point(832, 9)
+        Me.btnHistory.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHistory.Name = "btnHistory"
+        Me.btnHistory.Size = New System.Drawing.Size(117, 48)
+        Me.btnHistory.TabIndex = 318
+        Me.btnHistory.Text = "HISTORY"
+        Me.btnHistory.UseVisualStyleBackColor = False
+        '
+        'btnShiftKOT
+        '
+        Me.btnShiftKOT.AutoSize = True
+        Me.btnShiftKOT.BackColor = System.Drawing.Color.Tomato
+        Me.btnShiftKOT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnShiftKOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnShiftKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnShiftKOT.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnShiftKOT.Location = New System.Drawing.Point(563, 9)
+        Me.btnShiftKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnShiftKOT.Name = "btnShiftKOT"
+        Me.btnShiftKOT.Size = New System.Drawing.Size(128, 48)
+        Me.btnShiftKOT.TabIndex = 317
+        Me.btnShiftKOT.Text = "SHIFT KOT"
+        Me.btnShiftKOT.UseVisualStyleBackColor = False
+        '
+        'btnSettleBillHomePage
+        '
+        Me.btnSettleBillHomePage.AutoSize = True
+        Me.btnSettleBillHomePage.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnSettleBillHomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSettleBillHomePage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSettleBillHomePage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSettleBillHomePage.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSettleBillHomePage.Location = New System.Drawing.Point(290, 10)
+        Me.btnSettleBillHomePage.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSettleBillHomePage.Name = "btnSettleBillHomePage"
+        Me.btnSettleBillHomePage.Size = New System.Drawing.Size(128, 48)
+        Me.btnSettleBillHomePage.TabIndex = 312
+        Me.btnSettleBillHomePage.Text = "SETTLE BILL"
+        Me.btnSettleBillHomePage.UseVisualStyleBackColor = False
+        '
+        'btnModifiers
+        '
+        Me.btnModifiers.AutoSize = True
+        Me.btnModifiers.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnModifiers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnModifiers.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModifiers.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnModifiers.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnModifiers.Location = New System.Drawing.Point(158, 10)
+        Me.btnModifiers.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnModifiers.Name = "btnModifiers"
+        Me.btnModifiers.Size = New System.Drawing.Size(128, 48)
+        Me.btnModifiers.TabIndex = 316
+        Me.btnModifiers.Text = "MODIFIERS"
+        Me.btnModifiers.UseVisualStyleBackColor = False
+        '
+        'btnModifyKOT
+        '
+        Me.btnModifyKOT.AutoSize = True
+        Me.btnModifyKOT.BackColor = System.Drawing.Color.Tomato
+        Me.btnModifyKOT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnModifyKOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModifyKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnModifyKOT.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnModifyKOT.Location = New System.Drawing.Point(693, 9)
+        Me.btnModifyKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnModifyKOT.Name = "btnModifyKOT"
+        Me.btnModifyKOT.Size = New System.Drawing.Size(136, 48)
+        Me.btnModifyKOT.TabIndex = 315
+        Me.btnModifyKOT.Text = "MODIFY KOT"
+        Me.btnModifyKOT.UseVisualStyleBackColor = False
+        '
+        'btnShowTables
+        '
+        Me.btnShowTables.AutoSize = True
+        Me.btnShowTables.BackColor = System.Drawing.Color.Blue
+        Me.btnShowTables.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnShowTables.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnShowTables.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnShowTables.ForeColor = System.Drawing.Color.White
+        Me.btnShowTables.Location = New System.Drawing.Point(4, 10)
+        Me.btnShowTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnShowTables.Name = "btnShowTables"
+        Me.btnShowTables.Size = New System.Drawing.Size(146, 48)
+        Me.btnShowTables.TabIndex = 310
+        Me.btnShowTables.Text = "SHOW TABLES"
+        Me.btnShowTables.UseVisualStyleBackColor = False
+        '
+        'PanelLine
+        '
+        Me.PanelLine.BackColor = System.Drawing.Color.Gray
+        Me.PanelLine.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLine.ForeColor = System.Drawing.Color.Black
+        Me.PanelLine.Location = New System.Drawing.Point(10, 50)
+        Me.PanelLine.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelLine.Name = "PanelLine"
+        Me.PanelLine.Size = New System.Drawing.Size(1180, 2)
+        Me.PanelLine.TabIndex = 312
+        '
+        'LabelHeader
+        '
+        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LabelHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LabelHeader.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelHeader.ForeColor = System.Drawing.Color.Silver
+        Me.LabelHeader.Location = New System.Drawing.Point(10, 10)
+        Me.LabelHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHeader.Name = "LabelHeader"
+        Me.LabelHeader.Size = New System.Drawing.Size(1180, 40)
+        Me.LabelHeader.TabIndex = 311
+        Me.LabelHeader.Text = "POS BILLING SYSTEM"
+        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PanelModifiers
+        '
+        Me.PanelModifiers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelModifiers.Controls.Add(Me.btnItemModifierOK)
+        Me.PanelModifiers.Controls.Add(Me.btnDismiss)
+        Me.PanelModifiers.Controls.Add(Me.btnClear)
+        Me.PanelModifiers.Controls.Add(Me.txtKOTRemarks)
+        Me.PanelModifiers.Controls.Add(Me.LabelItemModifier)
+        Me.PanelModifiers.Controls.Add(Me.dgModifiers)
+        Me.PanelModifiers.Location = New System.Drawing.Point(14, 52)
+        Me.PanelModifiers.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelModifiers.Name = "PanelModifiers"
+        Me.PanelModifiers.Size = New System.Drawing.Size(379, 518)
+        Me.PanelModifiers.TabIndex = 320
+        '
+        'btnItemModifierOK
+        '
+        Me.btnItemModifierOK.AutoSize = True
+        Me.btnItemModifierOK.BackColor = System.Drawing.Color.Yellow
+        Me.btnItemModifierOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnItemModifierOK.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnItemModifierOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnItemModifierOK.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnItemModifierOK.Location = New System.Drawing.Point(256, 456)
+        Me.btnItemModifierOK.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnItemModifierOK.Name = "btnItemModifierOK"
+        Me.btnItemModifierOK.Size = New System.Drawing.Size(114, 48)
+        Me.btnItemModifierOK.TabIndex = 326
+        Me.btnItemModifierOK.Text = "OK"
+        Me.btnItemModifierOK.UseVisualStyleBackColor = False
+        '
+        'btnDismiss
+        '
+        Me.btnDismiss.AutoSize = True
+        Me.btnDismiss.BackColor = System.Drawing.Color.Yellow
+        Me.btnDismiss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnDismiss.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDismiss.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnDismiss.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDismiss.Location = New System.Drawing.Point(130, 457)
+        Me.btnDismiss.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDismiss.Name = "btnDismiss"
+        Me.btnDismiss.Size = New System.Drawing.Size(118, 48)
+        Me.btnDismiss.TabIndex = 325
+        Me.btnDismiss.Text = "DISMISS"
+        Me.btnDismiss.UseVisualStyleBackColor = False
+        '
+        'btnClear
+        '
+        Me.btnClear.AutoSize = True
+        Me.btnClear.BackColor = System.Drawing.Color.Yellow
+        Me.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnClear.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnClear.Location = New System.Drawing.Point(10, 456)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(112, 48)
+        Me.btnClear.TabIndex = 324
+        Me.btnClear.Text = "CLEAR"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'txtKOTRemarks
+        '
+        Me.txtKOTRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtKOTRemarks.Font = New System.Drawing.Font("Lucida Fax", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.txtKOTRemarks.Location = New System.Drawing.Point(6, 358)
+        Me.txtKOTRemarks.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtKOTRemarks.Multiline = True
+        Me.txtKOTRemarks.Name = "txtKOTRemarks"
+        Me.txtKOTRemarks.Size = New System.Drawing.Size(367, 93)
+        Me.txtKOTRemarks.TabIndex = 323
+        Me.txtKOTRemarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'LabelItemModifier
+        '
+        Me.LabelItemModifier.BackColor = System.Drawing.Color.Teal
+        Me.LabelItemModifier.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LabelItemModifier.Font = New System.Drawing.Font("Lucida Fax", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.LabelItemModifier.ForeColor = System.Drawing.Color.White
+        Me.LabelItemModifier.Location = New System.Drawing.Point(0, 0)
+        Me.LabelItemModifier.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelItemModifier.Name = "LabelItemModifier"
+        Me.LabelItemModifier.Size = New System.Drawing.Size(377, 36)
+        Me.LabelItemModifier.TabIndex = 322
+        Me.LabelItemModifier.Text = "ITEM MODIERS"
+        Me.LabelItemModifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'dgModifiers
+        '
+        Me.dgModifiers.AllowUserToAddRows = False
+        Me.dgModifiers.AllowUserToDeleteRows = False
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle30.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgModifiers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle30
+        Me.dgModifiers.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgModifiers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgModifiers.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle31.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle31.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle31.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgModifiers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle31
+        Me.dgModifiers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgModifiers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn5})
+        Me.dgModifiers.Cursor = System.Windows.Forms.Cursors.Default
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle32.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgModifiers.DefaultCellStyle = DataGridViewCellStyle32
+        Me.dgModifiers.GridColor = System.Drawing.Color.Chocolate
+        Me.dgModifiers.Location = New System.Drawing.Point(6, 48)
+        Me.dgModifiers.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgModifiers.MultiSelect = False
+        Me.dgModifiers.Name = "dgModifiers"
+        Me.dgModifiers.ReadOnly = True
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle33.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgModifiers.RowHeadersDefaultCellStyle = DataGridViewCellStyle33
+        Me.dgModifiers.RowHeadersVisible = False
+        Me.dgModifiers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgModifiers.RowTemplate.Height = 40
+        Me.dgModifiers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgModifiers.Size = New System.Drawing.Size(367, 303)
+        Me.dgModifiers.TabIndex = 15
+        Me.dgModifiers.TabStop = False
+        '
+        'DataGridViewImageColumn5
+        '
+        Me.DataGridViewImageColumn5.FillWeight = 50.0!
+        Me.DataGridViewImageColumn5.Frozen = True
+        Me.DataGridViewImageColumn5.HeaderText = ""
+        Me.DataGridViewImageColumn5.Image = Global.FNBManagement.My.Resources.Resources.check2
+        Me.DataGridViewImageColumn5.MinimumWidth = 50
+        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
+        Me.DataGridViewImageColumn5.ReadOnly = True
+        Me.DataGridViewImageColumn5.Width = 50
+        '
+        'PanelSettleBill
+        '
+        Me.PanelSettleBill.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PanelSettleBill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelSettleBill.Controls.Add(Me.txtDiscFoodAmt)
+        Me.PanelSettleBill.Controls.Add(Me.txtDiscNonAlcoholicAmt)
+        Me.PanelSettleBill.Controls.Add(Me.txtDiscAlcoholicAmt)
+        Me.PanelSettleBill.Controls.Add(Me.lblCitizenType)
+        Me.PanelSettleBill.Controls.Add(Me.Label48)
+        Me.PanelSettleBill.Controls.Add(Me.lblDiscFood)
+        Me.PanelSettleBill.Controls.Add(Me.lblDiscNonAlcoholic)
+        Me.PanelSettleBill.Controls.Add(Me.lblDiscAlcoholic)
+        Me.PanelSettleBill.Controls.Add(Me.txtDiscFoodPer)
+        Me.PanelSettleBill.Controls.Add(Me.txtDiscNonAlcoholicPer)
+        Me.PanelSettleBill.Controls.Add(Me.txtDiscAlcoholicPer)
+        Me.PanelSettleBill.Controls.Add(Me.Label45)
+        Me.PanelSettleBill.Controls.Add(Me.Label44)
+        Me.PanelSettleBill.Controls.Add(Me.Label41)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillSCAmount)
+        Me.PanelSettleBill.Controls.Add(Me.Label30)
+        Me.PanelSettleBill.Controls.Add(Me.lbll4)
+        Me.PanelSettleBill.Controls.Add(Me.lbll3)
+        Me.PanelSettleBill.Controls.Add(Me.lbll2)
+        Me.PanelSettleBill.Controls.Add(Me.Label7)
+        Me.PanelSettleBill.Controls.Add(Me.lbll1)
+        Me.PanelSettleBill.Controls.Add(Me.lblCardID)
+        Me.PanelSettleBill.Controls.Add(Me.lblIssueNo)
+        Me.PanelSettleBill.Controls.Add(Me.lblRoundOff)
+        Me.PanelSettleBill.Controls.Add(Me.lblBillSettlementHeader)
+        Me.PanelSettleBill.Controls.Add(Me.btnCancelBill)
+        Me.PanelSettleBill.Controls.Add(Me.btnSettleBill)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillRoundOff)
+        Me.PanelSettleBill.Controls.Add(Me.Label49)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillNetAmount)
+        Me.PanelSettleBill.Controls.Add(Me.Label47)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillVATAmount)
+        Me.PanelSettleBill.Controls.Add(Me.Label37)
+        Me.PanelSettleBill.Controls.Add(Me.Label38)
+        Me.PanelSettleBill.Controls.Add(Me.Label39)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillBasicAmount)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillGrossAmount)
+        Me.PanelSettleBill.Controls.Add(Me.Label42)
+        Me.PanelSettleBill.Controls.Add(Me.Label43)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillGSTAmount)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillDiscountAmount)
+        Me.PanelSettleBill.Controls.Add(Me.Label35)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeClosingAmount)
+        Me.PanelSettleBill.Controls.Add(Me.cmbModeOfPayment)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeOpeningAmount)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeClosingStr)
+        Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeOpeningStr)
+        Me.PanelSettleBill.Location = New System.Drawing.Point(475, 5)
+        Me.PanelSettleBill.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelSettleBill.Name = "PanelSettleBill"
+        Me.PanelSettleBill.Size = New System.Drawing.Size(421, 349)
+        Me.PanelSettleBill.TabIndex = 1
+        '
+        'txtDiscFoodAmt
+        '
+        Me.txtDiscFoodAmt.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscFoodAmt.Location = New System.Drawing.Point(317, 256)
+        Me.txtDiscFoodAmt.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscFoodAmt.Name = "txtDiscFoodAmt"
+        Me.txtDiscFoodAmt.Size = New System.Drawing.Size(93, 27)
+        Me.txtDiscFoodAmt.TabIndex = 15
+        Me.txtDiscFoodAmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtDiscNonAlcoholicAmt
+        '
+        Me.txtDiscNonAlcoholicAmt.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscNonAlcoholicAmt.Location = New System.Drawing.Point(317, 220)
+        Me.txtDiscNonAlcoholicAmt.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscNonAlcoholicAmt.Name = "txtDiscNonAlcoholicAmt"
+        Me.txtDiscNonAlcoholicAmt.Size = New System.Drawing.Size(93, 27)
+        Me.txtDiscNonAlcoholicAmt.TabIndex = 12
+        Me.txtDiscNonAlcoholicAmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtDiscAlcoholicAmt
+        '
+        Me.txtDiscAlcoholicAmt.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscAlcoholicAmt.Location = New System.Drawing.Point(317, 185)
+        Me.txtDiscAlcoholicAmt.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscAlcoholicAmt.Name = "txtDiscAlcoholicAmt"
+        Me.txtDiscAlcoholicAmt.Size = New System.Drawing.Size(93, 27)
+        Me.txtDiscAlcoholicAmt.TabIndex = 9
+        Me.txtDiscAlcoholicAmt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblCitizenType
+        '
+        Me.lblCitizenType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCitizenType.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCitizenType.ForeColor = System.Drawing.Color.Black
+        Me.lblCitizenType.Location = New System.Drawing.Point(247, 148)
+        Me.lblCitizenType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCitizenType.Name = "lblCitizenType"
+        Me.lblCitizenType.Size = New System.Drawing.Size(165, 28)
+        Me.lblCitizenType.TabIndex = 6
+        Me.lblCitizenType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.ForeColor = System.Drawing.Color.Black
+        Me.Label48.Location = New System.Drawing.Point(3, 153)
+        Me.Label48.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(123, 20)
+        Me.Label48.TabIndex = 5
+        Me.Label48.Text = "Citizen Type"
+        Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblDiscFood
+        '
+        Me.lblDiscFood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDiscFood.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDiscFood.ForeColor = System.Drawing.Color.Black
+        Me.lblDiscFood.Location = New System.Drawing.Point(151, 401)
+        Me.lblDiscFood.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDiscFood.Name = "lblDiscFood"
+        Me.lblDiscFood.Size = New System.Drawing.Size(77, 28)
+        Me.lblDiscFood.TabIndex = 13
+        Me.lblDiscFood.Text = "0.00"
+        Me.lblDiscFood.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblDiscFood.Visible = False
+        '
+        'lblDiscNonAlcoholic
+        '
+        Me.lblDiscNonAlcoholic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDiscNonAlcoholic.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDiscNonAlcoholic.ForeColor = System.Drawing.Color.Black
+        Me.lblDiscNonAlcoholic.Location = New System.Drawing.Point(151, 366)
+        Me.lblDiscNonAlcoholic.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDiscNonAlcoholic.Name = "lblDiscNonAlcoholic"
+        Me.lblDiscNonAlcoholic.Size = New System.Drawing.Size(77, 28)
+        Me.lblDiscNonAlcoholic.TabIndex = 10
+        Me.lblDiscNonAlcoholic.Text = "0.00"
+        Me.lblDiscNonAlcoholic.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblDiscNonAlcoholic.Visible = False
+        '
+        'lblDiscAlcoholic
+        '
+        Me.lblDiscAlcoholic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDiscAlcoholic.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDiscAlcoholic.ForeColor = System.Drawing.Color.Black
+        Me.lblDiscAlcoholic.Location = New System.Drawing.Point(151, 330)
+        Me.lblDiscAlcoholic.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDiscAlcoholic.Name = "lblDiscAlcoholic"
+        Me.lblDiscAlcoholic.Size = New System.Drawing.Size(77, 28)
+        Me.lblDiscAlcoholic.TabIndex = 7
+        Me.lblDiscAlcoholic.Text = "0.00"
+        Me.lblDiscAlcoholic.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblDiscAlcoholic.Visible = False
+        '
+        'txtDiscFoodPer
+        '
+        Me.txtDiscFoodPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscFoodPer.Location = New System.Drawing.Point(247, 256)
+        Me.txtDiscFoodPer.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscFoodPer.Name = "txtDiscFoodPer"
+        Me.txtDiscFoodPer.Size = New System.Drawing.Size(64, 27)
+        Me.txtDiscFoodPer.TabIndex = 14
+        Me.txtDiscFoodPer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtDiscNonAlcoholicPer
+        '
+        Me.txtDiscNonAlcoholicPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscNonAlcoholicPer.Location = New System.Drawing.Point(247, 220)
+        Me.txtDiscNonAlcoholicPer.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscNonAlcoholicPer.Name = "txtDiscNonAlcoholicPer"
+        Me.txtDiscNonAlcoholicPer.Size = New System.Drawing.Size(64, 27)
+        Me.txtDiscNonAlcoholicPer.TabIndex = 11
+        Me.txtDiscNonAlcoholicPer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtDiscAlcoholicPer
+        '
+        Me.txtDiscAlcoholicPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.txtDiscAlcoholicPer.Location = New System.Drawing.Point(247, 185)
+        Me.txtDiscAlcoholicPer.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtDiscAlcoholicPer.Name = "txtDiscAlcoholicPer"
+        Me.txtDiscAlcoholicPer.Size = New System.Drawing.Size(64, 27)
+        Me.txtDiscAlcoholicPer.TabIndex = 8
+        Me.txtDiscAlcoholicPer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.Black
+        Me.Label45.Location = New System.Drawing.Point(3, 261)
+        Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(148, 20)
+        Me.Label45.TabIndex = 13
+        Me.Label45.Text = "Disc.% on &Food"
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.Color.Black
+        Me.Label44.Location = New System.Drawing.Point(3, 225)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(231, 20)
+        Me.Label44.TabIndex = 10
+        Me.Label44.Text = "Disc.% on &Non Alcoholic"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.ForeColor = System.Drawing.Color.Black
+        Me.Label41.Location = New System.Drawing.Point(3, 190)
+        Me.Label41.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(189, 20)
+        Me.Label41.TabIndex = 7
+        Me.Label41.Text = "Disc.% on &Alcoholic"
+        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'labelBillSCAmount
+        '
+        Me.labelBillSCAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillSCAmount.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillSCAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillSCAmount.Location = New System.Drawing.Point(247, 401)
+        Me.labelBillSCAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillSCAmount.Name = "labelBillSCAmount"
+        Me.labelBillSCAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillSCAmount.TabIndex = 23
+        Me.labelBillSCAmount.Text = "0.00"
+        Me.labelBillSCAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.Black
+        Me.Label30.Location = New System.Drawing.Point(3, 406)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(109, 20)
+        Me.Label30.TabIndex = 22
+        Me.Label30.Text = "SC Amount"
+        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbll4
+        '
+        Me.lbll4.BackColor = System.Drawing.Color.Black
+        Me.lbll4.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbll4.ForeColor = System.Drawing.Color.Black
+        Me.lbll4.Location = New System.Drawing.Point(0, 617)
+        Me.lbll4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbll4.Name = "lbll4"
+        Me.lbll4.Size = New System.Drawing.Size(420, 2)
+        Me.lbll4.TabIndex = 326
+        Me.lbll4.Text = "Card Opening"
+        Me.lbll4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbll3
+        '
+        Me.lbll3.BackColor = System.Drawing.Color.Black
+        Me.lbll3.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbll3.ForeColor = System.Drawing.Color.Black
+        Me.lbll3.Location = New System.Drawing.Point(0, 575)
+        Me.lbll3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbll3.Name = "lbll3"
+        Me.lbll3.Size = New System.Drawing.Size(421, 2)
+        Me.lbll3.TabIndex = 33
+        Me.lbll3.Text = "Card Opening"
+        Me.lbll3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbll2
+        '
+        Me.lbll2.BackColor = System.Drawing.Color.Black
+        Me.lbll2.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbll2.ForeColor = System.Drawing.Color.Black
+        Me.lbll2.Location = New System.Drawing.Point(0, 134)
+        Me.lbll2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbll2.Name = "lbll2"
+        Me.lbll2.Size = New System.Drawing.Size(420, 2)
+        Me.lbll2.TabIndex = 4
+        Me.lbll2.Text = "Card Opening"
+        Me.lbll2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.Black
+        Me.Label7.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(-1, 534)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(420, 2)
+        Me.Label7.TabIndex = 30
+        Me.Label7.Text = "Card Opening"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbll1
+        '
+        Me.lbll1.BackColor = System.Drawing.Color.Black
+        Me.lbll1.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbll1.ForeColor = System.Drawing.Color.Black
+        Me.lbll1.Location = New System.Drawing.Point(-1, 89)
+        Me.lbll1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbll1.Name = "lbll1"
+        Me.lbll1.Size = New System.Drawing.Size(420, 2)
+        Me.lbll1.TabIndex = 322
+        Me.lbll1.Text = "Card Opening"
+        Me.lbll1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblCardID
+        '
+        Me.lblCardID.AutoSize = True
+        Me.lblCardID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblCardID.Location = New System.Drawing.Point(11, 673)
+        Me.lblCardID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCardID.Name = "lblCardID"
+        Me.lblCardID.Size = New System.Drawing.Size(63, 19)
+        Me.lblCardID.TabIndex = 288
+        Me.lblCardID.Text = "CardID"
+        Me.lblCardID.Visible = False
+        '
+        'lblIssueNo
+        '
+        Me.lblIssueNo.AutoSize = True
+        Me.lblIssueNo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblIssueNo.Location = New System.Drawing.Point(87, 673)
+        Me.lblIssueNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblIssueNo.Name = "lblIssueNo"
+        Me.lblIssueNo.Size = New System.Drawing.Size(72, 19)
+        Me.lblIssueNo.TabIndex = 6
+        Me.lblIssueNo.Text = "IssueNo"
+        Me.lblIssueNo.Visible = False
+        '
+        'lblRoundOff
+        '
+        Me.lblRoundOff.AutoSize = True
+        Me.lblRoundOff.Font = New System.Drawing.Font("Arial", 10.75!, System.Drawing.FontStyle.Bold)
+        Me.lblRoundOff.ForeColor = System.Drawing.Color.Black
+        Me.lblRoundOff.Location = New System.Drawing.Point(172, 672)
+        Me.lblRoundOff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblRoundOff.Name = "lblRoundOff"
+        Me.lblRoundOff.Size = New System.Drawing.Size(114, 21)
+        Me.lblRoundOff.TabIndex = 32
+        Me.lblRoundOff.Text = "lblRoundOff"
+        Me.lblRoundOff.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblRoundOff.Visible = False
+        '
+        'lblBillSettlementHeader
+        '
+        Me.lblBillSettlementHeader.BackColor = System.Drawing.Color.Teal
+        Me.lblBillSettlementHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblBillSettlementHeader.Font = New System.Drawing.Font("Lucida Fax", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.lblBillSettlementHeader.ForeColor = System.Drawing.Color.White
+        Me.lblBillSettlementHeader.Location = New System.Drawing.Point(0, 0)
+        Me.lblBillSettlementHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBillSettlementHeader.Name = "lblBillSettlementHeader"
+        Me.lblBillSettlementHeader.Size = New System.Drawing.Size(419, 36)
+        Me.lblBillSettlementHeader.TabIndex = 321
+        Me.lblBillSettlementHeader.Text = "SETTLE BILL"
+        Me.lblBillSettlementHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnCancelBill
+        '
+        Me.btnCancelBill.AutoSize = True
+        Me.btnCancelBill.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnCancelBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnCancelBill.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelBill.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCancelBill.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCancelBill.Location = New System.Drawing.Point(215, 710)
+        Me.btnCancelBill.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancelBill.Name = "btnCancelBill"
+        Me.btnCancelBill.Size = New System.Drawing.Size(197, 48)
+        Me.btnCancelBill.TabIndex = 37
+        Me.btnCancelBill.Text = "CANCEL"
+        Me.btnCancelBill.UseVisualStyleBackColor = False
+        '
+        'btnSettleBill
+        '
+        Me.btnSettleBill.AutoSize = True
+        Me.btnSettleBill.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnSettleBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSettleBill.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSettleBill.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSettleBill.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSettleBill.Location = New System.Drawing.Point(5, 710)
+        Me.btnSettleBill.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSettleBill.Name = "btnSettleBill"
+        Me.btnSettleBill.Size = New System.Drawing.Size(204, 48)
+        Me.btnSettleBill.TabIndex = 36
+        Me.btnSettleBill.Text = "SETTLE BILL"
+        Me.btnSettleBill.UseVisualStyleBackColor = False
+        '
+        'labelBillRoundOff
+        '
+        Me.labelBillRoundOff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillRoundOff.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillRoundOff.ForeColor = System.Drawing.Color.Black
+        Me.labelBillRoundOff.Location = New System.Drawing.Point(247, 501)
+        Me.labelBillRoundOff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillRoundOff.Name = "labelBillRoundOff"
+        Me.labelBillRoundOff.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillRoundOff.TabIndex = 29
+        Me.labelBillRoundOff.Text = "0.00"
+        Me.labelBillRoundOff.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.ForeColor = System.Drawing.Color.Black
+        Me.Label49.Location = New System.Drawing.Point(3, 506)
+        Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(104, 20)
+        Me.Label49.TabIndex = 28
+        Me.Label49.Text = "Round Off"
+        Me.Label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'labelBillNetAmount
+        '
+        Me.labelBillNetAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillNetAmount.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillNetAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillNetAmount.Location = New System.Drawing.Point(247, 468)
+        Me.labelBillNetAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillNetAmount.Name = "labelBillNetAmount"
+        Me.labelBillNetAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillNetAmount.TabIndex = 27
+        Me.labelBillNetAmount.Text = "0.00"
+        Me.labelBillNetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.ForeColor = System.Drawing.Color.Black
+        Me.Label47.Location = New System.Drawing.Point(3, 473)
+        Me.Label47.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(117, 20)
+        Me.Label47.TabIndex = 26
+        Me.Label47.Text = "Net Amount"
+        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'labelBillVATAmount
+        '
+        Me.labelBillVATAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillVATAmount.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillVATAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillVATAmount.Location = New System.Drawing.Point(247, 434)
+        Me.labelBillVATAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillVATAmount.Name = "labelBillVATAmount"
+        Me.labelBillVATAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillVATAmount.TabIndex = 25
+        Me.labelBillVATAmount.Text = "0.00"
+        Me.labelBillVATAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.Color.Black
+        Me.Label37.Location = New System.Drawing.Point(3, 546)
+        Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(104, 20)
+        Me.Label37.TabIndex = 31
+        Me.Label37.Text = "Gross Amt"
+        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.ForeColor = System.Drawing.Color.Black
+        Me.Label38.Location = New System.Drawing.Point(3, 439)
+        Me.Label38.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(125, 20)
+        Me.Label38.TabIndex = 24
+        Me.Label38.Text = "VAT Amount"
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.ForeColor = System.Drawing.Color.Black
+        Me.Label39.Location = New System.Drawing.Point(3, 306)
+        Me.Label39.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(134, 20)
+        Me.Label39.TabIndex = 16
+        Me.Label39.Text = "Basic Amount"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'labelBillBasicAmount
+        '
+        Me.labelBillBasicAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillBasicAmount.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillBasicAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillBasicAmount.Location = New System.Drawing.Point(247, 302)
+        Me.labelBillBasicAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillBasicAmount.Name = "labelBillBasicAmount"
+        Me.labelBillBasicAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillBasicAmount.TabIndex = 17
+        Me.labelBillBasicAmount.Text = "0.00"
+        Me.labelBillBasicAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'labelBillGrossAmount
+        '
+        Me.labelBillGrossAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillGrossAmount.Font = New System.Drawing.Font("Lucida Fax", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillGrossAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillGrossAmount.Location = New System.Drawing.Point(247, 542)
+        Me.labelBillGrossAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillGrossAmount.Name = "labelBillGrossAmount"
+        Me.labelBillGrossAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillGrossAmount.TabIndex = 32
+        Me.labelBillGrossAmount.Text = "0.00"
+        Me.labelBillGrossAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.ForeColor = System.Drawing.Color.Black
+        Me.Label42.Location = New System.Drawing.Point(3, 373)
+        Me.Label42.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(122, 20)
+        Me.Label42.TabIndex = 20
+        Me.Label42.Text = "GST Amount"
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.ForeColor = System.Drawing.Color.Black
+        Me.Label43.Location = New System.Drawing.Point(3, 340)
+        Me.Label43.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(133, 20)
+        Me.Label43.TabIndex = 18
+        Me.Label43.Text = "Disc. Amount"
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'labelBillGSTAmount
+        '
+        Me.labelBillGSTAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillGSTAmount.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillGSTAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillGSTAmount.Location = New System.Drawing.Point(247, 368)
+        Me.labelBillGSTAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillGSTAmount.Name = "labelBillGSTAmount"
+        Me.labelBillGSTAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillGSTAmount.TabIndex = 21
+        Me.labelBillGSTAmount.Text = "0.00"
+        Me.labelBillGSTAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'labelBillDiscountAmount
+        '
+        Me.labelBillDiscountAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.labelBillDiscountAmount.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillDiscountAmount.ForeColor = System.Drawing.Color.Black
+        Me.labelBillDiscountAmount.Location = New System.Drawing.Point(247, 335)
+        Me.labelBillDiscountAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillDiscountAmount.Name = "labelBillDiscountAmount"
+        Me.labelBillDiscountAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillDiscountAmount.TabIndex = 19
+        Me.labelBillDiscountAmount.Text = "0.00"
+        Me.labelBillDiscountAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Location = New System.Drawing.Point(3, 55)
+        Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(96, 20)
+        Me.Label35.TabIndex = 0
+        Me.Label35.Text = "&Pay Mode"
+        '
+        'labelBillPayModeClosingAmount
+        '
+        Me.labelBillPayModeClosingAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.labelBillPayModeClosingAmount.Font = New System.Drawing.Font("Lucida Fax", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillPayModeClosingAmount.ForeColor = System.Drawing.Color.White
+        Me.labelBillPayModeClosingAmount.Location = New System.Drawing.Point(247, 583)
+        Me.labelBillPayModeClosingAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillPayModeClosingAmount.Name = "labelBillPayModeClosingAmount"
+        Me.labelBillPayModeClosingAmount.Size = New System.Drawing.Size(165, 28)
+        Me.labelBillPayModeClosingAmount.TabIndex = 35
+        Me.labelBillPayModeClosingAmount.Text = "0.00"
+        Me.labelBillPayModeClosingAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cmbModeOfPayment
+        '
+        Me.cmbModeOfPayment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbModeOfPayment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbModeOfPayment.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbModeOfPayment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbModeOfPayment.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbModeOfPayment.FormattingEnabled = True
+        Me.cmbModeOfPayment.Location = New System.Drawing.Point(125, 50)
+        Me.cmbModeOfPayment.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbModeOfPayment.Name = "cmbModeOfPayment"
+        Me.cmbModeOfPayment.Size = New System.Drawing.Size(285, 26)
+        Me.cmbModeOfPayment.TabIndex = 1
+        '
+        'labelBillPayModeOpeningAmount
+        '
+        Me.labelBillPayModeOpeningAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.labelBillPayModeOpeningAmount.Font = New System.Drawing.Font("Lucida Fax", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.labelBillPayModeOpeningAmount.ForeColor = System.Drawing.Color.White
+        Me.labelBillPayModeOpeningAmount.Location = New System.Drawing.Point(256, 100)
+        Me.labelBillPayModeOpeningAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillPayModeOpeningAmount.Name = "labelBillPayModeOpeningAmount"
+        Me.labelBillPayModeOpeningAmount.Size = New System.Drawing.Size(156, 27)
+        Me.labelBillPayModeOpeningAmount.TabIndex = 3
+        Me.labelBillPayModeOpeningAmount.Text = "0.00"
+        Me.labelBillPayModeOpeningAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'labelBillPayModeClosingStr
+        '
+        Me.labelBillPayModeClosingStr.AutoSize = True
+        Me.labelBillPayModeClosingStr.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillPayModeClosingStr.ForeColor = System.Drawing.Color.Black
+        Me.labelBillPayModeClosingStr.Location = New System.Drawing.Point(3, 588)
+        Me.labelBillPayModeClosingStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillPayModeClosingStr.Name = "labelBillPayModeClosingStr"
+        Me.labelBillPayModeClosingStr.Size = New System.Drawing.Size(200, 20)
+        Me.labelBillPayModeClosingStr.TabIndex = 34
+        Me.labelBillPayModeClosingStr.Text = "Card Closing Balance"
+        Me.labelBillPayModeClosingStr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'labelBillPayModeOpeningStr
+        '
+        Me.labelBillPayModeOpeningStr.AutoSize = True
+        Me.labelBillPayModeOpeningStr.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelBillPayModeOpeningStr.ForeColor = System.Drawing.Color.Black
+        Me.labelBillPayModeOpeningStr.Location = New System.Drawing.Point(3, 102)
+        Me.labelBillPayModeOpeningStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelBillPayModeOpeningStr.Name = "labelBillPayModeOpeningStr"
+        Me.labelBillPayModeOpeningStr.Size = New System.Drawing.Size(209, 20)
+        Me.labelBillPayModeOpeningStr.TabIndex = 2
+        Me.labelBillPayModeOpeningStr.Text = "Card Opening Balance"
+        Me.labelBillPayModeOpeningStr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'ErrorProvider2
+        '
+        Me.ErrorProvider2.ContainerControl = Me
+        '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
+        'FrmPOSBilling2N
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.ClientSize = New System.Drawing.Size(1200, 700)
+        Me.Controls.Add(Me.PanelContainer)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.KeyPreview = True
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "FrmPOSBilling2N"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "create New Bill"
+        Me.TopMost = True
+        Me.PanelModifyKOT.ResumeLayout(False)
+        Me.PanelModifyKOT.PerformLayout()
+        CType(Me.dgKOTItemList, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgKOTList, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.PanelMergeTables.ResumeLayout(False)
+        Me.PanelMergeTables.PerformLayout()
+        CType(Me.dgSourceTable, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgDestinationTable, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelContainer.ResumeLayout(False)
+        Me.PanelMainScreen.ResumeLayout(False)
+        Me.PanelSearchItem.ResumeLayout(False)
+        Me.PanelSearchItem.PerformLayout()
+        CType(Me.dgSearchItem, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelContentHost.ResumeLayout(False)
+        Me.PanelRight.ResumeLayout(False)
+        Me.PanelItem.ResumeLayout(False)
+        Me.PanelItem.PerformLayout()
+        CType(Me.dgItemGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelImg.ResumeLayout(False)
+        Me.PanelImg.PerformLayout()
+        CType(Me.PBMember, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBSpouseSign, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBMemberSign, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBSpouse, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelDisplayArea.ResumeLayout(False)
+        Me.PanelMemberDetails.ResumeLayout(False)
+        Me.PanelMemberDetails.PerformLayout()
+        Me.PanelBillHeader.ResumeLayout(False)
+        Me.PanelBillHeader.PerformLayout()
+        Me.PanelLocationAndTables.ResumeLayout(False)
+        Me.PanelTables.ResumeLayout(False)
+        Me.PanelLocationTables.ResumeLayout(False)
+        Me.PanelClosedBills.ResumeLayout(False)
+        Me.PanelClosedBills.PerformLayout()
+        CType(Me.dgHistory, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelFooter.ResumeLayout(False)
+        Me.PanelFooter.PerformLayout()
+        Me.PanelDisplayBill.ResumeLayout(False)
+        Me.PanelDisplayBill.PerformLayout()
+        Me.PanelModifiers.ResumeLayout(False)
+        Me.PanelModifiers.PerformLayout()
+        CType(Me.dgModifiers, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelSettleBill.ResumeLayout(False)
+        Me.PanelSettleBill.PerformLayout()
+        CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents lblVATAmount As System.Windows.Forms.Label
+    Friend WithEvents LblFinalAmount As System.Windows.Forms.Label
+    Friend WithEvents lblAmount As System.Windows.Forms.Label
+    Friend WithEvents lblqty As System.Windows.Forms.Label
+    Friend WithEvents PanelContainer As System.Windows.Forms.Panel
+    Friend WithEvents PanelFooter As System.Windows.Forms.Panel
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents btnHistory As System.Windows.Forms.Button
+    Friend WithEvents btnShiftKOT As System.Windows.Forms.Button
+    Friend WithEvents btnSettleBillHomePage As System.Windows.Forms.Button
+    Friend WithEvents btnModifiers As System.Windows.Forms.Button
+    Friend WithEvents btnModifyKOT As System.Windows.Forms.Button
+    Friend WithEvents btnShowTables As System.Windows.Forms.Button
+    Friend WithEvents btnShiftTable As System.Windows.Forms.Button
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents btnEstimate As System.Windows.Forms.Button
+    Friend WithEvents btnSaveNSettle As System.Windows.Forms.Button
+    Friend WithEvents PanelMainScreen As System.Windows.Forms.Panel
+    Friend WithEvents PanelClosedBills As System.Windows.Forms.Panel
+    Friend WithEvents cmbTableNoSC As System.Windows.Forms.ComboBox
+    Friend WithEvents txtMemIDSC As System.Windows.Forms.TextBox
+    Friend WithEvents Label50 As System.Windows.Forms.Label
+    Friend WithEvents Label46 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents cmbLocation As System.Windows.Forms.ComboBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents cmbCashier As System.Windows.Forms.ComboBox
+    Friend WithEvents Panel14 As System.Windows.Forms.Panel
+    Friend WithEvents PanelLine As System.Windows.Forms.Panel
+    Friend WithEvents LabelHeader As System.Windows.Forms.Label
+    Friend WithEvents ToolTip2 As System.Windows.Forms.ToolTip
+    Friend WithEvents PanelModifyKOT As System.Windows.Forms.Panel
+    Friend WithEvents cmbKOTRemarks As System.Windows.Forms.ComboBox
+    Friend WithEvents lblMemID As System.Windows.Forms.Label
+    Friend WithEvents Label106 As System.Windows.Forms.Label
+    Friend WithEvents btnMinus6 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus5 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus4 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus7 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus9 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus8 As System.Windows.Forms.Button
+    Friend WithEvents lbl35 As System.Windows.Forms.Label
+    Friend WithEvents lbl34 As System.Windows.Forms.Label
+    Friend WithEvents lblReducedKOTAmt As System.Windows.Forms.Label
+    Friend WithEvents Label107 As System.Windows.Forms.Label
+    Friend WithEvents lblReducedKOTQty As System.Windows.Forms.Label
+    Friend WithEvents Label108 As System.Windows.Forms.Label
+    Friend WithEvents lblModifiedKOTAmt As System.Windows.Forms.Label
+    Friend WithEvents Label109 As System.Windows.Forms.Label
+    Friend WithEvents lblModifiedKOTQty As System.Windows.Forms.Label
+    Friend WithEvents Label110 As System.Windows.Forms.Label
+    Friend WithEvents lblTotalOriginalKOTAmt As System.Windows.Forms.Label
+    Friend WithEvents Label111 As System.Windows.Forms.Label
+    Friend WithEvents lblModifiedQty As System.Windows.Forms.Label
+    Friend WithEvents lblActualQty As System.Windows.Forms.Label
+    Friend WithEvents btnMinus0 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus3 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus2 As System.Windows.Forms.Button
+    Friend WithEvents btnMinus1 As System.Windows.Forms.Button
+    Friend WithEvents btnVoidKOT As System.Windows.Forms.Button
+    Friend WithEvents lblKOTNo_KOTModify As System.Windows.Forms.Label
+    Friend WithEvents lblYearCode_KOTModify As System.Windows.Forms.Label
+    Friend WithEvents lblLocationCode_KOTModify As System.Windows.Forms.Label
+    Friend WithEvents lblTotalOriginalQty As System.Windows.Forms.Label
+    Friend WithEvents Label112 As System.Windows.Forms.Label
+    Friend WithEvents labelKOTModificationItemDetails As System.Windows.Forms.Label
+    Friend WithEvents dgKOTItemList As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewImageColumn6 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents labelKOTModificationHeader As System.Windows.Forms.Label
+    Friend WithEvents dgKOTList As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewImageColumn3 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents Button14 As System.Windows.Forms.Button
+    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Label113 As System.Windows.Forms.Label
+    Friend WithEvents Label114 As System.Windows.Forms.Label
+    Friend WithEvents Label115 As System.Windows.Forms.Label
+    Friend WithEvents Label116 As System.Windows.Forms.Label
+    Friend WithEvents Label117 As System.Windows.Forms.Label
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents Label118 As System.Windows.Forms.Label
+    Friend WithEvents Label119 As System.Windows.Forms.Label
+    Friend WithEvents Label120 As System.Windows.Forms.Label
+    Friend WithEvents Label121 As System.Windows.Forms.Label
+    Friend WithEvents Label122 As System.Windows.Forms.Label
+    Friend WithEvents Label123 As System.Windows.Forms.Label
+    Friend WithEvents Label124 As System.Windows.Forms.Label
+    Friend WithEvents PanelMergeTables As System.Windows.Forms.Panel
+    Friend WithEvents Label86 As System.Windows.Forms.Label
+    Friend WithEvents Label87 As System.Windows.Forms.Label
+    Friend WithEvents Label88 As System.Windows.Forms.Label
+    Friend WithEvents Label89 As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationIssueNo As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationClosingBalance As System.Windows.Forms.Label
+    Friend WithEvents Label90 As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationMemName As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationOpeningBalance As System.Windows.Forms.Label
+    Friend WithEvents Label91 As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationMemID As System.Windows.Forms.Label
+    Friend WithEvents Label92 As System.Windows.Forms.Label
+    Friend WithEvents btnMoveAll As System.Windows.Forms.Button
+    Friend WithEvents dgSourceTable As System.Windows.Forms.DataGridView
+    Friend WithEvents dgbtnMoveSourceItem As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents lblDestinationBillNo As System.Windows.Forms.Label
+    Friend WithEvents Label93 As System.Windows.Forms.Label
+    Friend WithEvents lblSourceBillNo As System.Windows.Forms.Label
+    Friend WithEvents Label94 As System.Windows.Forms.Label
+    Friend WithEvents lblSourceTotalQty As System.Windows.Forms.Label
+    Friend WithEvents Label95 As System.Windows.Forms.Label
+    Friend WithEvents lblGrossAmtSource As System.Windows.Forms.Label
+    Friend WithEvents Label96 As System.Windows.Forms.Label
+    Friend WithEvents Label97 As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationTotalQty As System.Windows.Forms.Label
+    Friend WithEvents Label98 As System.Windows.Forms.Label
+    Friend WithEvents Label99 As System.Windows.Forms.Label
+    Friend WithEvents lblDestinationGrossAmt As System.Windows.Forms.Label
+    Friend WithEvents Label100 As System.Windows.Forms.Label
+    Friend WithEvents dgDestinationTable As System.Windows.Forms.DataGridView
+    Friend WithEvents dgbtnMoveDetinationItem As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents cmbDestinationTable As System.Windows.Forms.ComboBox
+    Friend WithEvents Label101 As System.Windows.Forms.Label
+    Friend WithEvents cmbSourceTable As System.Windows.Forms.ComboBox
+    Friend WithEvents Label102 As System.Windows.Forms.Label
+    Friend WithEvents Label125 As System.Windows.Forms.Label
+    Friend WithEvents Label126 As System.Windows.Forms.Label
+    Friend WithEvents Label127 As System.Windows.Forms.Label
+    Friend WithEvents Label128 As System.Windows.Forms.Label
+    Friend WithEvents Label129 As System.Windows.Forms.Label
+    Friend WithEvents Label130 As System.Windows.Forms.Label
+    Friend WithEvents Label131 As System.Windows.Forms.Label
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents Label132 As System.Windows.Forms.Label
+    Friend WithEvents Label133 As System.Windows.Forms.Label
+    Friend WithEvents Label134 As System.Windows.Forms.Label
+    Friend WithEvents Label135 As System.Windows.Forms.Label
+    Friend WithEvents Label136 As System.Windows.Forms.Label
+    Friend WithEvents Label137 As System.Windows.Forms.Label
+    Friend WithEvents Label138 As System.Windows.Forms.Label
+    Friend WithEvents Label139 As System.Windows.Forms.Label
+    Friend WithEvents Label140 As System.Windows.Forms.Label
+    Friend WithEvents Label141 As System.Windows.Forms.Label
+    Friend WithEvents Label142 As System.Windows.Forms.Label
+    Friend WithEvents Label143 As System.Windows.Forms.Label
+    Friend WithEvents Label144 As System.Windows.Forms.Label
+    Friend WithEvents Label145 As System.Windows.Forms.Label
+    Friend WithEvents Label146 As System.Windows.Forms.Label
+    Friend WithEvents Label147 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label148 As System.Windows.Forms.Label
+    Friend WithEvents Label149 As System.Windows.Forms.Label
+    Friend WithEvents Label150 As System.Windows.Forms.Label
+    Friend WithEvents Button15 As System.Windows.Forms.Button
+    Friend WithEvents Button16 As System.Windows.Forms.Button
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents Label157 As System.Windows.Forms.Label
+    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewImageColumn12 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents PanelSettleBill As System.Windows.Forms.Panel
+    Friend WithEvents txtDiscFoodAmt As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiscNonAlcoholicAmt As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiscAlcoholicAmt As System.Windows.Forms.TextBox
+    Friend WithEvents lblCitizenType As System.Windows.Forms.Label
+    Friend WithEvents Label48 As System.Windows.Forms.Label
+    Friend WithEvents lblDiscFood As System.Windows.Forms.Label
+    Friend WithEvents lblDiscNonAlcoholic As System.Windows.Forms.Label
+    Friend WithEvents lblDiscAlcoholic As System.Windows.Forms.Label
+    Friend WithEvents txtDiscFoodPer As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiscNonAlcoholicPer As System.Windows.Forms.TextBox
+    Friend WithEvents txtDiscAlcoholicPer As System.Windows.Forms.TextBox
+    Friend WithEvents Label45 As System.Windows.Forms.Label
+    Friend WithEvents Label44 As System.Windows.Forms.Label
+    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents labelBillSCAmount As System.Windows.Forms.Label
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents lbll4 As System.Windows.Forms.Label
+    Friend WithEvents lbll3 As System.Windows.Forms.Label
+    Friend WithEvents lbll2 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents lbll1 As System.Windows.Forms.Label
+    Friend WithEvents lblCardID As System.Windows.Forms.Label
+    Friend WithEvents lblIssueNo As System.Windows.Forms.Label
+    Friend WithEvents lblRoundOff As System.Windows.Forms.Label
+    Friend WithEvents lblBillSettlementHeader As System.Windows.Forms.Label
+    Friend WithEvents btnCancelBill As System.Windows.Forms.Button
+    Friend WithEvents btnSettleBill As System.Windows.Forms.Button
+    Friend WithEvents labelBillRoundOff As System.Windows.Forms.Label
+    Friend WithEvents Label49 As System.Windows.Forms.Label
+    Friend WithEvents labelBillNetAmount As System.Windows.Forms.Label
+    Friend WithEvents Label47 As System.Windows.Forms.Label
+    Friend WithEvents labelBillVATAmount As System.Windows.Forms.Label
+    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents Label39 As System.Windows.Forms.Label
+    Friend WithEvents labelBillBasicAmount As System.Windows.Forms.Label
+    Friend WithEvents labelBillGrossAmount As System.Windows.Forms.Label
+    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents Label43 As System.Windows.Forms.Label
+    Friend WithEvents labelBillGSTAmount As System.Windows.Forms.Label
+    Friend WithEvents labelBillDiscountAmount As System.Windows.Forms.Label
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents labelBillPayModeClosingAmount As System.Windows.Forms.Label
+    Friend WithEvents cmbModeOfPayment As System.Windows.Forms.ComboBox
+    Friend WithEvents labelBillPayModeOpeningAmount As System.Windows.Forms.Label
+    Friend WithEvents labelBillPayModeClosingStr As System.Windows.Forms.Label
+    Friend WithEvents labelBillPayModeOpeningStr As System.Windows.Forms.Label
+    Friend WithEvents DataGridViewImageColumn7 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn15 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn1 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn4 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents dgPrintBill As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents dgviewdraftbill As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents DeleteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DataGridViewImageColumn2 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents dgbtnmodifier As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents dgbtnEdit As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents dgbtndelete As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents ContextMenuStrip2 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents dgbtnSelectMember As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents ErrorProvider2 As System.Windows.Forms.ErrorProvider
+    Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+    Friend WithEvents PanelModifiers As System.Windows.Forms.Panel
+    Friend WithEvents btnItemModifierOK As System.Windows.Forms.Button
+    Friend WithEvents btnDismiss As System.Windows.Forms.Button
+    Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents txtKOTRemarks As System.Windows.Forms.TextBox
+    Friend WithEvents LabelItemModifier As System.Windows.Forms.Label
+    Friend WithEvents dgModifiers As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewImageColumn5 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents PanelDisplayBill As System.Windows.Forms.Panel
+    Friend WithEvents lblKOTStr As System.Windows.Forms.Label
+    Friend WithEvents lblTempYearCode As System.Windows.Forms.Label
+    Friend WithEvents lblTempLocationCode As System.Windows.Forms.Label
+    Friend WithEvents lblTempBillNo As System.Windows.Forms.Label
+    Friend WithEvents btnPrintDuplicateBill As System.Windows.Forms.Button
+    Friend WithEvents btnCloseView As System.Windows.Forms.Button
+    Friend WithEvents dgHistory As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewImageColumn8 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn9 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn10 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents PanelContentHost As System.Windows.Forms.Panel
+    Friend WithEvents PanelRight As System.Windows.Forms.Panel
+    Friend WithEvents PanelItem As System.Windows.Forms.Panel
+    Friend WithEvents lblAliasCode As System.Windows.Forms.Label
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents lblGSTPer As System.Windows.Forms.Label
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents lblSCPer As System.Windows.Forms.Label
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents lblUnit As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents LabelClosingStock As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents LabelStockStr As System.Windows.Forms.Label
+    Friend WithEvents txtRate As System.Windows.Forms.TextBox
+    Friend WithEvents txtItemCode As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtQty As System.Windows.Forms.TextBox
+    Friend WithEvents cmbItemName As System.Windows.Forms.ComboBox
+    Friend WithEvents PanelImg As System.Windows.Forms.Panel
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents PBMember As System.Windows.Forms.PictureBox
+    Friend WithEvents lblItemName As System.Windows.Forms.Label
+    Friend WithEvents PBSpouseSign As System.Windows.Forms.PictureBox
+    Friend WithEvents lblKOTNo As System.Windows.Forms.Label
+    Friend WithEvents lblOpenItemName As System.Windows.Forms.Label
+    Friend WithEvents txtDiscountPer As System.Windows.Forms.TextBox
+    Friend WithEvents PBMemberSign As System.Windows.Forms.PictureBox
+    Friend WithEvents btnSendOTP As System.Windows.Forms.Button
+    Friend WithEvents PBSpouse As System.Windows.Forms.PictureBox
+    Friend WithEvents PanelDisplayArea As System.Windows.Forms.Panel
+    Friend WithEvents lblMemberAcClosingBalance As System.Windows.Forms.Label
+    Friend WithEvents lblOpeningCreditLimit As System.Windows.Forms.Label
+    Friend WithEvents lblMemberAcClosingStr As System.Windows.Forms.Label
+    Friend WithEvents lblOpeningCreditLimitstr As System.Windows.Forms.Label
+    Friend WithEvents lblSmartCardClosingBalance As System.Windows.Forms.Label
+    Friend WithEvents lblSmartCardOpeningBalance As System.Windows.Forms.Label
+    Friend WithEvents lblBillingSmartCardClosingStr As System.Windows.Forms.Label
+    Friend WithEvents lblBillingSmartCardOpeningStr As System.Windows.Forms.Label
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents lblDiscountAmt As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents lblROff As System.Windows.Forms.Label
+    Friend WithEvents lblVATAmt As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents lblSubTotal As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents lblTotalQty As System.Windows.Forms.Label
+    Friend WithEvents lblGrossAmt As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents lblGSTAmt As System.Windows.Forms.Label
+    Friend WithEvents lblSCAmt As System.Windows.Forms.Label
+    Friend WithEvents PanelMemberDetails As System.Windows.Forms.Panel
+    Friend WithEvents lblMainScreebCitizenType As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents lblValidationMode As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents txtRefNo As System.Windows.Forms.TextBox
+    Friend WithEvents chbComplementory As System.Windows.Forms.CheckBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents txtPAX As System.Windows.Forms.TextBox
+    Friend WithEvents labelPAX As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents cmbTable As System.Windows.Forms.ComboBox
+    Friend WithEvents lblMemberName As System.Windows.Forms.Label
+    Friend WithEvents txtMemID As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cmbWaiter As System.Windows.Forms.ComboBox
+    Friend WithEvents PanelBillHeader As System.Windows.Forms.Panel
+    Friend WithEvents lblBillAmtPerviousKOT As System.Windows.Forms.Label
+    Friend WithEvents lblOpenBillString As System.Windows.Forms.Label
+    Friend WithEvents lblBillNo As System.Windows.Forms.Label
+    Friend WithEvents lblBillDate As System.Windows.Forms.Label
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents PanelLocationAndTables As System.Windows.Forms.Panel
+    Friend WithEvents PanelLocationTables As System.Windows.Forms.Panel
+    Friend WithEvents btnBillingLocation1 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation2 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation3 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation8 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation4 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation7 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation5 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocation6 As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocationMoveLeft As System.Windows.Forms.Button
+    Friend WithEvents btnBillingLocationMoveRight As System.Windows.Forms.Button
+    Friend WithEvents PanelTables As System.Windows.Forms.Panel
+    Friend WithEvents btnTableMoveRight As System.Windows.Forms.Button
+    Friend WithEvents btnTableMoveLeft As System.Windows.Forms.Button
+    Friend WithEvents btnTable36 As System.Windows.Forms.Button
+    Friend WithEvents btnTable35 As System.Windows.Forms.Button
+    Friend WithEvents btnTable39 As System.Windows.Forms.Button
+    Friend WithEvents btnTable38 As System.Windows.Forms.Button
+    Friend WithEvents btnTable37 As System.Windows.Forms.Button
+    Friend WithEvents btnTable28 As System.Windows.Forms.Button
+    Friend WithEvents btnTable31 As System.Windows.Forms.Button
+    Friend WithEvents btnTable29 As System.Windows.Forms.Button
+    Friend WithEvents btnTable30 As System.Windows.Forms.Button
+    Friend WithEvents btnTable34 As System.Windows.Forms.Button
+    Friend WithEvents btnTable33 As System.Windows.Forms.Button
+    Friend WithEvents btnTable32 As System.Windows.Forms.Button
+    Friend WithEvents btnTable27 As System.Windows.Forms.Button
+    Friend WithEvents btnTable25 As System.Windows.Forms.Button
+    Friend WithEvents btnTable26 As System.Windows.Forms.Button
+    Friend WithEvents btnTable18 As System.Windows.Forms.Button
+    Friend WithEvents btnTable21 As System.Windows.Forms.Button
+    Friend WithEvents btnTable19 As System.Windows.Forms.Button
+    Friend WithEvents btnTable20 As System.Windows.Forms.Button
+    Friend WithEvents btnTable24 As System.Windows.Forms.Button
+    Friend WithEvents btnTable23 As System.Windows.Forms.Button
+    Friend WithEvents btnTable22 As System.Windows.Forms.Button
+    Friend WithEvents btnTable17 As System.Windows.Forms.Button
+    Friend WithEvents btnTable15 As System.Windows.Forms.Button
+    Friend WithEvents btnTable16 As System.Windows.Forms.Button
+    Friend WithEvents btnTable8 As System.Windows.Forms.Button
+    Friend WithEvents btnTable11 As System.Windows.Forms.Button
+    Friend WithEvents btnTable9 As System.Windows.Forms.Button
+    Friend WithEvents btnTable10 As System.Windows.Forms.Button
+    Friend WithEvents btnTable1 As System.Windows.Forms.Button
+    Friend WithEvents btnTable14 As System.Windows.Forms.Button
+    Friend WithEvents btnTable2 As System.Windows.Forms.Button
+    Friend WithEvents btnTable13 As System.Windows.Forms.Button
+    Friend WithEvents btnTable3 As System.Windows.Forms.Button
+    Friend WithEvents btnTable12 As System.Windows.Forms.Button
+    Friend WithEvents btnTable4 As System.Windows.Forms.Button
+    Friend WithEvents btnTable7 As System.Windows.Forms.Button
+    Friend WithEvents btnTable5 As System.Windows.Forms.Button
+    Friend WithEvents btnTable6 As System.Windows.Forms.Button
+    Friend WithEvents dgItemGrid As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewImageColumn11 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn13 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn14 As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents PanelSearchItem As System.Windows.Forms.Panel
+    Friend WithEvents btnCancelMemberSearch As System.Windows.Forms.Button
+    Friend WithEvents txtSearchItemCode As System.Windows.Forms.TextBox
+    Friend WithEvents Label155 As System.Windows.Forms.Label
+    Friend WithEvents Label156 As System.Windows.Forms.Label
+    Friend WithEvents txtSearchItemName As System.Windows.Forms.TextBox
+    Friend WithEvents dgSearchItem As System.Windows.Forms.DataGridView
+    'Friend WithEvents CrystalReportViewer2 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+
+
+End Class

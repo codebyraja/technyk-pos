@@ -15,18 +15,18 @@
 
     End Sub
 
-    Private Sub ApplySafeResponsive(parent As Control)
+    'Private Sub ApplySafeResponsive(parent As Control)
 
-        For Each ctrl As Control In parent.Controls
+    '    For Each ctrl As Control In parent.Controls
 
-            ' Only stretch main outer panel
-            If TypeOf ctrl Is Panel AndAlso ctrl.Dock <> DockStyle.Fill Then
-                ctrl.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-            End If
+    '        ' Only stretch main outer panel
+    '        If TypeOf ctrl Is Panel AndAlso ctrl.Dock <> DockStyle.Fill Then
+    '            ctrl.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+    '        End If
 
-        Next
+    '    Next
 
-    End Sub
+    'End Sub
 
 End Class
 

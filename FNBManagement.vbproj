@@ -194,10 +194,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="helper\General.vb" />
-    <Compile Include="helper\FormResizeHelper.vb" />
-    <Compile Include="helper\FormResizer.vb" />
     <Compile Include="helper\GridHelper.vb" />
-    <Compile Include="helper\LayoutManager.vb" />
     <Compile Include="helper\ResponsiveHelper.vb" />
     <Compile Include="helper\ResponsiveManager.vb" />
     <Compile Include="helper\UIHelper.vb" />
@@ -311,6 +308,12 @@
     <Compile Include="POS Transations\FrmPOSBilling1N.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="POS Transations\FrmPOSBilling2N.designer.vb">
+      <DependentUpon>FrmPOSBilling2N.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS Transations\FrmPOSBilling2N.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Common\FrmCompanyInfo.resx">
@@ -415,6 +418,9 @@
     <EmbeddedResource Include="POS Transations\FrmPOSBilling1N.resx">
       <DependentUpon>FrmPOSBilling1N.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS Transations\FrmPOSBilling2N.resx">
+      <DependentUpon>FrmPOSBilling2N.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

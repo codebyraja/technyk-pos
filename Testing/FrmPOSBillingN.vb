@@ -1,10 +1,11 @@
 Imports System.Windows.Forms
 Imports System.Data.SqlClient
-Imports CrystalDecisions.CrystalReports.Engine
-Imports CrystalDecisions.Shared
 Imports System.Data
 
-Public Class FrmPOSBilling1N
+Public Class FrmPOSBilling2N
+    Inherits BasePOSForm
+    Private responsive As ResponsiveHelper
+
     Dim NewKOTNo As Integer
     Dim ItemCountDestinationTable As Integer
     Dim VendorCodes As String = ""
@@ -207,6 +208,8 @@ Public Class FrmPOSBilling1N
             End If
             FlagCheckBusinessDate = False
         End If
+
+        responsive = New ResponsiveHelper(Me)
     End Sub
 
     Protected Overloads Overrides Function _
@@ -1153,7 +1156,9 @@ Public Class FrmPOSBilling1N
             PanelModifiers.Location = LeftPanelLocation
             PanelModifiers.BringToFront()
             EnableControl(PanelModifiers)
-            PanelModifiers.Visible = True
+            'PanelModifiers.Visible = True
+            General.ShowModalPanel(PanelModifiers, Nothing)
+
             btnClear.BackColor = Color.Yellow
             btnDismiss.BackColor = Color.Yellow
             btnItemModifierOK.BackColor = Color.Yellow
@@ -1267,6 +1272,13 @@ Public Class FrmPOSBilling1N
                 EnableControl(PanelDisplayBill)
             End If
         End If
+    End Sub
+
+    Private Sub FrmPOSBilling2N_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+        ApplyResponsiveLayout(Me, responsive)
     End Sub
 
     Private Sub FrmPOSKeyBoard_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
@@ -4294,19 +4306,19 @@ Public Class FrmPOSBilling1N
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(TaxPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & AlcoholicItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE & " and KB.TaxType='VAT'"
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code & " and KB.TaxType='VAT'"
             VATAmt1 = ObjDatabase.ExecuteScalarN(StrSql)
 
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(SCPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & AlcoholicItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code
             SCAmt1 = ObjDatabase.ExecuteScalarN(StrSql)
 
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(TaxPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & AlcoholicItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE & " and KB.TaxType='GST'"
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code & " and KB.TaxType='GST'"
             GSTAmt1 = ObjDatabase.ExecuteScalarN(StrSql)
         End If
 
@@ -4315,19 +4327,19 @@ Public Class FrmPOSBilling1N
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(TaxPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & NonAlcoholicItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE & " and KB.TaxType='VAT'"
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code & " and KB.TaxType='VAT'"
             VATAmt2 = ObjDatabase.ExecuteScalarN(StrSql)
 
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(SCPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & NonAlcoholicItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code
             SCAmt2 = ObjDatabase.ExecuteScalarN(StrSql)
 
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(TaxPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & NonAlcoholicItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE & " and KB.TaxType='GST'"
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code & " and KB.TaxType='GST'"
             GSTAmt2 = ObjDatabase.ExecuteScalarN(StrSql)
         End If
 
@@ -4336,19 +4348,19 @@ Public Class FrmPOSBilling1N
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(TaxPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & FoodItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE & " and KB.TaxType='VAT'"
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code & " and KB.TaxType='VAT'"
             VATAmt3 = ObjDatabase.ExecuteScalarN(StrSql)
 
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(SCPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & FoodItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code
             SCAmt3 = ObjDatabase.ExecuteScalarN(StrSql)
 
             StrSql = "SELECT isnull(Sum((KB.Qty*KB.Rate)*(100-" & DiscPer & ")*0.01*(TaxPer)*0.01),0) as Amount" & _
             " from FB_KOTBody KB , FB_BillBody BB where KB.itemcode in(Select itemcode from IM_ItemMaster" & _
             " where ItemGroup in(" & FoodItemGroup & ")) and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
-            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_CODE & " and KB.TaxType='GST'"
+            " and BB.BillNo=" & Val(lblBillNo.Text) & " AND BB.[YearCode]=" & YearCode & " AND BB.[LocationCode]=" & LOCATION_Code & " and KB.TaxType='GST'"
             GSTAmt3 = ObjDatabase.ExecuteScalarN(StrSql)
         End If
 
@@ -4805,7 +4817,7 @@ Public Class FrmPOSBilling1N
        " and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
        " and KB.LocationCode=" & LOCATION_Code & _
        " and BH.TableCode=" & Val(cmbSourceTable.SelectedValue) & " and BH.BillDate='" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "' and BH.BillStatus=0" & _
-       " group by KB.KOTNO,KB.ItemCode,KB.SCPer,DiscountPer, TaxType,KB.SCPer,KB.TaxPer,KB.ItemName, KB.UnitCode, UM.UnitName,KB.Rate" & _
+       " group by KB.KOTNO,KB.ItemCode, IM.AliasName, KB.SCPer,DiscountPer, TaxType,KB.SCPer,KB.TaxPer,KB.ItemName, KB.UnitCode, UM.UnitName,KB.Rate" & _
        " order by KB.KOTNo,KB.ItemName"
 
         dsReq = ObjDatabase.BindDataSet(StrSql, "ITEM")
@@ -5196,7 +5208,7 @@ Public Class FrmPOSBilling1N
         StrQry = ""
         DestinationKOTNos = ""
         If lblDestinationBillNo.Text <> "" And lblDestinationBillNo.Text <> "New" Then
-            StrQry = "SELECT  STUFF((SELECT  ',' + CONVERT(VARCHAR(4),KOTNo) FROM FB_BillBody WHERE BillNo=" & lblDestinationBillNo.Text & " AND YearCode=" & YearCode & " AND LocationCode=" & LOCATION_CODE & " FOR XML PATH('')), 1, 1, '') AS ItemList"
+            StrQry = "SELECT  STUFF((SELECT  ',' + CONVERT(VARCHAR(4),KOTNo) FROM FB_BillBody WHERE BillNo=" & lblDestinationBillNo.Text & " AND YearCode=" & YearCode & " AND LocationCode=" & LOCATION_Code & " FOR XML PATH('')), 1, 1, '') AS ItemList"
             DestinationKOTNos = ObjDatabase.ExecuteScalarS(StrQry)
         Else
             If DestinationKOTNos = "" Then DestinationKOTNos = "0"
@@ -5240,21 +5252,21 @@ Public Class FrmPOSBilling1N
         btnShiftKOT.Enabled = False
         Try
             If lblDestinationBillNo.Text <> "New" Then
-                StrSql = "Select Max(KOTNo)+1 From FB_KOTHead WHERE YearCode=" & YearCode & " AND LocationCode=" & LOCATION_CODE
+                StrSql = "Select Max(KOTNo)+1 From FB_KOTHead WHERE YearCode=" & YearCode & " AND LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 Dim NewKOTNo As String = myCommand.ExecuteScalar()
 
                 QrySourceTable1 = "INSERT INTO FB_KOTHead(KOTNo, KOTDate, MemberID, IssueNo, WaiterCode, TableCode, PAX, RefNo, ModeOfPayment, OpeningBalance, ClosingBalance, CreationDate, ModificationDate, UserCode, LocationCode, YearCode)"
                 QrySourceTable2 = " SELECT " & NewKOTNo & ",'" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "','" & lblDestinationMemID.Text & "'," & lblDestinationIssueNo.Text & _
                 "," & cmbWaiter.SelectedValue & "," & cmbDestinationTable.SelectedValue & ",1,'0',''," & Val(lblDestinationOpeningBalance.Text) & _
-                "," & Val(lblDestinationClosingBalance.Text) & ",getdate(),getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode
+                "," & Val(lblDestinationClosingBalance.Text) & ",getdate(),getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode
                 StrSql = QrySourceTable1 & vbCrLf & QrySourceTable2
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
 
                 StrSql = "INSERT INTO FB_BillBody(Billno,KOTNo,CreationDate,ModificationDate,UserCode,LocationCode,YearCode)" & _
-                " values(" & Val(lblDestinationBillNo.Text) & "," & NewKOTNo & ",Getdate(),Getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode & ")"
+                " values(" & Val(lblDestinationBillNo.Text) & "," & NewKOTNo & ",Getdate(),Getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode & ")"
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
@@ -5266,12 +5278,12 @@ Public Class FrmPOSBilling1N
 
                     QrySourceTable1 = "INSERT INTO FB_KOTBody(KOTNo, Itemcode, ItemName, OpenItem, UnitCode, Qty, ActualQty, Rate, SchemeRate, Amount, DiscountPer, TaxType, TaxPer, SCPer, CreationDate, ModificationDate, UserCode, LocationCode, YearCode, remarks)"
                     QrySourceTable2 = " SELECT " & NewKOTNo & ",[ItemCode],ItemName,OpenItem,[UnitCode]," & Qty & ",Qty,[Rate],[Rate]," & Rate * Qty & ",[DiscountPer],[TaxType],[TaxPer],[SCPer],[CreationDate],[ModificationDate],[UserCode],[LocationCode],[YearCode],'to be deleted'" & _
-                    " FROM [FB_KOTBody] WHERE KOTNo=" & KOTNo & " AND YearCode=" & YearCode & " AND ItemCode=" & ItemCode & " And Rate=" & Rate & " And Qty>0 and LocationCode=" & LOCATION_CODE
+                    " FROM [FB_KOTBody] WHERE KOTNo=" & KOTNo & " AND YearCode=" & YearCode & " AND ItemCode=" & ItemCode & " And Rate=" & Rate & " And Qty>0 and LocationCode=" & LOCATION_Code
                     StrSql = QrySourceTable1 & vbCrLf & QrySourceTable2
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
 
-                    QrySourceTable2 = "UPDATE [FB_KOTBody] SET Qty=0, Remarks='Item shifted' WHERE KOTNo=" & KOTNo & " AND YearCode=" & YearCode & " AND ItemCode=" & ItemCode & " And Rate=" & Rate & " And Qty>0 and LocationCode=" & LOCATION_CODE
+                    QrySourceTable2 = "UPDATE [FB_KOTBody] SET Qty=0, Remarks='Item shifted' WHERE KOTNo=" & KOTNo & " AND YearCode=" & YearCode & " AND ItemCode=" & ItemCode & " And Rate=" & Rate & " And Qty>0 and LocationCode=" & LOCATION_Code
                     StrSql = QrySourceTable2
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
@@ -5279,14 +5291,14 @@ Public Class FrmPOSBilling1N
                 Next i
 
                 QrySourceTable1 = "INSERT INTO FB_KOTBody(KOTNo, Itemcode, ItemName, OpenItem, UnitCode, Qty, ActualQty, Rate, SchemeRate, Amount, DiscountPer, TaxType, TaxPer, SCPer, CreationDate, ModificationDate, UserCode, LocationCode, YearCode, remarks)"
-                QrySourceTable2 = "select KOTNo,ItemCode,ItemName,OpenItem,UnitCode,sum(qty),sum(qty),Rate,Rate,sum(amount),DiscountPer,TaxType,TaxPer,SCPer,getdate(),getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode & ", 'Table Moved/Merged' as Remarks" & _
-                " from FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & " and LocationCode=" & LOCATION_CODE & _
+                QrySourceTable2 = "select KOTNo,ItemCode,ItemName,OpenItem,UnitCode,sum(qty),sum(qty),Rate,Rate,sum(amount),DiscountPer,TaxType,TaxPer,SCPer,getdate(),getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode & ", 'Table Moved/Merged' as Remarks" & _
+                " from FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & " and LocationCode=" & LOCATION_Code & _
                 " group by KOTNo,ItemCode,UnitCode,DiscountPer,TaxPer,TaxType,SCPer, ItemName,OpenItem,Rate"
                 StrSql = QrySourceTable1 & vbCrLf & QrySourceTable2
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
-                StrSql = "DELETE FROM FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & " and LocationCode=" & LOCATION_CODE & " and Remarks<>'Table Moved/Merged'"
+                StrSql = "DELETE FROM FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & " and LocationCode=" & LOCATION_Code & " and Remarks<>'Table Moved/Merged'"
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
@@ -5299,42 +5311,42 @@ Public Class FrmPOSBilling1N
                 DestinationRoundOff = Math.Round(DestinationBillAmtAR - DestinationBillAmtBR, 2)
 
                 If Val(lblGrossAmtSource.Text) = 0 Then
-                    StrSql = "UPDATE FB_BillHead SET Amount=" & SourceBillAmtAR & ", RoundOff=" & SourceRoundOff & ", BillStatus=1 WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                    StrSql = "UPDATE FB_BillHead SET Amount=" & SourceBillAmtAR & ", RoundOff=" & SourceRoundOff & ", BillStatus=1 WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
                 Else
-                    StrSql = "UPDATE FB_BillHead SET Amount=" & Val(SourceBillAmtAR) & ",RoundOff=" & SourceRoundOff & " WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                    StrSql = "UPDATE FB_BillHead SET Amount=" & Val(SourceBillAmtAR) & ",RoundOff=" & SourceRoundOff & " WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
                 End If
 
-                StrSql = "UPDATE FB_BillHead SET Amount=" & DestinationBillAmtAR & ", RoundOff=" & DestinationRoundOff & " WHERE [BillNo]=" & Val(lblDestinationBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                StrSql = "UPDATE FB_BillHead SET Amount=" & DestinationBillAmtAR & ", RoundOff=" & DestinationRoundOff & " WHERE [BillNo]=" & Val(lblDestinationBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
             ElseIf lblDestinationBillNo.Text = "New" And dgSourceTable.RowCount > 0 Then
-                StrSql = "Select Max(BillNo)+1 From FB_BillHead WHERE YearCode=" & YearCode & " AND LocationCode=" & LOCATION_CODE
+                StrSql = "Select Max(BillNo)+1 From FB_BillHead WHERE YearCode=" & YearCode & " AND LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 Dim NewBillNo As String = myCommand.ExecuteScalar()
 
-                StrSql = "Select Max(KOTNo)+1 From FB_KOTHead WHERE YearCode=" & YearCode & " AND LocationCode=" & LOCATION_CODE
+                StrSql = "Select Max(KOTNo)+1 From FB_KOTHead WHERE YearCode=" & YearCode & " AND LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 Dim NewKOTNo As String = myCommand.ExecuteScalar()
 
                 StrSql = "INSERT INTO FB_BillHead(BillNo, BillDate, MemberID, MemberName, WaiterCode, TableCode, BookingNo, RoomCode, IssueNo, PAX, BillStatus, BillType, Amount, RoundOff, ModeOfPayment, RefNo, RefDate, ValidationMode, Remarks, OpeningBalance,ClosingBalance, CreationDate, ModificationDate, UserCode, LocationCode, YearCode)" & _
-                " VALUES(" & NewBillNo & ",'" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "','" & lblDestinationMemID.Text & "','" & lblDestinationMemName.Text & "'," & cmbWaiter.SelectedValue & "," & cmbDestinationTable.SelectedValue & ",0,0," & Val(lblDestinationIssueNo.Text) & ",1,0," & BillType & "," & lblDestinationGrossAmt.Text & ",0,'','','" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "','SmartCard','From Table Shifting'," & Val(lblDestinationOpeningBalance.Text) & "," & Val(lblDestinationClosingBalance.Text) & ",getdate(),getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode & ")"
+                " VALUES(" & NewBillNo & ",'" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "','" & lblDestinationMemID.Text & "','" & lblDestinationMemName.Text & "'," & cmbWaiter.SelectedValue & "," & cmbDestinationTable.SelectedValue & ",0,0," & Val(lblDestinationIssueNo.Text) & ",1,0," & BillType & "," & lblDestinationGrossAmt.Text & ",0,'','','" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "','SmartCard','From Table Shifting'," & Val(lblDestinationOpeningBalance.Text) & "," & Val(lblDestinationClosingBalance.Text) & ",getdate(),getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode & ")"
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
                 StrSql = "INSERT INTO FB_BillBody(Billno,KOTNo,CreationDate,ModificationDate,UserCode,LocationCode,YearCode)" & _
-                " values(" & NewBillNo & "," & NewKOTNo & ",Getdate(),Getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode & ")"
+                " values(" & NewBillNo & "," & NewKOTNo & ",Getdate(),Getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode & ")"
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
                 QrySourceTable1 = "INSERT INTO FB_KOTHead(KOTNo, KOTDate, MemberID, IssueNo, WaiterCode, TableCode, PAX, RefNo, ModeOfPayment, OpeningBalance, ClosingBalance, CreationDate, ModificationDate, UserCode, LocationCode, YearCode)"
                 QrySourceTable2 = " SELECT " & NewKOTNo & ",'" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "','" & lblDestinationMemID.Text & "'," & Val(lblDestinationIssueNo.Text) & _
                 "," & cmbWaiter.SelectedValue & "," & cmbDestinationTable.SelectedValue & ",1,'0',''," & Val(lblDestinationOpeningBalance.Text) & _
-                "," & Val(lblDestinationClosingBalance.Text) & ",getdate(),getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode
+                "," & Val(lblDestinationClosingBalance.Text) & ",getdate(),getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode
                 StrSql = QrySourceTable1 & vbCrLf & QrySourceTable2
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
@@ -5353,7 +5365,7 @@ Public Class FrmPOSBilling1N
                     myCommand.ExecuteNonQuery()
 
                     QrySourceTable2 = "UPDATE [FB_KOTBody] SET Qty=0, Remarks='Item shifted'" & _
-                    " WHERE KOTNo=" & KOTNo & " AND YearCode=" & YearCode & " AND LocationCode=" & LOCATION_CODE & " AND ItemCode=" & ItemCode & " And Rate=" & Rate & " And Qty>0"
+                    " WHERE KOTNo=" & KOTNo & " AND YearCode=" & YearCode & " AND LocationCode=" & LOCATION_Code & " AND ItemCode=" & ItemCode & " And Rate=" & Rate & " And Qty>0"
                     StrSql = QrySourceTable2
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
@@ -5361,15 +5373,15 @@ Public Class FrmPOSBilling1N
                 Next i
 
                 QrySourceTable1 = "INSERT INTO FB_KOTBody(KOTNo, Itemcode, ItemName, OpenItem, UnitCode, Qty, ActualQty, Rate, SchemeRate, Amount, DiscountPer, TaxType, TaxPer, SCPer, CreationDate, ModificationDate, UserCode, LocationCode, YearCode, remarks)"
-                QrySourceTable2 = "select KOTNo,ItemCode,ItemName,OpenItem,UnitCode,sum(qty),sum(qty),Rate,Rate,sum(amount),DiscountPer,TaxType,TaxPer,SCPer,getdate(),getdate()," & UserCode & "," & LOCATION_CODE & "," & YearCode & ", 'Table Moved/Merged' as Remarks" & _
-                " from FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & " and LocationCode=" & LOCATION_CODE & _
+                QrySourceTable2 = "select KOTNo,ItemCode,ItemName,OpenItem,UnitCode,sum(qty),sum(qty),Rate,Rate,sum(amount),DiscountPer,TaxType,TaxPer,SCPer,getdate(),getdate()," & UserCode & "," & LOCATION_Code & "," & YearCode & ", 'Table Moved/Merged' as Remarks" & _
+                " from FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & " and LocationCode=" & LOCATION_Code & _
                 " group by KOTNo,ItemCode,UnitCode,DiscountPer,TaxPer,TaxType,SCPer, ItemName,OpenItem,Rate"
                 StrSql = QrySourceTable1 & vbCrLf & QrySourceTable2
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
                 StrSql = "DELETE FROM FB_KOTBody WHERE KOTNo=" & NewKOTNo & " AND YearCode=" & YearCode & _
-                " and Remarks<>'Table Moved/Merged' and Locationcode=" & LOCATION_CODE
+                " and Remarks<>'Table Moved/Merged' and Locationcode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
@@ -5382,27 +5394,27 @@ Public Class FrmPOSBilling1N
                 DestinationRoundOff = Math.Round(DestinationBillAmtAR - DestinationBillAmtBR, 2)
 
                 If Val(lblGrossAmtSource.Text) = 0 Then
-                    StrSql = "UPDATE FB_BillHead SET Amount=" & SourceBillAmtAR & ", RoundOff=" & SourceRoundOff & ", BillStatus=1 WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                    StrSql = "UPDATE FB_BillHead SET Amount=" & SourceBillAmtAR & ", RoundOff=" & SourceRoundOff & ", BillStatus=1 WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
                 Else
-                    StrSql = "UPDATE FB_BillHead SET Amount=" & Val(SourceBillAmtAR) & ",RoundOff=" & SourceRoundOff & " WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                    StrSql = "UPDATE FB_BillHead SET Amount=" & Val(SourceBillAmtAR) & ",RoundOff=" & SourceRoundOff & " WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                     myCommand.CommandText = StrSql
                     myCommand.ExecuteNonQuery()
                 End If
 
-                StrSql = "UPDATE FB_BillHead SET Amount=" & DestinationBillAmtAR & ", RoundOff=" & DestinationRoundOff & " WHERE [BillNo]=" & Val(lblDestinationBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                StrSql = "UPDATE FB_BillHead SET Amount=" & DestinationBillAmtAR & ", RoundOff=" & DestinationRoundOff & " WHERE [BillNo]=" & Val(lblDestinationBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
             ElseIf lblDestinationBillNo.Text = "New" And dgSourceTable.RowCount = 0 Then
 
                 StrSql = "UPDATE FB_BillHead SET TableCode=" & cmbDestinationTable.SelectedValue & _
-                " WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                " WHERE [BillNo]=" & Val(lblSourceBillNo.Text) & " AND [YearCode]=" & YearCode & " and LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
-                StrSql = "UPDATE FB_KOTHead SET TableCode=" & cmbDestinationTable.SelectedValue & " WHERE [KOTNo]=" & NewKOTNo & " and YearCode=" & YearCode & " and LocationCode=" & LOCATION_CODE
+                StrSql = "UPDATE FB_KOTHead SET TableCode=" & cmbDestinationTable.SelectedValue & " WHERE [KOTNo]=" & NewKOTNo & " and YearCode=" & YearCode & " and LocationCode=" & LOCATION_Code
                 myCommand.CommandText = StrSql
                 myCommand.ExecuteNonQuery()
 
@@ -5467,7 +5479,7 @@ Public Class FrmPOSBilling1N
         StrSql = "SELECT TM.Code, TM.TableNo" & _
         " FROM FB_LocationTableLink LTL,FB_TableMaster TM,IM_LocationMaster LM" & _
         " where  LTL.TableCode = TM.Code and LTL.LocationCode = LM.code " & _
-        " AND LTL.LocationCode=" & LOCATION_CODE & " and LTL.MainLocationCode=" & LOCATION_CODE & " and TM.Code<>" & cmbSourceTable.SelectedValue
+        " AND LTL.LocationCode=" & LOCATION_Code & " and LTL.MainLocationCode=" & LOCATION_Code & " and TM.Code<>" & cmbSourceTable.SelectedValue
         BindComboboxWithSelectOneNumeric(StrSql, "Code", "TableNo", cmbDestinationTable)
         BindItemGridForSourceTable()
         BindItemGridForDestinationTable()
@@ -5485,13 +5497,13 @@ Public Class FrmPOSBilling1N
 
     Private Sub cmbDestinationTable_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbDestinationTable.Validated
         dgDestinationTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        lblDestinationBillNo.Text = ObjDatabase.ExecuteScalarS("Select BillNo From FB_BillHead Where TableCode=" & cmbDestinationTable.SelectedValue & " and BillDate='" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "' And BillStatus=0 and LocationCode=" & LOCATION_CODE)
+        lblDestinationBillNo.Text = ObjDatabase.ExecuteScalarS("Select BillNo From FB_BillHead Where TableCode=" & cmbDestinationTable.SelectedValue & " and BillDate='" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "' And BillStatus=0 and LocationCode=" & LOCATION_Code)
         BindItemGridForDestinationTable()
         If lblDestinationBillNo.Text = "" Then
             ReadCardForNewBill()
             lblDestinationBillNo.Text = "New"
         Else
-            StrSql = "select IssueNo, MemberID, MemberName From FB_BillHead where BillNo=" & Val(lblDestinationBillNo.Text) & " and YearCode=" & YearCode & " and LocationCode=" & LOCATION_CODE
+            StrSql = "select IssueNo, MemberID, MemberName From FB_BillHead where BillNo=" & Val(lblDestinationBillNo.Text) & " and YearCode=" & YearCode & " and LocationCode=" & LOCATION_Code
             ds = New DataSet
             ds = ObjDatabase.BindDataSet(StrSql, "CardInfo")
             If ds.Tables("CardInfo").Rows.Count > 0 Then
@@ -5822,11 +5834,11 @@ Public Class FrmPOSBilling1N
 
     End Sub
 
-    Private Sub btnCancelMemberSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelMemberSearch.Click
+    Private Sub btnCancelMemberSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         PanelSearchItem.Visible = False
     End Sub
 
-    Private Sub dgSearchItem_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgSearchItem.CellContentClick
+    Private Sub dgSearchItem_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
         If e.ColumnIndex = 0 Then
             PanelSearchItem.Visible = False
             Dim ItemCode As String = dgSearchItem.Rows(dgSearchItem.CurrentRow.Index).Cells("Itemcode").Value()
@@ -5865,7 +5877,7 @@ Public Class FrmPOSBilling1N
         dgSearchItem.RowHeadersVisible = True
     End Sub
 
-    Private Sub txtSearchItemName_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSearchItemName.TextChanged, txtSearchItemCode.TextChanged
+    Private Sub txtSearchItemName_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BindSearchGridForItem()
     End Sub
 
@@ -5877,13 +5889,13 @@ Public Class FrmPOSBilling1N
 
     End Sub
 
-    Private Sub txtSearchItemCode_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSearchItemCode.KeyDown, txtSearchItemName.KeyDown
+    Private Sub txtSearchItemCode_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
         If e.KeyCode = Keys.Down Then
             dgSearchItem.Focus()
         End If
     End Sub
 
-    Private Sub dgSearchItem_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles dgSearchItem.KeyDown
+    Private Sub dgSearchItem_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
         If e.KeyCode = Keys.Enter Then
             PanelSearchItem.Visible = False
             Dim ItemCode As String = dgSearchItem.Rows(dgSearchItem.CurrentRow.Index).Cells("Itemcode").Value()
@@ -5902,6 +5914,10 @@ Public Class FrmPOSBilling1N
     End Sub
 
     Private Sub cmbTableNoSC_SelectedIndexChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbTableNoSC.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub btnCancelMemberSearch_Click_1(sender As Object, e As EventArgs) Handles btnCancelMemberSearch.Click
 
     End Sub
 End Class

@@ -7,7 +7,7 @@ Imports System.Data.SqlClient
 'Imports CrystalDecisions.ReportAppServer
 
 Public Class frmCreditTransactionEnquiry
-    Inherits BasePOSForm
+    Private responsive As ResponsiveHelper
     Dim ds As DataSet
     Dim NoOfrecords As Integer
     Dim NoOfrecordsStr As String
@@ -28,87 +28,10 @@ Public Class frmCreditTransactionEnquiry
         lblAllotedLimit.Text = "0.00"
         lblAvailableLimit.Text = "0.00"
 
-        Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        PanelSearch.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        LabelHeader.TextAlign = ContentAlignment.MiddleCenter
+        responsive = New ResponsiveHelper(Me)
 
-        PanelFooter.Dock = DockStyle.Bottom
-        PanelFooter.Height = 60
-
-    End Sub
-
-    'Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
-
-    '    ' Center 3 buttons manually
-    '    Dim totalWidth As Integer =
-    '        btnSearch.Width +
-    '        btnPrintReport.Width +
-    '        btnClose.Width + 20
-
-    '    Dim startX As Integer = (PanelFooter.Width - totalWidth) \ 2
-
-    '    btnSearch.Left = startX
-    '    btnPrintReport.Left = btnSearch.Right + 10
-    '    btnClose.Left = btnPrintReport.Right + 10
-
-    '    ' LEFT side lblCount
-    '    ' lblCount.Left = 20
-    '    lblCount. = (PanelFooter.Height - lblCount.Height) \ 2
-
-    '    ' Right side totals
-    '    lblTotalCrAmount.Top = lblCount.Top
-    '    lblTotalDrAmount.Top = lblCount.Top
-
-    '    lblTotalCrAmount.Left = PanelFooter.Width - lblTotalCrAmount.Width - 20
-    '    lblTotalDrAmount.Left = lblTotalCrAmount.Left - lblTotalDrAmount.Width - 10
-    'End Sub
-
-    Private Sub PanelFooter_Resize(sender As Object, e As EventArgs) Handles PanelFooter.Resize
-
-        ' ===== Row 1 (Upper Row - Credit Info) =====
-        Dim row1Y As Integer = 2
-
-
-        Label1.Top = row1Y
-        lblAllotedLimit.Top = row1Y
-        Label4.Top = row1Y
-        lblAvailableLimit.Top = row1Y
-        txtAmountDr.Top = row1Y
-        txtAmountCr.Top = row1Y
-
-        txtAmountCr.Left = PanelFooter.Width - lblTotalCrAmount.Width - 20
-        txtAmountDr.Left = txtAmountCr.Left - txtAmountDr.Width - 10
-
-        ' ===== Row 2 (Bottom Row - Buttons) =====
-        Dim row2Y As Integer = PanelFooter.Height - btnSearch.Height - 4
-
-        btnSearch.Top = row2Y
-        btnPrintReport.Top = row2Y
-        btnClose.Top = row2Y
-
-        lblCount.Top = row2Y + 2
-        'lblCount.Left = 20
-
-        ' ===== Center Buttons Horizontally =====
-        Dim totalWidth As Integer =
-            btnSearch.Width +
-            btnPrintReport.Width +
-            btnClose.Width + 20
-
-        Dim startX As Integer = (PanelFooter.Width - totalWidth) \ 2
-
-        btnSearch.Left = startX
-        btnPrintReport.Left = btnSearch.Right + 10
-        btnClose.Left = btnPrintReport.Right + 10
-
-        ' ===== Right Totals (Align with Buttons Row) =====
-        lblTotalCrAmount.Top = row2Y + 2
-        lblTotalDrAmount.Top = row2Y + 2
-
-        lblTotalCrAmount.Left = PanelFooter.Width - lblTotalCrAmount.Width - 20
-        lblTotalDrAmount.Left = lblTotalCrAmount.Left - lblTotalDrAmount.Width - 10
-
+        PanelDisplay.Visible = False
+        PanelDisplay.SendToBack()
     End Sub
 
     Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
@@ -230,9 +153,9 @@ Public Class frmCreditTransactionEnquiry
 
         If dgCreditEnquiry.Columns.Count = 0 Then Exit Sub
 
-        dgCreditEnquiry.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
-        dgCreditEnquiry.RowHeadersVisible = False
-        dgCreditEnquiry.AllowUserToResizeRows = False
+        'dgCreditEnquiry.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None
+        'dgCreditEnquiry.RowHeadersVisible = False
+        'dgCreditEnquiry.AllowUserToResizeRows = False
 
         ' Hide unwanted columns
         dgCreditEnquiry.Columns("YearCode").Visible = False
@@ -262,10 +185,10 @@ Public Class frmCreditTransactionEnquiry
             End With
         End If
 
-        dgCreditEnquiry.Anchor = AnchorStyles.Top Or
-                         AnchorStyles.Bottom Or
-                         AnchorStyles.Left Or
-                         AnchorStyles.Right
+        'dgCreditEnquiry.Anchor = AnchorStyles.Top Or
+        '                 AnchorStyles.Bottom Or
+        '                 AnchorStyles.Left Or
+        '                 AnchorStyles.Right
 
     End Sub
 
@@ -627,5 +550,25 @@ Public Class frmCreditTransactionEnquiry
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub PanelFooter_Paint(sender As Object, e As PaintEventArgs) Handles PanelFooter.Paint
+
+    End Sub
+
+    Private Sub PanelFooter_Resize1(sender As Object, e As EventArgs) Handles PanelFooter.Resize
+        CenterButtonsInPanel(PanelFooter)
+    End Sub
+
+    Private Sub PanelDisplay_Paint(sender As Object, e As PaintEventArgs) Handles PanelDisplay.Paint
+
+    End Sub
+
+    Private Sub frmCreditTransactionEnquiry_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        If responsive Is Nothing Then
+            responsive = New ResponsiveHelper(Me)
+        End If
+
+        ApplyResponsiveLayout(Me, responsive)
     End Sub
 End Class

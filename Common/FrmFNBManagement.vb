@@ -4,6 +4,7 @@ Imports System.Drawing
 Imports System.Net
 
 Public Class FrmFNBManagement
+
     Private Sub FrmMainForm_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         'form Design
@@ -37,7 +38,6 @@ Public Class FrmFNBManagement
         DisableControls(False)
         DefineTooTipAndFormAccess()
         LOCATION_TYPE = "'POS Bar','POS Rest'"
-
     End Sub
     Public Sub ShowDashboard()
         'PanelButtons.Controls.Clear()
@@ -429,7 +429,7 @@ Public Class FrmFNBManagement
         End If
     End Sub
 
-   
+
     Private Sub btnMemberEnquiry_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnfrmMemberEnquiry.Click
         Dim frm As New frmMemberEnquiry
         CheckUserFormAccess(btnfrmMemberEnquiry)
@@ -526,7 +526,7 @@ Public Class FrmFNBManagement
         End If
     End Sub
 
-    
+
     Private Sub lblWelcomeUser_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim frm As New FrmChangePassword
         DisplayForm(frm)

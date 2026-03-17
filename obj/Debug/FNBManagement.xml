@@ -119,6 +119,10 @@ FNBManagement
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:FNBManagement.My.Resources.Resources.blank1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:FNBManagement.My.Resources.Resources.book_open">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
