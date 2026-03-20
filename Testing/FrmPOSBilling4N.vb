@@ -2,7 +2,7 @@ Imports System.Windows.Forms
 Imports System.Data.SqlClient
 Imports System.Data
 
-Public Class FrmPOSBilling2N
+Public Class FrmPOSBilling4N
     Inherits BasePOSForm
     Private responsive As ResponsiveHelper
 
@@ -152,6 +152,51 @@ Public Class FrmPOSBilling2N
         End If
     End Sub
 
+    Private Sub ShowMergeScreen()
+
+        ' Hide normal content (left + right)
+        PanelContentHost.Visible = False
+
+        ' Hide other overlays (optional safety)
+        'PanelModifiers.Visible = False
+        HideModalPanelCenter(PanelModifiers)
+        PanelSearchItem.Visible = False
+        PanelClosedBills.Visible = False
+
+        ' Show merge panel
+        PanelMergeTables.Visible = True
+        PanelMergeTables.BringToFront()
+    End Sub
+
+    Private Sub ShowBillingScreen()
+
+        PanelMergeTables.Visible = False
+
+        ' Show normal billing layout
+        PanelContentHost.Visible = True
+        PanelContentHost.BringToFront()
+
+    End Sub
+
+    Private Sub ShowModalPanelCenter(pnl As Panel)
+
+        If pnl Is Nothing Then Exit Sub
+        'If pnl.Parent Is Nothing Then Exit Sub
+
+        pnl.Visible = True
+        pnl.BringToFront()
+
+        pnl.Left = (pnl.Parent.Width - pnl.Width) \ 2
+        pnl.Top = (pnl.Parent.Height - pnl.Height) \ 2
+
+    End Sub
+
+    Private Sub HideModalPanelCenter(pnl As Panel)
+
+        If pnl IsNot Nothing Then pnl.Visible = False
+
+    End Sub
+
     Private Sub FrmPOSKeyBoardBilling_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         ObjDatabase.ConnectDatabse()
         ClearText(Me)
@@ -193,7 +238,7 @@ Public Class FrmPOSBilling2N
         If ValidateClientServerDate() = False Then
             Me.Enabled = False
         End If
-        PanelModifiers.Visible = False
+        HideModalPanelCenter(PanelModifiers)
         PanelSearchItem.Visible = False
         StrSql = "SELECT Code, Remarks FROM FB_KOTRemarks where Status='Active'"
         BindComboboxWithSelectOneNumeric(StrSql, "Code", "Remarks", cmbKOTRemarks)
@@ -428,10 +473,10 @@ Public Class FrmPOSBilling2N
         btnMinus9.FlatStyle = FlatStyle.Popup
         PanelTables.Tag = ""
         PopulateTablesSC(cmbLocation.SelectedValue, cmbLocation.SelectedValue, 0)
-        PanelModifiers.Visible = False
+        HideModalPanelCenter(PanelModifiers)
         btnHistory.Visible = True
         btnShiftKOT.Visible = True
-        PanelMergeTables.Visible = False
+        ShowBillingScreen()
         PanelSearchItem.Visible = False
         PanelClosedBills.Visible = True
         ControlAccess()
@@ -1157,8 +1202,7 @@ Public Class FrmPOSBilling2N
             PanelModifiers.BringToFront()
             EnableControl(PanelModifiers)
             'PanelModifiers.Visible = True
-            General.ShowModalPanel(PanelModifiers, Nothing)
-
+            ShowModalPanelCenter(PanelModifiers)
             btnClear.BackColor = Color.Yellow
             btnDismiss.BackColor = Color.Yellow
             btnItemModifierOK.BackColor = Color.Yellow
@@ -1329,8 +1373,7 @@ Public Class FrmPOSBilling2N
     End Sub
 
     Private Sub btnRecallBill_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
-        Me.Dispose()
-        BackToMainScreen = True
+        General.Close(Me)
     End Sub
 
     Private Sub cmbBillingLocation_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbLocation.Validated
@@ -4735,7 +4778,7 @@ Public Class FrmPOSBilling2N
             End If
         Next
         dtKOTItems.AcceptChanges()
-        PanelModifiers.Visible = False
+        HideModalPanelCenter(PanelModifiers)
         Message = "Adding KOT Items"
         txtKOTRemarks.Text = ""
     End Sub
@@ -4780,7 +4823,7 @@ Public Class FrmPOSBilling2N
     End Sub
 
     Private Sub btnDismiss_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDismiss.Click
-        PanelModifiers.Visible = False
+        HideModalPanelCenter(PanelModifiers)
         ModifierItemCode = ""
     End Sub
 
@@ -4795,7 +4838,8 @@ Public Class FrmPOSBilling2N
         End If
         PanelModifiers.BringToFront()
         EnableControl(PanelModifiers)
-        PanelModifiers.Visible = True
+        'PanelModifiers.Visible = True
+        ShowModalPanelCenter(PanelModifiers)
         BindItemModifiers()
         txtKOTRemarks.Text = ModifierRemarks
     End Sub
@@ -4817,7 +4861,7 @@ Public Class FrmPOSBilling2N
        " and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode" & _
        " and KB.LocationCode=" & LOCATION_Code & _
        " and BH.TableCode=" & Val(cmbSourceTable.SelectedValue) & " and BH.BillDate='" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "' and BH.BillStatus=0" & _
-       " group by KB.KOTNO,KB.ItemCode, IM.AliasName, KB.SCPer,DiscountPer, TaxType,KB.SCPer,KB.TaxPer,KB.ItemName, KB.UnitCode, UM.UnitName,KB.Rate" & _
+       " group by KB.KOTNO,KB.ItemCode,IM.AliasName, KB.SCPer,DiscountPer, TaxType,KB.SCPer,KB.TaxPer,KB.ItemName, KB.UnitCode, UM.UnitName,KB.Rate" & _
        " order by KB.KOTNo,KB.ItemName"
 
         dsReq = ObjDatabase.BindDataSet(StrSql, "ITEM")
@@ -4858,10 +4902,10 @@ Public Class FrmPOSBilling2N
         dgSourceTable.Columns("GrossAmt").Width = 80
         dgSourceTable.Columns("GrossAmt").HeaderText = "NetAmt"
         dgSourceTable.Columns("DiscountPer").Visible = False
-        dgDestinationTable.Columns("ItemCode").Visible = False
-        dgDestinationTable.Columns("ItemCode").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
-        dgDestinationTable.Columns("Aliasname").HeaderText = "ItemCode"
-        dgDestinationTable.Columns("Aliasname").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
+        dgSourceTable.Columns("ItemCode").Visible = False
+        dgSourceTable.Columns("ItemCode").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
+        dgSourceTable.Columns("Aliasname").HeaderText = "ItemCode"
+        dgSourceTable.Columns("Aliasname").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
 
         dgSourceTable.Columns("ItemCode").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
         dgSourceTable.Columns("Qty").HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
@@ -4913,7 +4957,7 @@ Public Class FrmPOSBilling2N
        " and KB.KOTNo=BB.KOTNo and KB.YearCode=BB.YearCode and KB.LocationCode=BB.LocationCode and BH.BillStatus=0" & _
        " and KB.LocationCode=" & LOCATION_Code & _
        " and BH.TableCode=" & Val(cmbDestinationTable.SelectedValue) & " and BH.BillDate='" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "' and BH.BillNo=" & Val(lblDestinationBillNo.Text) & _
-       " group by KB.KOTNO,KB.ItemCode,KB.SCPer,DiscountPer, TaxType,KB.SCPer,KB.TaxPer,KB.ItemName, KB.UnitCode, UM.UnitName,KB.Rate" & _
+       " group by KB.KOTNO,KB.ItemCode,IM.AliasName, KB.SCPer,DiscountPer, TaxType,KB.SCPer,KB.TaxPer,KB.ItemName, KB.UnitCode, UM.UnitName,KB.Rate" & _
        " order by KB.KOTNo,KB.ItemName"
 
         dsReq = ObjDatabase.BindDataSet(StrSql, "ITEM")
@@ -4996,13 +5040,13 @@ Public Class FrmPOSBilling2N
 
     Private Sub btnShiftKOT_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShiftKOT.Click
         If btnShiftKOT.Text = "SHIFT KOT" Then
-            PanelModifiers.Visible = False
+            HideModalPanelCenter(PanelModifiers)
             btnShowTables.Enabled = False
             PanelMergeTables.Location = LeftPanelLocation
             BindComboboxWithSelectOneNumeric("select Code,TableNo from FB_TableMaster where Code in (Select TableCode from FB_BillHead where BillDate='" & CDate(lblBillDate.Text).ToString("dd/MMM/yyyy") & "' and BillStatus=0 and LocationCode=" & LOCATION_Code & ")", "Code", "TableNo", cmbSourceTable)
             EnableControl(PanelMergeTables)
             PanelRight.Visible = False
-            PanelMergeTables.Visible = True
+            ShowMergeScreen()
             cmbSourceTable.Focus()
             ActionType = "M"
             btnShiftKOT.Text = "SAVE"
@@ -5834,11 +5878,11 @@ Public Class FrmPOSBilling2N
 
     End Sub
 
-    Private Sub btnCancelMemberSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnCancelMemberSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelMemberSearch.Click
         PanelSearchItem.Visible = False
     End Sub
 
-    Private Sub dgSearchItem_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)
+    Private Sub dgSearchItem_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgSearchItem.CellContentClick
         If e.ColumnIndex = 0 Then
             PanelSearchItem.Visible = False
             Dim ItemCode As String = dgSearchItem.Rows(dgSearchItem.CurrentRow.Index).Cells("Itemcode").Value()
@@ -5877,7 +5921,7 @@ Public Class FrmPOSBilling2N
         dgSearchItem.RowHeadersVisible = True
     End Sub
 
-    Private Sub txtSearchItemName_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub txtSearchItemName_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtSearchItemName.TextChanged, txtSearchItemCode.TextChanged
         BindSearchGridForItem()
     End Sub
 
@@ -5889,13 +5933,13 @@ Public Class FrmPOSBilling2N
 
     End Sub
 
-    Private Sub txtSearchItemCode_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
+    Private Sub txtSearchItemCode_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSearchItemCode.KeyDown, txtSearchItemName.KeyDown
         If e.KeyCode = Keys.Down Then
             dgSearchItem.Focus()
         End If
     End Sub
 
-    Private Sub dgSearchItem_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
+    Private Sub dgSearchItem_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles dgSearchItem.KeyDown
         If e.KeyCode = Keys.Enter Then
             PanelSearchItem.Visible = False
             Dim ItemCode As String = dgSearchItem.Rows(dgSearchItem.CurrentRow.Index).Cells("Itemcode").Value()
@@ -5911,13 +5955,5 @@ Public Class FrmPOSBilling2N
 
     Private Sub txtTableNo_Validated(ByVal sender As Object, ByVal e As System.EventArgs)
         BindOpenBills()
-    End Sub
-
-    Private Sub cmbTableNoSC_SelectedIndexChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbTableNoSC.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub btnCancelMemberSearch_Click_1(sender As Object, e As EventArgs) Handles btnCancelMemberSearch.Click
-
     End Sub
 End Class

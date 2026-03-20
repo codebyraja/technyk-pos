@@ -5,8 +5,8 @@ Imports CrystalDecisions.Shared
 Imports System.Data
 
 Public Class FrmPOSBilling1N
-    Dim NewKOTNo As Integer
-    Dim ItemCountDestinationTable As Integer
+Dim NewKOTNo As Integer
+Dim ItemCountDestinationTable As Integer
     Dim VendorCodes As String = ""
     Dim RFIDMemberID As String = "ID-0510"
     Dim LOCATION_TYPE11 As String = "'POS BAR','POS REST'"
@@ -535,7 +535,7 @@ Public Class FrmPOSBilling1N
     End Sub
 
     Public Sub AddItemToGrid(ByVal PassedItemCode As Integer, ByVal PassedQty As Decimal, ByVal PItemRate As Double)
-
+        
         Try
             If FlagCheckBusinessDate = False And Val(lblBillNo.Text) = 0 Then
                 btnShowTables.Text = "NOT ALLOWED"
@@ -1783,7 +1783,7 @@ Public Class FrmPOSBilling1N
                         Exit Sub
                     Else
                         ReturnValue = ValidateMemberCard(CardSerialNo, MemberID)
-
+                       
                         txtMemID.Text = MemberID
                         DisplayMemberPics(txtMemID.Text)
                         ds = New DataSet
@@ -3343,7 +3343,6 @@ Public Class FrmPOSBilling1N
     '        CrystalReportViewer2.ReportSource = CrystalReportDocument
     '    End If
     'End Sub
-
 #End Region
 
 #Region "Populate Tables"

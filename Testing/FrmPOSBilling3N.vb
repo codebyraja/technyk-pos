@@ -4,7 +4,7 @@ Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
 Imports System.Data
 
-Public Class FrmPOSBilling1N
+Public Class FrmPOSBilling3N
     Dim NewKOTNo As Integer
     Dim ItemCountDestinationTable As Integer
     Dim VendorCodes As String = ""
@@ -3343,7 +3343,6 @@ Public Class FrmPOSBilling1N
     '        CrystalReportViewer2.ReportSource = CrystalReportDocument
     '    End If
     'End Sub
-
 #End Region
 
 #Region "Populate Tables"

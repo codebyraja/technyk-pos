@@ -314,6 +314,18 @@
     <Compile Include="POS Transations\FrmPOSBilling2N.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Testing\FrmPOSBilling3N.designer.vb">
+      <DependentUpon>FrmPOSBilling3N.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Testing\FrmPOSBilling3N.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing\FrmPOSBilling4N.designer.vb">
+      <DependentUpon>FrmPOSBilling4N.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Testing\FrmPOSBilling4N.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Common\FrmCompanyInfo.resx">
@@ -421,6 +433,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="POS Transations\FrmPOSBilling2N.resx">
       <DependentUpon>FrmPOSBilling2N.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing\FrmPOSBilling3N.resx">
+      <DependentUpon>FrmPOSBilling3N.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing\FrmPOSBilling4N.resx">
+      <DependentUpon>FrmPOSBilling4N.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

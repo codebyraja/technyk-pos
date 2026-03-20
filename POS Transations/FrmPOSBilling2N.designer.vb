@@ -21,6 +21,7 @@ Partial Class FrmPOSBilling2N
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Me.DoubleBuffered = True
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -29,19 +30,15 @@ Partial Class FrmPOSBilling2N
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPOSBilling2N))
         Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPOSBilling2N))
         Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -55,6 +52,10 @@ Partial Class FrmPOSBilling2N
         Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Button14 = New System.Windows.Forms.Button()
@@ -112,42 +113,6 @@ Partial Class FrmPOSBilling2N
         Me.Label157 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewImageColumn12 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.PanelMergeTables = New System.Windows.Forms.Panel()
-        Me.Label86 = New System.Windows.Forms.Label()
-        Me.Label87 = New System.Windows.Forms.Label()
-        Me.Label88 = New System.Windows.Forms.Label()
-        Me.Label89 = New System.Windows.Forms.Label()
-        Me.lblDestinationIssueNo = New System.Windows.Forms.Label()
-        Me.lblDestinationClosingBalance = New System.Windows.Forms.Label()
-        Me.Label90 = New System.Windows.Forms.Label()
-        Me.lblDestinationMemName = New System.Windows.Forms.Label()
-        Me.lblDestinationOpeningBalance = New System.Windows.Forms.Label()
-        Me.Label91 = New System.Windows.Forms.Label()
-        Me.lblDestinationMemID = New System.Windows.Forms.Label()
-        Me.Label92 = New System.Windows.Forms.Label()
-        Me.btnMoveAll = New System.Windows.Forms.Button()
-        Me.dgSourceTable = New System.Windows.Forms.DataGridView()
-        Me.dgbtnMoveSourceItem = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.lblDestinationBillNo = New System.Windows.Forms.Label()
-        Me.Label93 = New System.Windows.Forms.Label()
-        Me.lblSourceBillNo = New System.Windows.Forms.Label()
-        Me.Label94 = New System.Windows.Forms.Label()
-        Me.lblSourceTotalQty = New System.Windows.Forms.Label()
-        Me.Label95 = New System.Windows.Forms.Label()
-        Me.lblGrossAmtSource = New System.Windows.Forms.Label()
-        Me.Label96 = New System.Windows.Forms.Label()
-        Me.Label97 = New System.Windows.Forms.Label()
-        Me.lblDestinationTotalQty = New System.Windows.Forms.Label()
-        Me.Label98 = New System.Windows.Forms.Label()
-        Me.Label99 = New System.Windows.Forms.Label()
-        Me.lblDestinationGrossAmt = New System.Windows.Forms.Label()
-        Me.Label100 = New System.Windows.Forms.Label()
-        Me.dgDestinationTable = New System.Windows.Forms.DataGridView()
-        Me.dgbtnMoveDetinationItem = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.cmbDestinationTable = New System.Windows.Forms.ComboBox()
-        Me.Label101 = New System.Windows.Forms.Label()
-        Me.cmbSourceTable = New System.Windows.Forms.ComboBox()
-        Me.Label102 = New System.Windows.Forms.Label()
         Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn15 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
@@ -177,14 +142,48 @@ Partial Class FrmPOSBilling2N
         Me.dgbtnSelectMember = New System.Windows.Forms.DataGridViewImageColumn()
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.PanelMainScreen = New System.Windows.Forms.Panel()
-        Me.PanelSearchItem = New System.Windows.Forms.Panel()
-        Me.btnCancelMemberSearch = New System.Windows.Forms.Button()
-        Me.txtSearchItemCode = New System.Windows.Forms.TextBox()
-        Me.Label155 = New System.Windows.Forms.Label()
-        Me.Label156 = New System.Windows.Forms.Label()
-        Me.txtSearchItemName = New System.Windows.Forms.TextBox()
-        Me.dgSearchItem = New System.Windows.Forms.DataGridView()
         Me.PanelContentHost = New System.Windows.Forms.Panel()
+        Me.PanelModifyKOT = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cmbKOTRemarks = New System.Windows.Forms.ComboBox()
+        Me.Label106 = New System.Windows.Forms.Label()
+        Me.lbl35 = New System.Windows.Forms.Label()
+        Me.lbl34 = New System.Windows.Forms.Label()
+        Me.lblReducedKOTAmt = New System.Windows.Forms.Label()
+        Me.Label107 = New System.Windows.Forms.Label()
+        Me.lblReducedKOTQty = New System.Windows.Forms.Label()
+        Me.Label108 = New System.Windows.Forms.Label()
+        Me.lblModifiedKOTAmt = New System.Windows.Forms.Label()
+        Me.Label109 = New System.Windows.Forms.Label()
+        Me.lblModifiedKOTQty = New System.Windows.Forms.Label()
+        Me.Label110 = New System.Windows.Forms.Label()
+        Me.lblTotalOriginalKOTAmt = New System.Windows.Forms.Label()
+        Me.Label111 = New System.Windows.Forms.Label()
+        Me.lblTotalOriginalQty = New System.Windows.Forms.Label()
+        Me.Label112 = New System.Windows.Forms.Label()
+        Me.lblMemID = New System.Windows.Forms.Label()
+        Me.btnMinus6 = New System.Windows.Forms.Button()
+        Me.btnMinus5 = New System.Windows.Forms.Button()
+        Me.btnMinus4 = New System.Windows.Forms.Button()
+        Me.btnMinus7 = New System.Windows.Forms.Button()
+        Me.btnMinus9 = New System.Windows.Forms.Button()
+        Me.btnMinus8 = New System.Windows.Forms.Button()
+        Me.lblModifiedQty = New System.Windows.Forms.Label()
+        Me.lblActualQty = New System.Windows.Forms.Label()
+        Me.btnMinus0 = New System.Windows.Forms.Button()
+        Me.btnMinus3 = New System.Windows.Forms.Button()
+        Me.btnMinus2 = New System.Windows.Forms.Button()
+        Me.btnMinus1 = New System.Windows.Forms.Button()
+        Me.btnVoidKOT = New System.Windows.Forms.Button()
+        Me.lblKOTNo_KOTModify = New System.Windows.Forms.Label()
+        Me.lblYearCode_KOTModify = New System.Windows.Forms.Label()
+        Me.lblLocationCode_KOTModify = New System.Windows.Forms.Label()
+        Me.labelKOTModificationItemDetails = New System.Windows.Forms.Label()
+        Me.dgKOTItemList = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.labelKOTModificationHeader = New System.Windows.Forms.Label()
+        Me.dgKOTList = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.PanelRight = New System.Windows.Forms.Panel()
         Me.PanelItem = New System.Windows.Forms.Panel()
         Me.dgItemGrid = New System.Windows.Forms.DataGridView()
@@ -268,47 +267,6 @@ Partial Class FrmPOSBilling2N
         Me.lblBillDate = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.PanelModifyKOT = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cmbKOTRemarks = New System.Windows.Forms.ComboBox()
-        Me.Label106 = New System.Windows.Forms.Label()
-        Me.lbl35 = New System.Windows.Forms.Label()
-        Me.lbl34 = New System.Windows.Forms.Label()
-        Me.lblReducedKOTAmt = New System.Windows.Forms.Label()
-        Me.Label107 = New System.Windows.Forms.Label()
-        Me.lblReducedKOTQty = New System.Windows.Forms.Label()
-        Me.Label108 = New System.Windows.Forms.Label()
-        Me.lblModifiedKOTAmt = New System.Windows.Forms.Label()
-        Me.Label109 = New System.Windows.Forms.Label()
-        Me.lblModifiedKOTQty = New System.Windows.Forms.Label()
-        Me.Label110 = New System.Windows.Forms.Label()
-        Me.lblTotalOriginalKOTAmt = New System.Windows.Forms.Label()
-        Me.Label111 = New System.Windows.Forms.Label()
-        Me.lblTotalOriginalQty = New System.Windows.Forms.Label()
-        Me.Label112 = New System.Windows.Forms.Label()
-        Me.lblMemID = New System.Windows.Forms.Label()
-        Me.btnMinus6 = New System.Windows.Forms.Button()
-        Me.btnMinus5 = New System.Windows.Forms.Button()
-        Me.btnMinus4 = New System.Windows.Forms.Button()
-        Me.btnMinus7 = New System.Windows.Forms.Button()
-        Me.btnMinus9 = New System.Windows.Forms.Button()
-        Me.btnMinus8 = New System.Windows.Forms.Button()
-        Me.lblModifiedQty = New System.Windows.Forms.Label()
-        Me.lblActualQty = New System.Windows.Forms.Label()
-        Me.btnMinus0 = New System.Windows.Forms.Button()
-        Me.btnMinus3 = New System.Windows.Forms.Button()
-        Me.btnMinus2 = New System.Windows.Forms.Button()
-        Me.btnMinus1 = New System.Windows.Forms.Button()
-        Me.btnVoidKOT = New System.Windows.Forms.Button()
-        Me.lblKOTNo_KOTModify = New System.Windows.Forms.Label()
-        Me.lblYearCode_KOTModify = New System.Windows.Forms.Label()
-        Me.lblLocationCode_KOTModify = New System.Windows.Forms.Label()
-        Me.labelKOTModificationItemDetails = New System.Windows.Forms.Label()
-        Me.dgKOTItemList = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.labelKOTModificationHeader = New System.Windows.Forms.Label()
-        Me.dgKOTList = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.PanelLocationAndTables = New System.Windows.Forms.Panel()
         Me.PanelTables = New System.Windows.Forms.Panel()
         Me.btnTable36 = New System.Windows.Forms.Button()
@@ -359,6 +317,32 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation7 = New System.Windows.Forms.Button()
         Me.btnBillingLocation5 = New System.Windows.Forms.Button()
         Me.btnBillingLocation6 = New System.Windows.Forms.Button()
+        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnHistory = New System.Windows.Forms.Button()
+        Me.btnShiftKOT = New System.Windows.Forms.Button()
+        Me.btnSettleBillHomePage = New System.Windows.Forms.Button()
+        Me.btnModifiers = New System.Windows.Forms.Button()
+        Me.btnModifyKOT = New System.Windows.Forms.Button()
+        Me.btnShowTables = New System.Windows.Forms.Button()
+        Me.PanelLine = New System.Windows.Forms.Panel()
+        Me.LabelHeader = New System.Windows.Forms.Label()
+        Me.PanelModifiers = New System.Windows.Forms.Panel()
+        Me.btnItemModifierOK = New System.Windows.Forms.Button()
+        Me.btnDismiss = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.txtKOTRemarks = New System.Windows.Forms.TextBox()
+        Me.LabelItemModifier = New System.Windows.Forms.Label()
+        Me.dgModifiers = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.PanelSearchItem = New System.Windows.Forms.Panel()
+        Me.btnCancelMemberSearch = New System.Windows.Forms.Button()
+        Me.txtSearchItemCode = New System.Windows.Forms.TextBox()
+        Me.Label155 = New System.Windows.Forms.Label()
+        Me.Label156 = New System.Windows.Forms.Label()
+        Me.txtSearchItemName = New System.Windows.Forms.TextBox()
+        Me.dgSearchItem = New System.Windows.Forms.DataGridView()
         Me.PanelClosedBills = New System.Windows.Forms.Panel()
         Me.dgHistory = New System.Windows.Forms.DataGridView()
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
@@ -420,43 +404,59 @@ Partial Class FrmPOSBilling2N
         Me.labelBillPayModeOpeningAmount = New System.Windows.Forms.Label()
         Me.labelBillPayModeClosingStr = New System.Windows.Forms.Label()
         Me.labelBillPayModeOpeningStr = New System.Windows.Forms.Label()
-        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.PanelMergeTables = New System.Windows.Forms.Panel()
+        Me.Label86 = New System.Windows.Forms.Label()
+        Me.Label87 = New System.Windows.Forms.Label()
+        Me.Label88 = New System.Windows.Forms.Label()
+        Me.Label89 = New System.Windows.Forms.Label()
+        Me.lblDestinationIssueNo = New System.Windows.Forms.Label()
+        Me.lblDestinationClosingBalance = New System.Windows.Forms.Label()
+        Me.Label90 = New System.Windows.Forms.Label()
+        Me.lblDestinationMemName = New System.Windows.Forms.Label()
+        Me.lblDestinationOpeningBalance = New System.Windows.Forms.Label()
+        Me.Label91 = New System.Windows.Forms.Label()
+        Me.lblDestinationMemID = New System.Windows.Forms.Label()
+        Me.Label92 = New System.Windows.Forms.Label()
+        Me.btnMoveAll = New System.Windows.Forms.Button()
+        Me.dgSourceTable = New System.Windows.Forms.DataGridView()
+        Me.dgbtnMoveSourceItem = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.lblDestinationBillNo = New System.Windows.Forms.Label()
+        Me.Label93 = New System.Windows.Forms.Label()
+        Me.lblSourceBillNo = New System.Windows.Forms.Label()
+        Me.Label94 = New System.Windows.Forms.Label()
+        Me.lblSourceTotalQty = New System.Windows.Forms.Label()
+        Me.Label95 = New System.Windows.Forms.Label()
+        Me.lblGrossAmtSource = New System.Windows.Forms.Label()
+        Me.Label96 = New System.Windows.Forms.Label()
+        Me.Label97 = New System.Windows.Forms.Label()
+        Me.lblDestinationTotalQty = New System.Windows.Forms.Label()
+        Me.Label98 = New System.Windows.Forms.Label()
+        Me.Label99 = New System.Windows.Forms.Label()
+        Me.lblDestinationGrossAmt = New System.Windows.Forms.Label()
+        Me.Label100 = New System.Windows.Forms.Label()
+        Me.dgDestinationTable = New System.Windows.Forms.DataGridView()
+        Me.dgbtnMoveDetinationItem = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.cmbDestinationTable = New System.Windows.Forms.ComboBox()
+        Me.Label101 = New System.Windows.Forms.Label()
+        Me.cmbSourceTable = New System.Windows.Forms.ComboBox()
+        Me.Label102 = New System.Windows.Forms.Label()
         Me.PanelDisplayBill = New System.Windows.Forms.Panel()
         Me.lblKOTStr = New System.Windows.Forms.Label()
         Me.lblTempYearCode = New System.Windows.Forms.Label()
         Me.lblTempLocationCode = New System.Windows.Forms.Label()
         Me.lblTempBillNo = New System.Windows.Forms.Label()
-        Me.btnRefresh = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnHistory = New System.Windows.Forms.Button()
-        Me.btnShiftKOT = New System.Windows.Forms.Button()
-        Me.btnSettleBillHomePage = New System.Windows.Forms.Button()
-        Me.btnModifiers = New System.Windows.Forms.Button()
-        Me.btnModifyKOT = New System.Windows.Forms.Button()
-        Me.btnShowTables = New System.Windows.Forms.Button()
-        Me.PanelLine = New System.Windows.Forms.Panel()
-        Me.LabelHeader = New System.Windows.Forms.Label()
-        Me.PanelModifiers = New System.Windows.Forms.Panel()
-        Me.btnItemModifierOK = New System.Windows.Forms.Button()
-        Me.btnDismiss = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.txtKOTRemarks = New System.Windows.Forms.TextBox()
-        Me.LabelItemModifier = New System.Windows.Forms.Label()
-        Me.dgModifiers = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.ErrorProvider2 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Panel9.SuspendLayout()
         Me.Panel7.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelMergeTables.SuspendLayout()
-        CType(Me.dgSourceTable, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgDestinationTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelContainer.SuspendLayout()
         Me.PanelMainScreen.SuspendLayout()
-        Me.PanelSearchItem.SuspendLayout()
-        CType(Me.dgSearchItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelContentHost.SuspendLayout()
+        Me.PanelModifyKOT.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.dgKOTItemList, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgKOTList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelRight.SuspendLayout()
         Me.PanelItem.SuspendLayout()
         CType(Me.dgItemGrid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -468,20 +468,21 @@ Partial Class FrmPOSBilling2N
         Me.PanelDisplayArea.SuspendLayout()
         Me.PanelMemberDetails.SuspendLayout()
         Me.PanelBillHeader.SuspendLayout()
-        Me.PanelModifyKOT.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.dgKOTItemList, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgKOTList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelLocationAndTables.SuspendLayout()
         Me.PanelTables.SuspendLayout()
         Me.PanelLocationTables.SuspendLayout()
+        Me.PanelFooter.SuspendLayout()
+        Me.PanelModifiers.SuspendLayout()
+        CType(Me.dgModifiers, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelSearchItem.SuspendLayout()
+        CType(Me.dgSearchItem, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelClosedBills.SuspendLayout()
         CType(Me.dgHistory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelSettleBill.SuspendLayout()
-        Me.PanelFooter.SuspendLayout()
+        Me.PanelMergeTables.SuspendLayout()
+        CType(Me.dgSourceTable, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgDestinationTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelDisplayBill.SuspendLayout()
-        Me.PanelModifiers.SuspendLayout()
-        CType(Me.dgModifiers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -1144,7 +1145,7 @@ Partial Class FrmPOSBilling2N
         Me.ComboBox4.Location = New System.Drawing.Point(125, 50)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(285, 28)
+        Me.ComboBox4.Size = New System.Drawing.Size(285, 26)
         Me.ComboBox4.TabIndex = 1
         '
         'Label148
@@ -1310,582 +1311,6 @@ Partial Class FrmPOSBilling2N
         Me.DataGridViewImageColumn12.ReadOnly = True
         Me.DataGridViewImageColumn12.Width = 50
         '
-        'PanelMergeTables
-        '
-        Me.PanelMergeTables.BackColor = System.Drawing.Color.PowderBlue
-        Me.PanelMergeTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelMergeTables.Controls.Add(Me.Label86)
-        Me.PanelMergeTables.Controls.Add(Me.Label87)
-        Me.PanelMergeTables.Controls.Add(Me.Label88)
-        Me.PanelMergeTables.Controls.Add(Me.Label89)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationIssueNo)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationClosingBalance)
-        Me.PanelMergeTables.Controls.Add(Me.Label90)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationMemName)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationOpeningBalance)
-        Me.PanelMergeTables.Controls.Add(Me.Label91)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationMemID)
-        Me.PanelMergeTables.Controls.Add(Me.Label92)
-        Me.PanelMergeTables.Controls.Add(Me.btnMoveAll)
-        Me.PanelMergeTables.Controls.Add(Me.dgSourceTable)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationBillNo)
-        Me.PanelMergeTables.Controls.Add(Me.Label93)
-        Me.PanelMergeTables.Controls.Add(Me.lblSourceBillNo)
-        Me.PanelMergeTables.Controls.Add(Me.Label94)
-        Me.PanelMergeTables.Controls.Add(Me.lblSourceTotalQty)
-        Me.PanelMergeTables.Controls.Add(Me.Label95)
-        Me.PanelMergeTables.Controls.Add(Me.lblGrossAmtSource)
-        Me.PanelMergeTables.Controls.Add(Me.Label96)
-        Me.PanelMergeTables.Controls.Add(Me.Label97)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationTotalQty)
-        Me.PanelMergeTables.Controls.Add(Me.Label98)
-        Me.PanelMergeTables.Controls.Add(Me.Label99)
-        Me.PanelMergeTables.Controls.Add(Me.lblDestinationGrossAmt)
-        Me.PanelMergeTables.Controls.Add(Me.Label100)
-        Me.PanelMergeTables.Controls.Add(Me.dgDestinationTable)
-        Me.PanelMergeTables.Controls.Add(Me.cmbDestinationTable)
-        Me.PanelMergeTables.Controls.Add(Me.Label101)
-        Me.PanelMergeTables.Controls.Add(Me.cmbSourceTable)
-        Me.PanelMergeTables.Controls.Add(Me.Label102)
-        Me.PanelMergeTables.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelMergeTables.Location = New System.Drawing.Point(10, 52)
-        Me.PanelMergeTables.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelMergeTables.Name = "PanelMergeTables"
-        Me.PanelMergeTables.Size = New System.Drawing.Size(1180, 518)
-        Me.PanelMergeTables.TabIndex = 310
-        '
-        'Label86
-        '
-        Me.Label86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label86.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label86.ForeColor = System.Drawing.Color.Navy
-        Me.Label86.Location = New System.Drawing.Point(287, 215)
-        Me.Label86.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label86.Name = "Label86"
-        Me.Label86.Size = New System.Drawing.Size(98, 22)
-        Me.Label86.TabIndex = 40
-        Me.Label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label86.Visible = False
-        '
-        'Label87
-        '
-        Me.Label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label87.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label87.ForeColor = System.Drawing.Color.Navy
-        Me.Label87.Location = New System.Drawing.Point(247, 217)
-        Me.Label87.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label87.Name = "Label87"
-        Me.Label87.Size = New System.Drawing.Size(98, 22)
-        Me.Label87.TabIndex = 40
-        Me.Label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label87.Visible = False
-        '
-        'Label88
-        '
-        Me.Label88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label88.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label88.ForeColor = System.Drawing.Color.Navy
-        Me.Label88.Location = New System.Drawing.Point(140, 218)
-        Me.Label88.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label88.Name = "Label88"
-        Me.Label88.Size = New System.Drawing.Size(98, 22)
-        Me.Label88.TabIndex = 40
-        Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label88.Visible = False
-        '
-        'Label89
-        '
-        Me.Label89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label89.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label89.ForeColor = System.Drawing.Color.Navy
-        Me.Label89.Location = New System.Drawing.Point(20, 240)
-        Me.Label89.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label89.Name = "Label89"
-        Me.Label89.Size = New System.Drawing.Size(87, 23)
-        Me.Label89.TabIndex = 39
-        Me.Label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label89.Visible = False
-        '
-        'lblDestinationIssueNo
-        '
-        Me.lblDestinationIssueNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationIssueNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationIssueNo.ForeColor = System.Drawing.Color.Navy
-        Me.lblDestinationIssueNo.Location = New System.Drawing.Point(154, 240)
-        Me.lblDestinationIssueNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationIssueNo.Name = "lblDestinationIssueNo"
-        Me.lblDestinationIssueNo.Size = New System.Drawing.Size(87, 23)
-        Me.lblDestinationIssueNo.TabIndex = 39
-        Me.lblDestinationIssueNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblDestinationIssueNo.Visible = False
-        '
-        'lblDestinationClosingBalance
-        '
-        Me.lblDestinationClosingBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationClosingBalance.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationClosingBalance.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationClosingBalance.Location = New System.Drawing.Point(405, 487)
-        Me.lblDestinationClosingBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationClosingBalance.Name = "lblDestinationClosingBalance"
-        Me.lblDestinationClosingBalance.Size = New System.Drawing.Size(87, 22)
-        Me.lblDestinationClosingBalance.TabIndex = 38
-        Me.lblDestinationClosingBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label90
-        '
-        Me.Label90.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label90.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label90.ForeColor = System.Drawing.Color.Silver
-        Me.Label90.Location = New System.Drawing.Point(273, 487)
-        Me.Label90.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label90.Name = "Label90"
-        Me.Label90.Size = New System.Drawing.Size(135, 22)
-        Me.Label90.TabIndex = 37
-        Me.Label90.Text = "Closing Balance"
-        '
-        'lblDestinationMemName
-        '
-        Me.lblDestinationMemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationMemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationMemName.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationMemName.Location = New System.Drawing.Point(696, 261)
-        Me.lblDestinationMemName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationMemName.Name = "lblDestinationMemName"
-        Me.lblDestinationMemName.Size = New System.Drawing.Size(225, 23)
-        Me.lblDestinationMemName.TabIndex = 36
-        Me.lblDestinationMemName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblDestinationOpeningBalance
-        '
-        Me.lblDestinationOpeningBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationOpeningBalance.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationOpeningBalance.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationOpeningBalance.Location = New System.Drawing.Point(151, 487)
-        Me.lblDestinationOpeningBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationOpeningBalance.Name = "lblDestinationOpeningBalance"
-        Me.lblDestinationOpeningBalance.Size = New System.Drawing.Size(87, 22)
-        Me.lblDestinationOpeningBalance.TabIndex = 35
-        Me.lblDestinationOpeningBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label91
-        '
-        Me.Label91.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label91.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label91.ForeColor = System.Drawing.Color.Silver
-        Me.Label91.Location = New System.Drawing.Point(9, 487)
-        Me.Label91.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label91.Name = "Label91"
-        Me.Label91.Size = New System.Drawing.Size(143, 22)
-        Me.Label91.TabIndex = 34
-        Me.Label91.Text = "Opening Balance"
-        '
-        'lblDestinationMemID
-        '
-        Me.lblDestinationMemID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationMemID.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationMemID.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationMemID.Location = New System.Drawing.Point(605, 261)
-        Me.lblDestinationMemID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationMemID.Name = "lblDestinationMemID"
-        Me.lblDestinationMemID.Size = New System.Drawing.Size(87, 23)
-        Me.lblDestinationMemID.TabIndex = 33
-        Me.lblDestinationMemID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label92
-        '
-        Me.Label92.AutoSize = True
-        Me.Label92.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label92.ForeColor = System.Drawing.Color.Black
-        Me.Label92.Location = New System.Drawing.Point(527, 264)
-        Me.Label92.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label92.Name = "Label92"
-        Me.Label92.Size = New System.Drawing.Size(72, 17)
-        Me.Label92.TabIndex = 32
-        Me.Label92.Text = "Mem_ID"
-        '
-        'btnMoveAll
-        '
-        Me.btnMoveAll.AutoSize = True
-        Me.btnMoveAll.BackColor = System.Drawing.Color.Yellow
-        Me.btnMoveAll.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMoveAll.FlatAppearance.BorderColor = System.Drawing.Color.Maroon
-        Me.btnMoveAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.btnMoveAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
-        Me.btnMoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMoveAll.Font = New System.Drawing.Font("Lucida Fax", 8.0!, System.Drawing.FontStyle.Bold)
-        Me.btnMoveAll.ForeColor = System.Drawing.Color.Black
-        Me.btnMoveAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnMoveAll.ImageIndex = 2
-        Me.btnMoveAll.Location = New System.Drawing.Point(1058, 5)
-        Me.btnMoveAll.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMoveAll.Name = "btnMoveAll"
-        Me.btnMoveAll.Size = New System.Drawing.Size(112, 32)
-        Me.btnMoveAll.TabIndex = 13
-        Me.btnMoveAll.Text = "Move All"
-        Me.btnMoveAll.UseVisualStyleBackColor = False
-        '
-        'dgSourceTable
-        '
-        Me.dgSourceTable.AllowUserToAddRows = False
-        Me.dgSourceTable.AllowUserToDeleteRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSourceTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
-        Me.dgSourceTable.BackgroundColor = System.Drawing.Color.White
-        Me.dgSourceTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.dgSourceTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        Me.dgSourceTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSourceTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.dgSourceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgSourceTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnMoveSourceItem})
-        Me.dgSourceTable.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgSourceTable.DefaultCellStyle = DataGridViewCellStyle7
-        Me.dgSourceTable.GridColor = System.Drawing.Color.Chocolate
-        Me.dgSourceTable.Location = New System.Drawing.Point(8, 42)
-        Me.dgSourceTable.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgSourceTable.MultiSelect = False
-        Me.dgSourceTable.Name = "dgSourceTable"
-        Me.dgSourceTable.ReadOnly = True
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSourceTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
-        Me.dgSourceTable.RowHeadersVisible = False
-        Me.dgSourceTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.dgSourceTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgSourceTable.Size = New System.Drawing.Size(1162, 173)
-        Me.dgSourceTable.TabIndex = 4
-        Me.dgSourceTable.TabStop = False
-        '
-        'dgbtnMoveSourceItem
-        '
-        Me.dgbtnMoveSourceItem.FillWeight = 40.0!
-        Me.dgbtnMoveSourceItem.Frozen = True
-        Me.dgbtnMoveSourceItem.HeaderText = ""
-        Me.dgbtnMoveSourceItem.Image = Global.FNBManagement.My.Resources.Resources.arrow_down_blue
-        Me.dgbtnMoveSourceItem.MinimumWidth = 40
-        Me.dgbtnMoveSourceItem.Name = "dgbtnMoveSourceItem"
-        Me.dgbtnMoveSourceItem.ReadOnly = True
-        Me.dgbtnMoveSourceItem.Width = 40
-        '
-        'lblDestinationBillNo
-        '
-        Me.lblDestinationBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationBillNo.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationBillNo.Location = New System.Drawing.Point(455, 261)
-        Me.lblDestinationBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationBillNo.Name = "lblDestinationBillNo"
-        Me.lblDestinationBillNo.Size = New System.Drawing.Size(66, 23)
-        Me.lblDestinationBillNo.TabIndex = 31
-        Me.lblDestinationBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label93
-        '
-        Me.Label93.AutoSize = True
-        Me.Label93.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label93.ForeColor = System.Drawing.Color.Black
-        Me.Label93.Location = New System.Drawing.Point(384, 264)
-        Me.Label93.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label93.Name = "Label93"
-        Me.Label93.Size = New System.Drawing.Size(60, 17)
-        Me.Label93.TabIndex = 30
-        Me.Label93.Text = "Bill No"
-        '
-        'lblSourceBillNo
-        '
-        Me.lblSourceBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblSourceBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSourceBillNo.ForeColor = System.Drawing.Color.Black
-        Me.lblSourceBillNo.Location = New System.Drawing.Point(455, 10)
-        Me.lblSourceBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblSourceBillNo.Name = "lblSourceBillNo"
-        Me.lblSourceBillNo.Size = New System.Drawing.Size(66, 22)
-        Me.lblSourceBillNo.TabIndex = 29
-        Me.lblSourceBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label94
-        '
-        Me.Label94.AutoSize = True
-        Me.Label94.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label94.ForeColor = System.Drawing.Color.Black
-        Me.Label94.Location = New System.Drawing.Point(384, 13)
-        Me.Label94.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label94.Name = "Label94"
-        Me.Label94.Size = New System.Drawing.Size(60, 17)
-        Me.Label94.TabIndex = 28
-        Me.Label94.Text = "Bill No"
-        '
-        'lblSourceTotalQty
-        '
-        Me.lblSourceTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblSourceTotalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSourceTotalQty.ForeColor = System.Drawing.Color.Black
-        Me.lblSourceTotalQty.Location = New System.Drawing.Point(883, 221)
-        Me.lblSourceTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblSourceTotalQty.Name = "lblSourceTotalQty"
-        Me.lblSourceTotalQty.Size = New System.Drawing.Size(83, 22)
-        Me.lblSourceTotalQty.TabIndex = 24
-        Me.lblSourceTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label95
-        '
-        Me.Label95.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label95.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label95.ForeColor = System.Drawing.Color.Silver
-        Me.Label95.Location = New System.Drawing.Point(801, 221)
-        Me.Label95.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label95.Name = "Label95"
-        Me.Label95.Size = New System.Drawing.Size(83, 22)
-        Me.Label95.TabIndex = 23
-        Me.Label95.Text = "Total Qty"
-        '
-        'lblGrossAmtSource
-        '
-        Me.lblGrossAmtSource.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGrossAmtSource.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGrossAmtSource.ForeColor = System.Drawing.Color.Black
-        Me.lblGrossAmtSource.Location = New System.Drawing.Point(1067, 220)
-        Me.lblGrossAmtSource.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblGrossAmtSource.Name = "lblGrossAmtSource"
-        Me.lblGrossAmtSource.Size = New System.Drawing.Size(103, 22)
-        Me.lblGrossAmtSource.TabIndex = 22
-        Me.lblGrossAmtSource.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label96
-        '
-        Me.Label96.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label96.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label96.ForeColor = System.Drawing.Color.Silver
-        Me.Label96.Location = New System.Drawing.Point(977, 220)
-        Me.Label96.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label96.Name = "Label96"
-        Me.Label96.Size = New System.Drawing.Size(93, 22)
-        Me.Label96.TabIndex = 21
-        Me.Label96.Text = "Gross Amt"
-        '
-        'Label97
-        '
-        Me.Label97.BackColor = System.Drawing.Color.Black
-        Me.Label97.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label97.ForeColor = System.Drawing.Color.Black
-        Me.Label97.Location = New System.Drawing.Point(8, 251)
-        Me.Label97.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label97.Name = "Label97"
-        Me.Label97.Size = New System.Drawing.Size(1163, 2)
-        Me.Label97.TabIndex = 20
-        Me.Label97.Text = "&Move To Table #"
-        '
-        'lblDestinationTotalQty
-        '
-        Me.lblDestinationTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationTotalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationTotalQty.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationTotalQty.Location = New System.Drawing.Point(847, 487)
-        Me.lblDestinationTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationTotalQty.Name = "lblDestinationTotalQty"
-        Me.lblDestinationTotalQty.Size = New System.Drawing.Size(87, 22)
-        Me.lblDestinationTotalQty.TabIndex = 19
-        Me.lblDestinationTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label98
-        '
-        Me.Label98.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label98.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label98.ForeColor = System.Drawing.Color.Silver
-        Me.Label98.Location = New System.Drawing.Point(765, 487)
-        Me.Label98.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label98.Name = "Label98"
-        Me.Label98.Size = New System.Drawing.Size(85, 22)
-        Me.Label98.TabIndex = 18
-        Me.Label98.Text = "Total Qty"
-        '
-        'Label99
-        '
-        Me.Label99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label99.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label99.ForeColor = System.Drawing.Color.Navy
-        Me.Label99.Location = New System.Drawing.Point(11, 222)
-        Me.Label99.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label99.Name = "Label99"
-        Me.Label99.Size = New System.Drawing.Size(98, 22)
-        Me.Label99.TabIndex = 17
-        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label99.Visible = False
-        '
-        'lblDestinationGrossAmt
-        '
-        Me.lblDestinationGrossAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDestinationGrossAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDestinationGrossAmt.ForeColor = System.Drawing.Color.Black
-        Me.lblDestinationGrossAmt.Location = New System.Drawing.Point(1067, 487)
-        Me.lblDestinationGrossAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblDestinationGrossAmt.Name = "lblDestinationGrossAmt"
-        Me.lblDestinationGrossAmt.Size = New System.Drawing.Size(103, 22)
-        Me.lblDestinationGrossAmt.TabIndex = 17
-        Me.lblDestinationGrossAmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label100
-        '
-        Me.Label100.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label100.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label100.ForeColor = System.Drawing.Color.Silver
-        Me.ErrorProvider1.SetIconAlignment(Me.Label100, System.Windows.Forms.ErrorIconAlignment.MiddleLeft)
-        Me.Label100.Location = New System.Drawing.Point(976, 487)
-        Me.Label100.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label100.Name = "Label100"
-        Me.Label100.Size = New System.Drawing.Size(94, 22)
-        Me.Label100.TabIndex = 16
-        Me.Label100.Text = "Gross Amt"
-        '
-        'dgDestinationTable
-        '
-        Me.dgDestinationTable.AllowUserToAddRows = False
-        Me.dgDestinationTable.AllowUserToDeleteRows = False
-        DataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle30.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgDestinationTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle30
-        Me.dgDestinationTable.BackgroundColor = System.Drawing.Color.White
-        Me.dgDestinationTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.dgDestinationTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        Me.dgDestinationTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle31.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle31.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle31.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgDestinationTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle31
-        Me.dgDestinationTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgDestinationTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnMoveDetinationItem})
-        Me.dgDestinationTable.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgDestinationTable.DefaultCellStyle = DataGridViewCellStyle32
-        Me.dgDestinationTable.GridColor = System.Drawing.Color.Chocolate
-        Me.dgDestinationTable.Location = New System.Drawing.Point(8, 290)
-        Me.dgDestinationTable.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgDestinationTable.MultiSelect = False
-        Me.dgDestinationTable.Name = "dgDestinationTable"
-        Me.dgDestinationTable.ReadOnly = True
-        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle33.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle33.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgDestinationTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle33
-        Me.dgDestinationTable.RowHeadersVisible = False
-        Me.dgDestinationTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.dgDestinationTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgDestinationTable.Size = New System.Drawing.Size(1162, 193)
-        Me.dgDestinationTable.TabIndex = 15
-        Me.dgDestinationTable.TabStop = False
-        '
-        'dgbtnMoveDetinationItem
-        '
-        Me.dgbtnMoveDetinationItem.FillWeight = 40.0!
-        Me.dgbtnMoveDetinationItem.Frozen = True
-        Me.dgbtnMoveDetinationItem.HeaderText = ""
-        Me.dgbtnMoveDetinationItem.Image = Global.FNBManagement.My.Resources.Resources.arrow_up_blue
-        Me.dgbtnMoveDetinationItem.MinimumWidth = 40
-        Me.dgbtnMoveDetinationItem.Name = "dgbtnMoveDetinationItem"
-        Me.dgbtnMoveDetinationItem.ReadOnly = True
-        Me.dgbtnMoveDetinationItem.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgbtnMoveDetinationItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.dgbtnMoveDetinationItem.Width = 40
-        '
-        'cmbDestinationTable
-        '
-        Me.cmbDestinationTable.BackColor = System.Drawing.Color.LightGreen
-        Me.cmbDestinationTable.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmbDestinationTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbDestinationTable.Enabled = False
-        Me.cmbDestinationTable.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbDestinationTable.ForeColor = System.Drawing.Color.Black
-        Me.cmbDestinationTable.Location = New System.Drawing.Point(180, 257)
-        Me.cmbDestinationTable.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbDestinationTable.Name = "cmbDestinationTable"
-        Me.cmbDestinationTable.Size = New System.Drawing.Size(199, 25)
-        Me.cmbDestinationTable.TabIndex = 14
-        Me.cmbDestinationTable.TabStop = False
-        '
-        'Label101
-        '
-        Me.Label101.AutoSize = True
-        Me.Label101.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label101.ForeColor = System.Drawing.Color.Black
-        Me.Label101.Location = New System.Drawing.Point(4, 262)
-        Me.Label101.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label101.Name = "Label101"
-        Me.Label101.Size = New System.Drawing.Size(140, 17)
-        Me.Label101.TabIndex = 13
-        Me.Label101.Text = "&Move To Table #"
-        '
-        'cmbSourceTable
-        '
-        Me.cmbSourceTable.BackColor = System.Drawing.Color.LightGreen
-        Me.cmbSourceTable.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmbSourceTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbSourceTable.Enabled = False
-        Me.cmbSourceTable.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbSourceTable.ForeColor = System.Drawing.Color.Black
-        Me.cmbSourceTable.Location = New System.Drawing.Point(180, 9)
-        Me.cmbSourceTable.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbSourceTable.Name = "cmbSourceTable"
-        Me.cmbSourceTable.Size = New System.Drawing.Size(199, 25)
-        Me.cmbSourceTable.TabIndex = 12
-        Me.cmbSourceTable.TabStop = False
-        '
-        'Label102
-        '
-        Me.Label102.AutoSize = True
-        Me.Label102.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label102.ForeColor = System.Drawing.Color.Black
-        Me.Label102.Location = New System.Drawing.Point(5, 13)
-        Me.Label102.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label102.Name = "Label102"
-        Me.Label102.Size = New System.Drawing.Size(160, 17)
-        Me.Label102.TabIndex = 11
-        Me.Label102.Text = "Move &From Table #"
-        '
         'DataGridViewImageColumn7
         '
         Me.DataGridViewImageColumn7.FillWeight = 40.0!
@@ -1993,10 +1418,10 @@ Partial Class FrmPOSBilling2N
         Me.btnShiftTable.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnShiftTable.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnShiftTable.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnShiftTable.Location = New System.Drawing.Point(421, 10)
+        Me.btnShiftTable.Location = New System.Drawing.Point(421, 6)
         Me.btnShiftTable.Margin = New System.Windows.Forms.Padding(4)
         Me.btnShiftTable.Name = "btnShiftTable"
-        Me.btnShiftTable.Size = New System.Drawing.Size(134, 48)
+        Me.btnShiftTable.Size = New System.Drawing.Size(134, 36)
         Me.btnShiftTable.TabIndex = 313
         Me.btnShiftTable.Text = "SHIFT TABLE"
         Me.ToolTip1.SetToolTip(Me.btnShiftTable, "SHIFT TABLE")
@@ -2101,10 +1526,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTableMoveRight.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTableMoveRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTableMoveRight.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTableMoveRight.Location = New System.Drawing.Point(638, 26)
+        Me.btnTableMoveRight.Location = New System.Drawing.Point(638, 31)
         Me.btnTableMoveRight.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTableMoveRight.Name = "btnTableMoveRight"
-        Me.btnTableMoveRight.Size = New System.Drawing.Size(155, 25)
+        Me.btnTableMoveRight.Size = New System.Drawing.Size(155, 27)
         Me.btnTableMoveRight.TabIndex = 42
         Me.btnTableMoveRight.TabStop = False
         Me.btnTableMoveRight.Tag = ""
@@ -2119,10 +1544,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTableMoveLeft.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTableMoveLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTableMoveLeft.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTableMoveLeft.Location = New System.Drawing.Point(638, -1)
+        Me.btnTableMoveLeft.Location = New System.Drawing.Point(638, 3)
         Me.btnTableMoveLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTableMoveLeft.Name = "btnTableMoveLeft"
-        Me.btnTableMoveLeft.Size = New System.Drawing.Size(155, 25)
+        Me.btnTableMoveLeft.Size = New System.Drawing.Size(155, 27)
         Me.btnTableMoveLeft.TabIndex = 41
         Me.btnTableMoveLeft.TabStop = False
         Me.btnTableMoveLeft.Tag = ""
@@ -2140,7 +1565,7 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocationMoveLeft.Location = New System.Drawing.Point(638, 2)
         Me.btnBillingLocationMoveLeft.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocationMoveLeft.Name = "btnBillingLocationMoveLeft"
-        Me.btnBillingLocationMoveLeft.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocationMoveLeft.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocationMoveLeft.TabIndex = 4
         Me.btnBillingLocationMoveLeft.TabStop = False
         Me.btnBillingLocationMoveLeft.Tag = ""
@@ -2155,10 +1580,10 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocationMoveRight.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBillingLocationMoveRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBillingLocationMoveRight.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBillingLocationMoveRight.Location = New System.Drawing.Point(638, 56)
+        Me.btnBillingLocationMoveRight.Location = New System.Drawing.Point(638, 62)
         Me.btnBillingLocationMoveRight.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocationMoveRight.Name = "btnBillingLocationMoveRight"
-        Me.btnBillingLocationMoveRight.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocationMoveRight.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocationMoveRight.TabIndex = 9
         Me.btnBillingLocationMoveRight.TabStop = False
         Me.btnBillingLocationMoveRight.Tag = ""
@@ -2234,12 +1659,13 @@ Partial Class FrmPOSBilling2N
         Me.PanelMainScreen.Controls.Add(Me.PanelSearchItem)
         Me.PanelMainScreen.Controls.Add(Me.PanelContentHost)
         Me.PanelMainScreen.Controls.Add(Me.PanelClosedBills)
+        Me.PanelMainScreen.Controls.Add(Me.PanelSettleBill)
         Me.PanelMainScreen.Controls.Add(Me.PanelMergeTables)
+        Me.PanelMainScreen.Controls.Add(Me.PanelDisplayBill)
         Me.PanelMainScreen.Controls.Add(Me.PanelFooter)
         Me.PanelMainScreen.Controls.Add(Me.PanelLine)
         Me.PanelMainScreen.Controls.Add(Me.LabelHeader)
         Me.PanelMainScreen.Controls.Add(Me.PanelModifiers)
-        Me.PanelMainScreen.Controls.Add(Me.PanelSettleBill)
         Me.PanelMainScreen.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelMainScreen.Location = New System.Drawing.Point(0, 0)
         Me.PanelMainScreen.Margin = New System.Windows.Forms.Padding(4)
@@ -2248,100 +1674,6 @@ Partial Class FrmPOSBilling2N
         Me.PanelMainScreen.Size = New System.Drawing.Size(1200, 700)
         Me.PanelMainScreen.TabIndex = 2
         '
-        'PanelSearchItem
-        '
-        Me.PanelSearchItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.PanelSearchItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelSearchItem.Controls.Add(Me.btnCancelMemberSearch)
-        Me.PanelSearchItem.Controls.Add(Me.txtSearchItemCode)
-        Me.PanelSearchItem.Controls.Add(Me.Label155)
-        Me.PanelSearchItem.Controls.Add(Me.Label156)
-        Me.PanelSearchItem.Controls.Add(Me.txtSearchItemName)
-        Me.PanelSearchItem.Controls.Add(Me.dgSearchItem)
-        Me.PanelSearchItem.Location = New System.Drawing.Point(275, 159)
-        Me.PanelSearchItem.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelSearchItem.Name = "PanelSearchItem"
-        Me.PanelSearchItem.Size = New System.Drawing.Size(650, 382)
-        Me.PanelSearchItem.TabIndex = 323
-        '
-        'btnCancelMemberSearch
-        '
-        Me.btnCancelMemberSearch.BackgroundImage = Global.FNBManagement.My.Resources.Resources.delete1
-        Me.btnCancelMemberSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnCancelMemberSearch.Location = New System.Drawing.Point(597, 0)
-        Me.btnCancelMemberSearch.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnCancelMemberSearch.Name = "btnCancelMemberSearch"
-        Me.btnCancelMemberSearch.Size = New System.Drawing.Size(41, 30)
-        Me.btnCancelMemberSearch.TabIndex = 4
-        Me.btnCancelMemberSearch.UseVisualStyleBackColor = True
-        '
-        'txtSearchItemCode
-        '
-        Me.txtSearchItemCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtSearchItemCode.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearchItemCode.Location = New System.Drawing.Point(12, 31)
-        Me.txtSearchItemCode.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtSearchItemCode.MaxLength = 10
-        Me.txtSearchItemCode.Name = "txtSearchItemCode"
-        Me.txtSearchItemCode.Size = New System.Drawing.Size(103, 25)
-        Me.txtSearchItemCode.TabIndex = 1
-        '
-        'Label155
-        '
-        Me.Label155.AutoSize = True
-        Me.Label155.BackColor = System.Drawing.Color.Transparent
-        Me.Label155.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label155.Location = New System.Drawing.Point(16, 9)
-        Me.Label155.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label155.Name = "Label155"
-        Me.Label155.Size = New System.Drawing.Size(85, 17)
-        Me.Label155.TabIndex = 0
-        Me.Label155.Text = "Item Code"
-        '
-        'Label156
-        '
-        Me.Label156.AutoSize = True
-        Me.Label156.BackColor = System.Drawing.Color.Transparent
-        Me.Label156.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label156.Location = New System.Drawing.Point(129, 9)
-        Me.Label156.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label156.Name = "Label156"
-        Me.Label156.Size = New System.Drawing.Size(89, 17)
-        Me.Label156.TabIndex = 2
-        Me.Label156.Text = "Item Name"
-        '
-        'txtSearchItemName
-        '
-        Me.txtSearchItemName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtSearchItemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearchItemName.Location = New System.Drawing.Point(125, 30)
-        Me.txtSearchItemName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtSearchItemName.Name = "txtSearchItemName"
-        Me.txtSearchItemName.Size = New System.Drawing.Size(512, 25)
-        Me.txtSearchItemName.TabIndex = 3
-        '
-        'dgSearchItem
-        '
-        Me.dgSearchItem.AllowUserToAddRows = False
-        Me.dgSearchItem.AllowUserToDeleteRows = False
-        Me.dgSearchItem.BackgroundColor = System.Drawing.Color.LightGray
-        Me.dgSearchItem.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgSearchItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgSearchItem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.dgSearchItem.Location = New System.Drawing.Point(8, 64)
-        Me.dgSearchItem.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgSearchItem.MultiSelect = False
-        Me.dgSearchItem.Name = "dgSearchItem"
-        Me.dgSearchItem.ReadOnly = True
-        Me.dgSearchItem.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.dgSearchItem.RowHeadersWidth = 20
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.dgSearchItem.RowsDefaultCellStyle = DataGridViewCellStyle9
-        Me.dgSearchItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgSearchItem.Size = New System.Drawing.Size(631, 308)
-        Me.dgSearchItem.TabIndex = 5
-        Me.dgSearchItem.TabStop = False
-        '
         'PanelContentHost
         '
         Me.PanelContentHost.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2349,11 +1681,661 @@ Partial Class FrmPOSBilling2N
         Me.PanelContentHost.Controls.Add(Me.PanelModifyKOT)
         Me.PanelContentHost.Controls.Add(Me.PanelLocationAndTables)
         Me.PanelContentHost.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelContentHost.Location = New System.Drawing.Point(390, 52)
+        Me.PanelContentHost.Location = New System.Drawing.Point(770, 52)
         Me.PanelContentHost.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelContentHost.Name = "PanelContentHost"
-        Me.PanelContentHost.Size = New System.Drawing.Size(800, 518)
+        Me.PanelContentHost.Size = New System.Drawing.Size(420, 588)
         Me.PanelContentHost.TabIndex = 320
+        '
+        'PanelModifyKOT
+        '
+        Me.PanelModifyKOT.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelModifyKOT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelModifyKOT.Controls.Add(Me.Panel1)
+        Me.PanelModifyKOT.Controls.Add(Me.lblMemID)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus6)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus5)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus4)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus7)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus9)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus8)
+        Me.PanelModifyKOT.Controls.Add(Me.lblModifiedQty)
+        Me.PanelModifyKOT.Controls.Add(Me.lblActualQty)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus0)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus3)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus2)
+        Me.PanelModifyKOT.Controls.Add(Me.btnMinus1)
+        Me.PanelModifyKOT.Controls.Add(Me.btnVoidKOT)
+        Me.PanelModifyKOT.Controls.Add(Me.lblKOTNo_KOTModify)
+        Me.PanelModifyKOT.Controls.Add(Me.lblYearCode_KOTModify)
+        Me.PanelModifyKOT.Controls.Add(Me.lblLocationCode_KOTModify)
+        Me.PanelModifyKOT.Controls.Add(Me.labelKOTModificationItemDetails)
+        Me.PanelModifyKOT.Controls.Add(Me.dgKOTItemList)
+        Me.PanelModifyKOT.Controls.Add(Me.labelKOTModificationHeader)
+        Me.PanelModifyKOT.Controls.Add(Me.dgKOTList)
+        Me.PanelModifyKOT.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelModifyKOT.Location = New System.Drawing.Point(0, 0)
+        Me.PanelModifyKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelModifyKOT.Name = "PanelModifyKOT"
+        Me.PanelModifyKOT.Size = New System.Drawing.Size(1180, 588)
+        Me.PanelModifyKOT.TabIndex = 267
+        '
+        'Panel1
+        '
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.cmbKOTRemarks)
+        Me.Panel1.Controls.Add(Me.Label106)
+        Me.Panel1.Controls.Add(Me.lbl35)
+        Me.Panel1.Controls.Add(Me.lbl34)
+        Me.Panel1.Controls.Add(Me.lblReducedKOTAmt)
+        Me.Panel1.Controls.Add(Me.Label107)
+        Me.Panel1.Controls.Add(Me.lblReducedKOTQty)
+        Me.Panel1.Controls.Add(Me.Label108)
+        Me.Panel1.Controls.Add(Me.lblModifiedKOTAmt)
+        Me.Panel1.Controls.Add(Me.Label109)
+        Me.Panel1.Controls.Add(Me.lblModifiedKOTQty)
+        Me.Panel1.Controls.Add(Me.Label110)
+        Me.Panel1.Controls.Add(Me.lblTotalOriginalKOTAmt)
+        Me.Panel1.Controls.Add(Me.Label111)
+        Me.Panel1.Controls.Add(Me.lblTotalOriginalQty)
+        Me.Panel1.Controls.Add(Me.Label112)
+        Me.Panel1.Location = New System.Drawing.Point(5, 489)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(789, 95)
+        Me.Panel1.TabIndex = 341
+        '
+        'cmbKOTRemarks
+        '
+        Me.cmbKOTRemarks.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbKOTRemarks.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.cmbKOTRemarks.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbKOTRemarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbKOTRemarks.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.cmbKOTRemarks.FormattingEnabled = True
+        Me.cmbKOTRemarks.Location = New System.Drawing.Point(119, 4)
+        Me.cmbKOTRemarks.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbKOTRemarks.Name = "cmbKOTRemarks"
+        Me.cmbKOTRemarks.Size = New System.Drawing.Size(661, 31)
+        Me.cmbKOTRemarks.TabIndex = 356
+        '
+        'Label106
+        '
+        Me.Label106.AutoSize = True
+        Me.Label106.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.Location = New System.Drawing.Point(6, 6)
+        Me.Label106.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label106.Name = "Label106"
+        Me.Label106.Size = New System.Drawing.Size(83, 20)
+        Me.Label106.TabIndex = 355
+        Me.Label106.Text = "Remarks"
+        '
+        'lbl35
+        '
+        Me.lbl35.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lbl35.Font = New System.Drawing.Font("Lucida Fax", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl35.Location = New System.Drawing.Point(526, 43)
+        Me.lbl35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl35.Name = "lbl35"
+        Me.lbl35.Size = New System.Drawing.Size(3, 48)
+        Me.lbl35.TabIndex = 354
+        Me.lbl35.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl34
+        '
+        Me.lbl34.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lbl34.Font = New System.Drawing.Font("Lucida Fax", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl34.Location = New System.Drawing.Point(251, 43)
+        Me.lbl34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl34.Name = "lbl34"
+        Me.lbl34.Size = New System.Drawing.Size(3, 48)
+        Me.lbl34.TabIndex = 353
+        Me.lbl34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblReducedKOTAmt
+        '
+        Me.lblReducedKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblReducedKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReducedKOTAmt.Location = New System.Drawing.Point(390, 65)
+        Me.lblReducedKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblReducedKOTAmt.Name = "lblReducedKOTAmt"
+        Me.lblReducedKOTAmt.Size = New System.Drawing.Size(113, 26)
+        Me.lblReducedKOTAmt.TabIndex = 352
+        Me.lblReducedKOTAmt.Text = "0.00"
+        Me.lblReducedKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label107
+        '
+        Me.Label107.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label107.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label107.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label107.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label107.Location = New System.Drawing.Point(390, 41)
+        Me.Label107.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label107.Name = "Label107"
+        Me.Label107.Size = New System.Drawing.Size(113, 26)
+        Me.Label107.TabIndex = 351
+        Me.Label107.Text = "Reduced Amt"
+        Me.Label107.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblReducedKOTQty
+        '
+        Me.lblReducedKOTQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblReducedKOTQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReducedKOTQty.Location = New System.Drawing.Point(274, 65)
+        Me.lblReducedKOTQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblReducedKOTQty.Name = "lblReducedKOTQty"
+        Me.lblReducedKOTQty.Size = New System.Drawing.Size(108, 26)
+        Me.lblReducedKOTQty.TabIndex = 350
+        Me.lblReducedKOTQty.Text = "0.00"
+        Me.lblReducedKOTQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label108
+        '
+        Me.Label108.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label108.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label108.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label108.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label108.Location = New System.Drawing.Point(274, 41)
+        Me.Label108.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label108.Name = "Label108"
+        Me.Label108.Size = New System.Drawing.Size(108, 26)
+        Me.Label108.TabIndex = 349
+        Me.Label108.Text = "Reduced Qty"
+        Me.Label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModifiedKOTAmt
+        '
+        Me.lblModifiedKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblModifiedKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModifiedKOTAmt.Location = New System.Drawing.Point(668, 65)
+        Me.lblModifiedKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifiedKOTAmt.Name = "lblModifiedKOTAmt"
+        Me.lblModifiedKOTAmt.Size = New System.Drawing.Size(113, 26)
+        Me.lblModifiedKOTAmt.TabIndex = 348
+        Me.lblModifiedKOTAmt.Text = "0.00"
+        Me.lblModifiedKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label109
+        '
+        Me.Label109.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label109.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label109.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label109.Location = New System.Drawing.Point(668, 41)
+        Me.Label109.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label109.Name = "Label109"
+        Me.Label109.Size = New System.Drawing.Size(113, 26)
+        Me.Label109.TabIndex = 347
+        Me.Label109.Text = "Modified Amt"
+        Me.Label109.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblModifiedKOTQty
+        '
+        Me.lblModifiedKOTQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblModifiedKOTQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblModifiedKOTQty.Location = New System.Drawing.Point(554, 65)
+        Me.lblModifiedKOTQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifiedKOTQty.Name = "lblModifiedKOTQty"
+        Me.lblModifiedKOTQty.Size = New System.Drawing.Size(106, 26)
+        Me.lblModifiedKOTQty.TabIndex = 346
+        Me.lblModifiedKOTQty.Text = "0.00"
+        Me.lblModifiedKOTQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label110
+        '
+        Me.Label110.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label110.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label110.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label110.Location = New System.Drawing.Point(554, 41)
+        Me.Label110.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label110.Name = "Label110"
+        Me.Label110.Size = New System.Drawing.Size(106, 26)
+        Me.Label110.TabIndex = 345
+        Me.Label110.Text = "Modified Qty"
+        Me.Label110.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblTotalOriginalKOTAmt
+        '
+        Me.lblTotalOriginalKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalOriginalKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalOriginalKOTAmt.Location = New System.Drawing.Point(119, 65)
+        Me.lblTotalOriginalKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalOriginalKOTAmt.Name = "lblTotalOriginalKOTAmt"
+        Me.lblTotalOriginalKOTAmt.Size = New System.Drawing.Size(111, 26)
+        Me.lblTotalOriginalKOTAmt.TabIndex = 344
+        Me.lblTotalOriginalKOTAmt.Text = "0.00"
+        Me.lblTotalOriginalKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label111
+        '
+        Me.Label111.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label111.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label111.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label111.Location = New System.Drawing.Point(119, 41)
+        Me.Label111.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label111.Name = "Label111"
+        Me.Label111.Size = New System.Drawing.Size(111, 26)
+        Me.Label111.TabIndex = 343
+        Me.Label111.Text = "Original Amt"
+        Me.Label111.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblTotalOriginalQty
+        '
+        Me.lblTotalOriginalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalOriginalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalOriginalQty.Location = New System.Drawing.Point(8, 65)
+        Me.lblTotalOriginalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalOriginalQty.Name = "lblTotalOriginalQty"
+        Me.lblTotalOriginalQty.Size = New System.Drawing.Size(103, 26)
+        Me.lblTotalOriginalQty.TabIndex = 342
+        Me.lblTotalOriginalQty.Text = "0.00"
+        Me.lblTotalOriginalQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label112
+        '
+        Me.Label112.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label112.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label112.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label112.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Label112.Location = New System.Drawing.Point(8, 40)
+        Me.Label112.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label112.Name = "Label112"
+        Me.Label112.Size = New System.Drawing.Size(103, 26)
+        Me.Label112.TabIndex = 341
+        Me.Label112.Text = "Original Qty"
+        Me.Label112.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblMemID
+        '
+        Me.lblMemID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblMemID.Location = New System.Drawing.Point(28, 196)
+        Me.lblMemID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMemID.Name = "lblMemID"
+        Me.lblMemID.Size = New System.Drawing.Size(48, 20)
+        Me.lblMemID.TabIndex = 339
+        Me.lblMemID.Text = "Mem_ID"
+        Me.lblMemID.Visible = False
+        '
+        'btnMinus6
+        '
+        Me.btnMinus6.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus6.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus6.ForeColor = System.Drawing.Color.White
+        Me.btnMinus6.Location = New System.Drawing.Point(736, 241)
+        Me.btnMinus6.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus6.Name = "btnMinus6"
+        Me.btnMinus6.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus6.TabIndex = 334
+        Me.btnMinus6.Text = "6"
+        Me.btnMinus6.UseVisualStyleBackColor = False
+        '
+        'btnMinus5
+        '
+        Me.btnMinus5.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus5.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus5.ForeColor = System.Drawing.Color.White
+        Me.btnMinus5.Location = New System.Drawing.Point(673, 241)
+        Me.btnMinus5.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus5.Name = "btnMinus5"
+        Me.btnMinus5.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus5.TabIndex = 333
+        Me.btnMinus5.Text = "5"
+        Me.btnMinus5.UseVisualStyleBackColor = False
+        '
+        'btnMinus4
+        '
+        Me.btnMinus4.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus4.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus4.ForeColor = System.Drawing.Color.White
+        Me.btnMinus4.Location = New System.Drawing.Point(609, 241)
+        Me.btnMinus4.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus4.Name = "btnMinus4"
+        Me.btnMinus4.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus4.TabIndex = 332
+        Me.btnMinus4.Text = "4"
+        Me.btnMinus4.UseVisualStyleBackColor = False
+        '
+        'btnMinus7
+        '
+        Me.btnMinus7.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus7.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus7.ForeColor = System.Drawing.Color.White
+        Me.btnMinus7.Location = New System.Drawing.Point(609, 194)
+        Me.btnMinus7.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus7.Name = "btnMinus7"
+        Me.btnMinus7.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus7.TabIndex = 331
+        Me.btnMinus7.Text = "7"
+        Me.btnMinus7.UseVisualStyleBackColor = False
+        '
+        'btnMinus9
+        '
+        Me.btnMinus9.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus9.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus9.ForeColor = System.Drawing.Color.White
+        Me.btnMinus9.Location = New System.Drawing.Point(736, 195)
+        Me.btnMinus9.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus9.Name = "btnMinus9"
+        Me.btnMinus9.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus9.TabIndex = 330
+        Me.btnMinus9.Text = "9"
+        Me.btnMinus9.UseVisualStyleBackColor = False
+        '
+        'btnMinus8
+        '
+        Me.btnMinus8.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus8.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus8.ForeColor = System.Drawing.Color.White
+        Me.btnMinus8.Location = New System.Drawing.Point(673, 195)
+        Me.btnMinus8.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus8.Name = "btnMinus8"
+        Me.btnMinus8.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus8.TabIndex = 329
+        Me.btnMinus8.Text = "8"
+        Me.btnMinus8.UseVisualStyleBackColor = False
+        '
+        'lblModifiedQty
+        '
+        Me.lblModifiedQty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblModifiedQty.Location = New System.Drawing.Point(43, 270)
+        Me.lblModifiedQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblModifiedQty.Name = "lblModifiedQty"
+        Me.lblModifiedQty.Size = New System.Drawing.Size(48, 20)
+        Me.lblModifiedQty.TabIndex = 316
+        Me.lblModifiedQty.Text = "lblModifiedQty"
+        Me.lblModifiedQty.Visible = False
+        '
+        'lblActualQty
+        '
+        Me.lblActualQty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblActualQty.Location = New System.Drawing.Point(43, 235)
+        Me.lblActualQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblActualQty.Name = "lblActualQty"
+        Me.lblActualQty.Size = New System.Drawing.Size(48, 20)
+        Me.lblActualQty.TabIndex = 315
+        Me.lblActualQty.Text = "lblActualQty"
+        Me.lblActualQty.Visible = False
+        '
+        'btnMinus0
+        '
+        Me.btnMinus0.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus0.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus0.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus0.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus0.ForeColor = System.Drawing.Color.White
+        Me.btnMinus0.Location = New System.Drawing.Point(548, 288)
+        Me.btnMinus0.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus0.Name = "btnMinus0"
+        Me.btnMinus0.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus0.TabIndex = 314
+        Me.btnMinus0.Text = "0"
+        Me.btnMinus0.UseVisualStyleBackColor = False
+        '
+        'btnMinus3
+        '
+        Me.btnMinus3.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus3.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus3.ForeColor = System.Drawing.Color.White
+        Me.btnMinus3.Location = New System.Drawing.Point(736, 287)
+        Me.btnMinus3.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus3.Name = "btnMinus3"
+        Me.btnMinus3.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus3.TabIndex = 313
+        Me.btnMinus3.Text = "3"
+        Me.btnMinus3.UseVisualStyleBackColor = False
+        '
+        'btnMinus2
+        '
+        Me.btnMinus2.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus2.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus2.ForeColor = System.Drawing.Color.White
+        Me.btnMinus2.Location = New System.Drawing.Point(673, 288)
+        Me.btnMinus2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus2.Name = "btnMinus2"
+        Me.btnMinus2.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus2.TabIndex = 312
+        Me.btnMinus2.Text = "2"
+        Me.btnMinus2.UseVisualStyleBackColor = False
+        '
+        'btnMinus1
+        '
+        Me.btnMinus1.BackColor = System.Drawing.Color.Tomato
+        Me.btnMinus1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinus1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMinus1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinus1.ForeColor = System.Drawing.Color.White
+        Me.btnMinus1.Location = New System.Drawing.Point(609, 288)
+        Me.btnMinus1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMinus1.Name = "btnMinus1"
+        Me.btnMinus1.Size = New System.Drawing.Size(57, 43)
+        Me.btnMinus1.TabIndex = 311
+        Me.btnMinus1.Text = "1"
+        Me.btnMinus1.UseVisualStyleBackColor = False
+        '
+        'btnVoidKOT
+        '
+        Me.btnVoidKOT.BackColor = System.Drawing.Color.Tomato
+        Me.btnVoidKOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVoidKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnVoidKOT.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVoidKOT.ForeColor = System.Drawing.Color.White
+        Me.btnVoidKOT.Location = New System.Drawing.Point(548, 194)
+        Me.btnVoidKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnVoidKOT.Name = "btnVoidKOT"
+        Me.btnVoidKOT.Size = New System.Drawing.Size(57, 90)
+        Me.btnVoidKOT.TabIndex = 310
+        Me.btnVoidKOT.Text = "VOID KOT"
+        Me.btnVoidKOT.UseVisualStyleBackColor = False
+        '
+        'lblKOTNo_KOTModify
+        '
+        Me.lblKOTNo_KOTModify.AutoSize = True
+        Me.lblKOTNo_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblKOTNo_KOTModify.Location = New System.Drawing.Point(167, 246)
+        Me.lblKOTNo_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblKOTNo_KOTModify.Name = "lblKOTNo_KOTModify"
+        Me.lblKOTNo_KOTModify.Size = New System.Drawing.Size(179, 19)
+        Me.lblKOTNo_KOTModify.TabIndex = 309
+        Me.lblKOTNo_KOTModify.Text = "lblKOTNo_KOTModify"
+        Me.lblKOTNo_KOTModify.Visible = False
+        '
+        'lblYearCode_KOTModify
+        '
+        Me.lblYearCode_KOTModify.AutoSize = True
+        Me.lblYearCode_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblYearCode_KOTModify.Location = New System.Drawing.Point(167, 288)
+        Me.lblYearCode_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblYearCode_KOTModify.Name = "lblYearCode_KOTModify"
+        Me.lblYearCode_KOTModify.Size = New System.Drawing.Size(197, 19)
+        Me.lblYearCode_KOTModify.TabIndex = 309
+        Me.lblYearCode_KOTModify.Text = "lblYearCode_KOTModify"
+        Me.lblYearCode_KOTModify.Visible = False
+        '
+        'lblLocationCode_KOTModify
+        '
+        Me.lblLocationCode_KOTModify.AutoSize = True
+        Me.lblLocationCode_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblLocationCode_KOTModify.Location = New System.Drawing.Point(167, 270)
+        Me.lblLocationCode_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblLocationCode_KOTModify.Name = "lblLocationCode_KOTModify"
+        Me.lblLocationCode_KOTModify.Size = New System.Drawing.Size(231, 19)
+        Me.lblLocationCode_KOTModify.TabIndex = 308
+        Me.lblLocationCode_KOTModify.Text = "lblLocationCode_KOTModify"
+        Me.lblLocationCode_KOTModify.Visible = False
+        '
+        'labelKOTModificationItemDetails
+        '
+        Me.labelKOTModificationItemDetails.AutoSize = True
+        Me.labelKOTModificationItemDetails.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.labelKOTModificationItemDetails.Location = New System.Drawing.Point(3, 312)
+        Me.labelKOTModificationItemDetails.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelKOTModificationItemDetails.Name = "labelKOTModificationItemDetails"
+        Me.labelKOTModificationItemDetails.Size = New System.Drawing.Size(103, 20)
+        Me.labelKOTModificationItemDetails.TabIndex = 302
+        Me.labelKOTModificationItemDetails.Text = "KOT Detail"
+        Me.labelKOTModificationItemDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dgKOTItemList
+        '
+        Me.dgKOTItemList.AllowUserToAddRows = False
+        Me.dgKOTItemList.AllowUserToDeleteRows = False
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTItemList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgKOTItemList.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgKOTItemList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgKOTItemList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgKOTItemList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTItemList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.dgKOTItemList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgKOTItemList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn6})
+        Me.dgKOTItemList.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgKOTItemList.DefaultCellStyle = DataGridViewCellStyle7
+        Me.dgKOTItemList.GridColor = System.Drawing.Color.Chocolate
+        Me.dgKOTItemList.Location = New System.Drawing.Point(5, 336)
+        Me.dgKOTItemList.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgKOTItemList.MultiSelect = False
+        Me.dgKOTItemList.Name = "dgKOTItemList"
+        Me.dgKOTItemList.ReadOnly = True
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTItemList.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.dgKOTItemList.RowHeadersVisible = False
+        Me.dgKOTItemList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgKOTItemList.RowTemplate.Height = 40
+        Me.dgKOTItemList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgKOTItemList.Size = New System.Drawing.Size(788, 149)
+        Me.dgKOTItemList.TabIndex = 301
+        Me.dgKOTItemList.TabStop = False
+        '
+        'DataGridViewImageColumn6
+        '
+        Me.DataGridViewImageColumn6.FillWeight = 30.0!
+        Me.DataGridViewImageColumn6.Frozen = True
+        Me.DataGridViewImageColumn6.HeaderText = ""
+        Me.DataGridViewImageColumn6.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
+        Me.DataGridViewImageColumn6.MinimumWidth = 30
+        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
+        Me.DataGridViewImageColumn6.ReadOnly = True
+        Me.DataGridViewImageColumn6.Width = 30
+        '
+        'labelKOTModificationHeader
+        '
+        Me.labelKOTModificationHeader.AutoSize = True
+        Me.labelKOTModificationHeader.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
+        Me.labelKOTModificationHeader.Location = New System.Drawing.Point(3, 5)
+        Me.labelKOTModificationHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelKOTModificationHeader.Name = "labelKOTModificationHeader"
+        Me.labelKOTModificationHeader.Size = New System.Drawing.Size(281, 20)
+        Me.labelKOTModificationHeader.TabIndex = 300
+        Me.labelKOTModificationHeader.Text = "KOT belonging to the Table No."
+        Me.labelKOTModificationHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dgKOTList
+        '
+        Me.dgKOTList.AllowUserToAddRows = False
+        Me.dgKOTList.AllowUserToDeleteRows = False
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.dgKOTList.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgKOTList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgKOTList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgKOTList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        Me.dgKOTList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgKOTList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn3})
+        Me.dgKOTList.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgKOTList.DefaultCellStyle = DataGridViewCellStyle11
+        Me.dgKOTList.GridColor = System.Drawing.Color.Chocolate
+        Me.dgKOTList.Location = New System.Drawing.Point(5, 27)
+        Me.dgKOTList.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgKOTList.MultiSelect = False
+        Me.dgKOTList.Name = "dgKOTList"
+        Me.dgKOTList.ReadOnly = True
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle12.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgKOTList.RowHeadersDefaultCellStyle = DataGridViewCellStyle12
+        Me.dgKOTList.RowHeadersVisible = False
+        Me.dgKOTList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgKOTList.RowTemplate.Height = 40
+        Me.dgKOTList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgKOTList.Size = New System.Drawing.Size(788, 162)
+        Me.dgKOTList.TabIndex = 2
+        Me.dgKOTList.TabStop = False
+        '
+        'DataGridViewImageColumn3
+        '
+        Me.DataGridViewImageColumn3.FillWeight = 30.0!
+        Me.DataGridViewImageColumn3.Frozen = True
+        Me.DataGridViewImageColumn3.HeaderText = ""
+        Me.DataGridViewImageColumn3.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
+        Me.DataGridViewImageColumn3.MinimumWidth = 30
+        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
+        Me.DataGridViewImageColumn3.ReadOnly = True
+        Me.DataGridViewImageColumn3.Width = 30
         '
         'PanelRight
         '
@@ -2368,7 +2350,7 @@ Partial Class FrmPOSBilling2N
         Me.PanelRight.Location = New System.Drawing.Point(0, 0)
         Me.PanelRight.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelRight.Name = "PanelRight"
-        Me.PanelRight.Size = New System.Drawing.Size(800, 518)
+        Me.PanelRight.Size = New System.Drawing.Size(1180, 588)
         Me.PanelRight.TabIndex = 323
         '
         'PanelItem
@@ -2395,61 +2377,61 @@ Partial Class FrmPOSBilling2N
         Me.PanelItem.Location = New System.Drawing.Point(3, 197)
         Me.PanelItem.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelItem.Name = "PanelItem"
-        Me.PanelItem.Size = New System.Drawing.Size(792, 254)
+        Me.PanelItem.Size = New System.Drawing.Size(792, 322)
         Me.PanelItem.TabIndex = 1
         '
         'dgItemGrid
         '
         Me.dgItemGrid.AllowUserToAddRows = False
         Me.dgItemGrid.AllowUserToDeleteRows = False
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle10.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgItemGrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle13.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgItemGrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.dgItemGrid.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgItemGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgItemGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
         Me.dgItemGrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgItemGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgItemGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgItemGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgItemGrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn11, Me.DataGridViewImageColumn13, Me.DataGridViewImageColumn14})
         Me.dgItemGrid.Cursor = System.Windows.Forms.Cursors.Default
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgItemGrid.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgItemGrid.DefaultCellStyle = DataGridViewCellStyle15
         Me.dgItemGrid.GridColor = System.Drawing.Color.Chocolate
-        Me.dgItemGrid.Location = New System.Drawing.Point(4, 58)
+        Me.dgItemGrid.Location = New System.Drawing.Point(0, 58)
         Me.dgItemGrid.Margin = New System.Windows.Forms.Padding(4)
         Me.dgItemGrid.MultiSelect = False
         Me.dgItemGrid.Name = "dgItemGrid"
         Me.dgItemGrid.ReadOnly = True
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgItemGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle16.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgItemGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.dgItemGrid.RowHeadersVisible = False
         Me.dgItemGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgItemGrid.RowTemplate.Height = 40
         Me.dgItemGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgItemGrid.Size = New System.Drawing.Size(783, 190)
+        Me.dgItemGrid.Size = New System.Drawing.Size(792, 261)
         Me.dgItemGrid.TabIndex = 23
         Me.dgItemGrid.TabStop = False
         '
@@ -2489,7 +2471,7 @@ Partial Class FrmPOSBilling2N
         '
         Me.lblAliasCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblAliasCode.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblAliasCode.Location = New System.Drawing.Point(152, 2)
+        Me.lblAliasCode.Location = New System.Drawing.Point(152, 3)
         Me.lblAliasCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAliasCode.Name = "lblAliasCode"
         Me.lblAliasCode.Size = New System.Drawing.Size(84, 23)
@@ -2499,7 +2481,7 @@ Partial Class FrmPOSBilling2N
         '
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label34.Location = New System.Drawing.Point(4, 6)
+        Me.Label34.Location = New System.Drawing.Point(-2, 6)
         Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(89, 17)
@@ -2628,10 +2610,10 @@ Partial Class FrmPOSBilling2N
         'txtItemCode
         '
         Me.txtItemCode.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtItemCode.Location = New System.Drawing.Point(6, 27)
+        Me.txtItemCode.Location = New System.Drawing.Point(0, 27)
         Me.txtItemCode.Margin = New System.Windows.Forms.Padding(4)
         Me.txtItemCode.Name = "txtItemCode"
-        Me.txtItemCode.Size = New System.Drawing.Size(87, 27)
+        Me.txtItemCode.Size = New System.Drawing.Size(102, 27)
         Me.txtItemCode.TabIndex = 1
         Me.txtItemCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -2839,7 +2821,7 @@ Partial Class FrmPOSBilling2N
         Me.PanelDisplayArea.Controls.Add(Me.Label4)
         Me.PanelDisplayArea.Controls.Add(Me.lblGSTAmt)
         Me.PanelDisplayArea.Controls.Add(Me.lblSCAmt)
-        Me.PanelDisplayArea.Location = New System.Drawing.Point(3, 455)
+        Me.PanelDisplayArea.Location = New System.Drawing.Point(3, 522)
         Me.PanelDisplayArea.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelDisplayArea.Name = "PanelDisplayArea"
         Me.PanelDisplayArea.Size = New System.Drawing.Size(792, 64)
@@ -3480,656 +3462,6 @@ Partial Class FrmPOSBilling2N
         Me.Label11.Text = "BILL NO"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PanelModifyKOT
-        '
-        Me.PanelModifyKOT.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.PanelModifyKOT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelModifyKOT.Controls.Add(Me.Panel1)
-        Me.PanelModifyKOT.Controls.Add(Me.lblMemID)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus6)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus5)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus4)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus7)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus9)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus8)
-        Me.PanelModifyKOT.Controls.Add(Me.lblModifiedQty)
-        Me.PanelModifyKOT.Controls.Add(Me.lblActualQty)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus0)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus3)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus2)
-        Me.PanelModifyKOT.Controls.Add(Me.btnMinus1)
-        Me.PanelModifyKOT.Controls.Add(Me.btnVoidKOT)
-        Me.PanelModifyKOT.Controls.Add(Me.lblKOTNo_KOTModify)
-        Me.PanelModifyKOT.Controls.Add(Me.lblYearCode_KOTModify)
-        Me.PanelModifyKOT.Controls.Add(Me.lblLocationCode_KOTModify)
-        Me.PanelModifyKOT.Controls.Add(Me.labelKOTModificationItemDetails)
-        Me.PanelModifyKOT.Controls.Add(Me.dgKOTItemList)
-        Me.PanelModifyKOT.Controls.Add(Me.labelKOTModificationHeader)
-        Me.PanelModifyKOT.Controls.Add(Me.dgKOTList)
-        Me.PanelModifyKOT.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelModifyKOT.Location = New System.Drawing.Point(0, 0)
-        Me.PanelModifyKOT.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelModifyKOT.Name = "PanelModifyKOT"
-        Me.PanelModifyKOT.Size = New System.Drawing.Size(800, 518)
-        Me.PanelModifyKOT.TabIndex = 267
-        '
-        'Panel1
-        '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.cmbKOTRemarks)
-        Me.Panel1.Controls.Add(Me.Label106)
-        Me.Panel1.Controls.Add(Me.lbl35)
-        Me.Panel1.Controls.Add(Me.lbl34)
-        Me.Panel1.Controls.Add(Me.lblReducedKOTAmt)
-        Me.Panel1.Controls.Add(Me.Label107)
-        Me.Panel1.Controls.Add(Me.lblReducedKOTQty)
-        Me.Panel1.Controls.Add(Me.Label108)
-        Me.Panel1.Controls.Add(Me.lblModifiedKOTAmt)
-        Me.Panel1.Controls.Add(Me.Label109)
-        Me.Panel1.Controls.Add(Me.lblModifiedKOTQty)
-        Me.Panel1.Controls.Add(Me.Label110)
-        Me.Panel1.Controls.Add(Me.lblTotalOriginalKOTAmt)
-        Me.Panel1.Controls.Add(Me.Label111)
-        Me.Panel1.Controls.Add(Me.lblTotalOriginalQty)
-        Me.Panel1.Controls.Add(Me.Label112)
-        Me.Panel1.Location = New System.Drawing.Point(5, 418)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(789, 95)
-        Me.Panel1.TabIndex = 341
-        '
-        'cmbKOTRemarks
-        '
-        Me.cmbKOTRemarks.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cmbKOTRemarks.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cmbKOTRemarks.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmbKOTRemarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbKOTRemarks.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.cmbKOTRemarks.FormattingEnabled = True
-        Me.cmbKOTRemarks.Location = New System.Drawing.Point(119, 4)
-        Me.cmbKOTRemarks.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbKOTRemarks.Name = "cmbKOTRemarks"
-        Me.cmbKOTRemarks.Size = New System.Drawing.Size(661, 31)
-        Me.cmbKOTRemarks.TabIndex = 356
-        '
-        'Label106
-        '
-        Me.Label106.AutoSize = True
-        Me.Label106.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label106.Location = New System.Drawing.Point(6, 6)
-        Me.Label106.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(83, 20)
-        Me.Label106.TabIndex = 355
-        Me.Label106.Text = "Remarks"
-        '
-        'lbl35
-        '
-        Me.lbl35.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lbl35.Font = New System.Drawing.Font("Lucida Fax", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl35.Location = New System.Drawing.Point(526, 43)
-        Me.lbl35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl35.Name = "lbl35"
-        Me.lbl35.Size = New System.Drawing.Size(3, 48)
-        Me.lbl35.TabIndex = 354
-        Me.lbl35.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lbl34
-        '
-        Me.lbl34.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.lbl34.Font = New System.Drawing.Font("Lucida Fax", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl34.Location = New System.Drawing.Point(251, 43)
-        Me.lbl34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl34.Name = "lbl34"
-        Me.lbl34.Size = New System.Drawing.Size(3, 48)
-        Me.lbl34.TabIndex = 353
-        Me.lbl34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblReducedKOTAmt
-        '
-        Me.lblReducedKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblReducedKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReducedKOTAmt.Location = New System.Drawing.Point(390, 65)
-        Me.lblReducedKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblReducedKOTAmt.Name = "lblReducedKOTAmt"
-        Me.lblReducedKOTAmt.Size = New System.Drawing.Size(113, 26)
-        Me.lblReducedKOTAmt.TabIndex = 352
-        Me.lblReducedKOTAmt.Text = "0.00"
-        Me.lblReducedKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label107
-        '
-        Me.Label107.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label107.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label107.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label107.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label107.Location = New System.Drawing.Point(390, 41)
-        Me.Label107.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label107.Name = "Label107"
-        Me.Label107.Size = New System.Drawing.Size(113, 26)
-        Me.Label107.TabIndex = 351
-        Me.Label107.Text = "Reduced Amt"
-        Me.Label107.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblReducedKOTQty
-        '
-        Me.lblReducedKOTQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblReducedKOTQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblReducedKOTQty.Location = New System.Drawing.Point(274, 65)
-        Me.lblReducedKOTQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblReducedKOTQty.Name = "lblReducedKOTQty"
-        Me.lblReducedKOTQty.Size = New System.Drawing.Size(108, 26)
-        Me.lblReducedKOTQty.TabIndex = 350
-        Me.lblReducedKOTQty.Text = "0.00"
-        Me.lblReducedKOTQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label108
-        '
-        Me.Label108.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label108.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label108.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label108.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label108.Location = New System.Drawing.Point(274, 41)
-        Me.Label108.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(108, 26)
-        Me.Label108.TabIndex = 349
-        Me.Label108.Text = "Reduced Qty"
-        Me.Label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblModifiedKOTAmt
-        '
-        Me.lblModifiedKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblModifiedKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModifiedKOTAmt.Location = New System.Drawing.Point(668, 65)
-        Me.lblModifiedKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblModifiedKOTAmt.Name = "lblModifiedKOTAmt"
-        Me.lblModifiedKOTAmt.Size = New System.Drawing.Size(113, 26)
-        Me.lblModifiedKOTAmt.TabIndex = 348
-        Me.lblModifiedKOTAmt.Text = "0.00"
-        Me.lblModifiedKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label109
-        '
-        Me.Label109.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label109.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label109.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label109.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label109.Location = New System.Drawing.Point(668, 41)
-        Me.Label109.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label109.Name = "Label109"
-        Me.Label109.Size = New System.Drawing.Size(113, 26)
-        Me.Label109.TabIndex = 347
-        Me.Label109.Text = "Modified Amt"
-        Me.Label109.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblModifiedKOTQty
-        '
-        Me.lblModifiedKOTQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblModifiedKOTQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblModifiedKOTQty.Location = New System.Drawing.Point(554, 65)
-        Me.lblModifiedKOTQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblModifiedKOTQty.Name = "lblModifiedKOTQty"
-        Me.lblModifiedKOTQty.Size = New System.Drawing.Size(106, 26)
-        Me.lblModifiedKOTQty.TabIndex = 346
-        Me.lblModifiedKOTQty.Text = "0.00"
-        Me.lblModifiedKOTQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label110
-        '
-        Me.Label110.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label110.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label110.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label110.Location = New System.Drawing.Point(554, 41)
-        Me.Label110.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label110.Name = "Label110"
-        Me.Label110.Size = New System.Drawing.Size(106, 26)
-        Me.Label110.TabIndex = 345
-        Me.Label110.Text = "Modified Qty"
-        Me.Label110.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblTotalOriginalKOTAmt
-        '
-        Me.lblTotalOriginalKOTAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalOriginalKOTAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalOriginalKOTAmt.Location = New System.Drawing.Point(119, 65)
-        Me.lblTotalOriginalKOTAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblTotalOriginalKOTAmt.Name = "lblTotalOriginalKOTAmt"
-        Me.lblTotalOriginalKOTAmt.Size = New System.Drawing.Size(111, 26)
-        Me.lblTotalOriginalKOTAmt.TabIndex = 344
-        Me.lblTotalOriginalKOTAmt.Text = "0.00"
-        Me.lblTotalOriginalKOTAmt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label111
-        '
-        Me.Label111.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label111.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label111.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label111.Location = New System.Drawing.Point(119, 41)
-        Me.Label111.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label111.Name = "Label111"
-        Me.Label111.Size = New System.Drawing.Size(111, 26)
-        Me.Label111.TabIndex = 343
-        Me.Label111.Text = "Original Amt"
-        Me.Label111.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblTotalOriginalQty
-        '
-        Me.lblTotalOriginalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotalOriginalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalOriginalQty.Location = New System.Drawing.Point(8, 65)
-        Me.lblTotalOriginalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblTotalOriginalQty.Name = "lblTotalOriginalQty"
-        Me.lblTotalOriginalQty.Size = New System.Drawing.Size(103, 26)
-        Me.lblTotalOriginalQty.TabIndex = 342
-        Me.lblTotalOriginalQty.Text = "0.00"
-        Me.lblTotalOriginalQty.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label112
-        '
-        Me.Label112.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label112.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label112.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label112.ForeColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Label112.Location = New System.Drawing.Point(8, 40)
-        Me.Label112.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label112.Name = "Label112"
-        Me.Label112.Size = New System.Drawing.Size(103, 26)
-        Me.Label112.TabIndex = 341
-        Me.Label112.Text = "Original Qty"
-        Me.Label112.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblMemID
-        '
-        Me.lblMemID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblMemID.Location = New System.Drawing.Point(28, 164)
-        Me.lblMemID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblMemID.Name = "lblMemID"
-        Me.lblMemID.Size = New System.Drawing.Size(48, 20)
-        Me.lblMemID.TabIndex = 339
-        Me.lblMemID.Text = "Mem_ID"
-        Me.lblMemID.Visible = False
-        '
-        'btnMinus6
-        '
-        Me.btnMinus6.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus6.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus6.ForeColor = System.Drawing.Color.White
-        Me.btnMinus6.Location = New System.Drawing.Point(736, 209)
-        Me.btnMinus6.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus6.Name = "btnMinus6"
-        Me.btnMinus6.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus6.TabIndex = 334
-        Me.btnMinus6.Text = "6"
-        Me.btnMinus6.UseVisualStyleBackColor = False
-        '
-        'btnMinus5
-        '
-        Me.btnMinus5.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus5.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus5.ForeColor = System.Drawing.Color.White
-        Me.btnMinus5.Location = New System.Drawing.Point(673, 209)
-        Me.btnMinus5.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus5.Name = "btnMinus5"
-        Me.btnMinus5.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus5.TabIndex = 333
-        Me.btnMinus5.Text = "5"
-        Me.btnMinus5.UseVisualStyleBackColor = False
-        '
-        'btnMinus4
-        '
-        Me.btnMinus4.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus4.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus4.ForeColor = System.Drawing.Color.White
-        Me.btnMinus4.Location = New System.Drawing.Point(609, 209)
-        Me.btnMinus4.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus4.Name = "btnMinus4"
-        Me.btnMinus4.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus4.TabIndex = 332
-        Me.btnMinus4.Text = "4"
-        Me.btnMinus4.UseVisualStyleBackColor = False
-        '
-        'btnMinus7
-        '
-        Me.btnMinus7.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus7.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus7.ForeColor = System.Drawing.Color.White
-        Me.btnMinus7.Location = New System.Drawing.Point(609, 162)
-        Me.btnMinus7.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus7.Name = "btnMinus7"
-        Me.btnMinus7.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus7.TabIndex = 331
-        Me.btnMinus7.Text = "7"
-        Me.btnMinus7.UseVisualStyleBackColor = False
-        '
-        'btnMinus9
-        '
-        Me.btnMinus9.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus9.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus9.ForeColor = System.Drawing.Color.White
-        Me.btnMinus9.Location = New System.Drawing.Point(736, 163)
-        Me.btnMinus9.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus9.Name = "btnMinus9"
-        Me.btnMinus9.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus9.TabIndex = 330
-        Me.btnMinus9.Text = "9"
-        Me.btnMinus9.UseVisualStyleBackColor = False
-        '
-        'btnMinus8
-        '
-        Me.btnMinus8.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus8.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus8.ForeColor = System.Drawing.Color.White
-        Me.btnMinus8.Location = New System.Drawing.Point(673, 163)
-        Me.btnMinus8.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus8.Name = "btnMinus8"
-        Me.btnMinus8.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus8.TabIndex = 329
-        Me.btnMinus8.Text = "8"
-        Me.btnMinus8.UseVisualStyleBackColor = False
-        '
-        'lblModifiedQty
-        '
-        Me.lblModifiedQty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblModifiedQty.Location = New System.Drawing.Point(43, 238)
-        Me.lblModifiedQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblModifiedQty.Name = "lblModifiedQty"
-        Me.lblModifiedQty.Size = New System.Drawing.Size(48, 20)
-        Me.lblModifiedQty.TabIndex = 316
-        Me.lblModifiedQty.Text = "lblModifiedQty"
-        Me.lblModifiedQty.Visible = False
-        '
-        'lblActualQty
-        '
-        Me.lblActualQty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblActualQty.Location = New System.Drawing.Point(43, 203)
-        Me.lblActualQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblActualQty.Name = "lblActualQty"
-        Me.lblActualQty.Size = New System.Drawing.Size(48, 20)
-        Me.lblActualQty.TabIndex = 315
-        Me.lblActualQty.Text = "lblActualQty"
-        Me.lblActualQty.Visible = False
-        '
-        'btnMinus0
-        '
-        Me.btnMinus0.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus0.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus0.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus0.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus0.ForeColor = System.Drawing.Color.White
-        Me.btnMinus0.Location = New System.Drawing.Point(548, 256)
-        Me.btnMinus0.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus0.Name = "btnMinus0"
-        Me.btnMinus0.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus0.TabIndex = 314
-        Me.btnMinus0.Text = "0"
-        Me.btnMinus0.UseVisualStyleBackColor = False
-        '
-        'btnMinus3
-        '
-        Me.btnMinus3.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus3.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus3.ForeColor = System.Drawing.Color.White
-        Me.btnMinus3.Location = New System.Drawing.Point(736, 255)
-        Me.btnMinus3.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus3.Name = "btnMinus3"
-        Me.btnMinus3.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus3.TabIndex = 313
-        Me.btnMinus3.Text = "3"
-        Me.btnMinus3.UseVisualStyleBackColor = False
-        '
-        'btnMinus2
-        '
-        Me.btnMinus2.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus2.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus2.ForeColor = System.Drawing.Color.White
-        Me.btnMinus2.Location = New System.Drawing.Point(673, 256)
-        Me.btnMinus2.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus2.Name = "btnMinus2"
-        Me.btnMinus2.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus2.TabIndex = 312
-        Me.btnMinus2.Text = "2"
-        Me.btnMinus2.UseVisualStyleBackColor = False
-        '
-        'btnMinus1
-        '
-        Me.btnMinus1.BackColor = System.Drawing.Color.Tomato
-        Me.btnMinus1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMinus1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMinus1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMinus1.ForeColor = System.Drawing.Color.White
-        Me.btnMinus1.Location = New System.Drawing.Point(609, 256)
-        Me.btnMinus1.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnMinus1.Name = "btnMinus1"
-        Me.btnMinus1.Size = New System.Drawing.Size(57, 43)
-        Me.btnMinus1.TabIndex = 311
-        Me.btnMinus1.Text = "1"
-        Me.btnMinus1.UseVisualStyleBackColor = False
-        '
-        'btnVoidKOT
-        '
-        Me.btnVoidKOT.BackColor = System.Drawing.Color.Tomato
-        Me.btnVoidKOT.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnVoidKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnVoidKOT.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVoidKOT.ForeColor = System.Drawing.Color.White
-        Me.btnVoidKOT.Location = New System.Drawing.Point(548, 162)
-        Me.btnVoidKOT.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnVoidKOT.Name = "btnVoidKOT"
-        Me.btnVoidKOT.Size = New System.Drawing.Size(57, 90)
-        Me.btnVoidKOT.TabIndex = 310
-        Me.btnVoidKOT.Text = "VOID KOT"
-        Me.btnVoidKOT.UseVisualStyleBackColor = False
-        '
-        'lblKOTNo_KOTModify
-        '
-        Me.lblKOTNo_KOTModify.AutoSize = True
-        Me.lblKOTNo_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblKOTNo_KOTModify.Location = New System.Drawing.Point(167, 214)
-        Me.lblKOTNo_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblKOTNo_KOTModify.Name = "lblKOTNo_KOTModify"
-        Me.lblKOTNo_KOTModify.Size = New System.Drawing.Size(179, 19)
-        Me.lblKOTNo_KOTModify.TabIndex = 309
-        Me.lblKOTNo_KOTModify.Text = "lblKOTNo_KOTModify"
-        Me.lblKOTNo_KOTModify.Visible = False
-        '
-        'lblYearCode_KOTModify
-        '
-        Me.lblYearCode_KOTModify.AutoSize = True
-        Me.lblYearCode_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblYearCode_KOTModify.Location = New System.Drawing.Point(167, 256)
-        Me.lblYearCode_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblYearCode_KOTModify.Name = "lblYearCode_KOTModify"
-        Me.lblYearCode_KOTModify.Size = New System.Drawing.Size(197, 19)
-        Me.lblYearCode_KOTModify.TabIndex = 309
-        Me.lblYearCode_KOTModify.Text = "lblYearCode_KOTModify"
-        Me.lblYearCode_KOTModify.Visible = False
-        '
-        'lblLocationCode_KOTModify
-        '
-        Me.lblLocationCode_KOTModify.AutoSize = True
-        Me.lblLocationCode_KOTModify.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblLocationCode_KOTModify.Location = New System.Drawing.Point(167, 238)
-        Me.lblLocationCode_KOTModify.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblLocationCode_KOTModify.Name = "lblLocationCode_KOTModify"
-        Me.lblLocationCode_KOTModify.Size = New System.Drawing.Size(231, 19)
-        Me.lblLocationCode_KOTModify.TabIndex = 308
-        Me.lblLocationCode_KOTModify.Text = "lblLocationCode_KOTModify"
-        Me.lblLocationCode_KOTModify.Visible = False
-        '
-        'labelKOTModificationItemDetails
-        '
-        Me.labelKOTModificationItemDetails.AutoSize = True
-        Me.labelKOTModificationItemDetails.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
-        Me.labelKOTModificationItemDetails.Location = New System.Drawing.Point(3, 280)
-        Me.labelKOTModificationItemDetails.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelKOTModificationItemDetails.Name = "labelKOTModificationItemDetails"
-        Me.labelKOTModificationItemDetails.Size = New System.Drawing.Size(103, 20)
-        Me.labelKOTModificationItemDetails.TabIndex = 302
-        Me.labelKOTModificationItemDetails.Text = "KOT Detail"
-        Me.labelKOTModificationItemDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dgKOTItemList
-        '
-        Me.dgKOTItemList.AllowUserToAddRows = False
-        Me.dgKOTItemList.AllowUserToDeleteRows = False
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle14.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgKOTItemList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle14
-        Me.dgKOTItemList.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgKOTItemList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.dgKOTItemList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        Me.dgKOTItemList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgKOTItemList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
-        Me.dgKOTItemList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgKOTItemList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn6})
-        Me.dgKOTItemList.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgKOTItemList.DefaultCellStyle = DataGridViewCellStyle16
-        Me.dgKOTItemList.GridColor = System.Drawing.Color.Chocolate
-        Me.dgKOTItemList.Location = New System.Drawing.Point(5, 303)
-        Me.dgKOTItemList.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgKOTItemList.MultiSelect = False
-        Me.dgKOTItemList.Name = "dgKOTItemList"
-        Me.dgKOTItemList.ReadOnly = True
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle17.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgKOTItemList.RowHeadersDefaultCellStyle = DataGridViewCellStyle17
-        Me.dgKOTItemList.RowHeadersVisible = False
-        Me.dgKOTItemList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.dgKOTItemList.RowTemplate.Height = 40
-        Me.dgKOTItemList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgKOTItemList.Size = New System.Drawing.Size(788, 111)
-        Me.dgKOTItemList.TabIndex = 301
-        Me.dgKOTItemList.TabStop = False
-        '
-        'DataGridViewImageColumn6
-        '
-        Me.DataGridViewImageColumn6.FillWeight = 30.0!
-        Me.DataGridViewImageColumn6.Frozen = True
-        Me.DataGridViewImageColumn6.HeaderText = ""
-        Me.DataGridViewImageColumn6.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
-        Me.DataGridViewImageColumn6.MinimumWidth = 30
-        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
-        Me.DataGridViewImageColumn6.ReadOnly = True
-        Me.DataGridViewImageColumn6.Width = 30
-        '
-        'labelKOTModificationHeader
-        '
-        Me.labelKOTModificationHeader.AutoSize = True
-        Me.labelKOTModificationHeader.Font = New System.Drawing.Font("Lucida Fax", 10.0!)
-        Me.labelKOTModificationHeader.Location = New System.Drawing.Point(3, 5)
-        Me.labelKOTModificationHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.labelKOTModificationHeader.Name = "labelKOTModificationHeader"
-        Me.labelKOTModificationHeader.Size = New System.Drawing.Size(281, 20)
-        Me.labelKOTModificationHeader.TabIndex = 300
-        Me.labelKOTModificationHeader.Text = "KOT belonging to the Table No."
-        Me.labelKOTModificationHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'dgKOTList
-        '
-        Me.dgKOTList.AllowUserToAddRows = False
-        Me.dgKOTList.AllowUserToDeleteRows = False
-        DataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle18.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgKOTList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle18
-        Me.dgKOTList.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgKOTList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.dgKOTList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        Me.dgKOTList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle19.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle19.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle19.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgKOTList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
-        Me.dgKOTList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgKOTList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn3})
-        Me.dgKOTList.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle20.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgKOTList.DefaultCellStyle = DataGridViewCellStyle20
-        Me.dgKOTList.GridColor = System.Drawing.Color.Chocolate
-        Me.dgKOTList.Location = New System.Drawing.Point(5, 27)
-        Me.dgKOTList.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgKOTList.MultiSelect = False
-        Me.dgKOTList.Name = "dgKOTList"
-        Me.dgKOTList.ReadOnly = True
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle21.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgKOTList.RowHeadersDefaultCellStyle = DataGridViewCellStyle21
-        Me.dgKOTList.RowHeadersVisible = False
-        Me.dgKOTList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.dgKOTList.RowTemplate.Height = 40
-        Me.dgKOTList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgKOTList.Size = New System.Drawing.Size(788, 129)
-        Me.dgKOTList.TabIndex = 2
-        Me.dgKOTList.TabStop = False
-        '
-        'DataGridViewImageColumn3
-        '
-        Me.DataGridViewImageColumn3.FillWeight = 30.0!
-        Me.DataGridViewImageColumn3.Frozen = True
-        Me.DataGridViewImageColumn3.HeaderText = ""
-        Me.DataGridViewImageColumn3.Image = Global.FNBManagement.My.Resources.Resources.data_edit1
-        Me.DataGridViewImageColumn3.MinimumWidth = 30
-        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
-        Me.DataGridViewImageColumn3.ReadOnly = True
-        Me.DataGridViewImageColumn3.Width = 30
-        '
         'PanelLocationAndTables
         '
         Me.PanelLocationAndTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -4139,7 +3471,7 @@ Partial Class FrmPOSBilling2N
         Me.PanelLocationAndTables.Location = New System.Drawing.Point(0, 0)
         Me.PanelLocationAndTables.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelLocationAndTables.Name = "PanelLocationAndTables"
-        Me.PanelLocationAndTables.Size = New System.Drawing.Size(800, 518)
+        Me.PanelLocationAndTables.Size = New System.Drawing.Size(1180, 588)
         Me.PanelLocationAndTables.TabIndex = 322
         '
         'PanelTables
@@ -4188,10 +3520,10 @@ Partial Class FrmPOSBilling2N
         Me.PanelTables.Controls.Add(Me.btnTable5)
         Me.PanelTables.Controls.Add(Me.btnTable6)
         Me.PanelTables.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelTables.Location = New System.Drawing.Point(0, 110)
+        Me.PanelTables.Location = New System.Drawing.Point(0, 124)
         Me.PanelTables.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelTables.Name = "PanelTables"
-        Me.PanelTables.Size = New System.Drawing.Size(798, 406)
+        Me.PanelTables.Size = New System.Drawing.Size(1178, 462)
         Me.PanelTables.TabIndex = 10
         '
         'btnTable36
@@ -4201,10 +3533,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable36.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable36.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable36.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable36.Location = New System.Drawing.Point(162, 354)
+        Me.btnTable36.Location = New System.Drawing.Point(162, 402)
         Me.btnTable36.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable36.Name = "btnTable36"
-        Me.btnTable36.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable36.Size = New System.Drawing.Size(155, 55)
         Me.btnTable36.TabIndex = 37
         Me.btnTable36.TabStop = False
         Me.btnTable36.Tag = ""
@@ -4217,10 +3549,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable35.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable35.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable35.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable35.Location = New System.Drawing.Point(3, 354)
+        Me.btnTable35.Location = New System.Drawing.Point(3, 402)
         Me.btnTable35.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable35.Name = "btnTable35"
-        Me.btnTable35.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable35.Size = New System.Drawing.Size(155, 55)
         Me.btnTable35.TabIndex = 36
         Me.btnTable35.TabStop = False
         Me.btnTable35.Tag = ""
@@ -4233,10 +3565,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable39.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable39.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable39.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable39.Location = New System.Drawing.Point(638, 354)
+        Me.btnTable39.Location = New System.Drawing.Point(638, 402)
         Me.btnTable39.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable39.Name = "btnTable39"
-        Me.btnTable39.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable39.Size = New System.Drawing.Size(155, 55)
         Me.btnTable39.TabIndex = 40
         Me.btnTable39.TabStop = False
         Me.btnTable39.Tag = ""
@@ -4249,10 +3581,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable38.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable38.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable38.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable38.Location = New System.Drawing.Point(479, 354)
+        Me.btnTable38.Location = New System.Drawing.Point(479, 402)
         Me.btnTable38.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable38.Name = "btnTable38"
-        Me.btnTable38.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable38.Size = New System.Drawing.Size(155, 55)
         Me.btnTable38.TabIndex = 39
         Me.btnTable38.TabStop = False
         Me.btnTable38.Tag = ""
@@ -4265,10 +3597,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable37.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable37.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable37.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable37.Location = New System.Drawing.Point(321, 354)
+        Me.btnTable37.Location = New System.Drawing.Point(321, 402)
         Me.btnTable37.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable37.Name = "btnTable37"
-        Me.btnTable37.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable37.Size = New System.Drawing.Size(155, 55)
         Me.btnTable37.TabIndex = 38
         Me.btnTable37.TabStop = False
         Me.btnTable37.Tag = ""
@@ -4281,10 +3613,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable28.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable28.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable28.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable28.Location = New System.Drawing.Point(479, 254)
+        Me.btnTable28.Location = New System.Drawing.Point(479, 288)
         Me.btnTable28.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable28.Name = "btnTable28"
-        Me.btnTable28.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable28.Size = New System.Drawing.Size(155, 55)
         Me.btnTable28.TabIndex = 29
         Me.btnTable28.TabStop = False
         Me.btnTable28.Tag = ""
@@ -4297,10 +3629,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable31.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable31.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable31.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable31.Location = New System.Drawing.Point(162, 304)
+        Me.btnTable31.Location = New System.Drawing.Point(162, 345)
         Me.btnTable31.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable31.Name = "btnTable31"
-        Me.btnTable31.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable31.Size = New System.Drawing.Size(155, 55)
         Me.btnTable31.TabIndex = 32
         Me.btnTable31.TabStop = False
         Me.btnTable31.Tag = ""
@@ -4313,10 +3645,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable29.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable29.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable29.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable29.Location = New System.Drawing.Point(638, 254)
+        Me.btnTable29.Location = New System.Drawing.Point(638, 288)
         Me.btnTable29.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable29.Name = "btnTable29"
-        Me.btnTable29.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable29.Size = New System.Drawing.Size(155, 55)
         Me.btnTable29.TabIndex = 30
         Me.btnTable29.TabStop = False
         Me.btnTable29.Tag = ""
@@ -4329,10 +3661,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable30.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable30.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable30.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable30.Location = New System.Drawing.Point(3, 304)
+        Me.btnTable30.Location = New System.Drawing.Point(3, 345)
         Me.btnTable30.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable30.Name = "btnTable30"
-        Me.btnTable30.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable30.Size = New System.Drawing.Size(155, 55)
         Me.btnTable30.TabIndex = 31
         Me.btnTable30.TabStop = False
         Me.btnTable30.Tag = ""
@@ -4345,10 +3677,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable34.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable34.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable34.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable34.Location = New System.Drawing.Point(638, 304)
+        Me.btnTable34.Location = New System.Drawing.Point(638, 345)
         Me.btnTable34.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable34.Name = "btnTable34"
-        Me.btnTable34.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable34.Size = New System.Drawing.Size(155, 55)
         Me.btnTable34.TabIndex = 35
         Me.btnTable34.TabStop = False
         Me.btnTable34.Tag = ""
@@ -4361,10 +3693,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable33.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable33.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable33.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable33.Location = New System.Drawing.Point(479, 304)
+        Me.btnTable33.Location = New System.Drawing.Point(479, 345)
         Me.btnTable33.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable33.Name = "btnTable33"
-        Me.btnTable33.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable33.Size = New System.Drawing.Size(155, 55)
         Me.btnTable33.TabIndex = 34
         Me.btnTable33.TabStop = False
         Me.btnTable33.Tag = ""
@@ -4377,10 +3709,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable32.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable32.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable32.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable32.Location = New System.Drawing.Point(321, 304)
+        Me.btnTable32.Location = New System.Drawing.Point(321, 345)
         Me.btnTable32.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable32.Name = "btnTable32"
-        Me.btnTable32.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable32.Size = New System.Drawing.Size(155, 55)
         Me.btnTable32.TabIndex = 33
         Me.btnTable32.TabStop = False
         Me.btnTable32.Tag = ""
@@ -4393,10 +3725,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable27.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable27.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable27.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable27.Location = New System.Drawing.Point(321, 254)
+        Me.btnTable27.Location = New System.Drawing.Point(321, 288)
         Me.btnTable27.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable27.Name = "btnTable27"
-        Me.btnTable27.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable27.Size = New System.Drawing.Size(155, 55)
         Me.btnTable27.TabIndex = 28
         Me.btnTable27.TabStop = False
         Me.btnTable27.Tag = ""
@@ -4409,10 +3741,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable25.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable25.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable25.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable25.Location = New System.Drawing.Point(3, 254)
+        Me.btnTable25.Location = New System.Drawing.Point(3, 288)
         Me.btnTable25.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable25.Name = "btnTable25"
-        Me.btnTable25.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable25.Size = New System.Drawing.Size(155, 55)
         Me.btnTable25.TabIndex = 26
         Me.btnTable25.TabStop = False
         Me.btnTable25.Tag = ""
@@ -4425,10 +3757,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable26.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable26.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable26.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable26.Location = New System.Drawing.Point(162, 254)
+        Me.btnTable26.Location = New System.Drawing.Point(162, 288)
         Me.btnTable26.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable26.Name = "btnTable26"
-        Me.btnTable26.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable26.Size = New System.Drawing.Size(155, 55)
         Me.btnTable26.TabIndex = 27
         Me.btnTable26.TabStop = False
         Me.btnTable26.Tag = ""
@@ -4441,10 +3773,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable18.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable18.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable18.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable18.Location = New System.Drawing.Point(479, 154)
+        Me.btnTable18.Location = New System.Drawing.Point(479, 174)
         Me.btnTable18.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable18.Name = "btnTable18"
-        Me.btnTable18.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable18.Size = New System.Drawing.Size(155, 55)
         Me.btnTable18.TabIndex = 19
         Me.btnTable18.TabStop = False
         Me.btnTable18.Tag = ""
@@ -4457,10 +3789,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable21.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable21.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable21.Location = New System.Drawing.Point(162, 204)
+        Me.btnTable21.Location = New System.Drawing.Point(162, 231)
         Me.btnTable21.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable21.Name = "btnTable21"
-        Me.btnTable21.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable21.Size = New System.Drawing.Size(155, 55)
         Me.btnTable21.TabIndex = 22
         Me.btnTable21.TabStop = False
         Me.btnTable21.Tag = ""
@@ -4473,10 +3805,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable19.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable19.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable19.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable19.Location = New System.Drawing.Point(638, 154)
+        Me.btnTable19.Location = New System.Drawing.Point(638, 174)
         Me.btnTable19.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable19.Name = "btnTable19"
-        Me.btnTable19.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable19.Size = New System.Drawing.Size(155, 55)
         Me.btnTable19.TabIndex = 20
         Me.btnTable19.TabStop = False
         Me.btnTable19.Tag = ""
@@ -4489,10 +3821,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable20.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable20.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable20.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable20.Location = New System.Drawing.Point(3, 204)
+        Me.btnTable20.Location = New System.Drawing.Point(3, 231)
         Me.btnTable20.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable20.Name = "btnTable20"
-        Me.btnTable20.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable20.Size = New System.Drawing.Size(155, 55)
         Me.btnTable20.TabIndex = 21
         Me.btnTable20.TabStop = False
         Me.btnTable20.Tag = ""
@@ -4505,10 +3837,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable24.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable24.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable24.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable24.Location = New System.Drawing.Point(638, 204)
+        Me.btnTable24.Location = New System.Drawing.Point(638, 231)
         Me.btnTable24.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable24.Name = "btnTable24"
-        Me.btnTable24.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable24.Size = New System.Drawing.Size(155, 55)
         Me.btnTable24.TabIndex = 25
         Me.btnTable24.TabStop = False
         Me.btnTable24.Tag = ""
@@ -4521,10 +3853,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable23.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable23.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable23.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable23.Location = New System.Drawing.Point(479, 204)
+        Me.btnTable23.Location = New System.Drawing.Point(479, 231)
         Me.btnTable23.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable23.Name = "btnTable23"
-        Me.btnTable23.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable23.Size = New System.Drawing.Size(155, 55)
         Me.btnTable23.TabIndex = 24
         Me.btnTable23.TabStop = False
         Me.btnTable23.Tag = ""
@@ -4537,10 +3869,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable22.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable22.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable22.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable22.Location = New System.Drawing.Point(321, 204)
+        Me.btnTable22.Location = New System.Drawing.Point(321, 231)
         Me.btnTable22.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable22.Name = "btnTable22"
-        Me.btnTable22.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable22.Size = New System.Drawing.Size(155, 55)
         Me.btnTable22.TabIndex = 23
         Me.btnTable22.TabStop = False
         Me.btnTable22.Tag = ""
@@ -4553,10 +3885,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable17.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable17.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable17.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable17.Location = New System.Drawing.Point(321, 154)
+        Me.btnTable17.Location = New System.Drawing.Point(321, 174)
         Me.btnTable17.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable17.Name = "btnTable17"
-        Me.btnTable17.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable17.Size = New System.Drawing.Size(155, 55)
         Me.btnTable17.TabIndex = 18
         Me.btnTable17.TabStop = False
         Me.btnTable17.Tag = ""
@@ -4569,10 +3901,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable15.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable15.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable15.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable15.Location = New System.Drawing.Point(3, 154)
+        Me.btnTable15.Location = New System.Drawing.Point(3, 174)
         Me.btnTable15.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable15.Name = "btnTable15"
-        Me.btnTable15.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable15.Size = New System.Drawing.Size(155, 55)
         Me.btnTable15.TabIndex = 16
         Me.btnTable15.TabStop = False
         Me.btnTable15.Tag = ""
@@ -4585,10 +3917,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable16.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable16.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable16.Location = New System.Drawing.Point(162, 154)
+        Me.btnTable16.Location = New System.Drawing.Point(162, 174)
         Me.btnTable16.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable16.Name = "btnTable16"
-        Me.btnTable16.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable16.Size = New System.Drawing.Size(155, 55)
         Me.btnTable16.TabIndex = 17
         Me.btnTable16.TabStop = False
         Me.btnTable16.Tag = ""
@@ -4601,10 +3933,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable8.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable8.Location = New System.Drawing.Point(479, 54)
+        Me.btnTable8.Location = New System.Drawing.Point(479, 60)
         Me.btnTable8.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable8.Name = "btnTable8"
-        Me.btnTable8.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable8.Size = New System.Drawing.Size(155, 55)
         Me.btnTable8.TabIndex = 9
         Me.btnTable8.TabStop = False
         Me.btnTable8.Tag = ""
@@ -4617,10 +3949,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable11.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable11.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable11.Location = New System.Drawing.Point(162, 104)
+        Me.btnTable11.Location = New System.Drawing.Point(162, 117)
         Me.btnTable11.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable11.Name = "btnTable11"
-        Me.btnTable11.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable11.Size = New System.Drawing.Size(155, 55)
         Me.btnTable11.TabIndex = 12
         Me.btnTable11.TabStop = False
         Me.btnTable11.Tag = ""
@@ -4633,10 +3965,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable9.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable9.Location = New System.Drawing.Point(638, 54)
+        Me.btnTable9.Location = New System.Drawing.Point(638, 60)
         Me.btnTable9.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable9.Name = "btnTable9"
-        Me.btnTable9.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable9.Size = New System.Drawing.Size(155, 55)
         Me.btnTable9.TabIndex = 10
         Me.btnTable9.TabStop = False
         Me.btnTable9.Tag = ""
@@ -4649,10 +3981,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable10.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable10.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable10.Location = New System.Drawing.Point(3, 104)
+        Me.btnTable10.Location = New System.Drawing.Point(3, 117)
         Me.btnTable10.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable10.Name = "btnTable10"
-        Me.btnTable10.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable10.Size = New System.Drawing.Size(155, 55)
         Me.btnTable10.TabIndex = 11
         Me.btnTable10.TabStop = False
         Me.btnTable10.Tag = ""
@@ -4665,10 +3997,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable1.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable1.Location = New System.Drawing.Point(3, 4)
+        Me.btnTable1.Location = New System.Drawing.Point(3, 3)
         Me.btnTable1.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable1.Name = "btnTable1"
-        Me.btnTable1.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable1.Size = New System.Drawing.Size(155, 55)
         Me.btnTable1.TabIndex = 0
         Me.btnTable1.TabStop = False
         Me.btnTable1.Tag = ""
@@ -4681,10 +4013,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable14.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable14.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable14.Location = New System.Drawing.Point(638, 104)
+        Me.btnTable14.Location = New System.Drawing.Point(638, 117)
         Me.btnTable14.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable14.Name = "btnTable14"
-        Me.btnTable14.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable14.Size = New System.Drawing.Size(155, 55)
         Me.btnTable14.TabIndex = 15
         Me.btnTable14.TabStop = False
         Me.btnTable14.Tag = ""
@@ -4697,10 +4029,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable2.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable2.Location = New System.Drawing.Point(162, 4)
+        Me.btnTable2.Location = New System.Drawing.Point(162, 3)
         Me.btnTable2.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable2.Name = "btnTable2"
-        Me.btnTable2.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable2.Size = New System.Drawing.Size(155, 55)
         Me.btnTable2.TabIndex = 1
         Me.btnTable2.TabStop = False
         Me.btnTable2.Tag = ""
@@ -4713,10 +4045,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable13.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable13.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable13.Location = New System.Drawing.Point(479, 104)
+        Me.btnTable13.Location = New System.Drawing.Point(479, 117)
         Me.btnTable13.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable13.Name = "btnTable13"
-        Me.btnTable13.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable13.Size = New System.Drawing.Size(155, 55)
         Me.btnTable13.TabIndex = 14
         Me.btnTable13.TabStop = False
         Me.btnTable13.Tag = ""
@@ -4729,10 +4061,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable3.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable3.Location = New System.Drawing.Point(321, 4)
+        Me.btnTable3.Location = New System.Drawing.Point(321, 3)
         Me.btnTable3.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable3.Name = "btnTable3"
-        Me.btnTable3.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable3.Size = New System.Drawing.Size(155, 55)
         Me.btnTable3.TabIndex = 2
         Me.btnTable3.TabStop = False
         Me.btnTable3.Tag = ""
@@ -4745,10 +4077,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable12.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable12.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable12.Location = New System.Drawing.Point(321, 104)
+        Me.btnTable12.Location = New System.Drawing.Point(321, 117)
         Me.btnTable12.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable12.Name = "btnTable12"
-        Me.btnTable12.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable12.Size = New System.Drawing.Size(155, 55)
         Me.btnTable12.TabIndex = 13
         Me.btnTable12.TabStop = False
         Me.btnTable12.Tag = ""
@@ -4761,10 +4093,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable4.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable4.Location = New System.Drawing.Point(479, 4)
+        Me.btnTable4.Location = New System.Drawing.Point(479, 3)
         Me.btnTable4.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable4.Name = "btnTable4"
-        Me.btnTable4.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable4.Size = New System.Drawing.Size(155, 55)
         Me.btnTable4.TabIndex = 3
         Me.btnTable4.TabStop = False
         Me.btnTable4.Tag = ""
@@ -4777,10 +4109,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable7.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable7.Location = New System.Drawing.Point(321, 54)
+        Me.btnTable7.Location = New System.Drawing.Point(321, 60)
         Me.btnTable7.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable7.Name = "btnTable7"
-        Me.btnTable7.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable7.Size = New System.Drawing.Size(155, 55)
         Me.btnTable7.TabIndex = 8
         Me.btnTable7.TabStop = False
         Me.btnTable7.Tag = ""
@@ -4793,10 +4125,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable5.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable5.Location = New System.Drawing.Point(3, 54)
+        Me.btnTable5.Location = New System.Drawing.Point(3, 60)
         Me.btnTable5.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable5.Name = "btnTable5"
-        Me.btnTable5.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable5.Size = New System.Drawing.Size(155, 55)
         Me.btnTable5.TabIndex = 6
         Me.btnTable5.TabStop = False
         Me.btnTable5.Tag = ""
@@ -4809,10 +4141,10 @@ Partial Class FrmPOSBilling2N
         Me.btnTable6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTable6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTable6.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnTable6.Location = New System.Drawing.Point(162, 54)
+        Me.btnTable6.Location = New System.Drawing.Point(162, 60)
         Me.btnTable6.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTable6.Name = "btnTable6"
-        Me.btnTable6.Size = New System.Drawing.Size(155, 48)
+        Me.btnTable6.Size = New System.Drawing.Size(155, 55)
         Me.btnTable6.TabIndex = 7
         Me.btnTable6.TabStop = False
         Me.btnTable6.Tag = ""
@@ -4836,7 +4168,7 @@ Partial Class FrmPOSBilling2N
         Me.PanelLocationTables.Location = New System.Drawing.Point(0, 0)
         Me.PanelLocationTables.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelLocationTables.Name = "PanelLocationTables"
-        Me.PanelLocationTables.Size = New System.Drawing.Size(798, 110)
+        Me.PanelLocationTables.Size = New System.Drawing.Size(1178, 124)
         Me.PanelLocationTables.TabIndex = 9
         '
         'btnBillingLocation1
@@ -4849,7 +4181,7 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation1.Location = New System.Drawing.Point(3, 2)
         Me.btnBillingLocation1.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation1.Name = "btnBillingLocation1"
-        Me.btnBillingLocation1.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation1.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation1.TabIndex = 0
         Me.btnBillingLocation1.TabStop = False
         Me.btnBillingLocation1.Tag = ""
@@ -4865,7 +4197,7 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation2.Location = New System.Drawing.Point(162, 2)
         Me.btnBillingLocation2.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation2.Name = "btnBillingLocation2"
-        Me.btnBillingLocation2.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation2.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation2.TabIndex = 1
         Me.btnBillingLocation2.TabStop = False
         Me.btnBillingLocation2.Tag = ""
@@ -4881,7 +4213,7 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation3.Location = New System.Drawing.Point(321, 2)
         Me.btnBillingLocation3.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation3.Name = "btnBillingLocation3"
-        Me.btnBillingLocation3.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation3.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation3.TabIndex = 2
         Me.btnBillingLocation3.TabStop = False
         Me.btnBillingLocation3.Tag = ""
@@ -4894,10 +4226,10 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBillingLocation8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBillingLocation8.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnBillingLocation8.Location = New System.Drawing.Point(479, 56)
+        Me.btnBillingLocation8.Location = New System.Drawing.Point(479, 62)
         Me.btnBillingLocation8.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation8.Name = "btnBillingLocation8"
-        Me.btnBillingLocation8.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation8.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation8.TabIndex = 8
         Me.btnBillingLocation8.TabStop = False
         Me.btnBillingLocation8.Tag = ""
@@ -4913,7 +4245,7 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation4.Location = New System.Drawing.Point(479, 2)
         Me.btnBillingLocation4.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation4.Name = "btnBillingLocation4"
-        Me.btnBillingLocation4.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation4.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation4.TabIndex = 3
         Me.btnBillingLocation4.TabStop = False
         Me.btnBillingLocation4.Tag = ""
@@ -4926,10 +4258,10 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBillingLocation7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBillingLocation7.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnBillingLocation7.Location = New System.Drawing.Point(321, 56)
+        Me.btnBillingLocation7.Location = New System.Drawing.Point(321, 62)
         Me.btnBillingLocation7.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation7.Name = "btnBillingLocation7"
-        Me.btnBillingLocation7.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation7.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation7.TabIndex = 7
         Me.btnBillingLocation7.TabStop = False
         Me.btnBillingLocation7.Tag = ""
@@ -4942,10 +4274,10 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBillingLocation5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBillingLocation5.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnBillingLocation5.Location = New System.Drawing.Point(3, 56)
+        Me.btnBillingLocation5.Location = New System.Drawing.Point(3, 62)
         Me.btnBillingLocation5.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation5.Name = "btnBillingLocation5"
-        Me.btnBillingLocation5.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation5.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation5.TabIndex = 5
         Me.btnBillingLocation5.TabStop = False
         Me.btnBillingLocation5.Tag = ""
@@ -4958,14 +4290,436 @@ Partial Class FrmPOSBilling2N
         Me.btnBillingLocation6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnBillingLocation6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBillingLocation6.Font = New System.Drawing.Font("Arial Narrow", 12.25!, System.Drawing.FontStyle.Bold)
-        Me.btnBillingLocation6.Location = New System.Drawing.Point(162, 56)
+        Me.btnBillingLocation6.Location = New System.Drawing.Point(162, 62)
         Me.btnBillingLocation6.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBillingLocation6.Name = "btnBillingLocation6"
-        Me.btnBillingLocation6.Size = New System.Drawing.Size(155, 50)
+        Me.btnBillingLocation6.Size = New System.Drawing.Size(155, 58)
         Me.btnBillingLocation6.TabIndex = 6
         Me.btnBillingLocation6.TabStop = False
         Me.btnBillingLocation6.Tag = ""
         Me.btnBillingLocation6.UseVisualStyleBackColor = False
+        '
+        'PanelFooter
+        '
+        Me.PanelFooter.BackColor = System.Drawing.Color.Transparent
+        Me.PanelFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelFooter.Controls.Add(Me.btnRefresh)
+        Me.PanelFooter.Controls.Add(Me.btnClose)
+        Me.PanelFooter.Controls.Add(Me.btnHistory)
+        Me.PanelFooter.Controls.Add(Me.btnShiftKOT)
+        Me.PanelFooter.Controls.Add(Me.btnSettleBillHomePage)
+        Me.PanelFooter.Controls.Add(Me.btnModifiers)
+        Me.PanelFooter.Controls.Add(Me.btnModifyKOT)
+        Me.PanelFooter.Controls.Add(Me.btnShowTables)
+        Me.PanelFooter.Controls.Add(Me.btnShiftTable)
+        Me.PanelFooter.Controls.Add(Me.btnEstimate)
+        Me.PanelFooter.Controls.Add(Me.btnSaveNSettle)
+        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelFooter.Location = New System.Drawing.Point(10, 640)
+        Me.PanelFooter.Name = "PanelFooter"
+        Me.PanelFooter.Size = New System.Drawing.Size(1180, 50)
+        Me.PanelFooter.TabIndex = 312
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.AutoSize = True
+        Me.btnRefresh.BackColor = System.Drawing.Color.Tomato
+        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnRefresh.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnRefresh.Location = New System.Drawing.Point(954, 6)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(108, 36)
+        Me.btnRefresh.TabIndex = 319
+        Me.btnRefresh.Text = "REFRESH"
+        Me.btnRefresh.UseVisualStyleBackColor = False
+        '
+        'btnClose
+        '
+        Me.btnClose.AutoSize = True
+        Me.btnClose.BackColor = System.Drawing.Color.Tomato
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnClose.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnClose.Location = New System.Drawing.Point(1067, 6)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(109, 36)
+        Me.btnClose.TabIndex = 320
+        Me.btnClose.Text = "CLOSE"
+        Me.btnClose.UseVisualStyleBackColor = False
+        '
+        'btnHistory
+        '
+        Me.btnHistory.AutoSize = True
+        Me.btnHistory.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnHistory.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnHistory.Location = New System.Drawing.Point(831, 6)
+        Me.btnHistory.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHistory.Name = "btnHistory"
+        Me.btnHistory.Size = New System.Drawing.Size(118, 36)
+        Me.btnHistory.TabIndex = 318
+        Me.btnHistory.Text = "HISTORY"
+        Me.btnHistory.UseVisualStyleBackColor = False
+        '
+        'btnShiftKOT
+        '
+        Me.btnShiftKOT.AutoSize = True
+        Me.btnShiftKOT.BackColor = System.Drawing.Color.Tomato
+        Me.btnShiftKOT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnShiftKOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnShiftKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnShiftKOT.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnShiftKOT.Location = New System.Drawing.Point(560, 6)
+        Me.btnShiftKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnShiftKOT.Name = "btnShiftKOT"
+        Me.btnShiftKOT.Size = New System.Drawing.Size(125, 36)
+        Me.btnShiftKOT.TabIndex = 317
+        Me.btnShiftKOT.Text = "SHIFT KOT"
+        Me.btnShiftKOT.UseVisualStyleBackColor = False
+        '
+        'btnSettleBillHomePage
+        '
+        Me.btnSettleBillHomePage.AutoSize = True
+        Me.btnSettleBillHomePage.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnSettleBillHomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnSettleBillHomePage.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSettleBillHomePage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSettleBillHomePage.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSettleBillHomePage.Location = New System.Drawing.Point(288, 6)
+        Me.btnSettleBillHomePage.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSettleBillHomePage.Name = "btnSettleBillHomePage"
+        Me.btnSettleBillHomePage.Size = New System.Drawing.Size(128, 36)
+        Me.btnSettleBillHomePage.TabIndex = 312
+        Me.btnSettleBillHomePage.Text = "SETTLE BILL"
+        Me.btnSettleBillHomePage.UseVisualStyleBackColor = False
+        '
+        'btnModifiers
+        '
+        Me.btnModifiers.AutoSize = True
+        Me.btnModifiers.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnModifiers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnModifiers.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModifiers.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnModifiers.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnModifiers.Location = New System.Drawing.Point(155, 6)
+        Me.btnModifiers.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnModifiers.Name = "btnModifiers"
+        Me.btnModifiers.Size = New System.Drawing.Size(128, 36)
+        Me.btnModifiers.TabIndex = 316
+        Me.btnModifiers.Text = "MODIFIERS"
+        Me.btnModifiers.UseVisualStyleBackColor = False
+        '
+        'btnModifyKOT
+        '
+        Me.btnModifyKOT.AutoSize = True
+        Me.btnModifyKOT.BackColor = System.Drawing.Color.Tomato
+        Me.btnModifyKOT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnModifyKOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModifyKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnModifyKOT.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnModifyKOT.Location = New System.Drawing.Point(690, 6)
+        Me.btnModifyKOT.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnModifyKOT.Name = "btnModifyKOT"
+        Me.btnModifyKOT.Size = New System.Drawing.Size(136, 36)
+        Me.btnModifyKOT.TabIndex = 315
+        Me.btnModifyKOT.Text = "MODIFY KOT"
+        Me.btnModifyKOT.UseVisualStyleBackColor = False
+        '
+        'btnShowTables
+        '
+        Me.btnShowTables.AutoSize = True
+        Me.btnShowTables.BackColor = System.Drawing.Color.Blue
+        Me.btnShowTables.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnShowTables.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnShowTables.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnShowTables.ForeColor = System.Drawing.Color.White
+        Me.btnShowTables.Location = New System.Drawing.Point(4, 6)
+        Me.btnShowTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnShowTables.Name = "btnShowTables"
+        Me.btnShowTables.Size = New System.Drawing.Size(146, 36)
+        Me.btnShowTables.TabIndex = 310
+        Me.btnShowTables.Text = "SHOW TABLES"
+        Me.btnShowTables.UseVisualStyleBackColor = False
+        '
+        'PanelLine
+        '
+        Me.PanelLine.BackColor = System.Drawing.Color.Gray
+        Me.PanelLine.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelLine.ForeColor = System.Drawing.Color.Black
+        Me.PanelLine.Location = New System.Drawing.Point(10, 50)
+        Me.PanelLine.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelLine.Name = "PanelLine"
+        Me.PanelLine.Size = New System.Drawing.Size(1180, 2)
+        Me.PanelLine.TabIndex = 312
+        '
+        'LabelHeader
+        '
+        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LabelHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LabelHeader.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.LabelHeader.ForeColor = System.Drawing.Color.Silver
+        Me.LabelHeader.Location = New System.Drawing.Point(10, 10)
+        Me.LabelHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelHeader.Name = "LabelHeader"
+        Me.LabelHeader.Size = New System.Drawing.Size(1180, 40)
+        Me.LabelHeader.TabIndex = 311
+        Me.LabelHeader.Text = "POS BILLING SYSTEM"
+        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PanelModifiers
+        '
+        Me.PanelModifiers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelModifiers.Controls.Add(Me.btnItemModifierOK)
+        Me.PanelModifiers.Controls.Add(Me.btnDismiss)
+        Me.PanelModifiers.Controls.Add(Me.btnClear)
+        Me.PanelModifiers.Controls.Add(Me.txtKOTRemarks)
+        Me.PanelModifiers.Controls.Add(Me.LabelItemModifier)
+        Me.PanelModifiers.Controls.Add(Me.dgModifiers)
+        Me.PanelModifiers.Location = New System.Drawing.Point(14, 52)
+        Me.PanelModifiers.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelModifiers.Name = "PanelModifiers"
+        Me.PanelModifiers.Size = New System.Drawing.Size(379, 588)
+        Me.PanelModifiers.TabIndex = 320
+        '
+        'btnItemModifierOK
+        '
+        Me.btnItemModifierOK.AutoSize = True
+        Me.btnItemModifierOK.BackColor = System.Drawing.Color.Yellow
+        Me.btnItemModifierOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnItemModifierOK.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnItemModifierOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnItemModifierOK.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnItemModifierOK.Location = New System.Drawing.Point(255, 531)
+        Me.btnItemModifierOK.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnItemModifierOK.Name = "btnItemModifierOK"
+        Me.btnItemModifierOK.Size = New System.Drawing.Size(114, 48)
+        Me.btnItemModifierOK.TabIndex = 326
+        Me.btnItemModifierOK.Text = "OK"
+        Me.btnItemModifierOK.UseVisualStyleBackColor = False
+        '
+        'btnDismiss
+        '
+        Me.btnDismiss.AutoSize = True
+        Me.btnDismiss.BackColor = System.Drawing.Color.Yellow
+        Me.btnDismiss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnDismiss.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDismiss.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnDismiss.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDismiss.Location = New System.Drawing.Point(129, 532)
+        Me.btnDismiss.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDismiss.Name = "btnDismiss"
+        Me.btnDismiss.Size = New System.Drawing.Size(118, 48)
+        Me.btnDismiss.TabIndex = 325
+        Me.btnDismiss.Text = "DISMISS"
+        Me.btnDismiss.UseVisualStyleBackColor = False
+        '
+        'btnClear
+        '
+        Me.btnClear.AutoSize = True
+        Me.btnClear.BackColor = System.Drawing.Color.Yellow
+        Me.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnClear.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnClear.Location = New System.Drawing.Point(9, 531)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(112, 48)
+        Me.btnClear.TabIndex = 324
+        Me.btnClear.Text = "CLEAR"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'txtKOTRemarks
+        '
+        Me.txtKOTRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtKOTRemarks.Font = New System.Drawing.Font("Lucida Fax", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.txtKOTRemarks.Location = New System.Drawing.Point(3, 432)
+        Me.txtKOTRemarks.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtKOTRemarks.Multiline = True
+        Me.txtKOTRemarks.Name = "txtKOTRemarks"
+        Me.txtKOTRemarks.Size = New System.Drawing.Size(370, 93)
+        Me.txtKOTRemarks.TabIndex = 323
+        Me.txtKOTRemarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'LabelItemModifier
+        '
+        Me.LabelItemModifier.BackColor = System.Drawing.Color.Teal
+        Me.LabelItemModifier.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LabelItemModifier.Font = New System.Drawing.Font("Lucida Fax", 12.75!, System.Drawing.FontStyle.Bold)
+        Me.LabelItemModifier.ForeColor = System.Drawing.Color.White
+        Me.LabelItemModifier.Location = New System.Drawing.Point(0, 0)
+        Me.LabelItemModifier.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelItemModifier.Name = "LabelItemModifier"
+        Me.LabelItemModifier.Size = New System.Drawing.Size(377, 36)
+        Me.LabelItemModifier.TabIndex = 322
+        Me.LabelItemModifier.Text = "ITEM MODIERS"
+        Me.LabelItemModifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'dgModifiers
+        '
+        Me.dgModifiers.AllowUserToAddRows = False
+        Me.dgModifiers.AllowUserToDeleteRows = False
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle17.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgModifiers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
+        Me.dgModifiers.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgModifiers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgModifiers.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgModifiers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
+        Me.dgModifiers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgModifiers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn5})
+        Me.dgModifiers.Cursor = System.Windows.Forms.Cursors.Default
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgModifiers.DefaultCellStyle = DataGridViewCellStyle19
+        Me.dgModifiers.GridColor = System.Drawing.Color.Chocolate
+        Me.dgModifiers.Location = New System.Drawing.Point(5, 45)
+        Me.dgModifiers.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgModifiers.MultiSelect = False
+        Me.dgModifiers.Name = "dgModifiers"
+        Me.dgModifiers.ReadOnly = True
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle20.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgModifiers.RowHeadersDefaultCellStyle = DataGridViewCellStyle20
+        Me.dgModifiers.RowHeadersVisible = False
+        Me.dgModifiers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgModifiers.RowTemplate.Height = 40
+        Me.dgModifiers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgModifiers.Size = New System.Drawing.Size(367, 382)
+        Me.dgModifiers.TabIndex = 15
+        Me.dgModifiers.TabStop = False
+        '
+        'DataGridViewImageColumn5
+        '
+        Me.DataGridViewImageColumn5.FillWeight = 50.0!
+        Me.DataGridViewImageColumn5.Frozen = True
+        Me.DataGridViewImageColumn5.HeaderText = ""
+        Me.DataGridViewImageColumn5.Image = Global.FNBManagement.My.Resources.Resources.check2
+        Me.DataGridViewImageColumn5.MinimumWidth = 50
+        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
+        Me.DataGridViewImageColumn5.ReadOnly = True
+        Me.DataGridViewImageColumn5.Width = 50
+        '
+        'PanelSearchItem
+        '
+        Me.PanelSearchItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PanelSearchItem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelSearchItem.Controls.Add(Me.btnCancelMemberSearch)
+        Me.PanelSearchItem.Controls.Add(Me.txtSearchItemCode)
+        Me.PanelSearchItem.Controls.Add(Me.Label155)
+        Me.PanelSearchItem.Controls.Add(Me.Label156)
+        Me.PanelSearchItem.Controls.Add(Me.txtSearchItemName)
+        Me.PanelSearchItem.Controls.Add(Me.dgSearchItem)
+        Me.PanelSearchItem.Location = New System.Drawing.Point(257, 159)
+        Me.PanelSearchItem.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelSearchItem.Name = "PanelSearchItem"
+        Me.PanelSearchItem.Size = New System.Drawing.Size(650, 382)
+        Me.PanelSearchItem.TabIndex = 323
+        '
+        'btnCancelMemberSearch
+        '
+        Me.btnCancelMemberSearch.BackgroundImage = Global.FNBManagement.My.Resources.Resources.delete1
+        Me.btnCancelMemberSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnCancelMemberSearch.Location = New System.Drawing.Point(597, 0)
+        Me.btnCancelMemberSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancelMemberSearch.Name = "btnCancelMemberSearch"
+        Me.btnCancelMemberSearch.Size = New System.Drawing.Size(41, 30)
+        Me.btnCancelMemberSearch.TabIndex = 4
+        Me.btnCancelMemberSearch.UseVisualStyleBackColor = True
+        '
+        'txtSearchItemCode
+        '
+        Me.txtSearchItemCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtSearchItemCode.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearchItemCode.Location = New System.Drawing.Point(12, 31)
+        Me.txtSearchItemCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSearchItemCode.MaxLength = 10
+        Me.txtSearchItemCode.Name = "txtSearchItemCode"
+        Me.txtSearchItemCode.Size = New System.Drawing.Size(103, 25)
+        Me.txtSearchItemCode.TabIndex = 1
+        '
+        'Label155
+        '
+        Me.Label155.AutoSize = True
+        Me.Label155.BackColor = System.Drawing.Color.Transparent
+        Me.Label155.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label155.Location = New System.Drawing.Point(16, 9)
+        Me.Label155.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label155.Name = "Label155"
+        Me.Label155.Size = New System.Drawing.Size(85, 17)
+        Me.Label155.TabIndex = 0
+        Me.Label155.Text = "Item Code"
+        '
+        'Label156
+        '
+        Me.Label156.AutoSize = True
+        Me.Label156.BackColor = System.Drawing.Color.Transparent
+        Me.Label156.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label156.Location = New System.Drawing.Point(129, 9)
+        Me.Label156.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label156.Name = "Label156"
+        Me.Label156.Size = New System.Drawing.Size(89, 17)
+        Me.Label156.TabIndex = 2
+        Me.Label156.Text = "Item Name"
+        '
+        'txtSearchItemName
+        '
+        Me.txtSearchItemName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtSearchItemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearchItemName.Location = New System.Drawing.Point(125, 30)
+        Me.txtSearchItemName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSearchItemName.Name = "txtSearchItemName"
+        Me.txtSearchItemName.Size = New System.Drawing.Size(512, 25)
+        Me.txtSearchItemName.TabIndex = 3
+        '
+        'dgSearchItem
+        '
+        Me.dgSearchItem.AllowUserToAddRows = False
+        Me.dgSearchItem.AllowUserToDeleteRows = False
+        Me.dgSearchItem.BackgroundColor = System.Drawing.Color.LightGray
+        Me.dgSearchItem.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgSearchItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgSearchItem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.dgSearchItem.Location = New System.Drawing.Point(8, 64)
+        Me.dgSearchItem.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgSearchItem.MultiSelect = False
+        Me.dgSearchItem.Name = "dgSearchItem"
+        Me.dgSearchItem.ReadOnly = True
+        Me.dgSearchItem.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgSearchItem.RowHeadersWidth = 20
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.dgSearchItem.RowsDefaultCellStyle = DataGridViewCellStyle21
+        Me.dgSearchItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgSearchItem.Size = New System.Drawing.Size(631, 308)
+        Me.dgSearchItem.TabIndex = 5
+        Me.dgSearchItem.TabStop = False
         '
         'PanelClosedBills
         '
@@ -4981,10 +4735,10 @@ Partial Class FrmPOSBilling2N
         Me.PanelClosedBills.Controls.Add(Me.Label10)
         Me.PanelClosedBills.Controls.Add(Me.cmbCashier)
         Me.PanelClosedBills.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelClosedBills.Location = New System.Drawing.Point(10, 52)
+        Me.PanelClosedBills.Location = New System.Drawing.Point(390, 52)
         Me.PanelClosedBills.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelClosedBills.Name = "PanelClosedBills"
-        Me.PanelClosedBills.Size = New System.Drawing.Size(380, 518)
+        Me.PanelClosedBills.Size = New System.Drawing.Size(380, 588)
         Me.PanelClosedBills.TabIndex = 317
         '
         'dgHistory
@@ -5020,7 +4774,7 @@ Partial Class FrmPOSBilling2N
         DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgHistory.DefaultCellStyle = DataGridViewCellStyle24
         Me.dgHistory.GridColor = System.Drawing.Color.Chocolate
-        Me.dgHistory.Location = New System.Drawing.Point(3, 119)
+        Me.dgHistory.Location = New System.Drawing.Point(2, 119)
         Me.dgHistory.Margin = New System.Windows.Forms.Padding(4)
         Me.dgHistory.MultiSelect = False
         Me.dgHistory.Name = "dgHistory"
@@ -5038,7 +4792,7 @@ Partial Class FrmPOSBilling2N
         Me.dgHistory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgHistory.RowTemplate.Height = 40
         Me.dgHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgHistory.Size = New System.Drawing.Size(373, 394)
+        Me.dgHistory.Size = New System.Drawing.Size(373, 465)
         Me.dgHistory.TabIndex = 8
         Me.dgHistory.TabStop = False
         '
@@ -5115,7 +4869,7 @@ Partial Class FrmPOSBilling2N
         '
         Me.Label46.AutoSize = True
         Me.Label46.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label46.Location = New System.Drawing.Point(3, 89)
+        Me.Label46.Location = New System.Drawing.Point(3, 87)
         Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(56, 20)
@@ -5126,7 +4880,7 @@ Partial Class FrmPOSBilling2N
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label12.Location = New System.Drawing.Point(3, 52)
+        Me.Label12.Location = New System.Drawing.Point(3, 50)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(86, 20)
@@ -5150,7 +4904,7 @@ Partial Class FrmPOSBilling2N
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Label10.Location = New System.Drawing.Point(3, 15)
+        Me.Label10.Location = New System.Drawing.Point(3, 14)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(77, 20)
@@ -5221,16 +4975,17 @@ Partial Class FrmPOSBilling2N
         Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeOpeningAmount)
         Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeClosingStr)
         Me.PanelSettleBill.Controls.Add(Me.labelBillPayModeOpeningStr)
-        Me.PanelSettleBill.Location = New System.Drawing.Point(10, 10)
+        Me.PanelSettleBill.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelSettleBill.Location = New System.Drawing.Point(10, 52)
         Me.PanelSettleBill.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelSettleBill.Name = "PanelSettleBill"
-        Me.PanelSettleBill.Size = New System.Drawing.Size(380, 680)
+        Me.PanelSettleBill.Size = New System.Drawing.Size(380, 588)
         Me.PanelSettleBill.TabIndex = 1
         '
         'txtDiscFoodAmt
         '
         Me.txtDiscFoodAmt.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDiscFoodAmt.Location = New System.Drawing.Point(311, 196)
+        Me.txtDiscFoodAmt.Location = New System.Drawing.Point(311, 217)
         Me.txtDiscFoodAmt.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiscFoodAmt.Name = "txtDiscFoodAmt"
         Me.txtDiscFoodAmt.Size = New System.Drawing.Size(62, 27)
@@ -5240,7 +4995,7 @@ Partial Class FrmPOSBilling2N
         'txtDiscNonAlcoholicAmt
         '
         Me.txtDiscNonAlcoholicAmt.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDiscNonAlcoholicAmt.Location = New System.Drawing.Point(311, 166)
+        Me.txtDiscNonAlcoholicAmt.Location = New System.Drawing.Point(311, 187)
         Me.txtDiscNonAlcoholicAmt.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiscNonAlcoholicAmt.Name = "txtDiscNonAlcoholicAmt"
         Me.txtDiscNonAlcoholicAmt.Size = New System.Drawing.Size(62, 27)
@@ -5250,7 +5005,7 @@ Partial Class FrmPOSBilling2N
         'txtDiscAlcoholicAmt
         '
         Me.txtDiscAlcoholicAmt.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDiscAlcoholicAmt.Location = New System.Drawing.Point(311, 136)
+        Me.txtDiscAlcoholicAmt.Location = New System.Drawing.Point(311, 157)
         Me.txtDiscAlcoholicAmt.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiscAlcoholicAmt.Name = "txtDiscAlcoholicAmt"
         Me.txtDiscAlcoholicAmt.Size = New System.Drawing.Size(62, 27)
@@ -5262,10 +5017,10 @@ Partial Class FrmPOSBilling2N
         Me.lblCitizenType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCitizenType.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCitizenType.ForeColor = System.Drawing.Color.Black
-        Me.lblCitizenType.Location = New System.Drawing.Point(247, 112)
+        Me.lblCitizenType.Location = New System.Drawing.Point(247, 123)
         Me.lblCitizenType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCitizenType.Name = "lblCitizenType"
-        Me.lblCitizenType.Size = New System.Drawing.Size(125, 20)
+        Me.lblCitizenType.Size = New System.Drawing.Size(125, 28)
         Me.lblCitizenType.TabIndex = 6
         Me.lblCitizenType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -5274,7 +5029,7 @@ Partial Class FrmPOSBilling2N
         Me.Label48.AutoSize = True
         Me.Label48.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label48.ForeColor = System.Drawing.Color.Black
-        Me.Label48.Location = New System.Drawing.Point(3, 113)
+        Me.Label48.Location = New System.Drawing.Point(3, 131)
         Me.Label48.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(102, 16)
@@ -5287,7 +5042,7 @@ Partial Class FrmPOSBilling2N
         Me.lblDiscFood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblDiscFood.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDiscFood.ForeColor = System.Drawing.Color.Black
-        Me.lblDiscFood.Location = New System.Drawing.Point(151, 348)
+        Me.lblDiscFood.Location = New System.Drawing.Point(151, 344)
         Me.lblDiscFood.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDiscFood.Name = "lblDiscFood"
         Me.lblDiscFood.Size = New System.Drawing.Size(77, 24)
@@ -5301,7 +5056,7 @@ Partial Class FrmPOSBilling2N
         Me.lblDiscNonAlcoholic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblDiscNonAlcoholic.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDiscNonAlcoholic.ForeColor = System.Drawing.Color.Black
-        Me.lblDiscNonAlcoholic.Location = New System.Drawing.Point(151, 302)
+        Me.lblDiscNonAlcoholic.Location = New System.Drawing.Point(151, 321)
         Me.lblDiscNonAlcoholic.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDiscNonAlcoholic.Name = "lblDiscNonAlcoholic"
         Me.lblDiscNonAlcoholic.Size = New System.Drawing.Size(77, 24)
@@ -5315,7 +5070,7 @@ Partial Class FrmPOSBilling2N
         Me.lblDiscAlcoholic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblDiscAlcoholic.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDiscAlcoholic.ForeColor = System.Drawing.Color.Black
-        Me.lblDiscAlcoholic.Location = New System.Drawing.Point(151, 277)
+        Me.lblDiscAlcoholic.Location = New System.Drawing.Point(151, 298)
         Me.lblDiscAlcoholic.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDiscAlcoholic.Name = "lblDiscAlcoholic"
         Me.lblDiscAlcoholic.Size = New System.Drawing.Size(77, 24)
@@ -5327,7 +5082,7 @@ Partial Class FrmPOSBilling2N
         'txtDiscFoodPer
         '
         Me.txtDiscFoodPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDiscFoodPer.Location = New System.Drawing.Point(247, 196)
+        Me.txtDiscFoodPer.Location = New System.Drawing.Point(247, 217)
         Me.txtDiscFoodPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiscFoodPer.Name = "txtDiscFoodPer"
         Me.txtDiscFoodPer.Size = New System.Drawing.Size(60, 27)
@@ -5337,7 +5092,7 @@ Partial Class FrmPOSBilling2N
         'txtDiscNonAlcoholicPer
         '
         Me.txtDiscNonAlcoholicPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDiscNonAlcoholicPer.Location = New System.Drawing.Point(247, 166)
+        Me.txtDiscNonAlcoholicPer.Location = New System.Drawing.Point(247, 187)
         Me.txtDiscNonAlcoholicPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiscNonAlcoholicPer.Name = "txtDiscNonAlcoholicPer"
         Me.txtDiscNonAlcoholicPer.Size = New System.Drawing.Size(60, 27)
@@ -5347,7 +5102,7 @@ Partial Class FrmPOSBilling2N
         'txtDiscAlcoholicPer
         '
         Me.txtDiscAlcoholicPer.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.txtDiscAlcoholicPer.Location = New System.Drawing.Point(247, 136)
+        Me.txtDiscAlcoholicPer.Location = New System.Drawing.Point(247, 157)
         Me.txtDiscAlcoholicPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDiscAlcoholicPer.Name = "txtDiscAlcoholicPer"
         Me.txtDiscAlcoholicPer.Size = New System.Drawing.Size(60, 27)
@@ -5359,7 +5114,7 @@ Partial Class FrmPOSBilling2N
         Me.Label45.AutoSize = True
         Me.Label45.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label45.ForeColor = System.Drawing.Color.Black
-        Me.Label45.Location = New System.Drawing.Point(3, 201)
+        Me.Label45.Location = New System.Drawing.Point(4, 221)
         Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(119, 16)
@@ -5372,7 +5127,7 @@ Partial Class FrmPOSBilling2N
         Me.Label44.AutoSize = True
         Me.Label44.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label44.ForeColor = System.Drawing.Color.Black
-        Me.Label44.Location = New System.Drawing.Point(3, 171)
+        Me.Label44.Location = New System.Drawing.Point(3, 192)
         Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(189, 16)
@@ -5385,7 +5140,7 @@ Partial Class FrmPOSBilling2N
         Me.Label41.AutoSize = True
         Me.Label41.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label41.ForeColor = System.Drawing.Color.Black
-        Me.Label41.Location = New System.Drawing.Point(3, 143)
+        Me.Label41.Location = New System.Drawing.Point(3, 163)
         Me.Label41.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(154, 16)
@@ -5398,10 +5153,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillSCAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillSCAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillSCAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillSCAmount.Location = New System.Drawing.Point(247, 296)
+        Me.labelBillSCAmount.Location = New System.Drawing.Point(247, 331)
         Me.labelBillSCAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillSCAmount.Name = "labelBillSCAmount"
-        Me.labelBillSCAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillSCAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillSCAmount.TabIndex = 23
         Me.labelBillSCAmount.Text = "0.00"
         Me.labelBillSCAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5411,7 +5166,7 @@ Partial Class FrmPOSBilling2N
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.ForeColor = System.Drawing.Color.Black
-        Me.Label30.Location = New System.Drawing.Point(3, 298)
+        Me.Label30.Location = New System.Drawing.Point(3, 337)
         Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(92, 16)
@@ -5424,10 +5179,10 @@ Partial Class FrmPOSBilling2N
         Me.lbll4.BackColor = System.Drawing.Color.Black
         Me.lbll4.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbll4.ForeColor = System.Drawing.Color.Black
-        Me.lbll4.Location = New System.Drawing.Point(0, 456)
+        Me.lbll4.Location = New System.Drawing.Point(1, 526)
         Me.lbll4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbll4.Name = "lbll4"
-        Me.lbll4.Size = New System.Drawing.Size(420, 2)
+        Me.lbll4.Size = New System.Drawing.Size(377, 2)
         Me.lbll4.TabIndex = 326
         Me.lbll4.Text = "Card Opening"
         Me.lbll4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -5437,10 +5192,10 @@ Partial Class FrmPOSBilling2N
         Me.lbll3.BackColor = System.Drawing.Color.Black
         Me.lbll3.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbll3.ForeColor = System.Drawing.Color.Black
-        Me.lbll3.Location = New System.Drawing.Point(0, 422)
+        Me.lbll3.Location = New System.Drawing.Point(0, 486)
         Me.lbll3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbll3.Name = "lbll3"
-        Me.lbll3.Size = New System.Drawing.Size(421, 2)
+        Me.lbll3.Size = New System.Drawing.Size(378, 2)
         Me.lbll3.TabIndex = 33
         Me.lbll3.Text = "Card Opening"
         Me.lbll3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -5450,10 +5205,10 @@ Partial Class FrmPOSBilling2N
         Me.lbll2.BackColor = System.Drawing.Color.Black
         Me.lbll2.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbll2.ForeColor = System.Drawing.Color.Black
-        Me.lbll2.Location = New System.Drawing.Point(0, 107)
+        Me.lbll2.Location = New System.Drawing.Point(0, 115)
         Me.lbll2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbll2.Name = "lbll2"
-        Me.lbll2.Size = New System.Drawing.Size(420, 2)
+        Me.lbll2.Size = New System.Drawing.Size(379, 2)
         Me.lbll2.TabIndex = 4
         Me.lbll2.Text = "Card Opening"
         Me.lbll2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -5463,10 +5218,10 @@ Partial Class FrmPOSBilling2N
         Me.Label7.BackColor = System.Drawing.Color.Black
         Me.Label7.Font = New System.Drawing.Font("Lucida Fax", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(-1, 388)
+        Me.Label7.Location = New System.Drawing.Point(-1, 445)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(420, 2)
+        Me.Label7.Size = New System.Drawing.Size(381, 2)
         Me.Label7.TabIndex = 30
         Me.Label7.Text = "Card Opening"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -5487,11 +5242,12 @@ Partial Class FrmPOSBilling2N
         'lblCardID
         '
         Me.lblCardID.AutoSize = True
-        Me.lblCardID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblCardID.Location = New System.Drawing.Point(7, 462)
+        Me.lblCardID.BackColor = System.Drawing.Color.Transparent
+        Me.lblCardID.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCardID.Location = New System.Drawing.Point(7, 529)
         Me.lblCardID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCardID.Name = "lblCardID"
-        Me.lblCardID.Size = New System.Drawing.Size(63, 19)
+        Me.lblCardID.Size = New System.Drawing.Size(58, 17)
         Me.lblCardID.TabIndex = 288
         Me.lblCardID.Text = "CardID"
         Me.lblCardID.Visible = False
@@ -5499,11 +5255,12 @@ Partial Class FrmPOSBilling2N
         'lblIssueNo
         '
         Me.lblIssueNo.AutoSize = True
-        Me.lblIssueNo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblIssueNo.Location = New System.Drawing.Point(83, 462)
+        Me.lblIssueNo.BackColor = System.Drawing.Color.Transparent
+        Me.lblIssueNo.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIssueNo.Location = New System.Drawing.Point(83, 529)
         Me.lblIssueNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblIssueNo.Name = "lblIssueNo"
-        Me.lblIssueNo.Size = New System.Drawing.Size(72, 19)
+        Me.lblIssueNo.Size = New System.Drawing.Size(66, 17)
         Me.lblIssueNo.TabIndex = 6
         Me.lblIssueNo.Text = "IssueNo"
         Me.lblIssueNo.Visible = False
@@ -5511,12 +5268,13 @@ Partial Class FrmPOSBilling2N
         'lblRoundOff
         '
         Me.lblRoundOff.AutoSize = True
-        Me.lblRoundOff.Font = New System.Drawing.Font("Arial", 10.75!, System.Drawing.FontStyle.Bold)
+        Me.lblRoundOff.BackColor = System.Drawing.Color.Transparent
+        Me.lblRoundOff.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRoundOff.ForeColor = System.Drawing.Color.Black
-        Me.lblRoundOff.Location = New System.Drawing.Point(168, 461)
+        Me.lblRoundOff.Location = New System.Drawing.Point(168, 528)
         Me.lblRoundOff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRoundOff.Name = "lblRoundOff"
-        Me.lblRoundOff.Size = New System.Drawing.Size(114, 21)
+        Me.lblRoundOff.Size = New System.Drawing.Size(90, 17)
         Me.lblRoundOff.TabIndex = 32
         Me.lblRoundOff.Text = "lblRoundOff"
         Me.lblRoundOff.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5544,7 +5302,7 @@ Partial Class FrmPOSBilling2N
         Me.btnCancelBill.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancelBill.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnCancelBill.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnCancelBill.Location = New System.Drawing.Point(201, 469)
+        Me.btnCancelBill.Location = New System.Drawing.Point(201, 535)
         Me.btnCancelBill.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancelBill.Name = "btnCancelBill"
         Me.btnCancelBill.Size = New System.Drawing.Size(171, 44)
@@ -5560,7 +5318,7 @@ Partial Class FrmPOSBilling2N
         Me.btnSettleBill.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSettleBill.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSettleBill.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSettleBill.Location = New System.Drawing.Point(5, 469)
+        Me.btnSettleBill.Location = New System.Drawing.Point(5, 535)
         Me.btnSettleBill.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSettleBill.Name = "btnSettleBill"
         Me.btnSettleBill.Size = New System.Drawing.Size(191, 44)
@@ -5573,10 +5331,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillRoundOff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillRoundOff.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillRoundOff.ForeColor = System.Drawing.Color.Black
-        Me.labelBillRoundOff.Location = New System.Drawing.Point(247, 365)
+        Me.labelBillRoundOff.Location = New System.Drawing.Point(247, 412)
         Me.labelBillRoundOff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillRoundOff.Name = "labelBillRoundOff"
-        Me.labelBillRoundOff.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillRoundOff.Size = New System.Drawing.Size(125, 28)
         Me.labelBillRoundOff.TabIndex = 29
         Me.labelBillRoundOff.Text = "0.00"
         Me.labelBillRoundOff.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5586,7 +5344,7 @@ Partial Class FrmPOSBilling2N
         Me.Label49.AutoSize = True
         Me.Label49.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label49.ForeColor = System.Drawing.Color.Black
-        Me.Label49.Location = New System.Drawing.Point(3, 367)
+        Me.Label49.Location = New System.Drawing.Point(3, 418)
         Me.Label49.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(84, 16)
@@ -5599,10 +5357,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillNetAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillNetAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillNetAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillNetAmount.Location = New System.Drawing.Point(247, 342)
+        Me.labelBillNetAmount.Location = New System.Drawing.Point(247, 385)
         Me.labelBillNetAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillNetAmount.Name = "labelBillNetAmount"
-        Me.labelBillNetAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillNetAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillNetAmount.TabIndex = 27
         Me.labelBillNetAmount.Text = "0.00"
         Me.labelBillNetAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5612,7 +5370,7 @@ Partial Class FrmPOSBilling2N
         Me.Label47.AutoSize = True
         Me.Label47.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label47.ForeColor = System.Drawing.Color.Black
-        Me.Label47.Location = New System.Drawing.Point(3, 344)
+        Me.Label47.Location = New System.Drawing.Point(3, 391)
         Me.Label47.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(99, 16)
@@ -5625,10 +5383,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillVATAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillVATAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillVATAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillVATAmount.Location = New System.Drawing.Point(247, 319)
+        Me.labelBillVATAmount.Location = New System.Drawing.Point(247, 358)
         Me.labelBillVATAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillVATAmount.Name = "labelBillVATAmount"
-        Me.labelBillVATAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillVATAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillVATAmount.TabIndex = 25
         Me.labelBillVATAmount.Text = "0.00"
         Me.labelBillVATAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5638,7 +5396,7 @@ Partial Class FrmPOSBilling2N
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label37.ForeColor = System.Drawing.Color.Black
-        Me.Label37.Location = New System.Drawing.Point(4, 398)
+        Me.Label37.Location = New System.Drawing.Point(4, 459)
         Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(88, 16)
@@ -5651,7 +5409,7 @@ Partial Class FrmPOSBilling2N
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label38.ForeColor = System.Drawing.Color.Black
-        Me.Label38.Location = New System.Drawing.Point(3, 321)
+        Me.Label38.Location = New System.Drawing.Point(3, 364)
         Me.Label38.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(105, 16)
@@ -5664,7 +5422,7 @@ Partial Class FrmPOSBilling2N
         Me.Label39.AutoSize = True
         Me.Label39.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label39.ForeColor = System.Drawing.Color.Black
-        Me.Label39.Location = New System.Drawing.Point(3, 228)
+        Me.Label39.Location = New System.Drawing.Point(3, 257)
         Me.Label39.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(112, 16)
@@ -5677,10 +5435,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillBasicAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillBasicAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillBasicAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillBasicAmount.Location = New System.Drawing.Point(247, 227)
+        Me.labelBillBasicAmount.Location = New System.Drawing.Point(247, 250)
         Me.labelBillBasicAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillBasicAmount.Name = "labelBillBasicAmount"
-        Me.labelBillBasicAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillBasicAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillBasicAmount.TabIndex = 17
         Me.labelBillBasicAmount.Text = "0.00"
         Me.labelBillBasicAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5690,10 +5448,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillGrossAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillGrossAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillGrossAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillGrossAmount.Location = New System.Drawing.Point(247, 396)
+        Me.labelBillGrossAmount.Location = New System.Drawing.Point(247, 452)
         Me.labelBillGrossAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillGrossAmount.Name = "labelBillGrossAmount"
-        Me.labelBillGrossAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillGrossAmount.Size = New System.Drawing.Size(125, 30)
         Me.labelBillGrossAmount.TabIndex = 32
         Me.labelBillGrossAmount.Text = "0.00"
         Me.labelBillGrossAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5703,7 +5461,7 @@ Partial Class FrmPOSBilling2N
         Me.Label42.AutoSize = True
         Me.Label42.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label42.ForeColor = System.Drawing.Color.Black
-        Me.Label42.Location = New System.Drawing.Point(3, 275)
+        Me.Label42.Location = New System.Drawing.Point(3, 310)
         Me.Label42.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(103, 16)
@@ -5716,7 +5474,7 @@ Partial Class FrmPOSBilling2N
         Me.Label43.AutoSize = True
         Me.Label43.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label43.ForeColor = System.Drawing.Color.Black
-        Me.Label43.Location = New System.Drawing.Point(3, 251)
+        Me.Label43.Location = New System.Drawing.Point(3, 283)
         Me.Label43.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(110, 16)
@@ -5729,10 +5487,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillGSTAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillGSTAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillGSTAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillGSTAmount.Location = New System.Drawing.Point(247, 273)
+        Me.labelBillGSTAmount.Location = New System.Drawing.Point(247, 304)
         Me.labelBillGSTAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillGSTAmount.Name = "labelBillGSTAmount"
-        Me.labelBillGSTAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillGSTAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillGSTAmount.TabIndex = 21
         Me.labelBillGSTAmount.Text = "0.00"
         Me.labelBillGSTAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5742,10 +5500,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillDiscountAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.labelBillDiscountAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillDiscountAmount.ForeColor = System.Drawing.Color.Black
-        Me.labelBillDiscountAmount.Location = New System.Drawing.Point(247, 250)
+        Me.labelBillDiscountAmount.Location = New System.Drawing.Point(247, 277)
         Me.labelBillDiscountAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillDiscountAmount.Name = "labelBillDiscountAmount"
-        Me.labelBillDiscountAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillDiscountAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillDiscountAmount.TabIndex = 19
         Me.labelBillDiscountAmount.Text = "0.00"
         Me.labelBillDiscountAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5754,7 +5512,7 @@ Partial Class FrmPOSBilling2N
         '
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(3, 50)
+        Me.Label35.Location = New System.Drawing.Point(3, 51)
         Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(77, 16)
@@ -5766,10 +5524,10 @@ Partial Class FrmPOSBilling2N
         Me.labelBillPayModeClosingAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.labelBillPayModeClosingAmount.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillPayModeClosingAmount.ForeColor = System.Drawing.Color.White
-        Me.labelBillPayModeClosingAmount.Location = New System.Drawing.Point(247, 430)
+        Me.labelBillPayModeClosingAmount.Location = New System.Drawing.Point(247, 492)
         Me.labelBillPayModeClosingAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillPayModeClosingAmount.Name = "labelBillPayModeClosingAmount"
-        Me.labelBillPayModeClosingAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillPayModeClosingAmount.Size = New System.Drawing.Size(125, 30)
         Me.labelBillPayModeClosingAmount.TabIndex = 35
         Me.labelBillPayModeClosingAmount.Text = "0.00"
         Me.labelBillPayModeClosingAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5796,7 +5554,7 @@ Partial Class FrmPOSBilling2N
         Me.labelBillPayModeOpeningAmount.Location = New System.Drawing.Point(247, 83)
         Me.labelBillPayModeOpeningAmount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillPayModeOpeningAmount.Name = "labelBillPayModeOpeningAmount"
-        Me.labelBillPayModeOpeningAmount.Size = New System.Drawing.Size(125, 20)
+        Me.labelBillPayModeOpeningAmount.Size = New System.Drawing.Size(125, 28)
         Me.labelBillPayModeOpeningAmount.TabIndex = 3
         Me.labelBillPayModeOpeningAmount.Text = "0.00"
         Me.labelBillPayModeOpeningAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -5806,7 +5564,7 @@ Partial Class FrmPOSBilling2N
         Me.labelBillPayModeClosingStr.AutoSize = True
         Me.labelBillPayModeClosingStr.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillPayModeClosingStr.ForeColor = System.Drawing.Color.Black
-        Me.labelBillPayModeClosingStr.Location = New System.Drawing.Point(3, 432)
+        Me.labelBillPayModeClosingStr.Location = New System.Drawing.Point(3, 499)
         Me.labelBillPayModeClosingStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillPayModeClosingStr.Name = "labelBillPayModeClosingStr"
         Me.labelBillPayModeClosingStr.Size = New System.Drawing.Size(163, 16)
@@ -5819,7 +5577,7 @@ Partial Class FrmPOSBilling2N
         Me.labelBillPayModeOpeningStr.AutoSize = True
         Me.labelBillPayModeOpeningStr.Font = New System.Drawing.Font("Lucida Fax", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelBillPayModeOpeningStr.ForeColor = System.Drawing.Color.Black
-        Me.labelBillPayModeOpeningStr.Location = New System.Drawing.Point(3, 88)
+        Me.labelBillPayModeOpeningStr.Location = New System.Drawing.Point(3, 89)
         Me.labelBillPayModeOpeningStr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelBillPayModeOpeningStr.Name = "labelBillPayModeOpeningStr"
         Me.labelBillPayModeOpeningStr.Size = New System.Drawing.Size(170, 16)
@@ -5827,27 +5585,581 @@ Partial Class FrmPOSBilling2N
         Me.labelBillPayModeOpeningStr.Text = "Card Opening Balance"
         Me.labelBillPayModeOpeningStr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PanelFooter
+        'PanelMergeTables
         '
-        Me.PanelFooter.BackColor = System.Drawing.Color.Transparent
-        Me.PanelFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelFooter.Controls.Add(Me.PanelDisplayBill)
-        Me.PanelFooter.Controls.Add(Me.btnRefresh)
-        Me.PanelFooter.Controls.Add(Me.btnClose)
-        Me.PanelFooter.Controls.Add(Me.btnHistory)
-        Me.PanelFooter.Controls.Add(Me.btnShiftKOT)
-        Me.PanelFooter.Controls.Add(Me.btnSettleBillHomePage)
-        Me.PanelFooter.Controls.Add(Me.btnModifiers)
-        Me.PanelFooter.Controls.Add(Me.btnModifyKOT)
-        Me.PanelFooter.Controls.Add(Me.btnShowTables)
-        Me.PanelFooter.Controls.Add(Me.btnShiftTable)
-        Me.PanelFooter.Controls.Add(Me.btnEstimate)
-        Me.PanelFooter.Controls.Add(Me.btnSaveNSettle)
-        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelFooter.Location = New System.Drawing.Point(10, 570)
-        Me.PanelFooter.Name = "PanelFooter"
-        Me.PanelFooter.Size = New System.Drawing.Size(1180, 120)
-        Me.PanelFooter.TabIndex = 312
+        Me.PanelMergeTables.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.PanelMergeTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelMergeTables.Controls.Add(Me.Label86)
+        Me.PanelMergeTables.Controls.Add(Me.Label87)
+        Me.PanelMergeTables.Controls.Add(Me.Label88)
+        Me.PanelMergeTables.Controls.Add(Me.Label89)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationIssueNo)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationClosingBalance)
+        Me.PanelMergeTables.Controls.Add(Me.Label90)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationMemName)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationOpeningBalance)
+        Me.PanelMergeTables.Controls.Add(Me.Label91)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationMemID)
+        Me.PanelMergeTables.Controls.Add(Me.Label92)
+        Me.PanelMergeTables.Controls.Add(Me.btnMoveAll)
+        Me.PanelMergeTables.Controls.Add(Me.dgSourceTable)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationBillNo)
+        Me.PanelMergeTables.Controls.Add(Me.Label93)
+        Me.PanelMergeTables.Controls.Add(Me.lblSourceBillNo)
+        Me.PanelMergeTables.Controls.Add(Me.Label94)
+        Me.PanelMergeTables.Controls.Add(Me.lblSourceTotalQty)
+        Me.PanelMergeTables.Controls.Add(Me.Label95)
+        Me.PanelMergeTables.Controls.Add(Me.lblGrossAmtSource)
+        Me.PanelMergeTables.Controls.Add(Me.Label96)
+        Me.PanelMergeTables.Controls.Add(Me.Label97)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationTotalQty)
+        Me.PanelMergeTables.Controls.Add(Me.Label98)
+        Me.PanelMergeTables.Controls.Add(Me.Label99)
+        Me.PanelMergeTables.Controls.Add(Me.lblDestinationGrossAmt)
+        Me.PanelMergeTables.Controls.Add(Me.Label100)
+        Me.PanelMergeTables.Controls.Add(Me.dgDestinationTable)
+        Me.PanelMergeTables.Controls.Add(Me.cmbDestinationTable)
+        Me.PanelMergeTables.Controls.Add(Me.Label101)
+        Me.PanelMergeTables.Controls.Add(Me.cmbSourceTable)
+        Me.PanelMergeTables.Controls.Add(Me.Label102)
+        Me.PanelMergeTables.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMergeTables.Location = New System.Drawing.Point(10, 52)
+        Me.PanelMergeTables.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelMergeTables.Name = "PanelMergeTables"
+        Me.PanelMergeTables.Size = New System.Drawing.Size(1180, 588)
+        Me.PanelMergeTables.TabIndex = 310
+        '
+        'Label86
+        '
+        Me.Label86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label86.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label86.ForeColor = System.Drawing.Color.Navy
+        Me.Label86.Location = New System.Drawing.Point(287, 263)
+        Me.Label86.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label86.Name = "Label86"
+        Me.Label86.Size = New System.Drawing.Size(98, 22)
+        Me.Label86.TabIndex = 40
+        Me.Label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label86.Visible = False
+        '
+        'Label87
+        '
+        Me.Label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label87.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label87.ForeColor = System.Drawing.Color.Navy
+        Me.Label87.Location = New System.Drawing.Point(247, 265)
+        Me.Label87.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label87.Name = "Label87"
+        Me.Label87.Size = New System.Drawing.Size(98, 22)
+        Me.Label87.TabIndex = 40
+        Me.Label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label87.Visible = False
+        '
+        'Label88
+        '
+        Me.Label88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label88.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label88.ForeColor = System.Drawing.Color.Navy
+        Me.Label88.Location = New System.Drawing.Point(140, 266)
+        Me.Label88.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label88.Name = "Label88"
+        Me.Label88.Size = New System.Drawing.Size(98, 22)
+        Me.Label88.TabIndex = 40
+        Me.Label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label88.Visible = False
+        '
+        'Label89
+        '
+        Me.Label89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label89.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label89.ForeColor = System.Drawing.Color.Navy
+        Me.Label89.Location = New System.Drawing.Point(20, 288)
+        Me.Label89.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label89.Name = "Label89"
+        Me.Label89.Size = New System.Drawing.Size(87, 23)
+        Me.Label89.TabIndex = 39
+        Me.Label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label89.Visible = False
+        '
+        'lblDestinationIssueNo
+        '
+        Me.lblDestinationIssueNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationIssueNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationIssueNo.ForeColor = System.Drawing.Color.Navy
+        Me.lblDestinationIssueNo.Location = New System.Drawing.Point(154, 288)
+        Me.lblDestinationIssueNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationIssueNo.Name = "lblDestinationIssueNo"
+        Me.lblDestinationIssueNo.Size = New System.Drawing.Size(87, 23)
+        Me.lblDestinationIssueNo.TabIndex = 39
+        Me.lblDestinationIssueNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblDestinationIssueNo.Visible = False
+        '
+        'lblDestinationClosingBalance
+        '
+        Me.lblDestinationClosingBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationClosingBalance.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationClosingBalance.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationClosingBalance.Location = New System.Drawing.Point(405, 559)
+        Me.lblDestinationClosingBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationClosingBalance.Name = "lblDestinationClosingBalance"
+        Me.lblDestinationClosingBalance.Size = New System.Drawing.Size(87, 22)
+        Me.lblDestinationClosingBalance.TabIndex = 38
+        Me.lblDestinationClosingBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label90
+        '
+        Me.Label90.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label90.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label90.ForeColor = System.Drawing.Color.Silver
+        Me.Label90.Location = New System.Drawing.Point(273, 559)
+        Me.Label90.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label90.Name = "Label90"
+        Me.Label90.Size = New System.Drawing.Size(135, 22)
+        Me.Label90.TabIndex = 37
+        Me.Label90.Text = "Closing Balance"
+        '
+        'lblDestinationMemName
+        '
+        Me.lblDestinationMemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationMemName.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationMemName.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationMemName.Location = New System.Drawing.Point(696, 309)
+        Me.lblDestinationMemName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationMemName.Name = "lblDestinationMemName"
+        Me.lblDestinationMemName.Size = New System.Drawing.Size(225, 23)
+        Me.lblDestinationMemName.TabIndex = 36
+        Me.lblDestinationMemName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblDestinationOpeningBalance
+        '
+        Me.lblDestinationOpeningBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationOpeningBalance.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationOpeningBalance.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationOpeningBalance.Location = New System.Drawing.Point(147, 559)
+        Me.lblDestinationOpeningBalance.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationOpeningBalance.Name = "lblDestinationOpeningBalance"
+        Me.lblDestinationOpeningBalance.Size = New System.Drawing.Size(87, 22)
+        Me.lblDestinationOpeningBalance.TabIndex = 35
+        Me.lblDestinationOpeningBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label91
+        '
+        Me.Label91.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label91.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label91.ForeColor = System.Drawing.Color.Silver
+        Me.Label91.Location = New System.Drawing.Point(5, 559)
+        Me.Label91.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label91.Name = "Label91"
+        Me.Label91.Size = New System.Drawing.Size(143, 22)
+        Me.Label91.TabIndex = 34
+        Me.Label91.Text = "Opening Balance"
+        '
+        'lblDestinationMemID
+        '
+        Me.lblDestinationMemID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationMemID.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationMemID.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationMemID.Location = New System.Drawing.Point(605, 309)
+        Me.lblDestinationMemID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationMemID.Name = "lblDestinationMemID"
+        Me.lblDestinationMemID.Size = New System.Drawing.Size(87, 23)
+        Me.lblDestinationMemID.TabIndex = 33
+        Me.lblDestinationMemID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label92
+        '
+        Me.Label92.AutoSize = True
+        Me.Label92.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label92.ForeColor = System.Drawing.Color.Black
+        Me.Label92.Location = New System.Drawing.Point(527, 312)
+        Me.Label92.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label92.Name = "Label92"
+        Me.Label92.Size = New System.Drawing.Size(72, 17)
+        Me.Label92.TabIndex = 32
+        Me.Label92.Text = "Mem_ID"
+        '
+        'btnMoveAll
+        '
+        Me.btnMoveAll.AutoSize = True
+        Me.btnMoveAll.BackColor = System.Drawing.Color.Yellow
+        Me.btnMoveAll.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMoveAll.FlatAppearance.BorderColor = System.Drawing.Color.Maroon
+        Me.btnMoveAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.btnMoveAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon
+        Me.btnMoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMoveAll.Font = New System.Drawing.Font("Lucida Fax", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMoveAll.ForeColor = System.Drawing.Color.Black
+        Me.btnMoveAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMoveAll.ImageIndex = 2
+        Me.btnMoveAll.Location = New System.Drawing.Point(1058, 5)
+        Me.btnMoveAll.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnMoveAll.Name = "btnMoveAll"
+        Me.btnMoveAll.Size = New System.Drawing.Size(112, 32)
+        Me.btnMoveAll.TabIndex = 13
+        Me.btnMoveAll.Text = "Move All"
+        Me.btnMoveAll.UseVisualStyleBackColor = False
+        '
+        'dgSourceTable
+        '
+        Me.dgSourceTable.AllowUserToAddRows = False
+        Me.dgSourceTable.AllowUserToDeleteRows = False
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle26.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSourceTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle26
+        Me.dgSourceTable.BackgroundColor = System.Drawing.Color.White
+        Me.dgSourceTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgSourceTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgSourceTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSourceTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle27
+        Me.dgSourceTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgSourceTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnMoveSourceItem})
+        Me.dgSourceTable.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgSourceTable.DefaultCellStyle = DataGridViewCellStyle28
+        Me.dgSourceTable.GridColor = System.Drawing.Color.Chocolate
+        Me.dgSourceTable.Location = New System.Drawing.Point(5, 42)
+        Me.dgSourceTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgSourceTable.MultiSelect = False
+        Me.dgSourceTable.Name = "dgSourceTable"
+        Me.dgSourceTable.ReadOnly = True
+        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle29.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSourceTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle29
+        Me.dgSourceTable.RowHeadersVisible = False
+        Me.dgSourceTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgSourceTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgSourceTable.Size = New System.Drawing.Size(1170, 221)
+        Me.dgSourceTable.TabIndex = 4
+        Me.dgSourceTable.TabStop = False
+        '
+        'dgbtnMoveSourceItem
+        '
+        Me.dgbtnMoveSourceItem.FillWeight = 40.0!
+        Me.dgbtnMoveSourceItem.Frozen = True
+        Me.dgbtnMoveSourceItem.HeaderText = ""
+        Me.dgbtnMoveSourceItem.Image = Global.FNBManagement.My.Resources.Resources.arrow_down_blue
+        Me.dgbtnMoveSourceItem.MinimumWidth = 40
+        Me.dgbtnMoveSourceItem.Name = "dgbtnMoveSourceItem"
+        Me.dgbtnMoveSourceItem.ReadOnly = True
+        Me.dgbtnMoveSourceItem.Width = 40
+        '
+        'lblDestinationBillNo
+        '
+        Me.lblDestinationBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationBillNo.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationBillNo.Location = New System.Drawing.Point(455, 309)
+        Me.lblDestinationBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationBillNo.Name = "lblDestinationBillNo"
+        Me.lblDestinationBillNo.Size = New System.Drawing.Size(66, 23)
+        Me.lblDestinationBillNo.TabIndex = 31
+        Me.lblDestinationBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label93
+        '
+        Me.Label93.AutoSize = True
+        Me.Label93.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label93.ForeColor = System.Drawing.Color.Black
+        Me.Label93.Location = New System.Drawing.Point(384, 312)
+        Me.Label93.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label93.Name = "Label93"
+        Me.Label93.Size = New System.Drawing.Size(60, 17)
+        Me.Label93.TabIndex = 30
+        Me.Label93.Text = "Bill No"
+        '
+        'lblSourceBillNo
+        '
+        Me.lblSourceBillNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSourceBillNo.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSourceBillNo.ForeColor = System.Drawing.Color.Black
+        Me.lblSourceBillNo.Location = New System.Drawing.Point(455, 10)
+        Me.lblSourceBillNo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSourceBillNo.Name = "lblSourceBillNo"
+        Me.lblSourceBillNo.Size = New System.Drawing.Size(66, 22)
+        Me.lblSourceBillNo.TabIndex = 29
+        Me.lblSourceBillNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label94
+        '
+        Me.Label94.AutoSize = True
+        Me.Label94.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label94.ForeColor = System.Drawing.Color.Black
+        Me.Label94.Location = New System.Drawing.Point(384, 13)
+        Me.Label94.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label94.Name = "Label94"
+        Me.Label94.Size = New System.Drawing.Size(60, 17)
+        Me.Label94.TabIndex = 28
+        Me.Label94.Text = "Bill No"
+        '
+        'lblSourceTotalQty
+        '
+        Me.lblSourceTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSourceTotalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSourceTotalQty.ForeColor = System.Drawing.Color.Black
+        Me.lblSourceTotalQty.Location = New System.Drawing.Point(883, 269)
+        Me.lblSourceTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblSourceTotalQty.Name = "lblSourceTotalQty"
+        Me.lblSourceTotalQty.Size = New System.Drawing.Size(83, 22)
+        Me.lblSourceTotalQty.TabIndex = 24
+        Me.lblSourceTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label95
+        '
+        Me.Label95.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label95.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label95.ForeColor = System.Drawing.Color.Silver
+        Me.Label95.Location = New System.Drawing.Point(801, 269)
+        Me.Label95.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label95.Name = "Label95"
+        Me.Label95.Size = New System.Drawing.Size(83, 22)
+        Me.Label95.TabIndex = 23
+        Me.Label95.Text = "Total Qty"
+        '
+        'lblGrossAmtSource
+        '
+        Me.lblGrossAmtSource.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblGrossAmtSource.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGrossAmtSource.ForeColor = System.Drawing.Color.Black
+        Me.lblGrossAmtSource.Location = New System.Drawing.Point(1067, 268)
+        Me.lblGrossAmtSource.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblGrossAmtSource.Name = "lblGrossAmtSource"
+        Me.lblGrossAmtSource.Size = New System.Drawing.Size(103, 22)
+        Me.lblGrossAmtSource.TabIndex = 22
+        Me.lblGrossAmtSource.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label96
+        '
+        Me.Label96.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label96.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label96.ForeColor = System.Drawing.Color.Silver
+        Me.Label96.Location = New System.Drawing.Point(977, 268)
+        Me.Label96.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label96.Name = "Label96"
+        Me.Label96.Size = New System.Drawing.Size(93, 22)
+        Me.Label96.TabIndex = 21
+        Me.Label96.Text = "Gross Amt"
+        '
+        'Label97
+        '
+        Me.Label97.BackColor = System.Drawing.Color.Black
+        Me.Label97.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label97.ForeColor = System.Drawing.Color.Black
+        Me.Label97.Location = New System.Drawing.Point(8, 299)
+        Me.Label97.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label97.Name = "Label97"
+        Me.Label97.Size = New System.Drawing.Size(1163, 2)
+        Me.Label97.TabIndex = 20
+        Me.Label97.Text = "&Move To Table #"
+        '
+        'lblDestinationTotalQty
+        '
+        Me.lblDestinationTotalQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationTotalQty.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationTotalQty.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationTotalQty.Location = New System.Drawing.Point(847, 559)
+        Me.lblDestinationTotalQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationTotalQty.Name = "lblDestinationTotalQty"
+        Me.lblDestinationTotalQty.Size = New System.Drawing.Size(87, 22)
+        Me.lblDestinationTotalQty.TabIndex = 19
+        Me.lblDestinationTotalQty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label98
+        '
+        Me.Label98.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label98.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label98.ForeColor = System.Drawing.Color.Silver
+        Me.Label98.Location = New System.Drawing.Point(765, 559)
+        Me.Label98.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label98.Name = "Label98"
+        Me.Label98.Size = New System.Drawing.Size(85, 22)
+        Me.Label98.TabIndex = 18
+        Me.Label98.Text = "Total Qty"
+        '
+        'Label99
+        '
+        Me.Label99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label99.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label99.ForeColor = System.Drawing.Color.Navy
+        Me.Label99.Location = New System.Drawing.Point(11, 270)
+        Me.Label99.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label99.Name = "Label99"
+        Me.Label99.Size = New System.Drawing.Size(98, 22)
+        Me.Label99.TabIndex = 17
+        Me.Label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label99.Visible = False
+        '
+        'lblDestinationGrossAmt
+        '
+        Me.lblDestinationGrossAmt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDestinationGrossAmt.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDestinationGrossAmt.ForeColor = System.Drawing.Color.Black
+        Me.lblDestinationGrossAmt.Location = New System.Drawing.Point(1070, 559)
+        Me.lblDestinationGrossAmt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblDestinationGrossAmt.Name = "lblDestinationGrossAmt"
+        Me.lblDestinationGrossAmt.Size = New System.Drawing.Size(103, 22)
+        Me.lblDestinationGrossAmt.TabIndex = 17
+        Me.lblDestinationGrossAmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label100
+        '
+        Me.Label100.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label100.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label100.ForeColor = System.Drawing.Color.Silver
+        Me.ErrorProvider1.SetIconAlignment(Me.Label100, System.Windows.Forms.ErrorIconAlignment.MiddleLeft)
+        Me.Label100.Location = New System.Drawing.Point(980, 559)
+        Me.Label100.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label100.Name = "Label100"
+        Me.Label100.Size = New System.Drawing.Size(94, 22)
+        Me.Label100.TabIndex = 16
+        Me.Label100.Text = "Gross Amt"
+        '
+        'dgDestinationTable
+        '
+        Me.dgDestinationTable.AllowUserToAddRows = False
+        Me.dgDestinationTable.AllowUserToDeleteRows = False
+        DataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle30.Padding = New System.Windows.Forms.Padding(2)
+        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgDestinationTable.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle30
+        Me.dgDestinationTable.BackgroundColor = System.Drawing.Color.White
+        Me.dgDestinationTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgDestinationTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        Me.dgDestinationTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle31.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle31.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle31.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgDestinationTable.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle31
+        Me.dgDestinationTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgDestinationTable.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgbtnMoveDetinationItem})
+        Me.dgDestinationTable.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle32.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.SeaShell
+        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgDestinationTable.DefaultCellStyle = DataGridViewCellStyle32
+        Me.dgDestinationTable.GridColor = System.Drawing.Color.Chocolate
+        Me.dgDestinationTable.Location = New System.Drawing.Point(5, 335)
+        Me.dgDestinationTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgDestinationTable.MultiSelect = False
+        Me.dgDestinationTable.Name = "dgDestinationTable"
+        Me.dgDestinationTable.ReadOnly = True
+        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle33.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgDestinationTable.RowHeadersDefaultCellStyle = DataGridViewCellStyle33
+        Me.dgDestinationTable.RowHeadersVisible = False
+        Me.dgDestinationTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.dgDestinationTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgDestinationTable.Size = New System.Drawing.Size(1170, 219)
+        Me.dgDestinationTable.TabIndex = 15
+        Me.dgDestinationTable.TabStop = False
+        '
+        'dgbtnMoveDetinationItem
+        '
+        Me.dgbtnMoveDetinationItem.FillWeight = 40.0!
+        Me.dgbtnMoveDetinationItem.Frozen = True
+        Me.dgbtnMoveDetinationItem.HeaderText = ""
+        Me.dgbtnMoveDetinationItem.Image = Global.FNBManagement.My.Resources.Resources.arrow_up_blue
+        Me.dgbtnMoveDetinationItem.MinimumWidth = 40
+        Me.dgbtnMoveDetinationItem.Name = "dgbtnMoveDetinationItem"
+        Me.dgbtnMoveDetinationItem.ReadOnly = True
+        Me.dgbtnMoveDetinationItem.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgbtnMoveDetinationItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.dgbtnMoveDetinationItem.Width = 40
+        '
+        'cmbDestinationTable
+        '
+        Me.cmbDestinationTable.BackColor = System.Drawing.Color.LightGreen
+        Me.cmbDestinationTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbDestinationTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDestinationTable.Enabled = False
+        Me.cmbDestinationTable.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbDestinationTable.ForeColor = System.Drawing.Color.Black
+        Me.cmbDestinationTable.Location = New System.Drawing.Point(180, 305)
+        Me.cmbDestinationTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbDestinationTable.Name = "cmbDestinationTable"
+        Me.cmbDestinationTable.Size = New System.Drawing.Size(199, 25)
+        Me.cmbDestinationTable.TabIndex = 14
+        Me.cmbDestinationTable.TabStop = False
+        '
+        'Label101
+        '
+        Me.Label101.AutoSize = True
+        Me.Label101.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label101.ForeColor = System.Drawing.Color.Black
+        Me.Label101.Location = New System.Drawing.Point(4, 310)
+        Me.Label101.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label101.Name = "Label101"
+        Me.Label101.Size = New System.Drawing.Size(140, 17)
+        Me.Label101.TabIndex = 13
+        Me.Label101.Text = "&Move To Table #"
+        '
+        'cmbSourceTable
+        '
+        Me.cmbSourceTable.BackColor = System.Drawing.Color.LightGreen
+        Me.cmbSourceTable.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmbSourceTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSourceTable.Enabled = False
+        Me.cmbSourceTable.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSourceTable.ForeColor = System.Drawing.Color.Black
+        Me.cmbSourceTable.Location = New System.Drawing.Point(180, 9)
+        Me.cmbSourceTable.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbSourceTable.Name = "cmbSourceTable"
+        Me.cmbSourceTable.Size = New System.Drawing.Size(199, 25)
+        Me.cmbSourceTable.TabIndex = 12
+        Me.cmbSourceTable.TabStop = False
+        '
+        'Label102
+        '
+        Me.Label102.AutoSize = True
+        Me.Label102.Font = New System.Drawing.Font("Lucida Fax", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label102.ForeColor = System.Drawing.Color.Black
+        Me.Label102.Location = New System.Drawing.Point(5, 13)
+        Me.Label102.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label102.Name = "Label102"
+        Me.Label102.Size = New System.Drawing.Size(160, 17)
+        Me.Label102.TabIndex = 11
+        Me.Label102.Text = "Move &From Table #"
         '
         'PanelDisplayBill
         '
@@ -5859,10 +6171,10 @@ Partial Class FrmPOSBilling2N
         Me.PanelDisplayBill.Controls.Add(Me.lblTempBillNo)
         Me.PanelDisplayBill.Controls.Add(Me.btnPrintDuplicateBill)
         Me.PanelDisplayBill.Controls.Add(Me.btnCloseView)
-        Me.PanelDisplayBill.Location = New System.Drawing.Point(351, 121)
+        Me.PanelDisplayBill.Location = New System.Drawing.Point(733, 52)
         Me.PanelDisplayBill.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelDisplayBill.Name = "PanelDisplayBill"
-        Me.PanelDisplayBill.Size = New System.Drawing.Size(349, 317)
+        Me.PanelDisplayBill.Size = New System.Drawing.Size(457, 518)
         Me.PanelDisplayBill.TabIndex = 318
         '
         'lblKOTStr
@@ -5917,313 +6229,6 @@ Partial Class FrmPOSBilling2N
         Me.lblTempBillNo.Text = "&Bill Type"
         Me.lblTempBillNo.Visible = False
         '
-        'btnRefresh
-        '
-        Me.btnRefresh.AutoSize = True
-        Me.btnRefresh.BackColor = System.Drawing.Color.Tomato
-        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnRefresh.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnRefresh.Location = New System.Drawing.Point(954, 10)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(108, 48)
-        Me.btnRefresh.TabIndex = 319
-        Me.btnRefresh.Text = "REFRESH"
-        Me.btnRefresh.UseVisualStyleBackColor = False
-        '
-        'btnClose
-        '
-        Me.btnClose.AutoSize = True
-        Me.btnClose.BackColor = System.Drawing.Color.Tomato
-        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClose.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnClose.Location = New System.Drawing.Point(1067, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(109, 48)
-        Me.btnClose.TabIndex = 320
-        Me.btnClose.Text = "CLOSE"
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
-        'btnHistory
-        '
-        Me.btnHistory.AutoSize = True
-        Me.btnHistory.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.btnHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnHistory.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnHistory.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnHistory.Location = New System.Drawing.Point(831, 10)
-        Me.btnHistory.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnHistory.Name = "btnHistory"
-        Me.btnHistory.Size = New System.Drawing.Size(118, 48)
-        Me.btnHistory.TabIndex = 318
-        Me.btnHistory.Text = "HISTORY"
-        Me.btnHistory.UseVisualStyleBackColor = False
-        '
-        'btnShiftKOT
-        '
-        Me.btnShiftKOT.AutoSize = True
-        Me.btnShiftKOT.BackColor = System.Drawing.Color.Tomato
-        Me.btnShiftKOT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnShiftKOT.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnShiftKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnShiftKOT.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnShiftKOT.Location = New System.Drawing.Point(560, 10)
-        Me.btnShiftKOT.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnShiftKOT.Name = "btnShiftKOT"
-        Me.btnShiftKOT.Size = New System.Drawing.Size(125, 48)
-        Me.btnShiftKOT.TabIndex = 317
-        Me.btnShiftKOT.Text = "SHIFT KOT"
-        Me.btnShiftKOT.UseVisualStyleBackColor = False
-        '
-        'btnSettleBillHomePage
-        '
-        Me.btnSettleBillHomePage.AutoSize = True
-        Me.btnSettleBillHomePage.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.btnSettleBillHomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnSettleBillHomePage.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSettleBillHomePage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSettleBillHomePage.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSettleBillHomePage.Location = New System.Drawing.Point(288, 10)
-        Me.btnSettleBillHomePage.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSettleBillHomePage.Name = "btnSettleBillHomePage"
-        Me.btnSettleBillHomePage.Size = New System.Drawing.Size(128, 48)
-        Me.btnSettleBillHomePage.TabIndex = 312
-        Me.btnSettleBillHomePage.Text = "SETTLE BILL"
-        Me.btnSettleBillHomePage.UseVisualStyleBackColor = False
-        '
-        'btnModifiers
-        '
-        Me.btnModifiers.AutoSize = True
-        Me.btnModifiers.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.btnModifiers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnModifiers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnModifiers.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnModifiers.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnModifiers.Location = New System.Drawing.Point(155, 10)
-        Me.btnModifiers.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnModifiers.Name = "btnModifiers"
-        Me.btnModifiers.Size = New System.Drawing.Size(128, 48)
-        Me.btnModifiers.TabIndex = 316
-        Me.btnModifiers.Text = "MODIFIERS"
-        Me.btnModifiers.UseVisualStyleBackColor = False
-        '
-        'btnModifyKOT
-        '
-        Me.btnModifyKOT.AutoSize = True
-        Me.btnModifyKOT.BackColor = System.Drawing.Color.Tomato
-        Me.btnModifyKOT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnModifyKOT.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnModifyKOT.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnModifyKOT.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnModifyKOT.Location = New System.Drawing.Point(690, 10)
-        Me.btnModifyKOT.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnModifyKOT.Name = "btnModifyKOT"
-        Me.btnModifyKOT.Size = New System.Drawing.Size(136, 48)
-        Me.btnModifyKOT.TabIndex = 315
-        Me.btnModifyKOT.Text = "MODIFY KOT"
-        Me.btnModifyKOT.UseVisualStyleBackColor = False
-        '
-        'btnShowTables
-        '
-        Me.btnShowTables.AutoSize = True
-        Me.btnShowTables.BackColor = System.Drawing.Color.Blue
-        Me.btnShowTables.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnShowTables.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnShowTables.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnShowTables.ForeColor = System.Drawing.Color.White
-        Me.btnShowTables.Location = New System.Drawing.Point(4, 10)
-        Me.btnShowTables.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnShowTables.Name = "btnShowTables"
-        Me.btnShowTables.Size = New System.Drawing.Size(146, 48)
-        Me.btnShowTables.TabIndex = 310
-        Me.btnShowTables.Text = "SHOW TABLES"
-        Me.btnShowTables.UseVisualStyleBackColor = False
-        '
-        'PanelLine
-        '
-        Me.PanelLine.BackColor = System.Drawing.Color.Gray
-        Me.PanelLine.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelLine.ForeColor = System.Drawing.Color.Black
-        Me.PanelLine.Location = New System.Drawing.Point(10, 50)
-        Me.PanelLine.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelLine.Name = "PanelLine"
-        Me.PanelLine.Size = New System.Drawing.Size(1180, 2)
-        Me.PanelLine.TabIndex = 312
-        '
-        'LabelHeader
-        '
-        Me.LabelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LabelHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LabelHeader.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.LabelHeader.ForeColor = System.Drawing.Color.Silver
-        Me.LabelHeader.Location = New System.Drawing.Point(10, 10)
-        Me.LabelHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelHeader.Name = "LabelHeader"
-        Me.LabelHeader.Size = New System.Drawing.Size(1180, 40)
-        Me.LabelHeader.TabIndex = 311
-        Me.LabelHeader.Text = "POS BILLING SYSTEM"
-        Me.LabelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PanelModifiers
-        '
-        Me.PanelModifiers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelModifiers.Controls.Add(Me.btnItemModifierOK)
-        Me.PanelModifiers.Controls.Add(Me.btnDismiss)
-        Me.PanelModifiers.Controls.Add(Me.btnClear)
-        Me.PanelModifiers.Controls.Add(Me.txtKOTRemarks)
-        Me.PanelModifiers.Controls.Add(Me.LabelItemModifier)
-        Me.PanelModifiers.Controls.Add(Me.dgModifiers)
-        Me.PanelModifiers.Location = New System.Drawing.Point(14, 52)
-        Me.PanelModifiers.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelModifiers.Name = "PanelModifiers"
-        Me.PanelModifiers.Size = New System.Drawing.Size(379, 518)
-        Me.PanelModifiers.TabIndex = 320
-        '
-        'btnItemModifierOK
-        '
-        Me.btnItemModifierOK.AutoSize = True
-        Me.btnItemModifierOK.BackColor = System.Drawing.Color.Yellow
-        Me.btnItemModifierOK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnItemModifierOK.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnItemModifierOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnItemModifierOK.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnItemModifierOK.Location = New System.Drawing.Point(256, 456)
-        Me.btnItemModifierOK.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnItemModifierOK.Name = "btnItemModifierOK"
-        Me.btnItemModifierOK.Size = New System.Drawing.Size(114, 48)
-        Me.btnItemModifierOK.TabIndex = 326
-        Me.btnItemModifierOK.Text = "OK"
-        Me.btnItemModifierOK.UseVisualStyleBackColor = False
-        '
-        'btnDismiss
-        '
-        Me.btnDismiss.AutoSize = True
-        Me.btnDismiss.BackColor = System.Drawing.Color.Yellow
-        Me.btnDismiss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnDismiss.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDismiss.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnDismiss.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnDismiss.Location = New System.Drawing.Point(130, 457)
-        Me.btnDismiss.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDismiss.Name = "btnDismiss"
-        Me.btnDismiss.Size = New System.Drawing.Size(118, 48)
-        Me.btnDismiss.TabIndex = 325
-        Me.btnDismiss.Text = "DISMISS"
-        Me.btnDismiss.UseVisualStyleBackColor = False
-        '
-        'btnClear
-        '
-        Me.btnClear.AutoSize = True
-        Me.btnClear.BackColor = System.Drawing.Color.Yellow
-        Me.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnClear.Font = New System.Drawing.Font("Lucida Fax", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnClear.Location = New System.Drawing.Point(10, 456)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(112, 48)
-        Me.btnClear.TabIndex = 324
-        Me.btnClear.Text = "CLEAR"
-        Me.btnClear.UseVisualStyleBackColor = False
-        '
-        'txtKOTRemarks
-        '
-        Me.txtKOTRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtKOTRemarks.Font = New System.Drawing.Font("Lucida Fax", 14.0!, System.Drawing.FontStyle.Bold)
-        Me.txtKOTRemarks.Location = New System.Drawing.Point(6, 358)
-        Me.txtKOTRemarks.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtKOTRemarks.Multiline = True
-        Me.txtKOTRemarks.Name = "txtKOTRemarks"
-        Me.txtKOTRemarks.Size = New System.Drawing.Size(367, 93)
-        Me.txtKOTRemarks.TabIndex = 323
-        Me.txtKOTRemarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'LabelItemModifier
-        '
-        Me.LabelItemModifier.BackColor = System.Drawing.Color.Teal
-        Me.LabelItemModifier.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LabelItemModifier.Font = New System.Drawing.Font("Lucida Fax", 12.75!, System.Drawing.FontStyle.Bold)
-        Me.LabelItemModifier.ForeColor = System.Drawing.Color.White
-        Me.LabelItemModifier.Location = New System.Drawing.Point(0, 0)
-        Me.LabelItemModifier.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelItemModifier.Name = "LabelItemModifier"
-        Me.LabelItemModifier.Size = New System.Drawing.Size(377, 36)
-        Me.LabelItemModifier.TabIndex = 322
-        Me.LabelItemModifier.Text = "ITEM MODIERS"
-        Me.LabelItemModifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'dgModifiers
-        '
-        Me.dgModifiers.AllowUserToAddRows = False
-        Me.dgModifiers.AllowUserToDeleteRows = False
-        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle26.Padding = New System.Windows.Forms.Padding(2)
-        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgModifiers.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle26
-        Me.dgModifiers.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.dgModifiers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        Me.dgModifiers.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle27.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle27.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgModifiers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle27
-        Me.dgModifiers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgModifiers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewImageColumn5})
-        Me.dgModifiers.Cursor = System.Windows.Forms.Cursors.Default
-        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle28.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.SeaShell
-        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgModifiers.DefaultCellStyle = DataGridViewCellStyle28
-        Me.dgModifiers.GridColor = System.Drawing.Color.Chocolate
-        Me.dgModifiers.Location = New System.Drawing.Point(6, 48)
-        Me.dgModifiers.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgModifiers.MultiSelect = False
-        Me.dgModifiers.Name = "dgModifiers"
-        Me.dgModifiers.ReadOnly = True
-        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle29.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgModifiers.RowHeadersDefaultCellStyle = DataGridViewCellStyle29
-        Me.dgModifiers.RowHeadersVisible = False
-        Me.dgModifiers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.dgModifiers.RowTemplate.Height = 40
-        Me.dgModifiers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgModifiers.Size = New System.Drawing.Size(367, 303)
-        Me.dgModifiers.TabIndex = 15
-        Me.dgModifiers.TabStop = False
-        '
-        'DataGridViewImageColumn5
-        '
-        Me.DataGridViewImageColumn5.FillWeight = 50.0!
-        Me.DataGridViewImageColumn5.Frozen = True
-        Me.DataGridViewImageColumn5.HeaderText = ""
-        Me.DataGridViewImageColumn5.Image = Global.FNBManagement.My.Resources.Resources.check2
-        Me.DataGridViewImageColumn5.MinimumWidth = 50
-        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
-        Me.DataGridViewImageColumn5.ReadOnly = True
-        Me.DataGridViewImageColumn5.Width = 50
-        '
         'ErrorProvider2
         '
         Me.ErrorProvider2.ContainerControl = Me
@@ -6253,16 +6258,15 @@ Partial Class FrmPOSBilling2N
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelMergeTables.ResumeLayout(False)
-        Me.PanelMergeTables.PerformLayout()
-        CType(Me.dgSourceTable, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgDestinationTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelContainer.ResumeLayout(False)
         Me.PanelMainScreen.ResumeLayout(False)
-        Me.PanelSearchItem.ResumeLayout(False)
-        Me.PanelSearchItem.PerformLayout()
-        CType(Me.dgSearchItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelContentHost.ResumeLayout(False)
+        Me.PanelModifyKOT.ResumeLayout(False)
+        Me.PanelModifyKOT.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.dgKOTItemList, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgKOTList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelRight.ResumeLayout(False)
         Me.PanelItem.ResumeLayout(False)
         Me.PanelItem.PerformLayout()
@@ -6278,27 +6282,28 @@ Partial Class FrmPOSBilling2N
         Me.PanelMemberDetails.PerformLayout()
         Me.PanelBillHeader.ResumeLayout(False)
         Me.PanelBillHeader.PerformLayout()
-        Me.PanelModifyKOT.ResumeLayout(False)
-        Me.PanelModifyKOT.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.dgKOTItemList, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgKOTList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelLocationAndTables.ResumeLayout(False)
         Me.PanelTables.ResumeLayout(False)
         Me.PanelLocationTables.ResumeLayout(False)
+        Me.PanelFooter.ResumeLayout(False)
+        Me.PanelFooter.PerformLayout()
+        Me.PanelModifiers.ResumeLayout(False)
+        Me.PanelModifiers.PerformLayout()
+        CType(Me.dgModifiers, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelSearchItem.ResumeLayout(False)
+        Me.PanelSearchItem.PerformLayout()
+        CType(Me.dgSearchItem, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelClosedBills.ResumeLayout(False)
         Me.PanelClosedBills.PerformLayout()
         CType(Me.dgHistory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSettleBill.ResumeLayout(False)
         Me.PanelSettleBill.PerformLayout()
-        Me.PanelFooter.ResumeLayout(False)
-        Me.PanelFooter.PerformLayout()
+        Me.PanelMergeTables.ResumeLayout(False)
+        Me.PanelMergeTables.PerformLayout()
+        CType(Me.dgSourceTable, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgDestinationTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelDisplayBill.ResumeLayout(False)
         Me.PanelDisplayBill.PerformLayout()
-        Me.PanelModifiers.ResumeLayout(False)
-        Me.PanelModifiers.PerformLayout()
-        CType(Me.dgModifiers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider1,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)

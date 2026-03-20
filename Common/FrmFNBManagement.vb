@@ -924,7 +924,7 @@ Public Class FrmFNBManagement
     End Sub
 
     Private Sub btnFrmPOSBilling_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFrmPOSBilling.Click
-        Dim frm As New FrmPOSBilling1N
+        Dim frm As New FrmPOSBilling2N
         CheckUserFormAccess(btnFrmPOSBilling)
         If (AddRight = 1 Or EditRight = 1 Or SearchRight = 1 Or DeleteRight = 1) Then
             DisplayForm(frm)

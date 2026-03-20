@@ -229,8 +229,8 @@ Partial Class frmCreditTransactionEnquiry
         'PanelContainer
         '
         Me.PanelContainer.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.PanelContainer.Controls.Add(Me.PanelSearch)
         Me.PanelContainer.Controls.Add(Me.PanelDisplay)
+        Me.PanelContainer.Controls.Add(Me.PanelSearch)
         Me.PanelContainer.Controls.Add(Me.PanelFooter)
         Me.PanelContainer.Controls.Add(Me.PanelLine)
         Me.PanelContainer.Controls.Add(Me.LabelHeader)
@@ -553,13 +553,14 @@ Partial Class frmCreditTransactionEnquiry
         '
         'PanelDisplay
         '
-        Me.PanelDisplay.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PanelDisplay.BackColor = System.Drawing.Color.Transparent
         Me.PanelDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PanelDisplay.Controls.Add(Me.btnPrint)
         Me.PanelDisplay.Controls.Add(Me.btnCloseDisplay)
-        Me.PanelDisplay.Location = New System.Drawing.Point(729, 5)
+        Me.PanelDisplay.Location = New System.Drawing.Point(721, 58)
         Me.PanelDisplay.Name = "PanelDisplay"
-        Me.PanelDisplay.Size = New System.Drawing.Size(460, 570)
+        Me.PanelDisplay.Size = New System.Drawing.Size(460, 575)
+        Me.PanelDisplay.Dock = DockStyle.Right
         Me.PanelDisplay.TabIndex = 271
         Me.PanelDisplay.Visible = False
         '

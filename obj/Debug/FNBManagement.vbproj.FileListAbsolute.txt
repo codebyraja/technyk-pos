@@ -735,3 +735,5 @@ D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.vbproj.GenerateReso
 D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.exe
 D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.xml
 D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.pdb
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmPOSBilling3N.resources
+D:\!\Raja\2026\POS Management - NSCI\obj\Debug\FNBManagement.FrmPOSBilling4N.resources

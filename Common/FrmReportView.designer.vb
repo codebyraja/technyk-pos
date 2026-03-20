@@ -22,31 +22,16 @@ Partial Class FrmReportView
     'Do not modify it using the Code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        'Me.CrystalReportViewer2 = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
-        Me.lblReportHeader = New System.Windows.Forms.Label
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel
-        Me.btnClose = New System.Windows.Forms.Button
-        Me.btnMinimize = New System.Windows.Forms.Button
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblReportHeader = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnMinimize = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'CrystalReportViewer2
-        '
-        'Me.CrystalReportViewer2.ActiveViewIndex = -1
-        'Me.CrystalReportViewer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        'Me.CrystalReportViewer2.DisplayBackgroundEdge = False
-        'Me.CrystalReportViewer2.DisplayGroupTree = False
-        'Me.CrystalReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill
-        'Me.CrystalReportViewer2.Location = New System.Drawing.Point(0, 39)
-        'Me.CrystalReportViewer2.Name = "CrystalReportViewer2"
-        'Me.CrystalReportViewer2.SelectionFormula = ""
-        'Me.CrystalReportViewer2.Size = New System.Drawing.Size(1018, 723)
-        'Me.CrystalReportViewer2.TabIndex = 0
-        'Me.CrystalReportViewer2.ViewTimeSelectionFormula = ""
         '
         'FlowLayoutPanel1
         '
@@ -57,7 +42,7 @@ Partial Class FrmReportView
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1018, 39)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1194, 39)
         Me.FlowLayoutPanel1.TabIndex = 4
         '
         'TableLayoutPanel1
@@ -67,7 +52,7 @@ Partial Class FrmReportView
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.6798!))
         Me.TableLayoutPanel1.Controls.Add(Me.lblReportHeader, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 3)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(176, 3)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -141,9 +126,8 @@ Partial Class FrmReportView
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.CancelButton = Me.btnMinimize
-        Me.ClientSize = New System.Drawing.Size(1018, 762)
+        Me.ClientSize = New System.Drawing.Size(1194, 694)
         Me.ControlBox = False
-        'Me.Controls.Add(Me.CrystalReportViewer2)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MaximizeBox = False

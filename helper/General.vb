@@ -13,28 +13,28 @@
 
     End Sub
 
-    Public Shared Sub ShowModalPanel(pnl As Panel, Optional overlay As Panel = Nothing)
+    'Public Shared Sub ShowModalPanel(pnl As Panel, Optional overlay As Panel = Nothing)
 
-        If pnl Is Nothing Then Exit Sub
-        If pnl.Parent Is Nothing Then Exit Sub
+    '    If pnl Is Nothing Then Exit Sub
+    '    If pnl.Parent Is Nothing Then Exit Sub
 
-        If overlay IsNot Nothing Then overlay.Visible = True
-        If overlay IsNot Nothing Then overlay.BringToFront()
+    '    If overlay IsNot Nothing Then overlay.Visible = True
+    '    If overlay IsNot Nothing Then overlay.BringToFront()
 
-        pnl.Visible = True
-        pnl.BringToFront()
+    '    pnl.Visible = True
+    '    pnl.BringToFront()
 
-        pnl.Left = (pnl.Parent.Width - pnl.Width) \ 2
-        pnl.Top = (pnl.Parent.Height - pnl.Height) \ 2
+    '    pnl.Left = (pnl.Parent.Width - pnl.Width) \ 2
+    '    pnl.Top = (pnl.Parent.Height - pnl.Height) \ 2
 
-    End Sub
+    'End Sub
 
-    Public Shared Sub HideModalPanel(pnl As Panel, Optional overlay As Panel = Nothing)
+    'Public Shared Sub HideModalPanel(pnl As Panel, Optional overlay As Panel = Nothing)
 
-        If pnl IsNot Nothing Then pnl.Visible = False
-        If overlay IsNot Nothing Then overlay.Visible = False
+    '    If pnl IsNot Nothing Then pnl.Visible = False
+    '    If overlay IsNot Nothing Then overlay.Visible = False
 
-    End Sub
+    'End Sub
 
 
     'Public Sub ShowMergeScreen()
